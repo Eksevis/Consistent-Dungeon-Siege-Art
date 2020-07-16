@@ -1,0 +1,4197 @@
+[t:template,n:base_shield]
+{
+	doc = "Shield base template";
+	specializes = armor;
+	[aspect]
+	{
+		[voice]
+		{
+			[put_down]
+			{
+				* = s_e_gui_put_down_shield;
+			}
+		}
+	}
+	[defend]
+	{
+		defend_class = dc_shield;
+	}
+	[gui]
+	{
+		equip_slot = es_shield_hand;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "20% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 20;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "10% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 10;
+			}
+		}
+	}
+}
+[t:template,n:sh_m_g_c_r_s_avg]
+{
+	doc = "Metal Buckler";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_19;
+		[textures]
+		{
+			0 = b_a_shd_078;
+		}
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Metal Buckler";
+	}
+	[defend]
+	{
+	  f defense = 7.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:14;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_shd_078;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "10% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 10;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "5% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 5;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[c_mag]
+		{
+		  f defense = 34.000000;
+			equip_requirements = strength:29;
+			inventory_icon = b_gui_ig_i_a_shd_122;
+			model = m_a_shd_23;
+		  f modifier_max = 7.000000;
+		  f modifier_min = 5.000000;
+			texture = b_a_shd_122;
+		}
+		[c_str]
+		{
+		  f defense = 21.000000;
+			equip_requirements = strength:22;
+			inventory_icon = b_gui_ig_i_a_shd_121;
+			model = m_a_shd_23;
+		  f modifier_max = 5.000000;
+		  f modifier_min = 3.000000;
+			texture = b_a_shd_121;
+		}
+		[o_avg]
+		{
+		  f defense = 13.000000;
+			equip_requirements = strength:17;
+			inventory_icon = b_gui_ig_i_a_shd_123;
+			model = m_a_shd_23;
+		  f modifier_max = 3.000000;
+		  f modifier_min = 2.000000;
+			texture = b_a_shd_123;
+		}
+		[o_fin]
+		{
+		  f defense = 16.000000;
+			equip_requirements = strength:19;
+			inventory_icon = b_gui_ig_i_a_shd_124;
+			model = m_a_shd_23;
+		  f modifier_max = 4.000000;
+		  f modifier_min = 2.000000;
+			texture = b_a_shd_124;
+		}
+		[o_mag]
+		{
+		  f defense = 41.000000;
+			equip_requirements = strength:33;
+			inventory_icon = b_gui_ig_i_a_shd_126;
+			model = m_a_shd_23;
+		  f modifier_max = 8.000000;
+		  f modifier_min = 6.000000;
+			texture = b_a_shd_126;
+		}
+		[o_str]
+		{
+		  f defense = 27.000000;
+			equip_requirements = strength:25;
+			inventory_icon = b_gui_ig_i_a_shd_125;
+			model = m_a_shd_23;
+		  f modifier_max = 6.000000;
+		  f modifier_min = 4.000000;
+			texture = b_a_shd_125;
+		}
+	}
+}
+[t:template,n:sh_m_g_c_r_s_low]
+{
+	doc = "Rusted Metal Buckler";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_10;
+		scale_base = 0.6;
+		[textures]
+		{
+			0 = b_a_shd_072;
+		}
+	}
+	[common]
+	{
+		allow_modifiers = false;
+		screen_name = "Rusted Metal Buckler";
+	}
+	[defend]
+	{
+		defense = 2;
+	}
+	[gui]
+	{
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_shd_072;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "10% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 10;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "5% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 5;
+			}
+		}
+	}
+}
+[t:template,n:sh_ra_m_c_h_s_practice]
+{
+	doc = "Practice Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_04;
+		[textures]
+		{
+			0 = b_a_shd_024;
+		}
+	}
+	[common]
+	{
+		pcontent_special_type = rare,unique;
+		screen_name = "Practice Shield";
+	}
+	[defend]
+	{
+	  f defense = 15.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:18;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_shd_024;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "5% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 5;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "5% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 5;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 9.000000;
+		  f modifier_min = 2.000000;
+		}
+	}
+}
+[t:template,n:sh_ra_m_c_k_m_practice]
+{
+	doc = "Practice Kite Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_13;
+		[textures]
+		{
+			0 = b_a_shd_058;
+		}
+	}
+	[common]
+	{
+		pcontent_special_type = rare,unique;
+		screen_name = "Practice Kite Shield";
+	}
+	[defend]
+	{
+	  f defense = 41.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:33;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_a_shd_058;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "10% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 10;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "5% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 5;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 23.000000;
+		  f modifier_min = 4.000000;
+		}
+	}
+}
+[t:template,n:sh_ra_m_c_r_l_stamp]
+{
+	doc = "Stamp Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_17;
+		[textures]
+		{
+			0 = b_a_shd_076;
+		}
+	}
+	[common]
+	{
+		pcontent_special_type = rare,unique;
+		screen_name = "Stamp Shield";
+	}
+	[defend]
+	{
+	  f defense = 50.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:38;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_shd_076;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "10% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 10;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "10% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 10;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 28.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:sh_ra_m_c_r_m_decrepit]
+{
+	doc = "Decrepit Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_10;
+		[textures]
+		{
+			0 = b_a_shd_072;
+		}
+	}
+	[common]
+	{
+		pcontent_special_type = rare,unique;
+		screen_name = "Decrepit Shield";
+	}
+	[defend]
+	{
+	  f defense = 4.000000;
+	}
+	[gui]
+	{
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_shd_072;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "5% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 5;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "5% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 5;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 2.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:sh_ra_m_c_r_m_rivet]
+{
+	doc = "Rivet Buckler";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_10;
+		[textures]
+		{
+			0 = b_a_shd_015;
+		}
+	}
+	[common]
+	{
+		pcontent_special_type = rare,unique;
+		screen_name = "Rivet Buckler";
+	}
+	[defend]
+	{
+	  f defense = 50.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:38;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_shd_015;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "10% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 10;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "5% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 5;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 28.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:sh_ra_m_c_r_m_serrated]
+{
+	doc = "Serrated Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_02;
+		[textures]
+		{
+			0 = b_a_shd_020;
+		}
+	}
+	[common]
+	{
+		pcontent_special_type = rare,unique;
+		screen_name = "Serrated Shield";
+	}
+	[defend]
+	{
+	  f defense = 75.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:52;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_shd_020;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "5% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 5;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "5% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 5;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 42.000000;
+		  f modifier_min = 8.000000;
+		}
+	}
+}
+[t:template,n:sh_ra_m_c_r_m_strapped]
+{
+	doc = "Strapped Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_05;
+		[textures]
+		{
+			0 = b_a_shd_030;
+		}
+	}
+	[common]
+	{
+		pcontent_special_type = rare,unique;
+		screen_name = "Strapped Shield";
+	}
+	[defend]
+	{
+	  f defense = 18.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:20;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_shd_030;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "5% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 5;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "5% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 5;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 10.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:sh_ra_m_c_r_m_wreath]
+{
+	doc = "Wreath Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_05;
+		[textures]
+		{
+			0 = b_a_shd_069;
+		}
+	}
+	[common]
+	{
+		pcontent_special_type = rare,unique;
+		screen_name = "Wreath Shield";
+	}
+	[defend]
+	{
+	  f defense = 16.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:18;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_shd_069;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "5% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 5;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "5% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 5;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 16.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:sh_ra_m_g_o_r_s_fin]
+{
+	doc = "Metal Buckler";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_23;
+		[textures]
+		{
+			0 = b_a_shd_124;
+		}
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Tortoise Shield";
+	}
+	[defend]
+	{
+	  f defense = 7.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:16;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_shd_151;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "14% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 14;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "7% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 7;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[o_str]
+		{
+		  f defense = 32.000000;
+			equip_requirements = strength:29;
+			inventory_icon = b_gui_ig_i_a_shd_152;
+			model = m_a_shd_23;
+		  f modifier_max = 9.000000;
+		  f modifier_min = 6.000000;
+			texture = b_a_shd_125;
+		}
+	}
+}
+[t:template,n:sh_ra_m_o_h_s_spine]
+{
+	doc = "Spine Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_12;
+		[textures]
+		{
+			0 = b_a_shd_051;
+		}
+	}
+	[common]
+	{
+		pcontent_special_type = rare,unique;
+		screen_name = "Spine Shield";
+	}
+	[defend]
+	{
+	  f defense = 31.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:27;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_shd_051;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "5% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 5;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "5% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 5;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 17.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:sh_ra_m_o_r_m_cinder]
+{
+	doc = "Crimson Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_02;
+		[textures]
+		{
+			0 = b_a_shd_003;
+		}
+	}
+	[common]
+	{
+		pcontent_special_type = rare,unique;
+		screen_name = "Crimson Shield";
+	}
+	[defend]
+	{
+	  f defense = 30.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:27;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_shd_003;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "10% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 10;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "5% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 5;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 17.000000;
+		  f modifier_min = 3.000000;
+		}
+	}
+}
+[t:template,n:sh_ra_m_o_r_m_disc]
+{
+	doc = "Disc Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_18;
+		[textures]
+		{
+			0 = b_a_shd_043;
+		}
+	}
+	[common]
+	{
+		pcontent_special_type = rare,unique;
+		screen_name = "Disc Shield";
+	}
+	[defend]
+	{
+	  f defense = 77.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:54;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_shd_043;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "5% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 5;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "15% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 15;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 43.000000;
+		  f modifier_min = 8.000000;
+		}
+	}
+}
+[t:template,n:sh_ra_m_o_r_m_frost]
+{
+	doc = "Frost Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_02;
+		[textures]
+		{
+			0 = b_a_shd_004;
+		}
+	}
+	[common]
+	{
+		pcontent_special_type = rare,unique;
+		screen_name = "Frost Shield";
+	}
+	[defend]
+	{
+	  f defense = 34.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:29;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_shd_004;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "10% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 10;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "5% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 5;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 19.000000;
+		  f modifier_min = 4.000000;
+		}
+	}
+}
+[t:template,n:sh_ra_m_o_r_m_quad]
+{
+	doc = "Quad Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_10;
+		[textures]
+		{
+			0 = b_a_shd_044;
+		}
+	}
+	[common]
+	{
+		pcontent_special_type = rare,unique;
+		screen_name = "Quad Shield";
+	}
+	[defend]
+	{
+	  f defense = 87.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:59;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_shd_044;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "5% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 5;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "5% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 5;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 48.000000;
+		  f modifier_min = 9.000000;
+		}
+	}
+}
+[t:template,n:sh_ra_m_o_r_m_shell]
+{
+	doc = "Shell Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_05;
+		[textures]
+		{
+			0 = b_a_shd_028;
+		}
+	}
+	[common]
+	{
+		pcontent_special_type = rare,unique;
+		screen_name = "Shell Shield";
+	}
+	[defend]
+	{
+	  f defense = 73.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:51;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_shd_028;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "5% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 5;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "5% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 5;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 40.000000;
+		  f modifier_min = 8.000000;
+		}
+	}
+}
+[t:template,n:sh_ra_m_o_r_s_etched]
+{
+	doc = "Etched Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_18;
+		[textures]
+		{
+			0 = b_a_shd_065;
+		}
+	}
+	[common]
+	{
+		pcontent_special_type = rare,unique;
+		screen_name = "Etched Shield";
+	}
+	[defend]
+	{
+	  f defense = 32.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:28;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_shd_065;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "5% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 5;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "5% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 5;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 18.000000;
+		  f modifier_min = 3.000000;
+		}
+	}
+}
+[t:template,n:sh_ra_w_c_c_m_strike]
+{
+	doc = "Strike Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_06;
+		[textures]
+		{
+			0 = b_a_shd_031;
+		}
+	}
+	[common]
+	{
+		pcontent_special_type = rare,unique;
+		screen_name = "Strike Shield";
+	}
+	[defend]
+	{
+	  f defense = 27.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:25;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_a_shd_031;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "15% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 15;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "10% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 10;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 15.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:sh_ra_w_c_k_m_braced]
+{
+	doc = "Braced Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_13;
+		[textures]
+		{
+			0 = b_a_shd_054;
+		}
+	}
+	[common]
+	{
+		pcontent_special_type = rare,unique;
+		screen_name = "Braced Shield";
+	}
+	[defend]
+	{
+	  f defense = 55.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:41;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_a_shd_054;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "10% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 10;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "5% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 5;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 30.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:sh_ra_w_c_k_s_pelt]
+{
+	doc = "Pelt Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_01;
+		[textures]
+		{
+			0 = b_a_shd_017;
+		}
+	}
+	[common]
+	{
+		pcontent_special_type = rare,unique;
+		screen_name = "Pelt Shield";
+	}
+	[defend]
+	{
+	  f defense = 1.000000;
+	}
+	[gui]
+	{
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_shd_017;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "5% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 5;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "5% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 5;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 1.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:sh_ra_w_g_c_h_m_fin]
+{
+	doc = "Heater Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_24;
+		[textures]
+		{
+			0 = b_a_shd_102;
+		}
+	}
+	[common]
+	{
+		pcontent_special_type = rare,unique;
+		screen_name = "Ordained Shield";
+	}
+	[defend]
+	{
+	  f defense = 20.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:20;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_shd_133;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 2.000000;
+		  f modifier_min = 1.000000;
+		}
+		[c_str]
+		{
+		  f defense = 36.000000;
+			equip_requirements = strength:29;
+			inventory_icon = b_gui_ig_i_a_shd_135;
+			model = m_a_shd_25;
+		  f modifier_max = 7.000000;
+		  f modifier_min = 4.000000;
+			texture = b_a_shd_104;
+		}
+		[o_fin]
+		{
+		  f defense = 28.000000;
+			equip_requirements = strength:24;
+			inventory_icon = b_gui_ig_i_a_shd_134;
+			model = m_a_shd_25;
+		  f modifier_max = 5.000000;
+		  f modifier_min = 2.000000;
+			texture = b_a_shd_106;
+		}
+	}
+}
+[t:template,n:sh_ra_w_g_c_k_l_fin]
+{
+	doc = "Large Kite Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_27;
+		[textures]
+		{
+			0 = b_a_shd_117;
+		}
+	}
+	[common]
+	{
+		pcontent_special_type = rare,unique;
+		screen_name = "Forged Shield";
+	}
+	[defend]
+	{
+	  f defense = 51.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:38;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_a_shd_141;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "35% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 35;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "35% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 20;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 5.000000;
+		  f modifier_min = 1.000000;
+		}
+		[c_str]
+		{
+		  f defense = 76.000000;
+			equip_requirements = strength:52;
+			inventory_icon = b_gui_ig_i_a_shd_143;
+			model = m_a_shd_27;
+		  f modifier_max = 14.000000;
+		  f modifier_min = 8.000000;
+			texture = b_a_shd_118;
+		}
+		[o_fin]
+		{
+		  f defense = 67.000000;
+			equip_requirements = strength:47;
+			inventory_icon = b_gui_ig_i_a_shd_142;
+			model = m_a_shd_27;
+		  f modifier_max = 12.000000;
+		  f modifier_min = 5.000000;
+			texture = b_a_shd_119;
+		}
+		[o_str]
+		{
+		  f defense = 86.000000;
+			equip_requirements = strength:58;
+			inventory_icon = b_gui_ig_i_a_shd_144;
+			model = m_a_shd_27;
+		  f modifier_max = 17.000000;
+		  f modifier_min = 11.000000;
+			texture = b_a_shd_120;
+		}
+	}
+}
+[t:template,n:sh_ra_w_g_c_k_m_fin]
+{
+	doc = "Kite Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_26;
+		[textures]
+		{
+			0 = b_a_shd_110;
+		}
+	}
+	[common]
+	{
+		pcontent_special_type = rare,unique;
+		screen_name = "Clobber Shield";
+	}
+	[defend]
+	{
+	  f defense = 31.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:26;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_a_shd_136;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "35% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 35;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "20% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 20;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 3.000000;
+		  f modifier_min = 1.000000;
+		}
+		[c_mag]
+		{
+		  f defense = 65.000000;
+			equip_requirements = strength:45;
+			inventory_icon = b_gui_ig_i_a_shd_140;
+			model = m_a_shd_26;
+		  f modifier_max = 13.000000;
+		  f modifier_min = 9.000000;
+			texture = b_a_shd_112;
+		}
+		[c_str]
+		{
+		  f defense = 47.000000;
+			equip_requirements = strength:36;
+			inventory_icon = b_gui_ig_i_a_shd_138;
+			model = m_a_shd_26;
+		  f modifier_max = 9.000000;
+		  f modifier_min = 5.000000;
+			texture = b_a_shd_111;
+		}
+		[o_mag]
+		{
+		  f defense = 89.000000;
+			equip_requirements = strength:61;
+			inventory_icon = b_gui_ig_i_a_shd_115;
+			model = m_a_shd_26;
+		  f modifier_max = 50.000000;
+		  f modifier_min = 12.000000;
+			texture = b_a_shd_115;
+		}
+		[o_str]
+		{
+		  f defense = 56.000000;
+			equip_requirements = strength:40;
+			inventory_icon = b_gui_ig_i_a_shd_139;
+			model = m_a_shd_26;
+		  f modifier_max = 11.000000;
+		  f modifier_min = 7.000000;
+			texture = b_a_shd_114;
+		}
+	}
+}
+[t:template,n:sh_ra_w_g_c_r_m_fin]
+{
+	doc = "Wooden Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_20;
+		[textures]
+		{
+			0 = b_a_shd_081;
+		}
+	}
+	[common]
+	{
+		pcontent_special_type = rare,unique;
+		screen_name = "Forthright Shield";
+	}
+	[defend]
+	{
+	  f defense = 11.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:16;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_shd_129;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0.000000;
+		  f modifier_min = 0.000000;
+		}
+		[o_fin]
+		{
+		  f defense = 22.000000;
+			equip_requirements = strength:22;
+			inventory_icon = b_gui_ig_i_a_shd_130;
+			model = m_a_shd_24;
+		  f modifier_max = 5.000000;
+		  f modifier_min = 3.000000;
+			texture = b_a_shd_100;
+		}
+		[o_mag]
+		{
+		  f defense = 69.000000;
+			equip_requirements = strength:49;
+			inventory_icon = b_gui_ig_i_a_shd_132;
+			model = m_a_shd_24;
+		  f modifier_max = 24.000000;
+		  f modifier_min = 10.000000;
+			texture = b_a_shd_102;
+		}
+		[o_str]
+		{
+		  f defense = 38.000000;
+			equip_requirements = strength:31;
+			inventory_icon = b_gui_ig_i_a_shd_131;
+			model = m_a_shd_24;
+		  f modifier_max = 11.000000;
+		  f modifier_min = 5.000000;
+			texture = b_a_shd_101;
+		}
+	}
+}
+[t:template,n:sh_ra_w_g_c_r_s_fin]
+{
+	doc = "Wooden Buckler";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_23;
+		[textures]
+		{
+			0 = b_a_shd_090;
+		}
+	}
+	[common]
+	{
+		pcontent_special_type = rare,unique;
+		screen_name = "Impact Shield";
+	}
+	[defend]
+	{
+	  f defense = 9.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:13;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_a_shd_127;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "10% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 10;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "5% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 5;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 3.000000;
+		  f modifier_min = 1.000000;
+		}
+		[o_fin]
+		{
+		  f defense = 16.000000;
+			equip_requirements = strength:18;
+			inventory_height = 2;
+			inventory_icon = b_gui_ig_i_a_shd_128;
+			inventory_width = 2;
+			model = m_a_shd_23;
+		  f modifier_max = 4.000000;
+		  f modifier_min = 2.000000;
+			texture = b_a_shd_094;
+		}
+	}
+}
+[t:template,n:sh_ra_w_g_o_k_m_fin]
+{
+	doc = "Kite Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_26;
+		[textures]
+		{
+			0 = b_a_shd_110;
+		}
+	}
+	[common]
+	{
+		pcontent_special_type = rare,unique;
+		screen_name = "Clipper Shield";
+	}
+	[defend]
+	{
+	  f defense = 32.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:29;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_a_shd_137;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "45% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 45;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "25% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 25;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 33.000000;
+		  f modifier_min = 9.000000;
+		}
+	}
+}
+[t:template,n:sh_ra_w_g_o_t_l_avg]
+{
+	doc = "Large Kite Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_27;
+		[textures]
+		{
+			0 = b_a_shd_116;
+		}
+	}
+	[common]
+	{
+		pcontent_special_type = rare,unique;
+		screen_name = "Savior Shield";
+	}
+	[defend]
+	{
+	  f defense = 46.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:36;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_a_shd_146;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "35% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 35;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "35% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 20;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 13.000000;
+		  f modifier_min = 6.000000;
+		}
+		[c_fin]
+		{
+		  f defense = 50.000000;
+			equip_requirements = strength:38;
+			inventory_icon = b_gui_ig_i_a_shd_145;
+			model = m_a_shd_27;
+		  f modifier_max = 17.000000;
+		  f modifier_min = 7.000000;
+			texture = b_a_shd_117;
+		}
+		[c_mag]
+		{
+		  f defense = 104.000000;
+			equip_requirements = strength:75;
+			inventory_icon = b_gui_ig_i_a_shd_149;
+			model = m_a_shd_27;
+		  f modifier_max = 101.000000;
+		  f modifier_min = 14.000000;
+			texture = b_a_shd_120;
+		}
+		[c_str]
+		{
+		  f defense = 64.000000;
+			equip_requirements = strength:38;
+			inventory_icon = b_gui_ig_i_a_shd_150;
+			model = m_a_shd_27;
+		  f modifier_max = 19.000000;
+		  f modifier_min = 9.000000;
+			texture = b_a_shd_118;
+		}
+		[o_fin]
+		{
+		  f defense = 58.000000;
+			equip_requirements = strength:43;
+			inventory_icon = b_gui_ig_i_a_shd_147;
+			model = m_a_shd_27;
+		  f modifier_max = 28.000000;
+		  f modifier_min = 8.000000;
+			texture = b_a_shd_119;
+		}
+		[o_str]
+		{
+		  f defense = 97.000000;
+			equip_requirements = strength:65;
+			inventory_icon = b_gui_ig_i_a_shd_148;
+			model = m_a_shd_27;
+		  f modifier_max = 101.000000;
+		  f modifier_min = 14.000000;
+			texture = b_a_shd_120;
+		}
+	}
+}
+[t:template,n:sh_ra_w_o_k_m_haze]
+{
+	doc = "Haze Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_13;
+		[textures]
+		{
+			0 = b_a_shd_087;
+		}
+	}
+	[common]
+	{
+		pcontent_special_type = rare,unique;
+		screen_name = "Haze Shield";
+	}
+	[defend]
+	{
+	  f defense = 37.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:31;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_a_shd_087;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "20% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 20;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "15% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 15;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 20.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:sh_u_g_c_k_l_avg]
+{
+	doc = "Mystic Kite Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_13;
+		[textures]
+		{
+			0 = b_a_shd_084;
+		}
+	}
+	[common]
+	{
+		is_pcontent_allowed = false;
+		screen_name = "Mystic Kite Shield";
+	}
+	[defend]
+	{
+	  f defense = 102.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:68;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_a_shd_084;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "35% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 35;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "20% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 20;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 5.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:sh_u_g_c_r_m_avg]
+{
+	doc = "Slat Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_20;
+		[textures]
+		{
+			0 = b_a_shd_080;
+		}
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Slat Shield";
+	}
+	[defend]
+	{
+	  f defense = 6.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:13;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_shd_080;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "10% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 10;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "5% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 5;
+			}
+		}
+	}
+}
+[t:template,n:sh_u_g_c_r_s_avg]
+{
+	doc = "Stock Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_19;
+		[textures]
+		{
+			0 = b_a_shd_079;
+		}
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Stock Shield";
+	}
+	[defend]
+	{
+	  f defense = 5.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:13;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_shd_079;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "10% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 10;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "5% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 5;
+			}
+		}
+	}
+}
+[t:template,n:sh_un_kite_ice]
+{
+	doc = "Ice Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_16;
+		[textures]
+		{
+			0 = b_i_glb_ice;
+		}
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Ice Shield";
+	}
+	[defend]
+	{
+	  f defense = 22.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:22;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_a_shd_075;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "20% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 20;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "15% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 15;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 12.000000;
+		  f modifier_min = 2.000000;
+		}
+	}
+}
+[t:template,n:sh_un_m_c_h_m_mold]
+{
+	doc = "Mold Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_03;
+		[textures]
+		{
+			0 = b_a_shd_022;
+		}
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Mold Shield";
+	}
+	[defend]
+	{
+	  f defense = 62.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:45;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_a_shd_022;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "10% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 10;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "10% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 10;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 35.000000;
+		  f modifier_min = 7.000000;
+		}
+	}
+}
+[t:template,n:sh_un_m_o_c_m_parade]
+{
+	doc = "Parade Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_06;
+		[textures]
+		{
+			0 = b_a_shd_008;
+		}
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Parade Shield";
+	}
+	[defend]
+	{
+	  f defense = 85.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:58;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_a_shd_008;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "15% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 15;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "10% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 10;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 47.000000;
+		  f modifier_min = 9.000000;
+		}
+	}
+}
+[t:template,n:sh_un_m_o_c_m_vesicle]
+{
+	doc = "Vesicle Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_06;
+		[textures]
+		{
+			0 = b_a_shd_032;
+		}
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Vesicle Shield";
+	}
+	[defend]
+	{
+	  f defense = 85.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:58;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_a_shd_032;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "15% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 15;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "10% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 10;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 47.000000;
+		  f modifier_min = 9.000000;
+		}
+	}
+}
+[t:template,n:sh_un_m_o_h_s_horn]
+{
+	doc = "Horn Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_04;
+		[textures]
+		{
+			0 = b_a_shd_023;
+		}
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Horn Shield";
+	}
+	[defend]
+	{
+	  f defense = 67.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:48;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_shd_023;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "10% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 10;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "10% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 10;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 37.000000;
+		  f modifier_min = 7.000000;
+		}
+	}
+}
+[t:template,n:sh_un_m_o_h_s_ram]
+{
+	doc = "Ram Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_04;
+		[textures]
+		{
+			0 = b_a_shd_025;
+		}
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Ram Shield";
+	}
+	[defend]
+	{
+	  f defense = 44.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:35;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_shd_025;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "10% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 10;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "10% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 10;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 25.000000;
+		  f modifier_min = 5.000000;
+		}
+	}
+}
+[t:template,n:sh_un_m_o_k_m_dermal]
+{
+	doc = "Dermal Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_09;
+		[textures]
+		{
+			0 = b_a_shd_037;
+		}
+	}
+	[common]
+	{
+		is_pcontent_allowed = false;
+		screen_name = "Dermal Shield";
+	}
+	[defend]
+	{
+	  f defense = 34.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:29;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_a_shd_037;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "15% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 15;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "15% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 15;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 19.000000;
+		  f modifier_min = 4.000000;
+		}
+	}
+}
+[t:template,n:sh_un_m_o_k_m_guardian]
+{
+	doc = "Guardian Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_09;
+		[textures]
+		{
+			0 = b_a_shd_011;
+		}
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Guardian Shield";
+	}
+	[defend]
+	{
+	  f defense = 91.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:61;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_a_shd_011;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "15% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 15;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "15% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 15;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 50.000000;
+		  f modifier_min = 10.000000;
+		}
+	}
+}
+[t:template,n:sh_un_m_o_k_m_maw]
+{
+	doc = "Maw Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_09;
+		[textures]
+		{
+			0 = b_a_shd_038;
+		}
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Maw Shield";
+	}
+	[defend]
+	{
+	  f defense = 39.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:32;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_a_shd_038;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "15% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 15;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "15% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 15;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 22.000000;
+		  f modifier_min = 4.000000;
+		}
+	}
+}
+[t:template,n:sh_un_m_o_k_m_sumbioum]
+{
+	doc = "Subioum Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_09;
+		[textures]
+		{
+			0 = b_a_shd_039;
+		}
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Subioum Shield";
+	}
+	[defend]
+	{
+	  f defense = 94.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:63;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_a_shd_039;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "15% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 15;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "15% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 15;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 52.000000;
+		  f modifier_min = 10.000000;
+		}
+	}
+}
+[t:template,n:sh_un_m_o_r_m_aurora]
+{
+	doc = "Aurora Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_10;
+		[textures]
+		{
+			0 = b_a_shd_070;
+		}
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Aurora Shield";
+	}
+	[defend]
+	{
+	  f defense = 59.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:43;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_shd_070;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "10% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 10;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "5% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 5;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 33.000000;
+		  f modifier_min = 6.000000;
+		}
+	}
+}
+[t:template,n:sh_un_m_o_r_m_canker]
+{
+	doc = "Canker Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_10;
+		[textures]
+		{
+			0 = b_a_shd_071;
+		}
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Canker Shield";
+	}
+	[defend]
+	{
+	  f defense = 43.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:34;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_shd_071;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "10% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 10;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "5% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 5;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 24.000000;
+		  f modifier_min = 5.000000;
+		}
+	}
+}
+[t:template,n:sh_un_m_o_r_m_chitin]
+{
+	doc = "Chitin Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_10;
+		[textures]
+		{
+			0 = b_a_shd_041;
+		}
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Chitin Shield";
+	}
+	[defend]
+	{
+	  f defense = 48.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:37;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_shd_041;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "5% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 5;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "5% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 5;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 27.000000;
+		  f modifier_min = 5.000000;
+		}
+	}
+}
+[t:template,n:sh_un_m_o_r_m_fury]
+{
+	doc = "Fury Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_10;
+		[textures]
+		{
+			0 = b_a_shd_073;
+		}
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Fury Shield";
+	}
+	[defend]
+	{
+	  f defense = 82.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:56;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_shd_073;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "10% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 10;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "5% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 5;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 45.000000;
+		  f modifier_min = 9.000000;
+		}
+	}
+}
+[t:template,n:sh_un_m_o_r_m_spirit]
+{
+	doc = "Spirit Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_05;
+		[textures]
+		{
+			0 = b_a_shd_029;
+		}
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Spirit Shield";
+	}
+	[defend]
+	{
+	  f defense = 102.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:68;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_shd_029;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "5% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 5;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "5% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 5;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 57.000000;
+		  f modifier_min = 11.000000;
+		}
+	}
+}
+[t:template,n:sh_un_m_o_r_m_turtle]
+{
+	doc = "Turtle Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_02;
+		[textures]
+		{
+			0 = b_a_shd_021;
+		}
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Turtle Shield";
+	}
+	[defend]
+	{
+	  f defense = 79.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:55;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_shd_021;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "10% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 5;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "5% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 5;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 44.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:sh_un_w_o_h_m_beast]
+{
+	doc = "Beast Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_03;
+		[textures]
+		{
+			0 = b_a_shd_005;
+		}
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Beast Shield";
+	}
+	[defend]
+	{
+	  f defense = 96.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:65;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_a_shd_005;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "15% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 15;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "10% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 10;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 53.000000;
+		  f modifier_min = 10.000000;
+		}
+	}
+}
+[t:template,n:sh_un_w_o_k_m_crown]
+{
+	doc = "Crown Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_22;
+		[textures]
+		{
+			0 = b_a_shd_088;
+		}
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Crown Shield";
+	}
+	[defend]
+	{
+	  f defense = 98.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:66;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_a_shd_088;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "25% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 25;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "20% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 20;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 55.000000;
+		  f modifier_min = 10.000000;
+		}
+	}
+}
+[t:template,n:sh_w_g_c_h_m_avg]
+{
+	doc = "Heater Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_25;
+		[textures]
+		{
+			0 = b_a_shd_103;
+		}
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Heater Shield";
+	}
+	[defend]
+	{
+	  f defense = 15.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:18;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_shd_103;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_mag]
+		{
+		  f defense = 49.000000;
+			equip_requirements = strength:38;
+			inventory_icon = b_gui_ig_i_a_shd_105;
+			model = m_a_shd_25;
+		  f modifier_max = 10.000000;
+		  f modifier_min = 7.000000;
+			texture = b_a_shd_105;
+		}
+		[c_str]
+		{
+		  f defense = 33.000000;
+			equip_requirements = strength:29;
+			inventory_icon = b_gui_ig_i_a_shd_104;
+			model = m_a_shd_25;
+		  f modifier_max = 6.000000;
+		  f modifier_min = 3.000000;
+			texture = b_a_shd_104;
+		}
+		[o_avg]
+		{
+		  f defense = 21.000000;
+			equip_requirements = strength:22;
+			inventory_icon = b_gui_ig_i_a_shd_106;
+			model = m_a_shd_25;
+		  f modifier_max = 3.000000;
+		  f modifier_min = 1.000000;
+			texture = b_a_shd_106;
+		}
+		[o_mag]
+		{
+		  f defense = 59.000000;
+			equip_requirements = strength:43;
+			inventory_icon = b_gui_ig_i_a_shd_108;
+			model = m_a_shd_25;
+		  f modifier_max = 12.000000;
+		  f modifier_min = 9.000000;
+			texture = b_a_shd_108;
+		}
+		[o_str]
+		{
+		  f defense = 41.000000;
+			equip_requirements = strength:33;
+			inventory_icon = b_gui_ig_i_a_shd_107;
+			model = m_a_shd_25;
+		  f modifier_max = 8.000000;
+		  f modifier_min = 5.000000;
+			texture = b_a_shd_107;
+		}
+	}
+}
+[t:template,n:sh_w_g_c_k_l_avg]
+{
+	doc = "Large Kite Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_27;
+		[textures]
+		{
+			0 = b_a_shd_116;
+		}
+	}
+	[common]
+	{
+		screen_name = "Large Kite Shield";
+	}
+	[defend]
+	{
+	  f defense = 46.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:36;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_a_shd_116;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "35% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 35;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "35% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 20;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 2.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_fin]
+		{
+		  f defense = 49.000000;
+			equip_requirements = strength:38;
+			inventory_icon = b_gui_ig_i_a_shd_117;
+			model = m_a_shd_27;
+		  f modifier_max = 5.000000;
+		  f modifier_min = 1.000000;
+			texture = b_a_shd_117;
+		}
+		[c_str]
+		{
+		  f defense = 74.000000;
+			equip_requirements = strength:52;
+			inventory_icon = b_gui_ig_i_a_shd_118;
+			model = m_a_shd_27;
+		  f modifier_max = 14.000000;
+		  f modifier_min = 8.000000;
+			texture = b_a_shd_118;
+		}
+		[o_avg]
+		{
+		  f defense = 56.000000;
+			equip_requirements = strength:42;
+			inventory_icon = b_gui_ig_i_a_shd_119;
+			model = m_a_shd_27;
+		  f modifier_max = 8.000000;
+		  f modifier_min = 3.000000;
+			texture = b_a_shd_119;
+		}
+		[o_str]
+		{
+		  f defense = 84.000000;
+			equip_requirements = strength:58;
+			inventory_icon = b_gui_ig_i_a_shd_120;
+			model = m_a_shd_27;
+		  f modifier_max = 16.000000;
+		  f modifier_min = 11.000000;
+			texture = b_a_shd_120;
+		}
+	}
+}
+[t:template,n:sh_w_g_c_k_m_avg]
+{
+	doc = "Kite Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_26;
+		[textures]
+		{
+			0 = b_a_shd_109;
+		}
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Kite Shield";
+	}
+	[defend]
+	{
+	  f defense = 26.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:24;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_a_shd_109;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "35% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 35;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "20% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 20;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_fin]
+		{
+		  f defense = 29.000000;
+			equip_requirements = strength:26;
+			inventory_icon = b_gui_ig_i_a_shd_110;
+			model = m_a_shd_26;
+		  f modifier_max = 3.000000;
+		  f modifier_min = 1.000000;
+			texture = b_a_shd_110;
+		}
+		[c_mag]
+		{
+		  f defense = 62.000000;
+			equip_requirements = strength:45;
+			inventory_icon = b_gui_ig_i_a_shd_112;
+			model = m_a_shd_26;
+		  f modifier_max = 12.000000;
+		  f modifier_min = 9.000000;
+			texture = b_a_shd_112;
+		}
+		[c_str]
+		{
+		  f defense = 46.000000;
+			equip_requirements = strength:36;
+			inventory_icon = b_gui_ig_i_a_shd_111;
+			model = m_a_shd_26;
+		  f modifier_max = 9.000000;
+		  f modifier_min = 5.000000;
+			texture = b_a_shd_111;
+		}
+		[o_avg]
+		{
+		  f defense = 33.000000;
+			equip_requirements = strength:29;
+			inventory_icon = b_gui_ig_i_a_shd_113;
+			model = m_a_shd_26;
+		  f modifier_max = 5.000000;
+		  f modifier_min = 1.000000;
+			texture = b_a_shd_113;
+		}
+		[o_mag]
+		{
+		  f defense = 73.000000;
+			equip_requirements = strength:51;
+			inventory_icon = b_gui_ig_i_a_shd_115;
+			model = m_a_shd_26;
+		  f modifier_max = 15.000000;
+		  f modifier_min = 10.000000;
+			texture = b_a_shd_115;
+		}
+		[o_str]
+		{
+		  f defense = 53.000000;
+			equip_requirements = strength:40;
+			inventory_icon = b_gui_ig_i_a_shd_114;
+			model = m_a_shd_26;
+		  f modifier_max = 10.000000;
+		  f modifier_min = 7.000000;
+			texture = b_a_shd_114;
+		}
+	}
+}
+[t:template,n:sh_w_g_c_r_m_avg]
+{
+	doc = "Wooden Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_20;
+		[textures]
+		{
+			0 = b_a_shd_081;
+		}
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Wooden Shield";
+	}
+	[defend]
+	{
+	  f defense = 11.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:16;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_shd_081;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_mag]
+		{
+		  f defense = 38.000000;
+			equip_requirements = strength:31;
+			inventory_icon = b_gui_ig_i_a_shd_098;
+			model = m_a_shd_24;
+		  f modifier_max = 8.000000;
+		  f modifier_min = 6.000000;
+			texture = b_a_shd_098;
+		}
+		[c_str]
+		{
+		  f defense = 24.000000;
+			equip_requirements = strength:24;
+			inventory_icon = b_gui_ig_i_a_shd_097;
+			model = m_a_shd_24;
+		  f modifier_max = 6.000000;
+		  f modifier_min = 3.000000;
+			texture = b_a_shd_097;
+		}
+		[o_avg]
+		{
+		  f defense = 16.000000;
+			equip_requirements = strength:18;
+			inventory_icon = b_gui_ig_i_a_shd_099;
+			model = m_a_shd_24;
+		  f modifier_max = 4.000000;
+		  f modifier_min = 2.000000;
+			texture = b_a_shd_099;
+		}
+		[o_fin]
+		{
+		  f defense = 20.000000;
+			equip_requirements = strength:21;
+			inventory_icon = b_gui_ig_i_a_shd_100;
+			model = m_a_shd_24;
+		  f modifier_max = 5.000000;
+		  f modifier_min = 2.000000;
+			texture = b_a_shd_100;
+		}
+		[o_mag]
+		{
+		  f defense = 44.000000;
+			equip_requirements = strength:35;
+			inventory_icon = b_gui_ig_i_a_shd_102;
+			model = m_a_shd_24;
+		  f modifier_max = 9.000000;
+		  f modifier_min = 7.000000;
+			texture = b_a_shd_102;
+		}
+		[o_str]
+		{
+		  f defense = 30.000000;
+			equip_requirements = strength:27;
+			inventory_icon = b_gui_ig_i_a_shd_101;
+			model = m_a_shd_24;
+		  f modifier_max = 7.000000;
+		  f modifier_min = 5.000000;
+			texture = b_a_shd_101;
+		}
+	}
+}
+[t:template,n:sh_w_g_c_r_m_fun]
+{
+	doc = "Page Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_05;
+		[textures]
+		{
+			0 = b_a_shd_027;
+		}
+	}
+	[common]
+	{
+		allow_modifiers = false;
+		screen_name = "Page Shield";
+	}
+	[defend]
+	{
+		defense = 3;
+	}
+	[gui]
+	{
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_shd_027;
+		inventory_width = 2;
+	}
+}
+[t:template,n:sh_w_g_c_r_s_avg]
+{
+	doc = "Wooden Buckler";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_23;
+		[textures]
+		{
+			0 = b_a_shd_089;
+		}
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Wooden Buckler";
+	}
+	[defend]
+	{
+	  f defense = 5.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:13;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_shd_089;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "10% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 10;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "5% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 5;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[c_fin]
+		{
+		  f defense = 6.000000;
+			equip_requirements = strength:13;
+			inventory_icon = b_gui_ig_i_a_shd_090;
+			model = m_a_shd_23;
+		  f modifier_max = 2.000000;
+		  f modifier_min = 1.000000;
+			texture = b_a_shd_090;
+		}
+		[c_mag]
+		{
+		  f defense = 31.000000;
+			equip_requirements = strength:27;
+			inventory_icon = b_gui_ig_i_a_shd_092;
+			model = m_a_shd_23;
+		  f modifier_max = 7.000000;
+		  f modifier_min = 5.000000;
+			texture = b_a_shd_092;
+		}
+		[c_str]
+		{
+		  f defense = 19.000000;
+			equip_requirements = strength:20;
+			inventory_icon = b_gui_ig_i_a_shd_091;
+			model = m_a_shd_23;
+		  f modifier_max = 4.000000;
+		  f modifier_min = 3.000000;
+			texture = b_a_shd_091;
+		}
+		[o_avg]
+		{
+		  f defense = 10.000000;
+			equip_requirements = strength:15;
+			inventory_icon = b_gui_ig_i_a_shd_093;
+			model = m_a_shd_23;
+		  f modifier_max = 2.000000;
+		  f modifier_min = 1.000000;
+			texture = b_a_shd_093;
+		}
+		[o_fin]
+		{
+		  f defense = 14.000000;
+			equip_requirements = strength:18;
+			inventory_icon = b_gui_ig_i_a_shd_094;
+			model = m_a_shd_23;
+		  f modifier_max = 3.000000;
+		  f modifier_min = 2.000000;
+			texture = b_a_shd_094;
+		}
+		[o_mag]
+		{
+		  f defense = 39.000000;
+			equip_requirements = strength:32;
+			inventory_icon = b_gui_ig_i_a_shd_096;
+			model = m_a_shd_23;
+		  f modifier_max = 8.000000;
+		  f modifier_min = 6.000000;
+			texture = b_a_shd_096;
+		}
+		[o_str]
+		{
+		  f defense = 24.000000;
+			equip_requirements = strength:24;
+			inventory_icon = b_gui_ig_i_a_shd_095;
+			model = m_a_shd_23;
+		  f modifier_max = 6.000000;
+		  f modifier_min = 4.000000;
+			texture = b_a_shd_095;
+		}
+	}
+}
+[t:template,n:sh_w_g_c_r_s_elm]
+{
+	doc = "Elm Buckler";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_15;
+		[textures]
+		{
+			0 = b_a_shd_010;
+		}
+	}
+	[common]
+	{
+		pcontent_special_type = rare,unique;
+		screen_name = "Elm Buckler";
+	}
+	[defend]
+	{
+	  f defense = 6.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:13;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_shd_064;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "5% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 5;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "5% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 5;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 4.000000;
+		  f modifier_min = 1.000000;
+		}
+	}
+}
+[t:template,n:sh_w_g_c_r_s_fun]
+{
+	doc = "Small Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_19;
+		[textures]
+		{
+			0 = b_a_shd_077;
+		}
+	}
+	[common]
+	{
+		allow_modifiers = false;
+		screen_name = "Small Shield";
+	}
+	[defend]
+	{
+		defense = 2;
+	}
+	[gui]
+	{
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_shd_077;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "10% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 10;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "5% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 5;
+			}
+		}
+	}
+}
+[t:template,n:sh_w_g_c_r_s_krohar]
+{
+	doc = "Wooden Buckler";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_23;
+		[textures]
+		{
+			0 = b_a_shd_093;
+		}
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		is_pcontent_allowed = false;
+		screen_name = "Krohar's Buckler";
+	}
+	[defend]
+	{
+	  f defense = 5.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:13;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_shd_093;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "10% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 10;
+			}
+			[*]
+			{
+				alteration = alter_chance_to_block_ranged_damage;
+				description = "5% Chance to Block Ranged Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 5;
+			}
+			[*]
+			{
+				alteration = alter_block_ranged_damage;
+				description = "Ranged Damage reduced by 5%";
+				duration = #infinite;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 5;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:sh_w_g_c_s_m_fun]
+{
+	doc = "Wooden Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_08;
+		[textures]
+		{
+			0 = b_a_shd_010;
+		}
+	}
+	[common]
+	{
+		allow_modifiers = false;
+		screen_name = "Old Wooden Shield";
+	}
+	[defend]
+	{
+	  f defense = 7.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:14;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_shd_010;
+		inventory_width = 2;
+	}
+}
+[t:template,n:sh_z_g_c_r_m_avg]
+{
+	doc = "Painted Shield";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_a_shd_20;
+		[textures]
+		{
+			0 = b_a_shd_082;
+		}
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Painted Shield";
+	}
+	[defend]
+	{
+	  f defense = 7.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:14;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_shd_082;
+		inventory_width = 2;
+	}
+}
+[t:template,n:tongs]
+{
+	doc = "Tongs";
+	specializes = base_shield;
+	[aspect]
+	{
+		model = m_w_misc_tongs;
+	}
+	[common]
+	{
+		is_pcontent_allowed = false;
+		screen_name = "Tongs";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_ms_tg;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_w_msc_006;
+		inventory_width = 1;
+	}
+}
