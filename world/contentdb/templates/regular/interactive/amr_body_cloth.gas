@@ -274,13 +274,7 @@
 {
 	doc = "Cloth";
 	specializes = base_body_armor_cloth;
-	[aspect]
-	{
-		[textures]
-		{
-			0 = b_c_pos_a7_300;
-		}
-	}
+	texture = solar_robe_b_c_pos_a7_009;
 	[common]
 	{
 		pcontent_special_type = rare, unique;
@@ -305,7 +299,6 @@
 		{
 		  f modifier_max = 15.000000;
 		  f modifier_min = 1.000000;
-		  texture = b_c_pos_a7_300;
 		}
 	}
 }
