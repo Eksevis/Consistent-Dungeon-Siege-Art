@@ -270,11 +270,10 @@
 		}
 	}
 }
-[t:template,n:bd_ra_ro_m_g_c_005]
+[t:template,n:bd_ra_ro_m_g_c_005kc]
 {
 	doc = "Cloth";
 	specializes = base_body_armor_cloth;
-	texture = solar_robe_b_c_pos_a7_009;
 	[common]
 	{
 		pcontent_special_type = rare, unique;
@@ -282,7 +281,7 @@
 	}
 	[defend]
 	{
-		armor_style = 009;
+		armor_style = 501;
 		armor_type = a7;
 	  f defense = 11.000000;
 	}
@@ -302,10 +301,11 @@
 		}
 	}
 }
-[t:template,n:bd_ra_ro_m_g_c_005a]
+[t:template,n:bd_ra_ro_m_g_c_005akc]
 {
 	doc = "Linen";
 	specializes = base_body_armor_cloth;
+	texture = b_c_pos_a7_500;
 	[common]
 	{
 		pcontent_special_type = rare, unique;
@@ -313,7 +313,7 @@
 	}
 	[defend]
 	{
-		armor_style = 031;
+		armor_style = 500;
 		armor_type = a7;
 	  f defense = 11.000000;
 	}

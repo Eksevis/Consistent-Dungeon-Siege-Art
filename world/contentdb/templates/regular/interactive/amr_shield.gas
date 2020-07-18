@@ -123,7 +123,7 @@
 		  f modifier_min = 3.000000;
 			texture = b_a_shd_121;
 		}
-		[o_avg]f
+		[o_avg]
 		{
 		  f defense = 13.000000;
 			equip_requirements = strength:17;
@@ -4043,7 +4043,7 @@
 		}
 	}
 }
-[t:template,n:sh_w_g_c_r_s_krohar] ///Updated In Consistency Mod
+[t:template,n:sh_w_g_c_r_s_krohar]
 {
 	doc = "Wooden Buckler";
 	specializes = base_shield;
