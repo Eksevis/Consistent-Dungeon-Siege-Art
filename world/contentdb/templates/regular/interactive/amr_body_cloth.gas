@@ -146,7 +146,7 @@
 		}
 	}
 }
-[t:template,n:bd_ra_ro_m_d_c_043]
+[t:template,n:bd_ra_ro_m_d_c_043u6]
 {
 	doc = "Coat";
 	specializes = base_body_armor_cloth;
@@ -157,7 +157,7 @@
 	}
 	[defend]
 	{
-		armor_style = 005;
+		armor_style = 507;
 		armor_type = a7;
 	  f defense = 61.000000;
 	}
@@ -208,7 +208,7 @@
 		}
 	}
 }
-[t:template,n:bd_ra_ro_m_g_c_001]
+[t:template,n:bd_ra_ro_m_g_c_001u6]
 {
 	doc = "Tatters";
 	specializes = base_body_armor_cloth;
@@ -219,7 +219,7 @@
 	}
 	[defend]
 	{
-		armor_style = 030;
+		armor_style = 505;
 		armor_type = a7;
 	  f defense = 6.000000;
 	}
@@ -395,7 +395,7 @@
 		}
 	}
 }
-[t:template,n:bd_ra_ro_m_g_c_014]
+[t:template,n:bd_ra_ro_m_g_c_014u6]
 {
 	doc = "Garment";
 	specializes = base_body_armor_cloth;
@@ -406,7 +406,7 @@
 	}
 	[defend]
 	{
-		armor_style = 033;
+		armor_style = 508;
 		armor_type = a7;
 	  f defense = 22.000000;
 	}
@@ -426,7 +426,7 @@
 		}
 	}
 }
-[t:template,n:bd_ra_ro_m_g_c_015]
+[t:template,n:bd_ra_ro_m_g_c_015u6]
 {
 	doc = "Garment";
 	specializes = base_body_armor_cloth;
@@ -437,7 +437,7 @@
 	}
 	[defend]
 	{
-		armor_style = 001;
+		armor_style = 506;
 		armor_type = a7;
 	  f defense = 24.000000;
 	}
@@ -519,7 +519,7 @@
 		}
 	}
 }
-[t:template,n:bd_ra_ro_m_g_c_021]
+[t:template,n:bd_ra_ro_m_g_c_021u6]
 {
 	doc = "Cloak";
 	specializes = base_body_armor_cloth;
@@ -530,7 +530,7 @@
 	}
 	[defend]
 	{
-		armor_style = 035;
+		armor_style = 503;
 		armor_type = a7;
 	  f defense = 31.000000;
 	}
@@ -860,7 +860,7 @@
 		}
 	}
 }
-[t:template,n:bd_ra_ro_m_g_c_046]
+[t:template,n:bd_ra_ro_m_g_c_046u6]
 {
 	doc = "Robe";
 	specializes = base_body_armor_cloth;
@@ -871,7 +871,7 @@
 	}
 	[defend]
 	{
-		armor_style = 002;
+		armor_style = 502;
 		armor_type = a7;
 	  f defense = 65.000000;
 	}
@@ -1046,7 +1046,7 @@
 		}
 	}
 }
-[t:template,n:bd_ra_ro_m_g_c_089]
+[t:template,n:bd_ra_ro_m_g_c_089u6]
 {
 	doc = "Gown";
 	specializes = base_body_armor_cloth;
@@ -1057,7 +1057,7 @@
 	}
 	[defend]
 	{
-		armor_style = 006;
+		armor_style = 504;
 		armor_type = a7;
 	  f defense = 93.000000;
 	}

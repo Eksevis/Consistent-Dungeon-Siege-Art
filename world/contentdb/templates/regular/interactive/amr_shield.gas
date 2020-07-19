@@ -292,7 +292,7 @@
 		model = m_a_shd_13;
 		[textures]
 		{
-			0 = b_a_shd_058;
+			0 = b_a_shd_500;
 		}
 	}
 	[common]
@@ -732,7 +732,7 @@
 		model = m_a_shd_23;
 		[textures]
 		{
-			0 = b_a_shd_124;
+			0 = b_a_shd_501;
 		}
 	}
 	[common]
@@ -1429,7 +1429,7 @@
 		model = m_a_shd_24;
 		[textures]
 		{
-			0 = b_a_shd_102;
+			0 = b_a_shd_505;
 		}
 	}
 	[common]
@@ -1463,7 +1463,7 @@
 			model = m_a_shd_25;
 		  f modifier_max = 7.000000;
 		  f modifier_min = 4.000000;
-			texture = b_a_shd_104;
+			texture = b_a_shd_507;
 		}
 		[o_fin]
 		{
@@ -1473,7 +1473,7 @@
 			model = m_a_shd_25;
 		  f modifier_max = 5.000000;
 		  f modifier_min = 2.000000;
-			texture = b_a_shd_106;
+			texture = b_a_shd_506;
 		}
 	}
 }
@@ -1486,7 +1486,7 @@
 		model = m_a_shd_27;
 		[textures]
 		{
-			0 = b_a_shd_117;
+			0 = b_a_shd_502;
 		}
 	}
 	[common]
@@ -1546,7 +1546,7 @@
 			model = m_a_shd_27;
 		  f modifier_max = 14.000000;
 		  f modifier_min = 8.000000;
-			texture = b_a_shd_118;
+			texture = b_a_shd_510;
 		}
 		[o_fin]
 		{
@@ -1556,7 +1556,7 @@
 			model = m_a_shd_27;
 		  f modifier_max = 12.000000;
 		  f modifier_min = 5.000000;
-			texture = b_a_shd_119;
+			texture = b_a_shd_509;
 		}
 		[o_str]
 		{
@@ -1566,7 +1566,7 @@
 			model = m_a_shd_27;
 		  f modifier_max = 17.000000;
 		  f modifier_min = 11.000000;
-			texture = b_a_shd_120;
+			texture = b_a_shd_511;
 		}
 	}
 }
@@ -1579,7 +1579,7 @@
 		model = m_a_shd_26;
 		[textures]
 		{
-			0 = b_a_shd_110;
+			0 = b_a_shd_508;
 		}
 	}
 	[common]
@@ -1679,10 +1679,10 @@
 	specializes = base_shield;
 	[aspect]
 	{
-		model = m_a_shd_20;
+		model = m_a_shd_18;
 		[textures]
 		{
-			0 = b_a_shd_081;
+			0 = b_a_shd_504;
 		}
 	}
 	[common]
@@ -1746,10 +1746,10 @@
 	specializes = base_shield;
 	[aspect]
 	{
-		model = m_a_shd_23;
+		model = m_a_shd_07;
 		[textures]
 		{
-			0 = b_a_shd_090;
+			0 = b_a_shd_127;
 		}
 	}
 	[common]
@@ -1887,7 +1887,7 @@
 		model = m_a_shd_27;
 		[textures]
 		{
-			0 = b_a_shd_116;
+			0 = b_a_shd_513;
 		}
 	}
 	[common]
@@ -1947,7 +1947,7 @@
 			model = m_a_shd_27;
 		  f modifier_max = 17.000000;
 		  f modifier_min = 7.000000;
-			texture = b_a_shd_117;
+			texture = b_a_shd_512;
 		}
 		[c_mag]
 		{
@@ -1957,7 +1957,7 @@
 			model = m_a_shd_27;
 		  f modifier_max = 101.000000;
 		  f modifier_min = 14.000000;
-			texture = b_a_shd_120;
+			texture = b_a_shd_516;
 		}
 		[c_str]
 		{
@@ -1967,7 +1967,7 @@
 			model = m_a_shd_27;
 		  f modifier_max = 19.000000;
 		  f modifier_min = 9.000000;
-			texture = b_a_shd_118;
+			texture = b_a_shd_517;
 		}
 		[o_fin]
 		{
@@ -1977,7 +1977,7 @@
 			model = m_a_shd_27;
 		  f modifier_max = 28.000000;
 		  f modifier_min = 8.000000;
-			texture = b_a_shd_119;
+			texture = b_a_shd_514;
 		}
 		[o_str]
 		{
@@ -1987,7 +1987,7 @@
 			model = m_a_shd_27;
 		  f modifier_max = 101.000000;
 		  f modifier_min = 14.000000;
-			texture = b_a_shd_120;
+			texture = b_a_shd_515;
 		}
 	}
 }

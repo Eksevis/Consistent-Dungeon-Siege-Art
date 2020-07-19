@@ -1,0 +1,1134 @@
+#! VERSION = 1.00
+
+###############################
+## Character Animation Class
+###############################
+
+CANIMCLASS = FS0	,	"Unarmed"
+CANIMCLASS = FS1	,	"Single Sword"
+CANIMCLASS = FS2	,	"Sword & Shield"
+CANIMCLASS = FS3	,	"Battle Axe"
+CANIMCLASS = FS4	,	"Long Sword"
+CANIMCLASS = FS5	,	"Staff"
+CANIMCLASS = FS6	,	"Bow & Arrow"
+CANIMCLASS = FS7	,	"Mini-gun"
+CANIMCLASS = FS8	,	"Shield"
+
+#
+##############################
+# Animation Tree
+##############################
+
+TREE = A	, Animations,	"Animations"
+TREE = A_C	, Characters,	"Characters"
+# Character groups
+
+TREE = A_C_EAM		,	Evil_A_Monsters	, "Evil A Monsters"
+TREE = A_C_ECM		,	Evil_C_Monsters	, "Evil C Monsters"
+TREE = A_C_EDM		,	Evil_D_Monsters	, "Evil D Monsters"
+
+TREE = A_C_EBB		,	Evil_B_Bosses	, "Evil B Bosses"
+
+TREE = A_C_GAH		,	Good_A_Heroes	, "Good A Heroes"
+
+TREE = A_C_GAN		,	Good_A_NPC		, "Good A NPC"
+TREE = A_C_GBN		,	Good_B_NPC		, "Good B NPC"
+TREE = A_C_NA		,	Neutral_Ambients, "Neutral Ambients"
+
+# Evil A Monsters
+
+TREE = A_C_EAM_DG	, Droog				, "Droog"				, FS0 , FS1 , FS6
+TREE = A_C_EAM_GGT	, Goblin_Grunt		, "Goblin Grunt"		, FS1
+TREE = A_C_EAM_GGG	, Goblin_Guard		, "Goblin Guard"		, FS1
+TREE = A_C_EAM_KG	, Krug				, "Krug"				, FS0 , FS1 , FS3 , FS6
+TREE = A_C_EAM_KS	, Krug_Shaman		, "Krug Shaman"	  		, FS0
+TREE = A_C_EAM_SK	, Seck				, "Seck"				, FS0 , FS1 , FS2 , FS6
+TREE = A_C_EAM_SM	, Seck_Mage			, "Seck Mage"	  		, FS5
+
+# Evil B Bosses
+
+TREE = A_C_EBB_DG	, Dragon			, "Dragon"				, FS0
+TREE = A_C_EBB_FK	, Fire_King			, "Fire King"			, FS3
+TREE = A_C_EBB_FY	, Fury			 	, "Fury"				, FS0
+TREE = A_C_EBB_GS	, Giant_Spider	 	, "Giant Spider"		, FS0
+TREE = A_C_EBB_GI	, Goblin_Inventor 	, "Goblin Inventor"		, FS0
+TREE = A_C_EBB_GRS	, Goblin_Robo_Suit	, "Goblin Robo Suit"	, FS0
+TREE = A_C_EBB_GOM	, GOM				, "GOM"					, FS1
+TREE = A_C_EBB_LK	, Lich_King			, "Lich King"			, FS5
+TREE = A_C_EBB_SQ	, Snow_Queen		, "Snow Queen"			, FS0
+TREE = A_C_EBB_SG	, Super_Gom			, "Super Gom"			, FS5
+
+# Evil C Monsters
+
+TREE = A_C_ECM_CY	, Cyclops			, "Cyclops"				, FS0 , FS1
+TREE = A_C_ECM_DB	, Darkblood			, "Darkblood"			, FS0 , FS3
+TREE = A_C_ECM_FE	, Fire_Elemental	, "Fire Elemental"		, FS0
+TREE = A_C_ECM_GA	, Gorack			, "Gorack"				, FS0
+TREE = A_C_ECM_KL	, Kell				, "Kell"				, FS0
+TREE = A_C_ECM_BK	, Braak				, "Braak"				, FS0
+TREE = A_C_ECM_MD	, Memadd			, "Memadd"				, FS0 , FS1
+TREE = A_C_ECM_SK	, Skeleton			, "Skeleton"			, FS0 , FS1 , FS2 , FS3 , FS4 , FS5 , FS6 , FS7, FS8
+TREE = A_C_ECM_SKG	, Skeleton_Guard	, "Skeleton Guard"		, FS0 , FS2
+TREE = A_C_ECM_SKH	, Skeleton_Horse	, "Skeleton Horse"		, FS0
+TREE = A_C_ECM_TO	, Toreck			, "Toreck"				, FS0 , FS5
+TREE = A_C_ECM_TG	, Trog				, "Trog"				, FS1 , FS2 , FS4
+TREE = A_C_ECM_WR	, Wraith			, "Wraith"				, FS0 , FS3	, FS6
+
+# Evil D Monsters
+
+TREE = A_C_EDM_AS	, Adolescent_Spider	, "Adolescent Spider"	, FS0
+TREE = A_C_EDM_AZ	, Azireth			, "Azireth"				, FS0
+TREE = A_C_EDM_BD	, Bat_Dude			, "Bat Dude"			, FS0
+TREE = A_C_EDM_BL	, Blaster			, "Blaster"				, FS0
+TREE = A_C_EDM_CG	, Clay_Golem		, "Clay Golem"			, FS0
+TREE = A_C_EDM_CW	, Cave_Worm			, "Cave Worm"			, FS0
+TREE = A_C_EDM_CK	, Cobralisk			, "Cobralisk"			, FS0
+TREE = A_C_EDM_CP	, Copter			, "Copter"				, FS0
+TREE = A_C_EDM_DG	, Darkling			, "Darkling"			, FS0
+TREE = A_C_EDM_DC	, Dungeon_Crawler	, "Dungeon Crawler"		, FS0
+TREE = A_C_EDM_DK	, Drake				, "Drake"				, FS0
+TREE = A_C_EDM_DL	, Dark_Lunger		, "Dark Lunger"			, FS0
+TREE = A_C_EDM_FN	, Frostnid			, "Frostnid"			, FS0
+TREE = A_C_EDM_FR	, Furok				, "Furok"				, FS0
+TREE = A_C_EDM_GA	, Gargoyle			, "Gargoyle"			, FS0
+TREE = A_C_EDM_GO	, Gobbot			, "Gobbot"				, FS7
+TREE = A_C_EDM_GG	, Googore			, "Googore"				, FS0
+TREE = A_C_EDM_GB	, Googore_grub		, "Googore Grub"		, FS0
+TREE = A_C_EDM_GK	, Gikk				, "Gikk"				, FS0
+TREE = A_C_EDM_GZ	, Giant_Lizard		, "Giant Lizard"		, FS0
+TREE = A_C_EDM_GM	, Gremal			, "Gremal"				, FS0
+TREE = A_C_EDM_GH	, Ghost 			, "Ghost"				, FS0
+TREE = A_C_EDM_GR	, Giant_Rat			, "Giant Rat"			, FS0
+TREE = A_C_EDM_GV	, Groveller			, "Groveller"			, FS0
+TREE = A_C_EDM_GL	, Grendal			, "Grendal"				, FS0
+TREE = A_C_EDM_HT	, Heater			, "Heater"				, FS0
+TREE = A_C_EDM_HB	, Hellboar			, "Hellboar"			, FS0
+TREE = A_C_EDM_HD	, Horrid			, "Horrid"				, FS1
+TREE = A_C_EDM_HY	, Hydrack			, "Hydrack"				, FS0
+TREE = A_C_EDM_IA	, Ice_Archer		, "Ice Archer"			, FS1 , FS6
+TREE = A_C_EDM_IF	, Ice_Fly			, "Ice Fly"				, FS0
+TREE = A_C_EDM_IW	, Ice_Warrior		, "Ice Warrior"			, FS0 , FS1
+TREE = A_C_EDM_IM	, Impaler			, "Impaler"				, FS0
+TREE = A_C_EDM_KW	, Klaw				, "Klaw"				, FS0
+TREE = A_C_EDM_LA	, Larch				, "Larch"				, FS0
+TREE = A_C_EDM_LH	, Littlehead		, "Littlehead"			, FS0
+TREE = A_C_EDM_LT	, Lectar			, "Lectar"				, FS0
+TREE = A_C_EDM_LI	, Lava_Imp			, "Lava Imp"			, FS0
+TREE = A_C_EDM_LK	, Lurker			, "Lurker"				, FS0
+TREE = A_C_EDM_MJ	, Mad_Jailer		, "Mad Jailer"			, FS1
+TREE = A_C_EDM_ML	, Maljin			, "Maljin"				, FS0	
+TREE = A_C_EDM_MN	, Mangler			, "Mangler"				, FS0
+TREE = A_C_EDM_MO	, Moth				, "Moth"				, FS0
+TREE = A_C_EDM_MG	, Molten_Golem		, "Molten Golem"		, FS0
+TREE = A_C_EDM_MM	, Mossman			, "Mossman"				, FS0
+TREE = A_C_EDM_MU	, Mucosa			, "Mucosa"				, FS0
+TREE = A_C_EDM_MW	, Mine_Worm			, "Mine Worm"			, FS0
+TREE = A_C_EDM_KD	, Krugdog			, "Krug Dog"			, FS0
+TREE = A_C_EDM_PK	, Peck				, "Peck"				, FS0
+TREE = A_C_EDM_PF	, Perforator		, "Perforator"			, FS0
+TREE = A_C_EDM_PR	, Picker			, "Picker"				, FS0
+TREE = A_C_EDM_PU	, Pupod				, "Pupod"				, FS0
+TREE = A_C_EDM_PX	, Proxo				, "Proxo"				, FS0
+TREE = A_C_EDM_RP	, Reaper			, "Reaper"				, FS5
+TREE = A_C_EDM_RT	, Rector			, "Rector"				, FS0
+TREE = A_C_EDM_RB	, Rock_Beast		, "Rock Beast"			, FS0
+TREE = A_C_EDM_QS	, Quadscale			, "Quadscale"			, FS0
+TREE = A_C_EDM_RG	, Rock_Golem		, "Rock Golem"			, FS0
+TREE = A_C_EDM_SC	, Scorpion			, "Scorpion"			, FS0
+TREE = A_C_EDM_SB	, Skrubb			, "Skrubb"				, FS0
+TREE = A_C_EDM_SH	, Shade				, "Shade"				, FS0
+TREE = A_C_EDM_SD	, Shard				, "Shard"				, FS0
+TREE = A_C_EDM_SHK	, Shrack			, "Shrack"				, FS0
+TREE = A_C_EDM_SK	, Skick				, "Skick"				, FS0
+TREE = A_C_EDM_SL	, Slarg				, "Slarg"				, FS0
+TREE = A_C_EDM_SM	, Spiked_Maw		, "Spiked Maw"			, FS0
+TREE = A_C_EDM_SN	, Stalagnid			, "Stalagnid"			, FS0
+TREE = A_C_EDM_SP	, Spider			, "Spider"				, FS0
+TREE = A_C_EDM_SR	, Spore				, "Spore"				, FS0
+TREE = A_C_EDM_SS	, Soul_Stinger		, "Soul Stinger"		, FS0
+TREE = A_C_EDM_ST	, Swamp_Stinger		, "Swamp Stinger"		, FS0
+TREE = A_C_EDM_SW	, Swamp_Witch		, "Swamp Witch"			, FS0
+TREE = A_C_EDM_SY	, Synged			, "Synged"				, FS0
+TREE = A_C_EDM_TH	, Threehorn			, "Threehorn"			, FS0
+TREE = A_C_EDM_TR	, Tretch			, "Tretch"				, FS0
+TREE = A_C_EDM_TL	, Troll				, "Troll"				, FS1
+TREE = A_C_EDM_UG	, Unguis			, "Unguis"				, FS0
+TREE = A_C_EDM_VS	, Visionary			, "Visionary"			, FS0
+TREE = A_C_EDM_WP	, Wasped			, "Wasped"				, FS0
+TREE = A_C_EDM_WW	, Werewolf			, "Werewolf"			, FS0
+TREE = A_C_EDM_WF	, Wolf				, "Wolf"				, FS0
+TREE = A_C_EDM_YT	, Yeti				, "Yeti"				, FS0
+
+# Good A Heroes
+
+TREE = A_C_GAH_FB	, Farmboy			, "Farmboy"				, FS0 , FS1 , FS2 , FS3 , FS4 , FS5 , FS6 , FS7, FS8
+TREE = A_C_GAH_FG	, Farmgirl			, "Farmgirl"			, FS0 , FS1 , FS2 , FS3 , FS4 , FS5 , FS6 , FS7, FS8
+
+# Good A NPC
+
+TREE = A_C_GAN_DF	, Dwarf				, "Dwarf"				, FS0 , FS1 , FS2 , FS3 , FS4 , FS5 , FS6 , FS7, FS8
+TREE = A_C_GAN_DF2	, Dwarf2			, "Dwarf2"				, FS0
+TREE = A_C_GAN_SK	, Skeleton			, "Skeleton"			, FS0 , FS1 , FS2 , FS3 , FS4 , FS5 , FS6 , FS7, FS8
+
+# Good B NPC
+
+TREE = A_C_GBN_BK	, Barkeep			, "Barkeep"				, FS0, FS1
+TREE = A_C_GBN_BS	, Blacksmith		, "Blacksmith"			, FS0, FS2
+TREE = A_C_GBN_ED	, Edgaar			, "Edgaar"				, FS0
+TREE = A_C_GBN_FY	, Fairy				, "Fairy"				, FS0
+TREE = A_C_GBN_FT	, Fortuneteller		, "Fortuneteller"		, FS0
+TREE = A_C_GBN_KG	, King				, "King"				, FS0
+TREE = A_C_GBN_MK	, Merik				, "Merik"				, FS0 , FS1 , FS2 , FS3 , FS4 , FS5 , FS6 , FS7, FS8
+TREE = A_C_GBN_PMO	, Peasant_M_Old		, "Peasant Male Old"	, FS0, FS5
+TREE = A_C_GBN_PSM	, Peasant_M			, "Peasant Male"   		, FS0
+TREE = A_C_GBN_PSF	, Peasant_F			, "Peasant Female" 		, FS0
+TREE = A_C_GBN_PX	, Pixie				, "Pixie"				, FS0
+TREE = A_C_GBN_TFM	, Townfolk_M		, "Townfolk Male"		, FS0
+TREE = A_C_GBN_TFF	, Townfolk_F		, "Townfolk Female"		, FS0
+
+# Neutral Ambients
+TREE = A_C_NA_BS	, Baby_Spider	 	, "Baby Spider"			, FS0
+TREE = A_C_NA_BR	, Bear				, "Bear"				, FS0
+TREE = A_C_NA_BT	, Bat				, "Bat"					, FS0
+TREE = A_C_NA_BD	, Bird				, "Bird"				, FS0
+TREE = A_C_NA_BF	, Butterfly			, "Butterfly"			, FS0
+TREE = A_C_NA_CKN	, Chicken			, "Chicken"				, FS0
+TREE = A_C_NA_CW	, Cow				, "Cow"					, FS0
+TREE = A_C_NA_CB	, Crab				, "Crab"				, FS0
+TREE = A_C_NA_DR	, Deer				, "Deer"				, FS0
+TREE = A_C_NA_DG	, Dog				, "Dog"					, FS0
+TREE = A_C_NA_DG2	, Dog2				, "Dog2"				, FS0
+TREE = A_C_NA_FW	, Fawn				, "Fawn"				, FS0
+TREE = A_C_NA_FI	, Fish				, "Fish"				, FS0
+TREE = A_C_NA_GK	, Gecko				, "Gecko"				, FS0
+TREE = A_C_NA_PM	, Pack_Mule			, "Pack Mule"			, FS0
+TREE = A_C_NA_PG	, Pig				, "Pig"					, FS0
+TREE = A_C_NA_RA	, Raven				, "Raven"				, FS0
+TREE = A_C_NA_RT	, Rat				, "Rat"					, FS0
+TREE = A_C_NA_SG	, Seagull			, "Seagull"				, FS0
+
+# GUI
+
+TREE = A_GUI			, GUI				, "GUI"
+TREE = A_GUI_FE			, Front_end			, "Front End"
+TREE = A_GUI_FE_M		, Menus				, "Menus"
+TREE = A_GUI_FE_M_CR	, Credits			, "Credits"
+TREE = A_GUI_FE_M_IN	, Intro				, "Intro"
+TREE = A_GUI_FE_M_MN	, Main				, "Main"
+TREE = A_GUI_FE_M_MP	, Multiplayer		, "Multiplayer"
+TREE = A_GUI_FE_M_OP	, Options			, "Options"
+TREE = A_GUI_FE_M_SP	, Singleplayer		, "Singleplayer"
+
+
+# Item groups
+
+TREE = A_I			, Items			, "Items"
+TREE = A_I_CSL		, Castle		, "Castle"
+TREE = A_I_GLB		, Global		, "Global"
+TREE = A_I_GRS		, Grass			, "Grass"
+TREE = A_I_CAV		, Caves			, "Caves"
+TREE = A_I_GOB		, Goblin_Inv	, "Goblin Inventor"
+TREE = A_I_SWP		, Swamp			, "Swamp"
+TREE = A_I_ICE		, Ice			, "Ice"
+
+# SFX
+
+TREE = A_SFX		, SFX			, "Special Effect"
+TREE = A_SFX_MG		, Magic			, "Magic"
+
+
+##############################
+## Definition of Bitmap Tree
+##############################
+
+	####### Root
+
+TREE = B, Bitmaps,	"Bitmaps"
+
+	####### Characters
+
+TREE = B_C			, Characters	, "Characters"
+
+TREE = B_C_POS		, Body_Armor	, "Body Armor"
+TREE = B_C_POS_A1	, Type1			, "Armor Type 1"
+TREE = B_C_POS_A2	, Type2			, "Armor Type 2"
+TREE = B_C_POS_A3	, Type3			, "Armor Type 3"
+TREE = B_C_POS_A4	, Type4			, "Armor Type 4"
+TREE = B_C_POS_A5	, Type5			, "Armor Type 5"
+TREE = B_C_POS_A6	, Type6			, "Armor Type 6"
+TREE = B_C_POS_A7	, Type7			, "Armor Type 7"
+TREE = B_C_POS_B1	, B1			, "Alternate Type B1"
+
+TREE = B_C_EAM , Evil_A_Monsters  , "Evil A Monsters"
+TREE = B_C_ECM , Evil_C_Monsters  , "Evil C Monsters"
+TREE = B_C_EDM , Evil_D_Monsters  , "Evil D Monsters"
+TREE = B_C_EBB , Evil_B_Bosses    , "Evil B Bosses"
+TREE = B_C_GAH , Good_A_Heroes    , "Good A Heroes"
+TREE = B_C_GAN , Good_A_NPC       , "Good A NPC"
+TREE = B_C_GBN , Good_B_NPC       , "Good B NPC"
+TREE = B_C_NA  , Neutral_Ambients , "Neutral Ambients"
+
+TREE = B_C_GAH_FB , Farmboy		, "Farmboy"
+TREE = B_C_GAH_FG , Farmgirl    , "Farmgirl"
+TREE = B_C_GAN_DF , Dwarf	    , "Dwarf"
+TREE = B_C_GAN_EF , Elf		    , "Elf"
+
+	####### Old style Objects  Are these obsolete yet? -- biddle
+
+TREE = B_O		, Objects	, "Objects in the old naming format"
+TREE = B_O_A	, Armor		, "Armor in the old naming format"
+TREE = B_O_W	, Weapons	, "Weapons in the old naming format"
+TREE = B_O_I	, Items		, "Items in the old naming format"
+
+	####### Armor
+
+TREE = B_A 	   		, Armor 	  , "Armor"
+TREE = B_A_HLMT		, Helmets 	  , "Helmets"
+TREE = B_A_GNTL		, Gauntlets	  , "Gauntlets"
+TREE = B_A_BOOT		, Boots		  , "Boots"
+TREE = B_A_SHD		, Shields	  , "Shields"
+
+	####### Weapons
+
+TREE = B_W		, Weapons	, "Weapons"
+TREE = B_W_ARW	, Arrow		, "Arrow"
+TREE = B_W_AXE	, Axe		, "Axe"
+TREE = B_W_BOW	, Bow		, "Bow"
+TREE = B_W_CLB	, Club		, "Club"
+TREE = B_W_CSB	, Crossbow	, "Crossbow"
+TREE = B_W_DAG	, Dagger	, "Dagger"
+TREE = B_W_HMR	, Hammer	, "Hammer"
+TREE = B_W_MCE	, Mace		, "Mace"
+TREE = B_W_MISC	, Misc		, "Misc"
+TREE = B_W_STF	, Staff		, "Staff"
+TREE = B_W_SWD	, Sword		, "Sword"
+
+	####### Items
+
+TREE = B_I		,Items			, "Items"
+TREE = B_I_CSL	, Castle		, "Castle"
+TREE = B_I_GLB	, Global		, "Global"
+TREE = B_I_GRS	, Grass			, "Grass"
+TREE = B_I_CAV	, Caves			, "Caves"
+TREE = B_I_FRM	, Farm			, "Farm"
+TREE = B_I_LAV	, Lava			, "Lava"
+TREE = B_I_GOB	, Goblin_Inv	, "Goblin Inventor"
+TREE = B_I_ICE	, Ice			, "Ice"
+TREE = B_I_DES	, Desert		, "Desert"
+TREE = B_I_SWP	, Swamp			, "Swamp"
+
+	####### SFX
+
+TREE = B_SFX		, SFX		, "Special Effects"
+
+	####### Environment maps
+
+TREE = B_EM			, Envmaps	, "Environment Maps"
+
+	####### Decals
+
+TREE = B_D			, Decals	, "Decals"
+
+	####### Terrain Textures
+
+TREE = B_T			, Terrain	, "Terrain"
+
+TREE = B_T_XXX		, Generic	, "Generic"
+TREE = B_T_XXX_WAL	,   Wall	, 	"Wall"
+TREE = B_T_XXX_FLR	,   Floor	, 	"Floor"
+TREE = B_T_XXX_PTH	,   Path	, 	"Path"
+TREE = B_T_XXX_RMP	,   Ramp	, 	"Ramp"
+TREE = B_T_XXX_RVR	,   River	, 	"River"
+TREE = B_T_XXX_H2O	,   Water	, 	"Water"
+TREE = B_T_XXX_DGN	,   Dungeon	, 	"Dungeon"
+TREE = B_T_XXX_FOR	,   Forest	, 	"Forest"
+TREE = B_T_XXX_RUIN	,   Ruins	, 	"Ruins"
+TREE = B_T_XXX_KEEP	,   Keep	, 	"Keep"
+
+
+
+
+TREE = B_T_DC01			, Desert_Canyon_1	, "Desert Canyon 1"
+TREE = B_T_DC01_WAL		, Wall				, 	"Wall"
+TREE = B_T_DC01_FLR		, Floor				, 	"Floor"
+TREE = B_T_DC01_PTH		, Path				, 	"Path"
+TREE = B_T_DC01_RMP		, Ramp				, 	"Ramp"
+TREE = B_T_DC01_RVR		, River				, 	"River"
+TREE = B_T_DC01_H2O		, Water				, 	"Water"
+TREE = B_T_DC01_RUIN	, Ruins				, 	"Ruins"
+TREE = B_T_DC01_SCAFF	, Scaffolding		, 	"Scaffolding"
+
+TREE = B_T_DM00			, Dwarven_Mine_0	, "Dwarven Mine 0"
+
+TREE = B_T_FH00			, Farmhouse			, "Farmhouse"
+
+TREE = B_T_GYP			, Gypsy_Tents		, "Gypsy Tents"
+
+TREE = B_T_DM01			, Dwarven_Mine_1	, "Dwarven Mine 1"
+TREE = B_T_DM01_WAL		, Wall				, 	"Wall"
+TREE = B_T_DM01_FLR		, Floor				, 	"Floor"
+TREE = B_T_DM01_PTH		, Path				, 	"Path"
+TREE = B_T_DM01_RMP		, Ramp				, 	"Ramp"
+TREE = B_T_DM01_RVR		, River				, 	"River"
+TREE = B_T_DM01_TRK		, Track				, 	"Track"
+TREE = B_T_DM01_H2O		, Water				, 	"Water"
+TREE = B_T_DM01_RUIN	, Ruins				, 	"Ruins"
+TREE = B_T_DM01_SCAFF	, Scaffolding		, 	"Scaffolding"
+
+TREE = B_T_DM02			, Dwarven_Mine_2	, "Dwarven Mine 2"
+TREE = B_T_DM02_WAL		, Wall				, 	"Wall"
+TREE = B_T_DM02_FLR		, Floor				, 	"Floor"
+TREE = B_T_DM02_PTH		, Path				, 	"Path"
+TREE = B_T_DM02_RMP		, Ramp				, 	"Ramp"
+TREE = B_T_DM02_RVR		, River				, 	"River"
+TREE = B_T_DM02_TRK		, Track				, 	"Track"
+TREE = B_T_DM02_H2O		, Water				, 	"Water"
+
+TREE = B_T_DM03			, Dwarven_Mine_3	, "Dwarven Mine 3"
+TREE = B_T_DM03_WAL		, Wall				, 	"Wall"
+TREE = B_T_DM03_FLR		, Floor				, 	"Floor"
+TREE = B_T_DM03_PTH		, Path				, 	"Path"
+TREE = B_T_DM03_RMP		, Ramp				, 	"Ramp"
+TREE = B_T_DM03_RVR		, River				, 	"River"
+TREE = B_T_DM03_TRK		, Track				, 	"Track"
+TREE = B_T_DM03_H2O		, Water				, 	"Water"
+
+TREE = B_T_ABC01		, Abandoned_Cave_1	, "Abandoned Cave 1"
+TREE = B_T_ABC01_WAL	, Wall				, 	"Wall"
+TREE = B_T_ABC01_FLR	, Floor				, 	"Floor"
+TREE = B_T_ABC01_PTH	, Path				, 	"Path"
+TREE = B_T_ABC01_RMP	, Ramp				, 	"Ramp"
+TREE = B_T_ABC01_RVR	, River				, 	"River"
+TREE = B_T_ABC01_RUIN	, Ruins				, 	"Ruins"
+TREE = B_T_ABC01_SCAFF	, Scaffolding  		, 	"Scaffolding"
+
+TREE = B_T_SR01			, Sub_River_1	, "Sub River 1"
+TREE = B_T_SR01_WAL		, Wall			, 	"Wall"
+TREE = B_T_SR01_FLR		, Floor			, 	"Floor"
+TREE = B_T_SR01_PTH		, Path			, 	"Path"
+TREE = B_T_SR01_RMP		, Ramp			, 	"Ramp"
+TREE = B_T_SR01_RVR		, River			, 	"River"
+TREE = B_T_SR01_H2O		, Water			, 	"Water"
+TREE = B_T_SR01_SCAFF	, Scaffolding	, 	"Scaffolding"
+
+TREE = B_T_SR02			, Sub_River_2	, "Sub River 2"
+TREE = B_T_SR02_WAL		, Wall			, 	"Wall"
+TREE = B_T_SR02_FLR		, Floor			, 	"Floor"
+TREE = B_T_SR02_PTH		, Path			, 	"Path"
+TREE = B_T_SR02_RMP		, Ramp			, 	"Ramp"
+TREE = B_T_SR02_RVR		, River			, 	"River"
+TREE = B_T_SR02_H2O		, Water			, 	"Water"
+TREE = B_T_SR02_RUIN	, Ruins			, 	"Ruins"
+TREE = B_T_SR02_SCAFF	, Scaffolding	, 	"Scaffolding"
+
+TREE = B_T_GRS01		, Grass_1		, "Grass 1"
+TREE = B_T_GRS01_WAL	, Wall			, 	"Wall"
+TREE = B_T_GRS01_FLR	, Floor			, 	"Floor"
+TREE = B_T_GRS01_PTH	, Path			, 	"Path"
+TREE = B_T_GRS01_RMP	, Ramp			, 	"Ramp"
+TREE = B_T_GRS01_RVR	, River			, 	"River"
+TREE = B_T_GRS01_H2O	, Water			, 	"Water"
+TREE = B_T_GRS01_RUIN	, Ruins			, 	"Ruins"
+TREE = B_T_GRS01_SCAFF	, Scaffolding	, 	"Scaffolding"
+
+TREE = B_T_GRS02		, Grass_2		, "Grass 2"
+TREE = B_T_GRS02_WAL	, Wall			, 	"Wall"
+TREE = B_T_GRS02_FLR	, Floor			, 	"Floor"
+TREE = B_T_GRS02_PTH	, Path			, 	"Path"
+TREE = B_T_GRS02_RMP	, Ramp			, 	"Ramp"
+TREE = B_T_GRS02_RVR	, River			, 	"River"
+TREE = B_T_GRS02_H2O	, Water			, 	"Water"
+TREE = B_T_GRS02_RUIN	, Ruins			, 	"Ruins"
+TREE = B_T_GRS02_SCAFF	, Scaffolding	, 	"Scaffolding"
+
+TREE = B_T_SN01			, Snow			, "Snow"
+TREE = B_T_SN01_WAL		, Wall			, 	"Wall"
+TREE = B_T_SN01_FLR		, Floor			, 	"Floor"
+TREE = B_T_SN01_PTH		, Path			, 	"Path"
+TREE = B_T_SN01_RMP		, Ramp			, 	"Ramp"
+TREE = B_T_SN01_RVR		, River			, 	"River"
+
+TREE = B_T_SN02			, Snow_2		, "Snow 2"
+TREE = B_T_SN02_WAL		, Wall			, 	"Wall"
+TREE = B_T_SN02_FLR		, Floor			, 	"Floor"
+TREE = B_T_SN02_PTH		, Path			, 	"Path"
+TREE = B_T_SN02_RMP		, Ramp			, 	"Ramp"
+TREE = B_T_SN02_RVR		, River			, 	"River"
+TREE = B_T_SN02_FOR		, Forest		, 	"Forest"
+TREE = B_T_SN02_RUIN	, Ruins			, 	"Ruins"
+TREE = B_T_SN02_SCAFF	, Scaffolding	, 	"Scaffolding"
+
+TREE = B_T_IC01			, Ice_Caves		, "Ice Caves"
+TREE = B_T_IC01_WAL		, Wall			, 	"Wall"
+TREE = B_T_IC01_FLR		, Floor			, 	"Floor"
+TREE = B_T_IC01_PTH		, Path			, 	"Path"
+TREE = B_T_IC01_RMP		, Ramp			, 	"Ramp"
+TREE = B_T_IC01_RVR		, River			, 	"River"
+TREE = B_T_IC01_RUIN	, Ruins			, 	"Ruins"
+TREE = B_T_IC01_SCAFF	, Scaffolding	, 	"Scaffolding"
+
+TREE = B_T_SEA01		, Seashore_1	, "Seashore 1"
+
+TREE = B_T_LK01			, Lakeshore_1	, "Lakeshore 1"
+
+TREE = B_T_FOR01		, Forest_Pine	, "Forest Pine"
+TREE = B_T_FOR01_WAL	, Wall			, 	"Wall"
+TREE = B_T_FOR01_FLR	, Floor			, 	"Floor"
+TREE = B_T_FOR01_PTH	, Path			, 	"Path"
+TREE = B_T_FOR01_RMP	, Ramp			, 	"Ramp"
+TREE = B_T_FOR01_H2O	, Water			, 	"Water"
+TREE = B_T_FOR01_FOR	, Forest		, 	"Forest"
+TREE = B_T_FOR01_RVR	, River			, 	"River"
+TREE = B_T_FOR01_RUIN	, Ruins			, 	"Ruins"
+TREE = B_T_FOR01_SCAFF	, Scaffolding	, 	"Scaffolding"
+
+TREE = B_T_FOR02		, Forest_Sequoia, "Forest Sequoia"
+TREE = B_T_FOR02_WAL	, Wall			, 	"Wall"
+TREE = B_T_FOR02_FLR	, Floor			, 	"Floor"
+TREE = B_T_FOR02_FOR	, Forest		, 	"Forest"
+TREE = B_T_FOR02_PTH	, Path			, 	"Path"
+TREE = B_T_FOR02_RMP	, Ramp			, 	"Ramp"
+TREE = B_T_FOR02_H2O	, Water			, 	"Water"
+TREE = B_T_FOR02_RVR	, River			, 	"River"
+TREE = B_T_FOR02_RUIN	, Ruins			, 	"Ruins"
+TREE = B_T_FOR02_SCAFF	, Scaffolding	, 	"Scaffolding"
+
+TREE = B_T_LC01			, Lava_Cavern	, "Lava Cavern"
+TREE = B_T_LC01_WAL		, Wall			, 	"Wall"
+TREE = B_T_LC01_FLR		, Floor			, 	"Floor"
+TREE = B_T_LC01_PTH		, Path			, 	"Path"
+TREE = B_T_LC01_RMP		, Ramp			, 	"Ramp"
+TREE = B_T_LC01_RVR		, River			, 	"River"
+TREE = B_T_LC01_RUIN	, Ruins			, 	"Ruins"
+TREE = B_T_LC01_SCAFF	, Scaffolding	, 	"Scaffolding"
+
+TREE = B_T_SD			, Spider_Dungeon	, "Spider Dungeon"
+TREE = B_T_SD_WAL		, Wall			,	 	"Wall"
+TREE = B_T_SD_FLR		, Floor			,	 	"Floor"
+TREE = B_T_SD_PTH		, Path			,	 	"Path"
+TREE = B_T_SD_RMP		, Ramp			,	 	"Ramp"
+TREE = B_T_SD_RVR		, River			,	 	"River"
+
+TREE = B_T_DGN01		, Dungeon_1			, "Dungeon 1"
+														 
+TREE = B_T_DGN02		, Dungeon_2			, "Dungeon 2"
+
+TREE = B_T_DGN03		, Dungeon_Greystone_1		, "Dungeon Greystone 1"
+TREE = B_T_DGN03_DGN	,   Dungeon					,   "Dungeon"
+
+TREE = B_T_DGN04		, Dungeon_Roundstone_1		, "Dungeon Roundstone 1"
+TREE = B_T_DGN04_DGN	, Dungeon					,   "Dungeon"
+
+TREE = B_T_DGN05		, Dungeon_Greenstone_1		, "Dungeon Greenstone 1"
+TREE = B_T_DGN05_DGN	, Dungeon			    	,   "Dungeon"
+
+TREE = B_T_DGN06		, Dungeon_Redbrick_1		, "Dungeon Redbrick 1"
+TREE = B_T_DGN06_DGN	, Dungeon					,   "Dungeon"
+TREE = B_T_DGN06_H2O	, Water						,   "Water"
+
+TREE = B_T_DGN07		, Dungeon_Redstone_1		, "Dungeon Redstone 1"
+TREE = B_T_DGN07_DGN	, Dungeon					,   "Dungeon"
+
+TREE = B_T_DGN08		, Dungeon_GreyMarble_1		, "Dungeon GreyMarble 1"
+TREE = B_T_DGN08_DGN	, Dungeon					,   "Dungeon"
+
+TREE = B_T_DGN09		, Dungeon_RedMarble_1		, "Dungeon RedMarble 1"
+TREE = B_T_DGN09_DGN	, Dungeon					,   "Dungeon"
+
+TREE = B_T_DGN10		, Dungeon_DarkBrick_1		, "Dungeon DarkBrick 1"
+TREE = B_T_DGN10_DGN	, Dungeon					,   "Dungeon"
+
+TREE = B_T_DGN11		, Dungeon_Brownrock-Iced_1	, "Dungeon Brownrock Iced 1"
+TREE = B_T_DGN11_DGN	, Dungeon					,    "Dungeon"
+
+TREE = B_T_DGN12		, Dungeon_Roundstone-Wet_1 	, "Dungeon Roundstone Wet 1"
+TREE = B_T_DGN12_DGN	, Dungeon					,   "Dungeon"
+
+TREE = B_T_DGN13		, Dungeon_Greystone_2 		, "Dungeon Greystone 2"
+TREE = B_T_DGN13_DGN	, Dungeon					,   "Dungeon"
+
+TREE = B_T_KEEP01		, Keep_Darkbrick_1 			, "Keep Darkbrick 1"
+TREE = B_T_KEEP01_KEEP	, Keep						,   "Keep"
+
+TREE = B_T_KEEP02		, Keep_GoldTrim_1 			, "Keep GoldTrim 1"
+TREE = B_T_KEEP02_KEEP	, Keep						,   "Keep"
+
+TREE = B_T_KEEP03		, Keep_TanBrick_1 			, "Keep TanBrick 1"
+TREE = B_T_KEEP03_KEEP	, Keep						,   "Keep"
+
+TREE = B_T_KEEP04		, Keep_IvyBrick_1 			, "Keep IvyBrick 1"
+TREE = B_T_KEEP04_KEEP	, Keep						,   "Keep"
+
+TREE = B_T_KEEP05		, Keep_FireLord_1 			, "Keep FireLord 1"
+TREE = B_T_KEEP05_KEEP	, Keep						,   "Keep"
+
+TREE = B_T_GI			, Goblin_Inventor	, "Goblin Inventor"
+TREE = B_T_GI_WAL		, Wall		  		,   "Wall"
+TREE = B_T_GI_FLR		, Floor		   		,   "Floor"
+TREE = B_T_GI_PTH		, Path		   		,   "Path"
+TREE = B_T_GI_RMP		, Ramp		   		,   "Ramp"
+TREE = B_T_GI_H2O		, Water		   		,   "Water"
+TREE = B_T_GI_SCAFF		, Scaffolding		,   "Scaffolding"
+TREE = B_T_GI_RUIN		, Ruins		   		,   "Ruins"
+
+TREE = B_T_CE			, Castle_Ehb		, "Castle Ehb"
+TREE = B_T_BT			, Sieged_Town		, "Sieged Town"
+
+TREE = B_T_CRY01		, Crypt_1			, "Crypt 1"
+
+TREE = B_T_CF			, Captured_Fort		, "Captured Fort"
+
+TREE = B_T_NT			, Northern_Town		, "Northern Town"
+TREE = B_T_NT_PTH		, Path				,   "Path"
+
+TREE = B_T_FD01			, Fury_Den_1			, "Fury_Den_1"
+
+TREE = B_T_CAV01		, Cave_1	 	,   "Cave_01"
+TREE = B_T_CAV01_WAL		, Wall			, 	"Wall"
+TREE = B_T_CAV01_FLR		, Floor			, 	"Floor"
+TREE = B_T_CAV01_PTH		, Path			, 	"Path"
+TREE = B_T_CAV01_RMP		, Ramp			, 	"Ramp"
+TREE = B_T_CAV01_RVR		, River			, 	"River"
+TREE = B_T_CAV01_RUIN		, Ruins			, 	"Ruins"
+TREE = B_T_CAV01_SCAFF		, Scaffolding	, 	"Scaffolding"
+
+TREE = B_T_SWP			, Swamp				, "Swamp"
+TREE = B_T_SWP_WAL		, Wall				, 	"Wall"
+TREE = B_T_SWP_FLR		, Floor				, 	"Floor"
+TREE = B_T_SWP_PTH		, Path				, 	"Path"
+TREE = B_T_SWP_RMP		, Ramp				, 	"Ramp"
+TREE = B_T_SWP_RVR		, River				, 	"River"
+TREE = B_T_SWP_H2O		, Water				, 	"Water"
+TREE = B_T_SWP_RUIN		, Ruins				, 	"Ruins"
+TREE = B_T_SWP_SCAFF	, Scaffolding		, 	"Scaffolding"
+
+TREE = B_T_SC01			, Snow_Customs		, "Snow Customs"
+
+TREE = B_T_GOM			, Gom_Lair			, "Gom Lair"
+
+TREE = B_T_TH01			, Teleport_Hub		, "Teleport Hub"
+
+TREE = B_T_SL			, Spiral_Ledge		, "Spiral Ledge"
+
+TREE = B_T_GRDN			, Garden			, "Garden"
+
+TREE = B_T_GRS01CBBL	, Grass_1_Cobblestone	, "Grass 1 Cobblestone"
+TREE = B_T_GRS01CBBL_PTH,   Path				, 	"Path"
+
+TREE = B_T_CD01			, Custom_Dungeon_1		, "Custom_Dungeon_1" 
+
+TREE = B_T_ICETWR		, Ice_Tower			, "Ice_Tower"
+
+TREE = B_T_WORLD3		, GPG_World_3		, "GPG_World_3"
+
+ 
+
+
+	####### GUI
+
+TREE = B_GUI			, GUI				, "GUI"
+
+TREE = B_GUI_C			, Cursors			,   "Cursors"
+TREE = B_GUI_CMN		, Common			,	"Common"
+
+TREE = B_GUI_FNT		, Fonts				,   "Fonts"
+
+TREE = B_GUI_FE			, Front_end			, "Front_end"
+TREE = B_GUI_FE_M		, Menus				,  "Menus"
+TREE = B_GUI_FE_M_CR	, Credits			,    "Credits"
+TREE = B_GUI_FE_M_IN	, Intro				,    "Intro"
+TREE = B_GUI_FE_M_MN	, Main				,    "Main"
+TREE = B_GUI_FE_M_MP	, Multiplayer		,	 "Multiplayer"
+TREE = B_GUI_FE_M_OP	, Options			,	 "Options"
+TREE = B_GUI_FE_M_SINGLE, Singleplayer		,	 "Singleplayer"
+
+TREE = B_GUI_NIS		, NIS				, "NIS"
+
+TREE = B_GUI_S			, Setup				, "Setup"
+
+TREE = B_GUI_IG			, In_game			, "In_game"
+TREE = B_GUI_IG_MNU		, Menus				,   "Menus"
+TREE = B_GUI_IG_I		, Inventory			,	"Inventory"
+TREE = B_GUI_IG_I_IC	, Icons				, 	"Icons"
+TREE = B_GUI_IG_I_A		, Armor				,	"Armor"
+TREE = B_GUI_IG_I_A_POS , Body_Armor		,	  "Body Armor"
+TREE = B_GUI_IG_I_A_GNTL, Gauntlet			,	  "Gauntlet"
+TREE = B_GUI_IG_I_A_HLMT, Helmet			,	  "Helmet"
+TREE = B_GUI_IG_I_A_SHD	, Shield			,	  "Shield"
+TREE = B_GUI_IG_I_A_BOOT, Boot				,	  "Boot"
+
+TREE = B_GUI_IG_I_IT	, Items				,   "Items"
+
+TREE = B_GUI_IG_I_W		, Weapons			,	"Weapons"
+TREE = B_GUI_IG_I_W_AXE	, Axe				,	  "Axe"
+TREE = B_GUI_IG_I_W_BOW	, Bow				,	  "Bow"
+TREE = B_GUI_IG_I_W_CLB	, Club				,	  "Club"
+TREE = B_GUI_IG_I_W_CSB	, Crossbow			,	  "Crossbow"
+TREE = B_GUI_IG_I_W_DGR	, Dagger			,	  "Dagger"
+TREE = B_GUI_IG_I_W_HMR	, Hammer			,	  "Hammer"
+TREE = B_GUI_IG_I_W_MCE	, Mace				,	  "Mace"
+TREE = B_GUI_IG_I_W_MSC	, Misc				,	  "Misc"
+TREE = B_GUI_IG_I_W_STF	, Staff				,	  "Staff"
+TREE = B_GUI_IG_I_W_SWD	, Sword				,	  "Sword"
+   
+
+
+##############################
+## Definition of Mesh Tree
+##############################
+
+	####### Root
+
+TREE = M		, Meshes	, "Meshes"
+
+TREE = M_W		, Weapons	, "Weapons"
+
+TREE = M_W_ARW	, Arrow		, "Arrow"
+TREE = M_W_AXE	, Axe		, "Axe"
+TREE = M_W_BOW	, Bow		, "Bow"
+TREE = M_W_CLB	, Club		, "Club"
+TREE = M_W_DAG	, Dagger	, "Dagger"
+TREE = M_W_HMR	, Hammer	, "Hammer"
+TREE = M_W_MCE	, Mace		, "Mace"
+TREE = M_W_STF	, Staff		, "Staff"
+TREE = M_W_SWD	, Sword		, "Sword"
+TREE = M_W_MISC	, Misc		, "Miscellaneous"
+TREE = M_W_CSB	, Crossbow	, "Crossbow"
+
+
+TREE = M_A		, Armor		, "Armor"
+TREE = M_A_SUIT	, Suits		, "Suits"
+TREE = M_A_SHD	, Shields	, "Shields"
+TREE = M_A_BOOT	, Boots		, "Boots"
+TREE = M_A_GNTL	, Gauntlets	, "Gauntlets"
+TREE = M_A_HLMT	, Helmets	, "Helmets"
+
+TREE = M_I		, Items		, "Items"
+
+TREE = M_I_CSL	, Castle	, "Castle"
+TREE = M_I_GLB	, Global	, "Global"
+TREE = M_I_GRS	, Grass		, "Grass"
+TREE = M_I_CAV	, Caves		, "Caves"
+TREE = M_I_FRM	, Farm			, "Farm"
+TREE = M_I_LAV	, Lava			, "Lava"
+TREE = M_I_GOB	, Goblin_Inv	, "Goblin Inventor"
+TREE = M_I_ICE	, Ice			, "Ice"
+TREE = M_I_DES	, Desert		, "Desert"
+TREE = M_I_SWP	, Swamp			, "Swamp"
+
+TREE = M_SFX		, SFX		, "Special Effect"
+TREE = M_SFX_MG		, Magic		, "Magic"
+
+TREE = M_C		, Characters	, "Characters"
+
+TREE = M_C_EAM , Evil_A_Monsters  , "Evil A Monsters"
+TREE = M_C_ECM , Evil_C_Monsters  , "Evil C Monsters"
+TREE = M_C_EDM , Evil_D_Monsters  , "Evil D Monsters"
+TREE = M_C_EBB , Evil_B_Bosses    , "Evil B Bosses"
+TREE = M_C_GAH , Good_A_Heroes    , "Good A Heroes"
+TREE = M_C_GAN , Good_A_NPC       , "Good A NPC"
+TREE = M_C_GBN , Good_B_NPC       , "Good B NPC"
+TREE = M_C_NA  , Neutral_Ambients , "Neutral Ambients"
+
+TREE = M_C_GAH_FB , Farmboy			, "Farmboy"
+
+TREE = M_C_GAH_FB_BOOT,	Boots		,	"Farmboy Boots"
+TREE = M_C_GAH_FB_GNTL,	Gauntlets	,	"Farmboy Gauntlets"
+TREE = M_C_GAH_FB_HLMT,	Helmets		,	"Farmboy Helmets"
+
+TREE = M_C_GAH_FG , Farmgirl		, "Farmgirl"
+
+TREE = M_C_GAH_FG_BOOT,	Boots		,	"Farmgirl Boots"
+TREE = M_C_GAH_FG_GNTL,	Gauntlets	,	"Farmgirl Gauntlets"
+TREE = M_C_GAH_FG_HLMT,	Helmets		,	"Farmgirl Helmets"
+
+TREE = M_C_GAN_DF , Dwarf			, "Dwarf"
+
+TREE = M_C_GAN_DF_BOOT,	Boots		,	"Dwarf Boots"
+TREE = M_C_GAN_DF_GNTL,	Gauntlets	,	"Dwarf Gauntlets"
+TREE = M_C_GAN_DF_HLMT,	Helmets		,	"Dwarf Helmets"
+
+
+TREE = M_C_ECM_SK , Skeleton		, "Skeleton"
+
+TREE = M_C_ECM_SK_BOOT,	Boots		,	"Skeleton Boots"
+TREE = M_C_ECM_SK_GNTL,	Gauntlets	,	"Skeleton Gauntlets"
+TREE = M_C_ECM_SK_HLMT,	Helmets		,	"Skeleton Helmets"
+
+
+# Evil A Monsters
+
+TREE = M_C_EAM_DG	, Droog				, "Droog"
+TREE = M_C_EAM_DGA	, Droog_Archer		, "Droog Archer"
+TREE = M_C_EAM_DGG	, Droog_Grunt		, "Droog Grunt"
+TREE = M_C_EAM_DGM	, Droog_Mage		, "Droog Mage"
+
+TREE = M_C_EAM_GGT	, Goblin_Grunt		, "Goblin Grunt"
+TREE = M_C_EAM_GGG	, Goblin_Guard		, "Goblin Guard"
+
+TREE = M_C_EAM_KC	, Krug_Commander	, "Krug Commander"
+TREE = M_C_EAM_KG	, Krug_Grunt		, "Krug Grunt"
+TREE = M_C_EAM_KR	, Krug_Raider		, "Krug Raider"
+TREE = M_C_EAM_KS	, Krug_Shaman		, "Krug Shaman"
+
+TREE = M_C_EAM_SA	, Seck_Archer		, "Seck Archer"
+TREE = M_C_EAM_SC	, Seck_Commander	, "Seck Commander"
+TREE = M_C_EAM_SG	, Seck_Grunt		, "Seck Grunt"
+TREE = M_C_EAM_SM	, Seck_Mage			, "Seck Mage"
+
+# Evil B Bosses
+
+TREE = M_C_EBB_DG	, Dragon			, "Dragon"
+TREE = M_C_EBB_FK	, Fire_King			, "Fire King"
+TREE = M_C_EBB_FY	, Fury			 	, "Fury"
+TREE = M_C_EBB_GS	, Giant_Spider	 	, "Giant Spider"
+TREE = M_C_EBB_GI	, Goblin_Inventor 	, "Goblin Inventor"
+TREE = M_C_EBB_GRS	, Goblin_Robo_Suit	, "Goblin Robo Suit"
+TREE = M_C_EBB_GOM	, GOM				, "GOM"
+TREE = M_C_EBB_SG	, Super_Gom			, "Super Gom"
+
+# Evil C Monsters
+
+TREE = M_C_ECM_CY	, Cyclops			, "Cyclops"
+TREE = M_C_ECM_DB	, Darkblood			, "Darkblood"
+TREE = M_C_ECM_FE	, Fire_Elemental	, "Fire Elemental"
+TREE = M_C_ECM_GA	, Gorack			, "Gorack"
+TREE = M_C_ECM_KL	, Kell				, "Kell"
+TREE = M_C_ECM_BK	, Braak				, "Braak"
+TREE = M_C_ECM_MD	, Memadd			, "Memadd"
+#
+# -- Had to move the Skeleton entry up to allow for Boot/Gauntlets/Helmet -biddle
+#TREE = M_C_ECM_SK	, Skeleton			, "Skeleton"
+#
+TREE = M_C_ECM_SKG	, Skeleton_Guard	, "Skeleton Guard"
+TREE = M_C_ECM_SKH	, Skeleton_Horse	, "Skeleton Horse"
+TREE = M_C_ECM_TO	, Toreck			, "Toreck"
+TREE = M_C_ECM_TG	, Trog				, "Trog"
+TREE = M_C_ECM_WR	, Wraith			, "Wraith"
+
+# Evil D Monsters
+
+TREE = M_C_EDM_AS	, Adolescent_Spider	, "Adolescent Spider"
+TREE = M_C_EDM_AZ	, Azireth			, "Azireth"
+TREE = M_C_EDM_BD	, Bat_Dude			, "Bat Dude"
+TREE = M_C_EDM_BL	, Blaster			, "Blaster"
+TREE = M_C_EDM_CG	, Clay_Golem		, "Clay Golem"
+TREE = M_C_EDM_CW	, Cave_Worm			, "Cave Worm"
+TREE = M_C_EDM_CK	, Cobralisk			, "Cobralisk"
+TREE = M_C_EDM_CP	, Copter			, "Copter"
+TREE = M_C_EDM_DG	, Darkling			, "Darkling"
+TREE = M_C_EDM_DC	, Dungeon_Crawler	, "Dungeon Crawler"
+TREE = M_C_EDM_DK	, Drake				, "Drake"
+TREE = M_C_EDM_DL	, Dark_Lunger		, "Dark Lunger"
+TREE = M_C_EDM_FN	, Frostnid			, "Frostnid"
+TREE = M_C_EDM_FR	, Furok				, "Furok"
+TREE = M_C_EDM_GA	, Gargoyle			, "Gargoyle"
+TREE = M_C_EDM_GO	, Gobbot			, "Gobbot"
+TREE = M_C_EDM_GG	, Googore			, "Googore"
+TREE = M_C_EDM_GB	, Googore_grub		, "Googore Grub"
+TREE = M_C_EDM_GH	, Ghost 			, "Ghost"
+TREE = M_C_EDM_GK	, Gikk				, "Gikk"
+TREE = M_C_EDM_GZ	, Giant_Lizard		, "Giant Lizard"
+TREE = M_C_EDM_GM	, Gremal			, "Gremal"
+TREE = M_C_EDM_GR	, Giant_Rat			, "Giant Rat"
+TREE = M_C_EDM_GV	, Groveller			, "Groveller"
+TREE = M_C_EDM_HT	, Heater			, "Heater"
+TREE = M_C_EDM_HB	, Hellboar			, "Hellboar"
+TREE = M_C_EDM_HD	, Horrid			, "Horrid"
+TREE = M_C_EDM_HY	, Hydrack			, "Hydrack"
+TREE = M_C_EDM_IA	, Ice_Archer		, "Ice Archer"
+TREE = M_C_EDM_IF	, Ice_Fly			, "Ice Fly"
+TREE = M_C_EDM_IW	, Ice_Warrior		, "Ice Warrior"
+TREE = M_C_EDM_IM	, Impaler			, "Impaler"
+TREE = M_C_EDM_KW	, Klaw				, "Klaw"
+TREE = M_C_EDM_LA	, Larch				, "Larch"
+TREE = M_C_EDM_LH	, Littlehead		, "Littlehead"
+TREE = M_C_EDM_LT	, Lectar			, "Lectar"
+TREE = M_C_EDM_LI	, Lava_Imp			, "Lava Imp"
+TREE = M_C_EDM_LS	, Lava_Spirit		, "Lava Spirit"
+TREE = M_C_EDM_LK	, Lurker			, "Lurker"
+TREE = M_C_EDM_MN	, Mangler			, "Mangler"
+TREE = M_C_EDM_ME	, Magic_Eye			, "Magic Eye"
+TREE = M_C_EDM_MW	, Mine_Worm			, "Mine Worm"
+TREE = M_C_EDM_MG	, Molten_Golem		, "Molten Golem"
+TREE = M_C_EDM_MM	, Mossman			, "Mossman"
+TREE = M_C_EDM_MO	, Moth				, "Moth"
+TREE = M_C_EDM_MU	, Mucosa			, "Mucosa"
+TREE = M_C_EDM_KD	, Krugdog			, "Krug Dog"
+TREE = M_C_EDM_PK	, Peck				, "Peck"
+TREE = M_C_EDM_PF	, Perforator		, "Perforator"
+TREE = M_C_EDM_PR	, Picker			, "Picker"
+TREE = M_C_EDM_PU	, Pupod				, "Pupod"
+TREE = M_C_EDM_PX	, Proxo				, "Proxo"
+TREE = M_C_EDM_RP	, Reaper			, "Reaper"
+TREE = M_C_EDM_RT	, Rector			, "Rector"
+TREE = M_C_EDM_RB	, Rock_Beast		, "Rock Beast"
+TREE = M_C_EDM_QS	, Quadscale			, "Quadscale"
+TREE = M_C_EDM_RG	, Rock_Golem		, "Rock_Golem"
+TREE = M_C_EDM_SB	, Skrubb			, "Skrubb"
+TREE = M_C_EDM_SC	, Scorpion			, "Scorpion"
+TREE = M_C_EDM_SH	, Shade				, "Shade"
+TREE = M_C_EDM_SD	, Shard				, "Shard"
+TREE = M_C_EDM_SHK	, Shrack			, "Shrack"
+TREE = M_C_EDM_SK	, Skick				, "Skick"
+TREE = M_C_EDM_SL	, Slarg				, "Slarg"
+TREE = M_C_EDM_SM	, Spiked_Maw		, "Spiked Maw"
+TREE = M_C_EDM_SN	, Stalagnid			, "Stalagnid"
+TREE = M_C_EDM_SP	, Spider			, "Spider"
+TREE = M_C_EDM_SR	, Spore				, "Spore"
+TREE = M_C_EDM_SS	, Soul_Stinger		, "Soul Stinger"
+TREE = M_C_EDM_ST	, Swamp_Stinger		, "Swamp Stinger"
+TREE = M_C_EDM_SW	, Swamp_Witch		, "Swamp Witch"
+TREE = M_C_EDM_SY	, Synged			, "Synged"
+TREE = M_C_EDM_TH	, Threehorn			, "Threehorn"
+TREE = M_C_EDM_TR	, Tretch			, "Tretch"
+TREE = M_C_EDM_TL	, Troll				, "Troll"
+TREE = M_C_EDM_UG	, Unguis			, "Unguis"
+TREE = M_C_EDM_VS	, Visionary			, "Visionary"
+TREE = M_C_EDM_WP	, Wasped			, "Wasped"
+TREE = M_C_EDM_WW	, Werewolf			, "Werewolf"
+TREE = M_C_EDM_WF	, Wolf				, "Wolf"
+TREE = M_C_EDM_YT	, Yeti				, "Yeti"
+TREE = M_C_EDM_ZO	, Zombie			, "Zombie"
+
+
+# Good B NPC
+
+TREE = M_C_GBN_BK	, Barkeep			, "Barkeep"
+TREE = M_C_GBN_BS	, Blacksmith		, "Blacksmith"
+TREE = M_C_GBN_FY	, Fairy				, "Fairy"
+TREE = M_C_GBN_FT	, Fortuneteller		, "Fortuneteller"
+TREE = M_C_GBN_JA	, Jeriah			, "Jeriah"
+TREE = M_C_GBN_KG	, King				, "King"
+TREE = M_C_GBN_MK	, Merik				, "Merik"
+TREE = M_C_GBN_PMO	, Peasant_M_Old		, "Peasant Male Old"
+TREE = M_C_GBN_PSM	, Peasant_M			, "Peasant Male"
+TREE = M_C_GBN_PSF	, Peasant_F			, "Peasant Female"
+TREE = M_C_GBN_PX	, Pixie				, "Pixie"
+TREE = M_C_GBN_TFM	, Townfolk_M		, "Townfolk Male"
+TREE = M_C_GBN_TFF	, Townfolk_F		, "Townfolk Female"
+
+# Neutral Ambients
+TREE = M_C_NA_BS	, Baby_Spider	 	, "Baby Spider"
+TREE = M_C_NA_BR	, Bear				, "Bear"
+TREE = M_C_NA_BT	, Bat				, "Bat"
+TREE = M_C_NA_BD	, Bird				, "Bird"
+TREE = M_C_NA_BF	, Butterfly			, "Butterfly"
+TREE = M_C_NA_CKN	, Chicken			, "Chicken"
+TREE = M_C_NA_CW	, Cow				, "Cow"
+TREE = M_C_NA_CB	, Crab				, "Crab"
+TREE = M_C_NA_DR	, Deer				, "Deer"
+TREE = M_C_NA_DG	, Dog				, "Dog"
+TREE = M_C_NA_DG2	, Dog2				, "Dog2"
+TREE = M_C_NA_FW	, Fawn				, "Fawn"
+TREE = M_C_NA_FI	, Fish				, "Fish"
+TREE = M_C_NA_GK	, Gecko				, "Gecko"
+TREE = M_C_NA_PM	, Pack_Mule			, "Pack Mule"
+TREE = M_C_NA_PG	, Pig				, "Pig"
+TREE = M_C_NA_RA	, Raven				, "Raven"
+TREE = M_C_NA_RT	, Rat				, "Rat"
+TREE = M_C_NA_SG	, Seagull			, "Seagull"
+
+# GUI
+
+TREE = M_GUI			, GUI				, "GUI"
+TREE = M_GUI_FE			, Front_end			, "Front_end"
+TREE = M_GUI_FE_M		, Menus				, "Menus"
+TREE = M_GUI_FE_M_CR	, Credits			, "Credits"
+TREE = M_GUI_FE_M_IN	, Intro				, "Intro"
+TREE = M_GUI_FE_M_MN	, Main				, "Main"
+TREE = M_GUI_FE_M_MP	, Multiplayer		, "Multiplayer"
+TREE = M_GUI_FE_M_OP	, Options			, "Options"
+TREE = M_GUI_FE_M_SP	, Singleplayer		, "Singleplayer"
+
+##############################
+## Definition of Terrain Tree (for SNO files)
+##############################
+
+TREE = T			, Terrain			, "Terrain"
+
+TREE = T_XXX			, Generic		, "Generic"
+TREE = T_XXX_WAL		, Wall			, "Wall"
+TREE = T_XXX_HAL		, Hall			, "Hall"
+TREE = T_XXX_RMP		, Ramp			, "Ramp"
+TREE = T_XXX_CNR		, Corner		, "Corner"
+TREE = T_XXX_FLR		, Floor			, "Floor"
+TREE = T_XXX_RVR		, River			, "River"
+TREE = T_XXX_LEDG		, Ledge			, "Ledge"
+TREE = T_XXX_BRDG		, Bridge		, "Bridge"
+TREE = T_XXX_ENTR		, Entrance		, "Entrance"
+TREE = T_XXX_PTH		, Path		 	, "Path"
+TREE = T_XXX_DGN		, Dungeon			, "Dungeon"
+TREE = T_XXX_FOR		, Forest		, "Forest"
+TREE = T_XXX_RUIN		, Ruins			, "Ruins"
+TREE = T_XXX_KEEP		, Keep				, "Keep"
+TREE = T_XXX_SCAFF		, Scaffolding	, "Scaffolding"
+TREE = T_XXX_STLG		, Stalagmites	, "Stalagmites"
+TREE = T_XXX_FENC		, Fence			, "Fence"
+
+TREE = T_XXX_DGN_WAL		, Wall		,   "Dungeon Wall"
+TREE = T_XXX_DGN_WAL_H2O	, H2O		,     "Dungeon Wall Water Plane"
+TREE = T_XXX_DGN_CNR		, Corner	,   "Dungeon Corner"
+TREE = T_XXX_DGN_CNR_H2O	, H2O  		,     "Dungeon Corner Water Plane"
+TREE = T_XXX_DGN_FLR		, Floor		,   "Dungeon Floor"
+TREE = T_XXX_DGN_FLR_H2O	, H2O  		,     "Dungeon Floor Water Plane"
+TREE = T_XXX_DGN_STAIR		, Stair		,   "Dungeon Stairway"
+TREE = T_XXX_DGN_STAIR_H2O	, H2O		,     "Dungeon Stairway Water Plane"
+
+TREE = T_XXX_KEEP_WALL	, Wall			,   "Keep Wall"
+TREE = T_XXX_KEEP_FLR	, Floor			,   "Keep Floor"
+TREE = T_XXX_KEEP_CNR	, Corner		,   "Keep Corner"
+TREE = T_XXX_KEEP_RUG	, Rug			,   "Keep Rug"
+
+
+TREE = T_XXX_WAL_H2O	, H2O			, "Wall Water Plane"
+TREE = T_XXX_RMP_H2O	, H2O			, "Ramp Water Plane"
+TREE = T_XXX_CNR_H2O	, H2O			, "Corner Water Plane"
+TREE = T_XXX_FLR_H2O	, H2O			, "Floor Water Plane"
+TREE = T_XXX_BRDG_H2O	, H2O			, "Bridge Water Plane"
+TREE = T_XXX_PTH_H2O	, H2O			, "Path Water Plane"
+TREE = T_XXX_HAL_H2O	, H2O			, "Hall Water Plane"
+TREE = T_XXX_STLG_H2O	, H2O			, "Stalagmites Water Plane"
+
+
+TREE = T_CE			, Castle_Ehb	   	, "Castle Ehb"
+
+TREE = T_CRY01		, Crypt_1			, "Crypt 1"
+TREE = T_CRY01_FLR  , Floor          	,   "Floor"
+TREE = T_CRY01_CNR  , Corner			,   "Corner"
+TREE = T_CRY01_WAL  , Wall           	,   "Wall"
+TREE = T_CRY01_HAL  , Hall				,   "Hall"
+TREE = T_CRY01_SEC  , Secret         	,   "Secret"
+TREE = T_CRY01_TRAP , Trap            	,   "Trap"
+TREE = T_CRY01_ROOM , Room            	,   "Room"
+TREE = T_CRY01_COVR , Cover           	,   "Cover"
+TREE = T_CRY01_STR 	, Stair           	,   "Stair"
+
+TREE = T_CD01		, Custom_Dungeon_1	, "Custom Dungeon 1"
+TREE = T_CD01_WD	, Water_Dungeon 	,   "Water Dungeon"
+
+TREE = T_GOM		, Gom_Lair			, "Gom Lair"
+
+TREE = T_FD01		, Fury_den			, "Fury den"
+
+TREE = T_DC01		, Desert_Canyon		, "Desert Canyon 1"
+
+TREE = T_SEA01		, Seashore_1		, "Seashore 1"
+
+TREE = T_LK01		, Lakeshore_1		, "Lakeshore 1"
+
+TREE = T_FOR01		, Forest_1			, "Forest 1"
+
+
+TREE = T_DGN01		, Dungeon_1			, "Dungeon 1"
+TREE = T_DGN01_CNR	, Corner			,   "Corner"
+TREE = T_DGN01_FLR	, Floor				,   "Floor"
+TREE = T_DGN01_WAL	, Wall				,   "Wall"
+TREE = T_DGN01_STR	, Stair				,   "Stair"
+
+TREE = T_DGN02			, Dungeon_2	   	, "Dungeon 2"
+TREE = T_DGN02_CNR		, Corner	   	,   "Corner"
+TREE = T_DGN02_FLR		, Floor		   	,   "Floor"
+TREE = T_DGN02_WAL		, Wall		   	,   "Wall"
+TREE = T_DGN02_STR		, Stair		   	,   "Stair"
+TREE = T_DGN02_DOR		, Door		   	,   "Doorway"
+TREE = T_DGN02_BRIDGE	, Bridge	   	,   "Bridge"
+TREE = T_DGN02_COS		, COS			,   "COS"
+TREE = T_DGN02_SIDE		, Side		   	,   "Side"
+
+  
+
+TREE = T_DM01			, Dwarven_Mine_1	, "Dwarven Mines 1"
+TREE = T_DM01_ELE		, Elevator			,   "Elevator"
+TREE = T_DM01_HAL		, Hall				,   "Hall"
+TREE = T_DM01_TRACK		, Track				,   "Track"
+TREE = T_DM01_QUARTERS	, Quarters 			,   "Quarters"
+TREE = T_DM02			, Dwarven_Mine_2	,   "Dwarven Mines 2"
+TREE = T_DM02_HAL		, Hall				,   "Hall"
+TREE = T_DM03			, Dwarven_Mine_3	,   "Dwarven Mines 3"
+TREE = T_DM03_HAL		, Hall				,   "Hall"
+
+TREE = T_FH00		, Farmhouse				, "Farmhouse"
+
+TREE = T_GYP		, Gypsy_Tents			, "Gypsy Tents"
+
+TREE = T_GI			, Goblin_Inventor		, "Goblin Inventor"
+TREE = T_GI_WAL		, Wall					,   "Wall"
+TREE = T_GI_FLR		, Floor					,   "Floor"
+TREE = T_GI_CNR		, Corner				,   "Corner"
+TREE = T_GI_WLK		, Walkway				,   "Walkway"
+TREE = T_GI_STR		, Stair					,   "Stair"
+TREE = T_GI_TRENCH	, Trench				,   "Trench"
+TREE = T_GI_FAC		, Factory				,   "Factory"
+TREE = T_GI_SWR		, Sewer					,   "Sewer"
+TREE = T_GI_DOR		, Door					,   "Door"
+TREE = T_GI_LIFT	, Lift					,   "Lift"
+TREE = T_GI_GAD		, Gadgets				,   "Gadgets"
+TREE = T_GI_TORCH	, Torch					,   "Torch"
+TREE = T_GI_PIPE	, Pipe					,   "Pipe"
+
+
+
+TREE = T_GRS01			, Grass_1			, "Grass 1"
+TREE = T_GRS01_HOUSES	, Houses			,   "Houses"
+TREE = T_GRS01_RDGE		, Stone_Ridges		,   "Stone Ridges"
+TREE = T_GRS01_FENCE	, Fences			,   "Fences"
+
+TREE = T_GRS02		, Grass_2				, "Grass 2"
+
+TREE = T_IC01		, Ice_Caves				, "Ice Caves 1"
+
+TREE = T_LC01		, Lava_Cavern			, "Lava Cavern"
+
+TREE = T_NT01		, Northern_Town			, "Northern Town 1"
+TREE = T_NT02		, Northern_Town			, "Northern Town 2"
+TREE = T_NT03		, Northern_Town			, "Northern Town 3"
+
+TREE = T_BT			, Sieged_Town			, "Sieged Town"
+
+TREE = T_SD			, Spider_Dungeon		, "Spider Dungeon"
+TREE = T_SD_CNR		, Corner				,   "Corner"
+TREE = T_SD_FLR		, Floor					,   "Floor"
+TREE = T_SD_WAL		, Wall					,   "Wall"
+
+TREE = T_SR01		, Subterranean_River	, "Subterranean River 1"
+TREE = T_SR02		, Subterranean_River	, "Subterranean River 2"
+
+TREE = T_CF	   		, Captured_Fort			, "Captured Fort"
+
+TREE = T_SWP		, Swamp					, "Swamp"
+
+TREE = T_SC01		, Snow_Customs			, "Snow Customs"
+
+TREE = T_WD01		, Water_Dungeon_1		, "Water Dungeon 1"
+
+TREE = T_TH01		, Teleport_Hub			, "Teleport Hub"
+
+TREE = T_SL			, Spiral_Ledge			, "Spiral Ledge"
+
+TREE = T_GRDN		, Garden				, "Garden"
+
+TREE = T_ICETWR		, Ice_Tower				, "Ice Tower"
+
+TREE = T_WORLD3		, GPG_World_3			, "GPG World 3"
+
+##############################
+## Definition of Sound Tree
+##############################
+
+TREE = S			, Sound					, "Sound"
+TREE = S_M			, Music					, "Music"
+TREE = S_E			, Effects				, "Sound Effects"
+TREE = S_V			, Voices				, "Voices"
+
+
+##############################
+## Definition of Skrit Tree
+##############################
+
+TREE = K			, 									, "Skrits"
+TREE = K_JOB		, World\Ai\Jobs						, "Jobs"
+TREE = K_JOB_A		, Actors							, "Actor jobs"
+TREE = K_JOB_C		, Common							, "Common jobs"
+TREE = K_SPL		, World\ContentDB\Components\Spells	, "Spells"
+TREE = K_INC		, World\Global\Skrits				, "Includes and Skrit Objects"
