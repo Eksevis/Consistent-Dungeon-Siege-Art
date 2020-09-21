@@ -1470,7 +1470,7 @@
 		  f defense = 28.000000;
 			equip_requirements = strength:24;
 			inventory_icon = b_gui_ig_i_a_shd_134;
-			model = m_a_shd_25;
+			model = m_a_shd_24;
 		  f modifier_max = 5.000000;
 		  f modifier_min = 2.000000;
 			texture = b_a_shd_506;
@@ -1639,7 +1639,7 @@
 			model = m_a_shd_26;
 		  f modifier_max = 13.000000;
 		  f modifier_min = 9.000000;
-			texture = b_a_shd_112;
+			texture = b_a_shd_140;
 		}
 		[c_str]
 		{
@@ -1649,7 +1649,7 @@
 			model = m_a_shd_26;
 		  f modifier_max = 9.000000;
 		  f modifier_min = 5.000000;
-			texture = b_a_shd_111;
+			texture = b_a_shd_138;
 		}
 		[o_mag]
 		{
@@ -1669,7 +1669,7 @@
 			model = m_a_shd_26;
 		  f modifier_max = 11.000000;
 		  f modifier_min = 7.000000;
-			texture = b_a_shd_114;
+			texture = b_a_shd_139;
 		}
 	}
 }
@@ -1716,7 +1716,7 @@
 			model = m_a_shd_24;
 		  f modifier_max = 5.000000;
 		  f modifier_min = 3.000000;
-			texture = b_a_shd_100;
+			texture = b_a_shd_130;
 		}
 		[o_mag]
 		{
@@ -1726,7 +1726,7 @@
 			model = m_a_shd_24;
 		  f modifier_max = 24.000000;
 		  f modifier_min = 10.000000;
-			texture = b_a_shd_102;
+			texture = b_a_shd_132;
 		}
 		[o_str]
 		{
@@ -1736,7 +1736,7 @@
 			model = m_a_shd_24;
 		  f modifier_max = 11.000000;
 		  f modifier_min = 5.000000;
-			texture = b_a_shd_101;
+			texture = b_a_shd_131;
 		}
 	}
 }
@@ -1811,7 +1811,7 @@
 			model = m_a_shd_23;
 		  f modifier_max = 4.000000;
 		  f modifier_min = 2.000000;
-			texture = b_a_shd_094;
+			texture = b_a_shd_129;
 		}
 	}
 }

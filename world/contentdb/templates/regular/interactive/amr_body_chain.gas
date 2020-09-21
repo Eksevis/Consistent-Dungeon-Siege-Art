@@ -1,0 +1,974 @@
+[t:template,n:base_body_armor_chain]
+{
+	doc = "Body armor base template";
+	specializes = armor;
+	[aspect]
+	{
+		material = steel;
+		[voice]
+		{
+			[put_down]
+			{
+				* = s_e_gui_put_down_armor_chain;
+			}
+		}
+	}
+	[gui]
+	{
+		equip_slot = es_chest;
+	}
+	[physics]
+	{
+		sim_duration = 0.0;
+	}
+}
+[t:template,n:bd_ch_f_g_c_avg]
+{
+	doc = "Thick Chain";
+	specializes = base_body_armor_chain;
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Thick Chain";
+	}
+	[defend]
+	{
+		armor_style = 004;
+		armor_type = a4;
+	  f defense = 135.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:24;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_a_pos_a4_004;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_fin]
+		{
+			armor_style = 027;
+			armor_type = a3;
+		  f defense = 147.000000;
+			equip_requirements = strength:25;
+			inventory_height = 2;
+			inventory_icon = b_gui_ig_i_a_pos_a3_027;
+			inventory_width = 2;
+		  f modifier_max = 6.000000;
+		  f modifier_min = 1.000000;
+		}
+		[c_str]
+		{
+			armor_style = 007;
+			armor_type = a3;
+		  f defense = 241.000000;
+			equip_requirements = strength:34;
+			inventory_icon = b_gui_ig_i_a_pos_a3_007;
+		  f modifier_max = 17.000000;
+		  f modifier_min = 9.000000;
+		}
+		[o_fin]
+		{
+			armor_style = 028;
+			armor_type = a3;
+		  f defense = 204.000000;
+			equip_requirements = strength:31;
+			inventory_height = 2;
+			inventory_icon = b_gui_ig_i_a_pos_a3_028;
+			inventory_width = 2;
+		  f modifier_max = 14.000000;
+		  f modifier_min = 7.000000;
+			pcontent_special_type = rare, unique, normal;
+		}
+	}
+}
+[t:template,n:bd_ch_f_g_c_fun]
+{
+	doc = "Rusty Chain";
+	specializes = base_body_armor_chain;
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Rusty Chain";
+	}
+	[defend]
+	{
+		armor_style = 010;
+		armor_type = a4;
+	  f defense = 122.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:22;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_a_pos_a4_010;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+			modifier_max = 0;
+			modifier_min = 0;
+		}
+	}
+}
+[t:template,n:bd_ch_f_g_c_low]
+{
+	doc = "Stiff Chain";
+	specializes = base_body_armor_chain;
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Stiff Chain";
+	}
+	[defend]
+	{
+		armor_style = 008;
+		armor_type = a3;
+	  f defense = 98.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:20;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_a_pos_a3_008;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+			modifier_max = 0;
+			modifier_min = 0;
+		}
+	}
+}
+[t:template,n:bd_ch_m_g_c_avg]
+{
+	doc = "Thin Chain";
+	specializes = base_body_armor_chain;
+	[common]
+	{
+		screen_name = "Thin Chain";
+	}
+	[defend]
+	{
+		armor_style = 022;
+		armor_type = a1;
+	  f defense = 80.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:12;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a1_022;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 4.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_fin]
+		{
+			armor_style = 033;
+			armor_type = a2;
+		  f defense = 92.000000;
+			equip_requirements = strength:12;
+			inventory_icon = b_gui_ig_i_a_pos_a2_033;
+		  f modifier_max = 10.000000;
+		  f modifier_min = 2.000000;
+		}
+		[c_mag]
+		{
+			armor_style = 035;
+			armor_type = a2;
+		  f defense = 201.000000;
+			equip_requirements = strength:16;
+			inventory_icon = b_gui_ig_i_a_pos_a2_035;
+		  f modifier_max = 50.000000;
+		  f modifier_min = 35.000000;
+		}
+		[c_str]
+		{
+			armor_style = 034;
+			armor_type = a2;
+		  f defense = 148.000000;
+			equip_requirements = strength:14;
+			inventory_icon = b_gui_ig_i_a_pos_a2_034;
+		  f modifier_max = 36.000000;
+		  f modifier_min = 20.000000;
+		}
+		[o_avg]
+		{
+			armor_style = 036;
+			armor_type = a2;
+		  f defense = 106.000000;
+			equip_requirements = strength:13;
+			inventory_icon = b_gui_ig_i_a_pos_a2_036;
+		  f modifier_max = 20.000000;
+		  f modifier_min = 8.000000;
+			pcontent_special_type = rare, unique, normal;
+		}
+		[o_fin]
+		{
+			armor_style = 037;
+			armor_type = a2;
+		  f defense = 125.000000;
+			equip_requirements = strength:14;
+			inventory_icon = b_gui_ig_i_a_pos_a2_037;
+		  f modifier_max = 28.000000;
+		  f modifier_min = 13.000000;
+			pcontent_special_type = rare, unique, normal;
+		}
+		[o_mag]
+		{
+			armor_style = 050;
+			armor_type = a2;
+		  f defense = 232.000000;
+			equip_requirements = strength:17;
+			inventory_icon = b_gui_ig_i_a_pos_a2_050;
+		  f modifier_max = 59.000000;
+		  f modifier_min = 43.000000;
+			pcontent_special_type = rare, unique, normal;
+		}
+		[o_str]
+		{
+			armor_style = 038;
+			armor_type = a2;
+		  f defense = 173.000000;
+			equip_requirements = strength:15;
+			inventory_icon = b_gui_ig_i_a_pos_a2_038;
+		  f modifier_max = 43.000000;
+		  f modifier_min = 29.000000;
+			pcontent_special_type = rare, unique, normal;
+		}
+	}
+}
+[t:template,n:bd_ch_r_g_c_avg]
+{
+	doc = "Chain Mail";
+	specializes = base_body_armor_chain;
+	[common]
+	{
+		screen_name = "Chain Mail";
+	}
+	[defend]
+	{
+		armor_style = 029;
+		armor_type = a2;
+	  f defense = 100.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:16;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a2_029;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 3.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_fin]
+		{
+			armor_style = 006;
+			armor_type = a3;
+		  f defense = 116.000000;
+			equip_requirements = strength:17;
+			inventory_height = 3;
+			inventory_icon = b_gui_ig_i_a_pos_a3_006;
+			inventory_width = 2;
+		  f modifier_max = 9.000000;
+		  f modifier_min = 2.000000;
+		}
+		[c_mag]
+		{
+			armor_style = 030;
+			armor_type = a2;
+		  f defense = 274.000000;
+			equip_requirements = strength:27;
+			inventory_icon = b_gui_ig_i_a_pos_a2_030;
+		  f modifier_max = 38.000000;
+		  f modifier_min = 27.000000;
+		}
+		[c_str]
+		{
+			armor_style = 029;
+			armor_type = a3;
+		  f defense = 197.000000;
+			equip_requirements = strength:22;
+			inventory_icon = b_gui_ig_i_a_pos_a3_029;
+		  f modifier_max = 27.000000;
+		  f modifier_min = 15.000000;
+		}
+		[o_avg]
+		{
+			armor_style = 014;
+			armor_type = a2;
+		  f defense = 140.000000;
+			equip_requirements = strength:18;
+			inventory_icon = b_gui_ig_i_a_pos_a2_014;
+		  f modifier_max = 14.000000;
+		  f modifier_min = 6.000000;
+			pcontent_special_type = rare, unique, normal;
+		}
+		[o_fin]
+		{
+			armor_style = 031;
+			armor_type = a2;
+		  f defense = 167.000000;
+			equip_requirements = strength:20;
+			inventory_icon = b_gui_ig_i_a_pos_a2_031;
+		  f modifier_max = 21.000000;
+		  f modifier_min = 10.000000;
+			pcontent_special_type = rare, unique, normal;
+		}
+		[o_mag]
+		{
+			armor_style = 032;
+			armor_type = a2;
+		  f defense = 319.000000;
+			equip_requirements = strength:29;
+			inventory_icon = b_gui_ig_i_a_pos_a2_032;
+		  f modifier_max = 46.000000;
+		  f modifier_min = 33.000000;
+			pcontent_special_type = rare, unique, normal;
+		}
+		[o_str]
+		{
+			armor_style = 030;
+			armor_type = a3;
+		  f defense = 234.000000;
+			equip_requirements = strength:24;
+			inventory_icon = b_gui_ig_i_a_pos_a3_030;
+		  f modifier_max = 33.000000;
+		  f modifier_min = 22.000000;
+			pcontent_special_type = rare, unique, normal;
+		}
+	}
+}
+[t:template,n:bd_ch_r_g_c_fun]
+{
+	doc = "Tarnished Chain Mail";
+	specializes = base_body_armor_chain;
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Tarnished Chain Mail";
+	}
+	[defend]
+	{
+		armor_style = 017;
+		armor_type = a2;
+	  f defense = 84.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:15;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a2_017;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+			modifier_max = 0;
+			modifier_min = 0;
+		}
+	}
+}
+[t:template,n:bd_ra_ch_m_g_c_fin]
+{
+	doc = "Solar Chain";
+	specializes = base_body_armor_chain;
+	[common]
+	{
+		pcontent_special_type = rare;
+		screen_name = "Solar Chain";
+	}
+	[defend]
+	{
+		armor_style = 033;
+		armor_type = a2;
+	  f defense = 97.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:12;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a2_064;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 11.000000;
+		  f modifier_min = 2.000000;
+		}
+		[o_avg]
+		{
+			armor_style = 036;
+			armor_type = a2;
+		  f defense = 111.000000;
+			equip_requirements = strength:13;
+			inventory_icon = b_gui_ig_i_a_pos_a2_065;
+		  f modifier_max = 49.000000;
+		  f modifier_min = 8.000000;
+		}
+		[o_fin]
+		{
+			armor_style = 037;
+			armor_type = a2;
+		  f defense = 131.000000;
+			equip_requirements = strength:14;
+			inventory_icon = b_gui_ig_i_a_pos_a2_066;
+		  f modifier_max = 70.000000;
+		  f modifier_min = 13.000000;
+		}
+	}
+}
+[t:template,n:bd_ra_ch_r_g_o_fin]
+{
+	doc = "Dragon Weave";
+	specializes = base_body_armor_chain;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Dragon Weave";
+	}
+	[defend]
+	{
+		armor_style = 031;
+		armor_type = a2;
+	  f defense = 173.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:20;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a2_062;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 48.000000;
+		  f modifier_min = 10.000000;
+		}
+		[c_str]
+		{
+			armor_style = 029;
+			armor_type = a3;
+		  f defense = 205.000000;
+			equip_requirements = strength:22;
+			inventory_icon = b_gui_ig_i_a_pos_a3_044;
+		  f modifier_max = 62.000000;
+		  f modifier_min = 15.000000;
+		}
+		[o_mag]
+		{
+			armor_style = 032;
+			armor_type = a2;
+		  f defense = 327.000000;
+			equip_requirements = strength:29;
+			inventory_icon = b_gui_ig_i_a_pos_a2_063;
+		  f modifier_max = 106.000000;
+		  f modifier_min = 34.000000;
+		}
+	}
+}
+[t:template,n:bd_ra_sc_f_g_o_mag]
+{
+	doc = "Blood Scale";
+	specializes = base_body_armor_chain;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Blood Scale";
+	}
+	[defend]
+	{
+		armor_style = 008;
+		armor_type = a4;
+	  f defense = 366.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:46;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_a_pos_a4_013;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 33.000000;
+		  f modifier_min = 19.000000;
+		}
+	}
+}
+[t:template,n:bd_ra_sc_m_g_c_fin] // Consistent Textures
+{
+	doc = "Shadow Scale";
+	specializes = base_body_armor_chain;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Shadow Scale";
+	}
+	[defend]
+	{
+		armor_style = 504;
+		armor_type = a2;
+	  f defense = 72.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:12;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a2_061;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 32.000000;
+		  f modifier_min = 1.000000;
+		}
+		[c_mag]
+		{
+			armor_style = 003;
+			armor_type = a4;
+		  f defense = 159.000000;
+			equip_requirements = strength:14;
+			inventory_icon = b_gui_ig_i_a_pos_a4_012;
+		  f modifier_max = 106.000000;
+		  f modifier_min = 29.000000;
+			inventory_height = 3;
+		}
+		[o_fin]
+		{
+			armor_style = 018;
+			armor_type = a2;
+		  f defense = 99.000000;
+			equip_requirements = strength:13;
+			inventory_icon = b_gui_ig_i_a_pos_a2_058;
+		  f modifier_max = 53.000000;
+		  f modifier_min = 11.000000;
+		}
+	}
+}
+[t:template,n:bd_ra_sc_r_g_c_fin]
+{
+	doc = "Noble Scale";
+	specializes = base_body_armor_chain;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Noble Scale";
+	}
+	[defend]
+	{
+		armor_style = 002;
+		armor_type = a4;
+	  f defense = 94.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:15;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_a_pos_a4_011;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 23.000000;
+		  f modifier_min = 1.000000;
+		}
+		[c_str]
+		{
+			armor_style = 009;
+			armor_type = a3;
+		  f defense = 153.000000;
+			equip_requirements = strength:19;
+			inventory_icon = b_gui_ig_i_a_pos_a3_040;
+		  f modifier_max = 42.000000;
+		  f modifier_min = 11.000000;
+		}
+	}
+}
+[t:template,n:bd_sc_f_g_c_avg]
+{
+	doc = "Thick Scale";
+	specializes = base_body_armor_chain;
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Thick Scale";
+	}
+	[defend]
+	{
+		armor_style = 025;
+		armor_type = a3;
+	  f defense = 104.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:20;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_a_pos_a3_025;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_str]
+		{
+			armor_style = 001;
+			armor_type = a4;
+		  f defense = 210.000000;
+			equip_requirements = strength:31;
+			inventory_icon = b_gui_ig_i_a_pos_a4_001;
+		  f modifier_max = 14.000000;
+		  f modifier_min = 8.000000;
+		}
+		[o_fin]
+		{
+			armor_style = 006;
+			armor_type = a4;
+		  f defense = 166.000000;
+			equip_requirements = strength:27;
+			inventory_icon = b_gui_ig_i_a_pos_a4_006;
+		  f modifier_max = 11.000000;
+		  f modifier_min = 5.000000;
+			pcontent_special_type = rare, unique, normal;
+		}
+		[o_mag]
+		{
+			armor_style = 008;
+			armor_type = a4;
+		  f defense = 353.000000;
+			equip_requirements = strength:46;
+			inventory_icon = b_gui_ig_i_a_pos_a4_008;
+		  f modifier_max = 25.000000;
+		  f modifier_min = 18.000000;
+			pcontent_special_type = rare, unique, normal;
+		}
+		[o_str]
+		{
+			armor_style = 012;
+			armor_type = a3;
+		  f defense = 253.000000;
+			equip_requirements = strength:36;
+			inventory_icon = b_gui_ig_i_a_pos_a3_012;
+		  f modifier_max = 18.000000;
+		  f modifier_min = 11.000000;
+			pcontent_special_type = rare, unique, normal;
+		}
+	}
+}
+[t:template,n:bd_sc_f_g_c_fun]
+{
+	doc = "Pitted Scale";
+	specializes = base_body_armor_chain;
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Pitted Scale";
+	}
+	[defend]
+	{
+		armor_style = 036;
+		armor_type = a3;
+	  f defense = 91.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:19;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_a_pos_a3_036;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+			modifier_max = 0;
+			modifier_min = 0;
+		}
+	}
+}
+[t:template,n:bd_sc_f_g_o_low]
+{
+	doc = "Bulky Scale";
+	specializes = base_body_armor_chain;
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Bulky Scale";
+	}
+	[defend]
+	{
+		armor_style = 007;
+		armor_type = a4;
+	  f defense = 73.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:17;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_a_pos_a4_007;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+			modifier_max = 0;
+			modifier_min = 0;
+		}
+	}
+}
+[t:template,n:bd_sc_m_g_c_avg]
+{
+	doc = "Thin Scale";
+	specializes = base_body_armor_chain;
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Thin Scale";
+	}
+	[defend]
+	{
+		armor_style = 027;
+		armor_type = a2;
+	  f defense = 61.000000;
+	}
+	[gui]
+	{
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a2_027;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_fin]
+		{
+			armor_style = 028;
+			armor_type = a2;
+		  f defense = 66.000000;
+			equip_requirements = strength:12;
+			inventory_icon = b_gui_ig_i_a_pos_a2_028;
+		  f modifier_max = 9.000000;
+		  f modifier_min = 1.000000;
+		}
+		[c_mag]
+		{
+			armor_style = 003;
+			armor_type = a4;
+		  f defense = 151.000000;
+			equip_requirements = strength:14;
+			inventory_height = 3;
+			inventory_icon = b_gui_ig_i_a_pos_a4_003;
+			inventory_width = 2;
+		  f modifier_max = 38.000000;
+		  f modifier_min = 27.000000;
+		}
+		[o_fin]
+		{
+			armor_style = 018;
+			armor_type = a2;
+		  f defense = 92.000000;
+			equip_requirements = strength:12;
+			inventory_icon = b_gui_ig_i_a_pos_a2_018;
+		  f modifier_max = 22.000000;
+		  f modifier_min = 10.000000;
+			pcontent_special_type = rare, unique, normal;
+		}
+	}
+}
+[t:template,n:bd_sc_r_g_c_avg]
+{
+	doc = "Flexible Scale";
+	specializes = base_body_armor_chain;
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Flexible Scale";
+	}
+	[defend]
+	{
+		armor_style = 026;
+		armor_type = a3;
+	  f defense = 78.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:14;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_a_pos_a3_026;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_fin]
+		{
+			armor_style = 002;
+			armor_type = a4;
+		  f defense = 88.000000;
+			equip_requirements = strength:15;
+			inventory_icon = b_gui_ig_i_a_pos_a4_002;
+		  f modifier_max = 7.000000;
+		  f modifier_min = 1.000000;
+		}
+		[c_str]
+		{
+			armor_style = 009;
+			armor_type = a3;
+		  f defense = 144.000000;
+			equip_requirements = strength:19;
+			inventory_icon = b_gui_ig_i_a_pos_a3_009;
+		  f modifier_max = 20.000000;
+		  f modifier_min = 10.000000;
+		}
+		[o_fin]
+		{
+			armor_style = 019;
+			armor_type = a2;
+		  f defense = 120.000000;
+			equip_requirements = strength:17;
+			inventory_height = 2;
+			inventory_icon = b_gui_ig_i_a_pos_a2_019;
+			inventory_width = 2;
+		  f modifier_max = 16.000000;
+		  f modifier_min = 8.000000;
+			pcontent_special_type = rare, unique, normal;
+		}
+	}
+}
+[t:template,n:bd_un_ch_r_green]
+{
+	doc = "Green Chain Mail";
+	specializes = base_body_armor_chain;
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Green Chain Mail";
+	}
+	[defend]
+	{
+		armor_style = 052;
+		armor_type = a1;
+	  f defense = 201.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:22;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a1_052;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 37.000000;
+		  f modifier_min = 8.000000;
+		}
+	}
+}
+[t:template,n:bd_un_sc_f_dragon]
+{
+	doc = "Serpentine Scale";
+	specializes = base_body_armor_chain;
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Serpentine Scale";
+	}
+	[defend]
+	{
+		armor_style = 018;
+		armor_type = a5;
+	  f defense = 472.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:58;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_a_pos_a5_018;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 33.000000;
+		  f modifier_min = 9.000000;
+		}
+	}
+}
+[t:template,n:bd_un_sc_r_d_o_mag]
+{
+	doc = "Dark Scale";
+	specializes = base_body_armor_chain;
+	[common]
+	{
+		screen_name = "Dark Scale";
+	}
+	[defend]
+	{
+		armor_style = 018;
+		armor_type = a3;
+	  f defense = 294.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:28;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_a_pos_a3_018;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 54.000000;
+		  f modifier_min = 12.000000;
+		}
+	}
+}

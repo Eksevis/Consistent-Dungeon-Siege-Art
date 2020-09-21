@@ -1,0 +1,927 @@
+/////////////////////////////////////////////////////////////////////////////////////
+//                                                                                 //
+//                                CHAIN ARMOR                                      //
+//                                                                                 //
+/////////////////////////////////////////////////////////////////////////////////////
+
+[t:template,n:bd_ra_sc_m_g_c_fin] // Tristanzz //
+{
+	doc = "Shadow Scale";
+	specializes = base_body_armor_chain;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Shadow Scale";
+	}
+	[defend]
+	{
+		armor_style = 504;
+		armor_type = a2;
+	  f defense = 72.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:12;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a2_061;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 32.000000;
+		  f modifier_min = 1.000000;
+		}
+		[c_mag]
+		{
+			armor_style = 003;
+			armor_type = a4;
+		  f defense = 159.000000;
+			equip_requirements = strength:14;
+			inventory_icon = b_gui_ig_i_a_pos_a4_012;
+		  f modifier_max = 106.000000;
+		  f modifier_min = 29.000000;
+			inventory_height = 3;
+		}
+		[o_fin]
+		{
+			armor_style = 018;
+			armor_type = a2;
+		  f defense = 99.000000;
+			equip_requirements = strength:13;
+			inventory_icon = b_gui_ig_i_a_pos_a2_058;
+		  f modifier_max = 53.000000;
+		  f modifier_min = 11.000000;
+		}
+	}
+}
+
+/////////////////////////////////////////////////////////////////////////////////////
+//                                                                                 //
+//                                CLOTH ARMOR                                      //
+//                                                                                 //
+/////////////////////////////////////////////////////////////////////////////////////
+
+[t:template,n:bd_ra_ro_m_d_c_003] // Tristanzz //
+{
+	doc = "Burlap";
+	specializes = base_body_armor_cloth;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Ash Burlap";
+	}
+	[defend]
+	{
+		armor_style = 509;
+		armor_type = a7;
+	  f defense = 9.000000;
+	}
+	[gui]
+	{
+		equip_requirements = intelligence:13;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a7_059;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 10.000000;
+		  f modifier_min = 2.000000;
+		}
+	}
+}
+[t:template,n:bd_ra_ro_m_d_c_043] // Ultima 6 Team //
+{
+	doc = "Coat";
+	specializes = base_body_armor_cloth;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Blood Coat";
+	}
+	[defend]
+	{
+		armor_style = 507;
+		armor_type = a7;
+	  f defense = 61.000000;
+	}
+	[gui]
+	{
+		equip_requirements = intelligence:38;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a7_055;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 116.000000;
+		  f modifier_min = 29.000000;
+		}
+	}
+}
+[t:template,n:bd_ra_ro_m_g_c_001] // Ultima 6 Team //
+{
+	doc = "Tatters";
+	specializes = base_body_armor_cloth;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Clay Tatters";
+	}
+	[defend]
+	{
+		armor_style = 505;
+		armor_type = a7;
+	  f defense = 6.000000;
+	}
+	[gui]
+	{
+		equip_requirements = intelligence:11;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a7_077;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 11.000000;
+		  f modifier_min = 3.000000;
+		}
+	}
+}
+[t:template,n:bd_ra_ro_m_g_c_005] // Kathycf //
+{
+	doc = "Cloth";
+	specializes = base_body_armor_cloth;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Solar Cloth";
+	}
+	[defend]
+	{
+		armor_style = 501;
+		armor_type = a7;
+	  f defense = 11.000000;
+	}
+	[gui]
+	{
+		equip_requirements = intelligence:13;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a7_058;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 15.000000;
+		  f modifier_min = 1.000000;
+		}
+	}
+}
+[t:template,n:bd_ra_ro_m_g_c_005a] // Kathycf //
+{
+	doc = "Linen";
+	specializes = base_body_armor_cloth;
+	texture = b_c_pos_a7_500;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Gossamer Linen";
+	}
+	[defend]
+	{
+		armor_style = 500;
+		armor_type = a7;
+	  f defense = 11.000000;
+	}
+	[gui]
+	{
+		equip_requirements = intelligence:13;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a7_078;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 15.000000;
+		  f modifier_min = 1.000000;
+		}
+	}
+}
+[t:template,n:bd_ra_ro_m_g_c_014] // Ultima 6 Team //
+{
+	doc = "Garment";
+	specializes = base_body_armor_cloth;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Night Garment";
+	}
+	[defend]
+	{
+		armor_style = 508;
+		armor_type = a7;
+	  f defense = 22.000000;
+	}
+	[gui]
+	{
+		equip_requirements = intelligence:19;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a7_080;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 34.000000;
+		  f modifier_min = 8.000000;
+		}
+	}
+}
+[t:template,n:bd_ra_ro_m_g_c_015] // Ultima 6 Team //
+{
+	doc = "Garment";
+	specializes = base_body_armor_cloth;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Night Garment";
+	}
+	[defend]
+	{
+		armor_style = 506;
+		armor_type = a7;
+	  f defense = 24.000000;
+	}
+	[gui]
+	{
+		equip_requirements = intelligence:20;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a7_051;
+		inventory_width = 2;
+		//description = "Blue-Green Robe With Purple Trim"
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 41.000000;
+		  f modifier_min = 11.000000;
+		}
+	}
+}
+[t:template,n:bd_ra_ro_m_g_c_021] // Ultima 6 Team //
+{
+	doc = "Cloak";
+	specializes = base_body_armor_cloth;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Astral Cloak";
+	}
+	[defend]
+	{
+		armor_style = 503;
+		armor_type = a7;
+	  f defense = 31.000000;
+	}
+	[gui]
+	{
+		equip_requirements = intelligence:24;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a7_082;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 44.000000;
+		  f modifier_min = 8.000000;
+		}
+	}
+}
+[t:template,n:bd_ra_ro_m_g_c_024] // Tristanzz //
+{
+	doc = "Cloak";
+	specializes = base_body_armor_cloth;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Astral Cloak";
+	}
+	[defend]
+	{
+		armor_style = 510;
+		armor_type = a7;
+	  f defense = 36.000000;
+	}
+	[gui]
+	{
+		equip_requirements = intelligence:26;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a7_083;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 60.000000;
+		  f modifier_min = 16.000000;
+		}
+	}
+}
+[t:template,n:bd_ra_ro_m_g_c_046] // Ultima 6 Team //
+{
+	doc = "Robe";
+	specializes = base_body_armor_cloth;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Dream Robe";
+	}
+	[defend]
+	{
+		armor_style = 502;
+		armor_type = a7;
+	  f defense = 65.000000;
+	}
+	[gui]
+	{
+		equip_requirements = intelligence:40;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a7_052;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 78.000000;
+		  f modifier_min = 12.000000;
+		}
+	}
+}
+[t:template,n:bd_ra_ro_m_g_c_089] // Ultima 6 Team //
+{
+	doc = "Gown";
+	specializes = base_body_armor_cloth;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Radiant Gown";
+	}
+	[defend]
+	{
+		armor_style = 504;
+		armor_type = a7;
+	  f defense = 93.000000;
+	}
+	[gui]
+	{
+		equip_requirements = intelligence:54;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a7_056;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 176.000000;
+		  f modifier_min = 18.000000;
+		}
+	}
+}
+[t:template,n:bd_ra_ro_m_g_c_094] // Tristanzz //
+{
+	doc = "Gown";
+	specializes = base_body_armor_cloth;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Radiant Gown";
+	}
+	[defend]
+	{
+		armor_style = 511;
+		armor_type = a7;
+	  f defense = 96.000000;
+	}
+	[gui]
+	{
+		equip_requirements = intelligence:56;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a7_057;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 230.000000;
+		  f modifier_min = 18.000000;
+		}
+	}
+}
+[t:template,n:bd_ra_ro_m_g_c_105] // Tristanzz //
+{
+	doc = "Finery";
+	specializes = base_body_armor_cloth;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Shadow Finery";
+	}
+	[defend]
+	{
+		armor_style = 512;
+		armor_type = a7;
+	  f defense = 107.000000;
+	}
+	[gui]
+	{
+		equip_requirements = intelligence:61;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a7_066;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 255.000000;
+		  f modifier_min = 20.000000;
+		}
+	}
+}
+
+/////////////////////////////////////////////////////////////////////////////////////
+//                                                                                 //
+//                                LEATHER ARMOR                                    //
+//                                                                                 //
+/////////////////////////////////////////////////////////////////////////////////////
+
+[t:template,n:bd_ra_bl_f_g_c_str] // Tristanzz //
+{
+	doc = "Rock Pelt";
+	specializes = base_body_armor_leather;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Rock Pelt";
+	}
+	[defend]
+	{
+		armor_style = 503;
+		armor_type = a2;
+	  f defense = 141.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:24;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a2_071;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0.000000;
+		  f modifier_min = 0.000000;
+		}
+		[o_fin]
+		{
+			armor_style = 049;
+			armor_type = a2;
+		  f defense = 116.000000;
+			equip_requirements = strength:22;
+			inventory_icon = b_gui_ig_i_a_pos_a2_072;
+		  f modifier_max = 9.000000;
+		  f modifier_min = 6.000000;
+		}
+	}
+}
+[t:template,n:bd_ra_bl_m_g_c_fin] // Moros //
+{
+	doc = "Night Leather";
+	specializes = base_body_armor_leather;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Night Leather";
+	}
+	[defend]
+	{
+		armor_style = 501;
+		armor_type = a2;
+	  f defense = 44.000000;
+	}
+	[gui]
+	{
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a2_060;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 20.000000;
+		  f modifier_min = 1.000000;
+		}
+		[o_fin]
+		{
+			armor_style = 003;
+			armor_type = a3;
+		  f defense = 65.000000;
+			inventory_icon = b_gui_ig_i_a_pos_a3_037;
+		  f modifier_max = 35.000000;
+		  f modifier_min = 7.000000;
+		}
+	}
+}
+[t:template,n:bd_ra_sl_m_g_c_avg] // Tristanzz //
+{
+	doc = "Classic Leather";
+	specializes = base_body_armor_leather;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Classic Leather";
+	}
+	[defend]
+	{
+		armor_style = 501;
+		armor_type = a1;
+	  f defense = 23.000000;
+	}
+	[gui]
+	{
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a1_061;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 11.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_fin]
+		{
+			armor_style = 500;
+			armor_type = a1;
+		  f defense = 30.000000;
+			inventory_icon = b_gui_ig_i_a_pos_a1_062;
+		  f modifier_max = 13.000000;
+		  f modifier_min = 1.000000;
+		}
+		[c_str]
+		{
+			armor_style = 502;
+			armor_type = a2;
+		  f defense = 66.000000;
+			equip_requirements = strength:12;
+			inventory_icon = b_gui_ig_i_a_pos_a2_069;
+		  f modifier_max = 38.000000;
+		  f modifier_min = 9.000000;
+		}
+		[o_fin]
+		{
+			armor_style = 050;
+			armor_type = a1;
+		  f defense = 52.000000;
+			inventory_icon = b_gui_ig_i_a_pos_a1_063;
+		  f modifier_max = 28.000000;
+		  f modifier_min = 6.000000;
+		}
+		[o_str]
+		{
+			armor_style = 047;
+			armor_type = a2;
+		  f defense = 89.000000;
+			equip_requirements = strength:12;
+			inventory_icon = b_gui_ig_i_a_pos_a2_070;
+		  f modifier_max = 55.000000;
+		  f modifier_min = 14.000000;
+		}
+	}
+}
+[t:template,n:bd_ra_sl_r_g_c_avg] // Moros //
+{
+	doc = "Marshal Leather";
+	specializes = base_body_armor_leather;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Marshal Leather";
+	}
+	[defend]
+	{
+		armor_style = 500;
+		armor_type = a2;
+	  f defense = 27.000000;
+	}
+	[gui]
+	{
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a2_057;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 7.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_fin]
+		{
+			armor_style = 040;
+			armor_type = a2;
+		  f defense = 35.000000;
+			inventory_icon = b_gui_ig_i_a_pos_a2_067;
+		  f modifier_max = 9.000000;
+		  f modifier_min = 1.000000;
+		}
+		[c_str]
+		{
+			armor_style = 041;
+			armor_type = a2;
+		  f defense = 92.000000;
+			equip_requirements = strength:15;
+			inventory_icon = b_gui_ig_i_a_pos_a2_068;
+		  f modifier_max = 25.000000;
+		  f modifier_min = 7.000000;
+		}
+	}
+}
+
+/////////////////////////////////////////////////////////////////////////////////////
+//                                                                                 //
+//                                PLATE ARMOR                                      //
+//                                                                                 //
+/////////////////////////////////////////////////////////////////////////////////////
+
+[t:template,n:bd_ra_ba_f_g_o_fin] // Tristanzz //
+{
+	doc = "Banded Armor";
+	specializes = base_body_armor_plate;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Fused Steel";
+	}
+	[defend]
+	{
+		armor_style = 501;
+		armor_type = a5;
+	  f defense = 253.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:34;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_a_pos_a5_025;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 16.000000;
+		  f modifier_min = 8.000000;
+		}
+		[o_mag]
+		{
+			armor_style = 002;
+			armor_type = a6;
+		  f defense = 447.000000;
+			equip_requirements = strength:54;
+			inventory_icon = b_gui_ig_i_a_pos_a6_013;
+		  f modifier_max = 40.000000;
+		  f modifier_min = 23.000000;
+		}
+	}
+}
+[t:template,n:bd_ra_br_f_g_c_str] // Tristanzz //
+{
+	doc = "Heavy Brigandine";
+	specializes = base_body_armor_plate;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Clay Brigandine";
+	}
+	[defend]
+	{
+		armor_style = 502;
+		armor_type = a3;
+	  f defense = 204.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:29;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_a_pos_a3_041;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 14.000000;
+		  f modifier_min = 7.000000;
+		}
+	}
+}
+[t:template,n:bd_ra_br_m_g_o_fin] // Moros //
+{
+	doc = "Thin Brigandine";
+	specializes = base_body_armor_plate;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Compact Brigandine";
+	}
+	[defend]
+	{
+		armor_style = 501;
+		armor_type = a3;
+	  f defense = 83.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:12;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_a_pos_a3_043;
+		inventory_width = 2;
+		//description = "Red"
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 44.000000;
+		  f modifier_min = 9.000000;
+		}
+		[c_mag]
+		{
+			armor_style = 004;
+			armor_type = a3;
+		  f defense = 145.000000;
+			equip_requirements = strength:14;
+			inventory_icon = b_gui_ig_i_a_pos_a3_038;
+		  f modifier_max = 97.000000;
+		  f modifier_min = 26.000000;
+		}
+	}
+}
+[t:template,n:bd_ra_br_r_g_c_avg] // Moros //
+{
+	doc = "Brigandine Armor";
+	specializes = base_body_armor_plate;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Prime Brigandine";
+	}
+	[defend]
+	{
+		armor_style = 500;
+		armor_type = a3;
+	  f defense = 72.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:14;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_a_pos_a3_042;
+		inventory_width = 2;
+		//description = "Blue Striped Plate"
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 20.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_fin]
+		{
+			armor_style = 005;
+			armor_type = a3;
+		  f defense = 80.000000;
+			equip_requirements = strength:14;
+			inventory_icon = b_gui_ig_i_a_pos_a3_039;
+		  f modifier_max = 20.000000;
+		  f modifier_min = 1.000000;
+		}
+	}
+}
+[t:template,n:bd_ra_fp_f_g_o_fin] // Tristanzz //
+{
+	doc = "Full Plate";
+	specializes = base_body_armor_plate;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Cardinal Plate";
+	}
+	[defend]
+	{
+		armor_style = 500;
+		armor_type = a5;
+	  f defense = 391.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:49;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_a_pos_a5_022;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 25.000000;
+		  f modifier_min = 10.000000;
+		}
+		[o_str]
+		{
+			armor_style = 006;
+			armor_type = a6;
+		  f defense = 497.000000;
+			equip_requirements = strength:59;
+			inventory_icon = b_gui_ig_i_a_pos_a6_014;
+		  f modifier_max = 37.000000;
+		  f modifier_min = 19.000000;
+		}
+	}
+}
+[t:template,n:bd_ra_fp_r_g_c_avg] // Tristanzz //
+{
+	doc = "Quarter Plate";
+	specializes = base_body_armor_plate;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Imperial Plate";
+	}
+	[defend]
+	{
+		armor_style = 502;
+		armor_type = a5;
+	  f defense = 242.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:24;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_a_pos_a5_024;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 67.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+
+/////////////////////////////////////////////////////////////////////////////////////
+//                                                                                 //
+//                                       HELMETS                                   //
+//                                                                                 //
+/////////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////////
+//                                                                                 //
+//                                      GAUNTLETS                                  //
+//                                                                                 //
+/////////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////////
+//                                                                                 //
+//                                        BOOTS                                    //
+//                                                                                 //
+/////////////////////////////////////////////////////////////////////////////////////

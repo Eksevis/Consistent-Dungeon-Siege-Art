@@ -22,7 +22,7 @@
 		sim_duration = 0.0;
 	}
 }
-[t:template,n:bd_ra_ro_m_d_c_003]
+[t:template,n:bd_ra_ro_m_d_c_003] // Consistent Textures
 {
 	doc = "Burlap";
 	specializes = base_body_armor_cloth;
@@ -33,7 +33,7 @@
 	}
 	[defend]
 	{
-		armor_style = 010;
+		armor_style = 509;
 		armor_type = a7;
 	  f defense = 9.000000;
 	}
@@ -146,7 +146,7 @@
 		}
 	}
 }
-[t:template,n:bd_ra_ro_m_d_c_043u6]
+[t:template,n:bd_ra_ro_m_d_c_043] // Consistent Textures
 {
 	doc = "Coat";
 	specializes = base_body_armor_cloth;
@@ -208,7 +208,7 @@
 		}
 	}
 }
-[t:template,n:bd_ra_ro_m_g_c_001u6]
+[t:template,n:bd_ra_ro_m_g_c_001] // Consistent Textures
 {
 	doc = "Tatters";
 	specializes = base_body_armor_cloth;
@@ -270,7 +270,7 @@
 		}
 	}
 }
-[t:template,n:bd_ra_ro_m_g_c_005kc]
+[t:template,n:bd_ra_ro_m_g_c_005] // Consistent Textures
 {
 	doc = "Cloth";
 	specializes = base_body_armor_cloth;
@@ -301,7 +301,7 @@
 		}
 	}
 }
-[t:template,n:bd_ra_ro_m_g_c_005akc]
+[t:template,n:bd_ra_ro_m_g_c_005a] // Consistent Textures
 {
 	doc = "Linen";
 	specializes = base_body_armor_cloth;
@@ -395,7 +395,7 @@
 		}
 	}
 }
-[t:template,n:bd_ra_ro_m_g_c_014u6]
+[t:template,n:bd_ra_ro_m_g_c_014] // Consistent Textures
 {
 	doc = "Garment";
 	specializes = base_body_armor_cloth;
@@ -426,7 +426,7 @@
 		}
 	}
 }
-[t:template,n:bd_ra_ro_m_g_c_015u6]
+[t:template,n:bd_ra_ro_m_g_c_015] // Consistent Textures
 {
 	doc = "Garment";
 	specializes = base_body_armor_cloth;
@@ -447,6 +447,7 @@
 		inventory_height = 2;
 		inventory_icon = b_gui_ig_i_a_pos_a7_051;
 		inventory_width = 2;
+		//description = "Blue-Green Robe With Purple Trim"
 	}
 	[pcontent]
 	{
@@ -519,7 +520,7 @@
 		}
 	}
 }
-[t:template,n:bd_ra_ro_m_g_c_021u6]
+[t:template,n:bd_ra_ro_m_g_c_021] // Consistent Textures
 {
 	doc = "Cloak";
 	specializes = base_body_armor_cloth;
@@ -581,7 +582,7 @@
 		}
 	}
 }
-[t:template,n:bd_ra_ro_m_g_c_024]
+[t:template,n:bd_ra_ro_m_g_c_024] // Consistent Textures
 {
 	doc = "Cloak";
 	specializes = base_body_armor_cloth;
@@ -592,7 +593,7 @@
 	}
 	[defend]
 	{
-		armor_style = 036;
+		armor_style = 510;
 		armor_type = a7;
 	  f defense = 36.000000;
 	}
@@ -860,7 +861,7 @@
 		}
 	}
 }
-[t:template,n:bd_ra_ro_m_g_c_046u6]
+[t:template,n:bd_ra_ro_m_g_c_046] // Consistent Textures
 {
 	doc = "Robe";
 	specializes = base_body_armor_cloth;
@@ -1036,6 +1037,7 @@
 		inventory_height = 2;
 		inventory_icon = b_gui_ig_i_a_pos_a7_063;
 		inventory_width = 2;
+		//description = "Blue Flames"
 	}
 	[pcontent]
 	{
@@ -1046,7 +1048,7 @@
 		}
 	}
 }
-[t:template,n:bd_ra_ro_m_g_c_089u6]
+[t:template,n:bd_ra_ro_m_g_c_089] // Consistent Textures
 {
 	doc = "Gown";
 	specializes = base_body_armor_cloth;
@@ -1077,7 +1079,7 @@
 		}
 	}
 }
-[t:template,n:bd_ra_ro_m_g_c_094]
+[t:template,n:bd_ra_ro_m_g_c_094] // Consistent Textures
 {
 	doc = "Gown";
 	specializes = base_body_armor_cloth;
@@ -1088,7 +1090,7 @@
 	}
 	[defend]
 	{
-		armor_style = 008;
+		armor_style = 511;
 		armor_type = a7;
 	  f defense = 96.000000;
 	}
@@ -1139,7 +1141,7 @@
 		}
 	}
 }
-[t:template,n:bd_ra_ro_m_g_c_105]
+[t:template,n:bd_ra_ro_m_g_c_105] // Consistent Textures
 {
 	doc = "Finery";
 	specializes = base_body_armor_cloth;
@@ -1150,7 +1152,7 @@
 	}
 	[defend]
 	{
-		armor_style = 017;
+		armor_style = 512;
 		armor_type = a7;
 	  f defense = 107.000000;
 	}

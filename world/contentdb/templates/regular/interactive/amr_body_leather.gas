@@ -1,0 +1,1216 @@
+[t:template,n:base_body_armor_leather]
+{
+	doc = "Body armor base template";
+	specializes = armor;
+	[aspect]
+	{
+		material = leather;
+		[voice]
+		{
+			[put_down]
+			{
+				* = s_e_gui_put_down_armor_leather;
+			}
+		}
+	}
+	[gui]
+	{
+		equip_slot = es_chest;
+	}
+	[physics]
+	{
+		sim_duration = 0.0;
+	}
+}
+[t:template,n:bd_bl_f_g_c_avg]
+{
+	doc = "Rigid Leather";
+	specializes = base_body_armor_leather;
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Rigid Leather";
+	}
+	[defend]
+	{
+		armor_style = 001;
+		armor_type = a3;
+	  f defense = 51.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:15;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a3_001;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_str]
+		{
+			armor_style = 048;
+			armor_type = a2;
+		  f defense = 122.000000;
+			equip_requirements = strength:22;
+			inventory_icon = b_gui_ig_i_a_pos_a2_048;
+		  f modifier_max = 10.000000;
+		  f modifier_min = 6.000000;
+		}
+		[o_fin]
+		{
+			armor_style = 049;
+			armor_type = a2;
+		  f defense = 98.000000;
+			equip_requirements = strength:20;
+			inventory_icon = b_gui_ig_i_a_pos_a2_049;
+		  f modifier_max = 8.000000;
+		  f modifier_min = 4.000000;
+			pcontent_special_type = rare, unique, normal;
+		}
+	}
+}
+[t:template,n:bd_bl_f_g_c_fun]
+{
+	doc = "Worn Rigid Leather";
+	specializes = base_body_armor_leather;
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Worn Rigid Leather";
+	}
+	[defend]
+	{
+		armor_style = 055;
+		armor_type = a2;
+	  f defense = 44.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:14;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a2_055;
+		inventory_width = 2;
+	}
+}
+[t:template,n:bd_bl_f_g_c_low]
+{
+	doc = "Cracked Rigid Leather";
+	specializes = base_body_armor_leather;
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Cracked Rigid Leather";
+	}
+	[defend]
+	{
+		armor_style = 054;
+		armor_type = a2;
+	  f defense = 35.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:13;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a2_054;
+		inventory_width = 2;
+	}
+}
+[t:template,n:bd_bl_m_g_c_avg]
+{
+	doc = "Waxed Leather";
+	specializes = base_body_armor_leather;
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Waxed Leather";
+	}
+	[defend]
+	{
+		armor_style = 024;
+		armor_type = a2;
+	  f defense = 33.000000;
+	}
+	[gui]
+	{
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a2_024;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_fin]
+		{
+			armor_style = 025;
+			armor_type = a2;
+		  f defense = 40.000000;
+			inventory_icon = b_gui_ig_i_a_pos_a2_025;
+		  f modifier_max = 5.000000;
+		  f modifier_min = 1.000000;
+		}
+		[o_fin]
+		{
+			armor_style = 003;
+			armor_type = a3;
+		  f defense = 61.000000;
+			inventory_icon = b_gui_ig_i_a_pos_a3_003;
+		  f modifier_max = 14.000000;
+		  f modifier_min = 7.000000;
+			pcontent_special_type = rare, unique, normal;
+		}
+	}
+}
+[t:template,n:bd_bl_r_g_c_avg]
+{
+	doc = "Boiled Leather";
+	specializes = base_body_armor_leather;
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Boiled Leather";
+	}
+	[defend]
+	{
+		armor_style = 002;
+		armor_type = a3;
+	  f defense = 39.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:12;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a3_002;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0.000000;
+		  f modifier_min = 0.000000;
+		}
+		[o_fin]
+		{
+			armor_style = 023;
+			armor_type = a2;
+		  f defense = 80.000000;
+			equip_requirements = strength:15;
+			inventory_icon = b_gui_ig_i_a_pos_a2_023;
+		  f modifier_max = 11.000000;
+		  f modifier_min = 5.000000;
+			pcontent_special_type = rare, unique, normal;
+		}
+	}
+}
+[t:template,n:bd_le_f_g_c_avg]
+{
+	doc = "Thick Leather";
+	specializes = base_body_armor_leather;
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Thick Leather";
+	}
+	[defend]
+	{
+		armor_style = 001;
+		armor_type = a1;
+	  f defense = 10.000000;
+	}
+	[gui]
+	{
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a1_001;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_fin]
+		{
+			armor_style = 042;
+			armor_type = a1;
+		  f defense = 23.000000;
+			equip_requirements = strength:12;
+			inventory_icon = b_gui_ig_i_a_pos_a1_042;
+		  f modifier_max = 2.000000;
+		  f modifier_min = 1.000000;
+		}
+		[o_fin]
+		{
+			armor_style = 043;
+			armor_type = a1;
+		  f defense = 60.000000;
+			equip_requirements = strength:16;
+			inventory_icon = b_gui_ig_i_a_pos_a1_043;
+		  f modifier_max = 5.000000;
+		  f modifier_min = 2.000000;
+			pcontent_special_type = rare, unique, normal;
+		}
+	}
+}
+[t:template,n:bd_le_f_g_c_fun]
+{
+	doc = "Crude Leather";
+	specializes = base_body_armor_leather;
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Crude Leather";
+	}
+	[defend]
+	{
+		armor_style = 077;
+		armor_type = a1;
+	  f defense = 6.000000;
+	}
+	[gui]
+	{
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a1_077;
+		inventory_width = 2;
+	}
+}
+[t:template,n:bd_le_f_g_c_low]
+{
+	doc = "Worn Leather";
+	specializes = base_body_armor_leather;
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Worn Leather";
+	}
+	[defend]
+	{
+		armor_style = 076;
+		armor_type = a1;
+	  f defense = 4.000000;
+	}
+	[gui]
+	{
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a1_076;
+		inventory_width = 2;
+	}
+}
+[t:template,n:bd_le_m_g_c_avg]
+{
+	doc = "Mage Leather";
+	specializes = base_body_armor_leather;
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Mage Leather";
+	}
+	[defend]
+	{
+		armor_style = 045;
+		armor_type = a1;
+	  f defense = 10.000000;
+	}
+	[gui]
+	{
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a1_045;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_str]
+		{
+			armor_style = 021;
+			armor_type = a1;
+		  f defense = 55.000000;
+			inventory_icon = b_gui_ig_i_a_pos_a1_021;
+		  f modifier_max = 14.000000;
+		  f modifier_min = 7.000000;
+		}
+		[o_avg]
+		{
+			armor_style = 003;
+			armor_type = a1;
+		  f defense = 27.000000;
+			inventory_icon = b_gui_ig_i_a_pos_a1_003;
+		  f modifier_max = 5.000000;
+		  f modifier_min = 2.000000;
+			pcontent_special_type = rare, unique, normal;
+		}
+		[o_fin]
+		{
+			armor_style = 015;
+			armor_type = a2;
+		  f defense = 40.000000;
+			inventory_icon = b_gui_ig_i_a_pos_a2_015;
+		  f modifier_max = 9.000000;
+		  f modifier_min = 4.000000;
+			pcontent_special_type = rare, unique, normal;
+		}
+	}
+}
+[t:template,n:bd_le_r_g_c_avg]
+{
+	doc = "Leather Armor";
+	specializes = base_body_armor_leather;
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Leather Armor";
+	}
+	[defend]
+	{
+		armor_style = 002;
+		armor_type = a1;
+	  f defense = 11.000000;
+	}
+	[gui]
+	{
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a1_002;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0.000000;
+		  f modifier_min = 0.000000;
+		}
+		[o_fin]
+		{
+			armor_style = 044;
+			armor_type = a1;
+		  f defense = 55.000000;
+			equip_requirements = strength:13;
+			inventory_icon = b_gui_ig_i_a_pos_a1_044;
+		  f modifier_max = 7.000000;
+		  f modifier_min = 3.000000;
+			pcontent_special_type = rare, unique, normal;
+		}
+	}
+}
+[t:template,n:bd_le_r_g_c_low]
+{
+	doc = "Tattered Leather";
+	specializes = base_body_armor_leather;
+	[common]
+	{
+		allow_modifiers = false;
+		screen_name = "Tattered Leather";
+	}
+	[defend]
+	{
+		armor_style = 018;
+		armor_type = a1;
+	  f defense = 3.000000;
+	}
+	[gui]
+	{
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a1_018;
+		inventory_width = 2;
+	}
+}
+[t:template,n:bd_ra_bl_f_g_c_str] // Consistent Textures
+{
+	doc = "Rock Pelt";
+	specializes = base_body_armor_leather;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Rock Pelt";
+	}
+	[defend]
+	{
+		armor_style = 503;
+		armor_type = a2;
+	  f defense = 141.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:24;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a2_071;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0.000000;
+		  f modifier_min = 0.000000;
+		}
+		[o_fin]
+		{
+			armor_style = 049;
+			armor_type = a2;
+		  f defense = 116.000000;
+			equip_requirements = strength:22;
+			inventory_icon = b_gui_ig_i_a_pos_a2_072;
+		  f modifier_max = 9.000000;
+		  f modifier_min = 6.000000;
+		}
+	}
+}
+[t:template,n:bd_ra_bl_m_g_c_fin] // Consistent Textures
+{
+	doc = "Night Leather";
+	specializes = base_body_armor_leather;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Night Leather";
+	}
+	[defend]
+	{
+		armor_style = 501;
+		armor_type = a2;
+	  f defense = 44.000000;
+	}
+	[gui]
+	{
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a2_060;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 20.000000;
+		  f modifier_min = 1.000000;
+		}
+		[o_fin]
+		{
+			armor_style = 003;
+			armor_type = a3;
+		  f defense = 65.000000;
+			inventory_icon = b_gui_ig_i_a_pos_a3_037;
+		  f modifier_max = 35.000000;
+		  f modifier_min = 7.000000;
+		}
+	}
+}
+[t:template,n:bd_ra_bl_r_g_o_fin]
+{
+	doc = "Stellar Leather";
+	specializes = base_body_armor_leather;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Stellar Leather";
+	}
+	[defend]
+	{
+		armor_style = 023;
+		armor_type = a2;
+	  f defense = 84.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:14;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a2_059;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 21.000000;
+		  f modifier_min = 5.000000;
+		}
+	}
+}
+[t:template,n:bd_ra_le_f_g_c_fin]
+{
+	doc = "Fused Leather";
+	specializes = base_body_armor_leather;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Fused Leather";
+	}
+	[defend]
+	{
+		armor_style = 042;
+		armor_type = a1;
+	  f defense = 35.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:12;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a1_059;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 5.000000;
+		  f modifier_min = 1.000000;
+		}
+	}
+}
+[t:template,n:bd_ra_le_m_g_o_avg]
+{
+	doc = "Dream Leather";
+	specializes = base_body_armor_leather;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Dream Leather";
+	}
+	[defend]
+	{
+		armor_style = 003;
+		armor_type = a1;
+	  f defense = 33.000000;
+	}
+	[gui]
+	{
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a1_058;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 15.000000;
+		  f modifier_min = 2.000000;
+		}
+	}
+}
+[t:template,n:bd_ra_le_r_g_o_fin]
+{
+	doc = "Noble Leather";
+	specializes = base_body_armor_leather;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Noble Leather";
+	}
+	[defend]
+	{
+		armor_style = 044;
+		armor_type = a1;
+	  f defense = 59.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:13;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a1_060;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 15.000000;
+		  f modifier_min = 4.000000;
+		}
+	}
+}
+[t:template,n:bd_ra_sl_m_g_c_avg] // Consistent Textures
+{
+	doc = "Classic Leather";
+	specializes = base_body_armor_leather;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Classic Leather";
+	}
+	[defend]
+	{
+		armor_style = 501;
+		armor_type = a1;
+	  f defense = 23.000000;
+	}
+	[gui]
+	{
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a1_061;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 11.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_fin]
+		{
+			armor_style = 500;
+			armor_type = a1;
+		  f defense = 30.000000;
+			inventory_icon = b_gui_ig_i_a_pos_a1_062;
+		  f modifier_max = 13.000000;
+		  f modifier_min = 1.000000;
+		}
+		[c_str]
+		{
+			armor_style = 502;
+			armor_type = a2;
+		  f defense = 66.000000;
+			equip_requirements = strength:12;
+			inventory_icon = b_gui_ig_i_a_pos_a2_069;
+		  f modifier_max = 38.000000;
+		  f modifier_min = 9.000000;
+		}
+		[o_fin]
+		{
+			armor_style = 050;
+			armor_type = a1;
+		  f defense = 52.000000;
+			inventory_icon = b_gui_ig_i_a_pos_a1_063;
+		  f modifier_max = 28.000000;
+		  f modifier_min = 6.000000;
+		}
+		[o_str]
+		{
+			armor_style = 047;
+			armor_type = a2;
+		  f defense = 89.000000;
+			equip_requirements = strength:12;
+			inventory_icon = b_gui_ig_i_a_pos_a2_070;
+		  f modifier_max = 55.000000;
+		  f modifier_min = 14.000000;
+		}
+	}
+}
+[t:template,n:bd_ra_sl_r_g_c_avg] // Consistent Textures
+{
+	doc = "Marshal Leather";
+	specializes = base_body_armor_leather;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Marshal Leather";
+	}
+	[defend]
+	{
+		armor_style = 500;
+		armor_type = a2;
+	  f defense = 27.000000;
+	}
+	[gui]
+	{
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a2_057;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 7.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_fin]
+		{
+			armor_style = 040;
+			armor_type = a2;
+		  f defense = 35.000000;
+			inventory_icon = b_gui_ig_i_a_pos_a2_067;
+		  f modifier_max = 9.000000;
+		  f modifier_min = 1.000000;
+		}
+		[c_str]
+		{
+			armor_style = 041;
+			armor_type = a2;
+		  f defense = 92.000000;
+			equip_requirements = strength:15;
+			inventory_icon = b_gui_ig_i_a_pos_a2_068;
+		  f modifier_max = 25.000000;
+		  f modifier_min = 7.000000;
+		}
+	}
+}
+[t:template,n:bd_sl_f_g_c_avg]
+{
+	doc = "Cleated Leather";
+	specializes = base_body_armor_leather;
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Cleated Leather";
+	}
+	[defend]
+	{
+		armor_style = 001;
+		armor_type = a2;
+	  f defense = 23.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:12;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a2_001;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_str]
+		{
+			armor_style = 019;
+			armor_type = a3;
+		  f defense = 98.000000;
+			equip_requirements = strength:20;
+			inventory_height = 3;
+			inventory_icon = b_gui_ig_i_a_pos_a3_019;
+			inventory_width = 2;
+		  f modifier_max = 8.000000;
+		  f modifier_min = 5.000000;
+		}
+		[o_fin]
+		{
+			armor_style = 039;
+			armor_type = a2;
+		  f defense = 73.000000;
+			equip_requirements = strength:17;
+			inventory_icon = b_gui_ig_i_a_pos_a2_039;
+		  f modifier_max = 6.000000;
+		  f modifier_min = 3.000000;
+			pcontent_special_type = rare, unique, normal;
+		}
+	}
+}
+[t:template,n:bd_sl_f_g_c_fun]
+{
+	doc = "Torn Leather";
+	specializes = base_body_armor_leather;
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Torn Leather";
+	}
+	[defend]
+	{
+		armor_style = 056;
+		armor_type = a2;
+	  f defense = 16.000000;
+	}
+	[gui]
+	{
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a2_056;
+		inventory_width = 2;
+	}
+}
+[t:template,n:bd_sl_m_g_c_avg]
+{
+	doc = "Riveted Leather";
+	specializes = base_body_armor_leather;
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Riveted Leather";
+	}
+	[defend]
+	{
+		armor_style = 046;
+		armor_type = a1;
+	  f defense = 18.000000;
+	}
+	[gui]
+	{
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a1_046;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_fin]
+		{
+			armor_style = 047;
+			armor_type = a1;
+		  f defense = 24.000000;
+			inventory_icon = b_gui_ig_i_a_pos_a1_047;
+		  f modifier_max = 3.000000;
+		  f modifier_min = 1.000000;
+		}
+		[c_mag]
+		{
+			armor_style = 048;
+			armor_type = a1;
+		  f defense = 103.000000;
+			equip_requirements = strength:13;
+			inventory_icon = b_gui_ig_i_a_pos_a1_048;
+		  f modifier_max = 26.000000;
+		  f modifier_min = 18.000000;
+		}
+		[c_str]
+		{
+			armor_style = 046;
+			armor_type = a2;
+		  f defense = 64.000000;
+			equip_requirements = strength:12;
+			inventory_icon = b_gui_ig_i_a_pos_a2_046;
+		  f modifier_max = 16.000000;
+		  f modifier_min = 8.000000;
+		}
+		[o_avg]
+		{
+			armor_style = 049;
+			armor_type = a1;
+		  f defense = 35.000000;
+			inventory_icon = b_gui_ig_i_a_pos_a1_049;
+		  f modifier_max = 6.000000;
+		  f modifier_min = 2.000000;
+			pcontent_special_type = rare, unique, normal;
+		}
+		[o_fin]
+		{
+			armor_style = 050;
+			armor_type = a1;
+		  f defense = 47.000000;
+			inventory_icon = b_gui_ig_i_a_pos_a1_050;
+		  f modifier_max = 11.000000;
+		  f modifier_min = 5.000000;
+			pcontent_special_type = rare, unique, normal;
+		}
+		[o_str]
+		{
+			armor_style = 047;
+			armor_type = a2;
+		  f defense = 83.000000;
+			equip_requirements = strength:12;
+			inventory_icon = b_gui_ig_i_a_pos_a2_047;
+		  f modifier_max = 21.000000;
+		  f modifier_min = 14.000000;
+			pcontent_special_type = rare, unique, normal;
+		}
+	}
+}
+[t:template,n:bd_sl_m_g_c_fun]
+{
+	doc = "Weathered Leather";
+	specializes = base_body_armor_leather;
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Weathered Leather";
+	}
+	[defend]
+	{
+		armor_style = 003;
+		armor_type = a2;
+	  f defense = 13.000000;
+	}
+	[gui]
+	{
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a2_003;
+		inventory_width = 2;
+	}
+}
+[t:template,n:bd_sl_r_g_c_avg]
+{
+	doc = "Studded Leather";
+	specializes = base_body_armor_leather;
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Studded Leather";
+	}
+	[defend]
+	{
+		armor_style = 002;
+		armor_type = a2;
+	  f defense = 19.000000;
+	}
+	[gui]
+	{
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a2_002;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_fin]
+		{
+			armor_style = 040;
+			armor_type = a2;
+		  f defense = 29.000000;
+			inventory_icon = b_gui_ig_i_a_pos_a2_040;
+		  f modifier_max = 2.000000;
+		  f modifier_min = 1.000000;
+		}
+		[c_mag]
+		{
+			armor_style = 042;
+			armor_type = a2;
+		  f defense = 142.000000;
+			equip_requirements = strength:18;
+			inventory_icon = b_gui_ig_i_a_pos_a2_042;
+		  f modifier_max = 20.000000;
+		  f modifier_min = 14.000000;
+		}
+		[c_str]
+		{
+			armor_style = 041;
+			armor_type = a2;
+		  f defense = 84.000000;
+			equip_requirements = strength:15;
+			inventory_icon = b_gui_ig_i_a_pos_a2_041;
+		  f modifier_max = 12.000000;
+		  f modifier_min = 6.000000;
+		}
+		[o_avg]
+		{
+			armor_style = 043;
+			armor_type = a2;
+		  f defense = 43.000000;
+			equip_requirements = strength:12;
+			inventory_icon = b_gui_ig_i_a_pos_a2_043;
+		  f modifier_max = 4.000000;
+		  f modifier_min = 1.000000;
+			pcontent_special_type = rare, unique, normal;
+		}
+		[o_fin]
+		{
+			armor_style = 044;
+			armor_type = a2;
+		  f defense = 59.000000;
+			equip_requirements = strength:13;
+			inventory_icon = b_gui_ig_i_a_pos_a2_044;
+		  f modifier_max = 8.000000;
+		  f modifier_min = 4.000000;
+			pcontent_special_type = rare, unique, normal;
+		}
+		[o_mag]
+		{
+			armor_style = 013;
+			armor_type = a2;
+		  f defense = 173.000000;
+			equip_requirements = strength:20;
+			inventory_icon = b_gui_ig_i_a_pos_a2_013;
+		  f modifier_max = 25.000000;
+		  f modifier_min = 18.000000;
+			pcontent_special_type = rare, unique, normal;
+		}
+		[o_str]
+		{
+			armor_style = 045;
+			armor_type = a2;
+		  f defense = 112.000000;
+			equip_requirements = strength:17;
+			inventory_icon = b_gui_ig_i_a_pos_a2_045;
+		  f modifier_max = 16.000000;
+		  f modifier_min = 10.000000;
+			pcontent_special_type = rare, unique, normal;
+		}
+	}
+}
+[t:template,n:gen_bd_un_bl_f_g_c_blood]
+{
+	doc = "Lord Hovart's Blood Armor multiplayer_generator";
+	specializes = base_body_armor_leather;
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Lord Hovart's Blood Armor";
+		is_pcontent_allowed = false;
+	}
+	[defend]
+	{
+		armor_style = 045;
+		armor_type = a3;
+	  f defense = 50.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:15;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_a_pos_a3_045;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+	[generator_multiple_mp]
+	{
+		child_template_name = bd_un_bl_f_g_c_blood;
+	}
+}
+[t:template,n:bd_un_bl_f_g_c_blood]
+{
+	doc = "Lord Hovart's Blood Armor";
+	specializes = base_body_armor_leather;
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Lord Hovart's Blood Armor";
+	}
+	[defend]
+	{
+		armor_style = 045;
+		armor_type = a3;
+	  f defense = 50.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:15;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_a_pos_a3_045;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:bd_un_bl_r_leaf]
+{
+	doc = "Woodland Leather";
+	specializes = base_body_armor_leather;
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Woodland Leather";
+	}
+	[defend]
+	{
+		armor_style = 051;
+		armor_type = a2;
+	  f defense = 72.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:14;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a2_051;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 13.000000;
+		  f modifier_min = 3.000000;
+		}
+	}
+}
+[t:template,n:bd_un_le_f_pad_avg]
+{
+	doc = "Altan's Leather";
+	specializes = base_body_armor_leather;
+	[common]
+	{
+	  b allow_modifiers = false;
+		is_pcontent_allowed = false;
+		screen_name = "Altan's Leather";
+	}
+	[defend]
+	{
+		armor_style = 078;
+		armor_type = a1;
+	  f defense = 10.000000;
+	}
+	[gui]
+	{
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a1_078;
+		inventory_width = 2;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_max_life;
+				description = "+5 to Health";
+				duration = #infinite;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 5;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:bd_un_sl_f_barbarian]
+{
+	doc = "Olaf's Studded Leather";
+	specializes = base_body_armor_leather;
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Olaf's Studded Leather";
+	}
+	[defend]
+	{
+		armor_style = 054;
+		armor_type = a1;
+	  f defense = 44.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:14;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a1_054;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 3.000000;
+		  f modifier_min = 1.000000;
+		}
+	}
+}
