@@ -6,9 +6,13 @@ to edit or view. While the publisher of this mod, myself, is fond of mod being o
 willingly submitted for this project. 
 
 Tristanzz
+
 Moros
+
 Kathycf
+
 Project Britannica
+
 and Eksevis, myself,
 
 have directly contributed at least something to this mod, or is otherwise registered under free distrubtion law by the creators. I believe it is our right as modders 
