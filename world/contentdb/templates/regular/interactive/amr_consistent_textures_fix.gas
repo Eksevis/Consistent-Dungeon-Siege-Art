@@ -468,6 +468,37 @@
 		}
 	}
 }
+[t:template,n:bd_ra_ro_m_g_c_059] // Eksevis //
+{
+	doc = "Robe";
+	specializes = base_body_armor_cloth;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Dream Robe";
+	}
+	[defend]
+	{
+		armor_style = 513;
+		armor_type = a7;
+	  f defense = 72.000000;
+	}
+	[gui]
+	{
+		equip_requirements = intelligence:43;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a7_071;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 111.000000;
+		  f modifier_min = 26.000000;
+		}
+	}
+}
 
 /////////////////////////////////////////////////////////////////////////////////////
 //                                                                                 //
@@ -961,6 +992,78 @@
 		}
 	}
 }
+[t:template,n:gl_ra_ga_fp_f_g_o_avg]
+{
+	doc = "Full Plate Gauntlets";
+	specializes = base_glove;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Chief Gauntlets";
+	}
+	[defend]
+	{
+		armor_style = 005;
+		armor_type = type1;
+	  f defense = 35.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:49;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_gntl_129;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 15.000000;
+		  f modifier_min = 8.000000;
+		}
+		[c_fin] // Eksevis //
+		{
+			armor_style = 501;
+			armor_type = type1;
+		  f defense = 31.000000;
+			equip_requirements = strength:44;
+			inventory_icon = b_gui_ig_i_a_gntl_128;
+		  f modifier_max = 21.000000;
+		  f modifier_min = 8.000000;
+		}
+		[c_str]
+		{
+			armor_style = 056;
+			armor_type = type1;
+		  f defense = 47.000000;
+			equip_requirements = strength:63;
+			inventory_icon = b_gui_ig_i_a_gntl_131;
+		  f modifier_max = 71.000000;
+		  f modifier_min = 13.000000;
+		}
+		[o_fin]
+		{
+			armor_style = 005;
+			armor_type = type1;
+		  f defense = 40.000000;
+			equip_requirements = strength:54;
+			inventory_icon = b_gui_ig_i_a_gntl_130;
+		  f modifier_max = 49.000000;
+		  f modifier_min = 11.000000;
+		}
+		[o_str]
+		{
+			armor_style = 005;
+			armor_type = type1;
+		  f defense = 55.000000;
+			equip_requirements = strength:71;
+			inventory_icon = b_gui_ig_i_a_gntl_132;
+		  f modifier_max = 112.000000;
+		  f modifier_min = 15.000000;
+		}
+	}
+}
+
 /////////////////////////////////////////////////////////////////////////////////////
 //                                                                                 //
 //                                        BOOTS                                    //

@@ -1,0 +1,1865 @@
+[t:template,n:base_glove]
+{
+	doc = "base_glove";
+	specializes = armor;
+	[aspect]
+	{
+		[voice]
+		{
+			[put_down]
+			{
+				* = s_e_gui_put_down_gloves;
+			}
+		}
+	}
+	[gui]
+	{
+		equip_slot = es_forearms;
+		inventory_height = 2;
+		inventory_width = 1;
+	}
+}
+[t:template,n:gl_ga_ba_f_g_c_avg]
+{
+	doc = "Banded Gauntlets";
+	specializes = base_glove;
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Banded Gauntlets";
+	}
+	[defend]
+	{
+		armor_style = 011;
+		armor_type = type1;
+	  f defense = 23.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:36;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_gntl_011;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_fin]
+		{
+			armor_style = 086;
+			armor_type = type1;
+		  f defense = 24.000000;
+			equip_requirements = strength:37;
+			inventory_icon = b_gui_ig_i_a_gntl_086;
+		  f modifier_max = 5.000000;
+		  f modifier_min = 2.000000;
+		}
+		[c_mag]
+		{
+			armor_style = 088;
+			armor_type = type1;
+		  f defense = 43.000000;
+			equip_requirements = strength:58;
+			inventory_icon = b_gui_ig_i_a_gntl_088;
+		  f modifier_max = 16.000000;
+		  f modifier_min = 12.000000;
+		}
+		[c_str]
+		{
+			armor_style = 087;
+			armor_type = type1;
+		  f defense = 33.000000;
+			equip_requirements = strength:47;
+			inventory_icon = b_gui_ig_i_a_gntl_087;
+		  f modifier_max = 13.000000;
+		  f modifier_min = 7.000000;
+		}
+		[o_avg]
+		{
+			armor_style = 089;
+			armor_type = type1;
+		  f defense = 27.000000;
+			equip_requirements = strength:40;
+			inventory_icon = b_gui_ig_i_a_gntl_089;
+		  f modifier_max = 7.000000;
+		  f modifier_min = 2.000000;
+		}
+		[o_fin]
+		{
+			armor_style = 090;
+			armor_type = type1;
+		  f defense = 29.000000;
+			equip_requirements = strength:43;
+			inventory_icon = b_gui_ig_i_a_gntl_090;
+		  f modifier_max = 11.000000;
+		  f modifier_min = 5.000000;
+		}
+		[o_mag]
+		{
+			armor_style = 092;
+			armor_type = type1;
+		  f defense = 48.000000;
+			equip_requirements = strength:63;
+			inventory_icon = b_gui_ig_i_a_gntl_092;
+		  f modifier_max = 19.000000;
+		  f modifier_min = 14.000000;
+		}
+		[o_str]
+		{
+			armor_style = 091;
+			armor_type = type1;
+		  f defense = 38.000000;
+			equip_requirements = strength:52;
+			inventory_icon = b_gui_ig_i_a_gntl_091;
+		  f modifier_max = 15.000000;
+		  f modifier_min = 10.000000;
+		}
+	}
+}
+[t:template,n:gl_ga_bl_f_g_c_avg]
+{
+	doc = "Boiled Leather Gauntlets";
+	specializes = base_glove;
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Boiled Leather Gauntlets";
+	}
+	[defend]
+	{
+		armor_style = 024;
+		armor_type = type1;
+	  f defense = 9.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:20;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_gntl_024;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_fin]
+		{
+			armor_style = 025;
+			armor_type = type1;
+		  f defense = 11.000000;
+			equip_requirements = strength:22;
+			inventory_icon = b_gui_ig_i_a_gntl_025;
+		  f modifier_max = 2.000000;
+		  f modifier_min = 1.000000;
+		}
+		[c_mag]
+		{
+			armor_style = 027;
+			armor_type = type1;
+		  f defense = 27.000000;
+			equip_requirements = strength:40;
+			inventory_icon = b_gui_ig_i_a_gntl_027;
+		  f modifier_max = 10.000000;
+		  f modifier_min = 7.000000;
+		}
+		[c_str]
+		{
+			armor_style = 026;
+			armor_type = type1;
+		  f defense = 19.000000;
+			equip_requirements = strength:31;
+			inventory_icon = b_gui_ig_i_a_gntl_026;
+		  f modifier_max = 7.000000;
+		  f modifier_min = 4.000000;
+		}
+		[o_avg]
+		{
+			armor_style = 028;
+			armor_type = type1;
+		  f defense = 12.000000;
+			equip_requirements = strength:24;
+			inventory_icon = b_gui_ig_i_a_gntl_028;
+		  f modifier_max = 3.000000;
+		  f modifier_min = 1.000000;
+		}
+		[o_fin]
+		{
+			armor_style = 029;
+			armor_type = type1;
+		  f defense = 15.000000;
+			equip_requirements = strength:26;
+			inventory_icon = b_gui_ig_i_a_gntl_029;
+		  f modifier_max = 5.000000;
+		  f modifier_min = 3.000000;
+		}
+		[o_mag]
+		{
+			armor_style = 031;
+			armor_type = type1;
+		  f defense = 32.000000;
+			equip_requirements = strength:45;
+			inventory_icon = b_gui_ig_i_a_gntl_031;
+		  f modifier_max = 12.000000;
+		  f modifier_min = 9.000000;
+		}
+		[o_str]
+		{
+			armor_style = 030;
+			armor_type = type1;
+		  f defense = 23.000000;
+			equip_requirements = strength:35;
+			inventory_icon = b_gui_ig_i_a_gntl_030;
+		  f modifier_max = 9.000000;
+		  f modifier_min = 6.000000;
+		}
+	}
+}
+[t:template,n:gl_ga_br_f_g_c_avg]
+{
+	doc = "Brigandine Gauntlets";
+	specializes = base_glove;
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Brigandine Gauntlets";
+	}
+	[defend]
+	{
+		armor_style = 009;
+		armor_type = type1;
+	  f defense = 11.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:22;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_gntl_009;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_fin]
+		{
+			armor_style = 079;
+			armor_type = type1;
+		  f defense = 12.000000;
+			equip_requirements = strength:23;
+			inventory_icon = b_gui_ig_i_a_gntl_079;
+		  f modifier_max = 2.000000;
+		  f modifier_min = 1.000000;
+		}
+		[c_mag]
+		{
+			armor_style = 081;
+			armor_type = type1;
+		  f defense = 28.000000;
+			equip_requirements = strength:42;
+			inventory_icon = b_gui_ig_i_a_gntl_081;
+		  f modifier_max = 11.000000;
+		  f modifier_min = 8.000000;
+		}
+		[c_str]
+		{
+			armor_style = 080;
+			armor_type = type1;
+		  f defense = 20.000000;
+			equip_requirements = strength:32;
+			inventory_icon = b_gui_ig_i_a_gntl_080;
+		  f modifier_max = 8.000000;
+		  f modifier_min = 4.000000;
+		}
+		[o_avg]
+		{
+			armor_style = 082;
+			armor_type = type1;
+		  f defense = 13.000000;
+			equip_requirements = strength:25;
+			inventory_icon = b_gui_ig_i_a_gntl_082;
+		  f modifier_max = 4.000000;
+		  f modifier_min = 1.000000;
+		}
+		[o_fin]
+		{
+			armor_style = 083;
+			armor_type = type1;
+		  f defense = 16.000000;
+			equip_requirements = strength:28;
+			inventory_icon = b_gui_ig_i_a_gntl_083;
+		  f modifier_max = 6.000000;
+		  f modifier_min = 3.000000;
+		}
+		[o_mag]
+		{
+			armor_style = 085;
+			armor_type = type1;
+		  f defense = 33.000000;
+			equip_requirements = strength:47;
+			inventory_icon = b_gui_ig_i_a_gntl_085;
+		  f modifier_max = 13.000000;
+		  f modifier_min = 10.000000;
+		}
+		[o_str]
+		{
+			armor_style = 084;
+			armor_type = type1;
+		  f defense = 24.000000;
+			equip_requirements = strength:36;
+			inventory_icon = b_gui_ig_i_a_gntl_084;
+		  f modifier_max = 9.000000;
+		  f modifier_min = 6.000000;
+		}
+	}
+}
+[t:template,n:gl_ga_fp_f_g_c_avg]
+{
+	doc = "Full Plate Gauntlets";
+	specializes = base_glove;
+	[common]
+	{
+		screen_name = "Full Plate Gauntlets";
+	}
+	[defend]
+	{
+		armor_style = 005;
+		armor_type = type1;
+	  f defense = 28.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:41;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_gntl_005;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 2.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_fin]
+		{
+			armor_style = 055;
+			armor_type = type1;
+		  f defense = 30.000000;
+			equip_requirements = strength:43;
+			inventory_icon = b_gui_ig_i_a_gntl_055;
+		  f modifier_max = 6.000000;
+		  f modifier_min = 1.000000;
+		}
+		[c_mag]
+		{
+			armor_style = 057;
+			armor_type = type1;
+		  f defense = 53.000000;
+			equip_requirements = strength:70;
+			inventory_icon = b_gui_ig_i_a_gntl_057;
+		  f modifier_max = 20.000000;
+		  f modifier_min = 15.000000;
+		}
+		[c_str]
+		{
+			armor_style = 056;
+			armor_type = type1;
+		  f defense = 43.000000;
+			equip_requirements = strength:58;
+			inventory_icon = b_gui_ig_i_a_gntl_056;
+		  f modifier_max = 16.000000;
+		  f modifier_min = 9.000000;
+		}
+		[o_avg]
+		{
+			armor_style = 005;
+			armor_type = type1;
+		  f defense = 33.000000;
+			equip_requirements = strength:47;
+			inventory_icon = b_gui_ig_i_a_gntl_005;
+		  f modifier_max = 10.000000;
+		  f modifier_min = 4.000000;
+		}
+		[o_fin]
+		{
+			armor_style = 005;
+			armor_type = type1;
+		  f defense = 38.000000;
+			equip_requirements = strength:52;
+			inventory_icon = b_gui_ig_i_a_gntl_005;
+		  f modifier_max = 13.000000;
+		  f modifier_min = 6.000000;
+		}
+		[o_mag]
+		{
+			armor_style = 005;
+			armor_type = type1;
+		  f defense = 60.000000;
+			equip_requirements = strength:77;
+			inventory_icon = b_gui_ig_i_a_gntl_005;
+		  f modifier_max = 24.000000;
+		  f modifier_min = 17.000000;
+		}
+		[o_str]
+		{
+			armor_style = 005;
+			armor_type = type1;
+		  f defense = 48.000000;
+			equip_requirements = strength:63;
+			inventory_icon = b_gui_ig_i_a_gntl_005;
+		  f modifier_max = 18.000000;
+		  f modifier_min = 12.000000;
+		}
+	}
+}
+[t:template,n:gl_ga_sc_f_g_c_avg]
+{
+	doc = "Scale Gauntlets";
+	specializes = base_glove;
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Scale Gauntlets";
+	}
+	[defend]
+	{
+		armor_style = 010;
+		armor_type = type1;
+	  f defense = 14.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:26;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_gntl_010;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_fin]
+		{
+			armor_style = 048;
+			armor_type = type1;
+		  f defense = 16.000000;
+			equip_requirements = strength:27;
+			inventory_icon = b_gui_ig_i_a_gntl_048;
+		  f modifier_max = 3.000000;
+		  f modifier_min = 1.000000;
+		}
+		[c_mag]
+		{
+			armor_style = 050;
+			armor_type = type1;
+		  f defense = 33.000000;
+			equip_requirements = strength:47;
+			inventory_icon = b_gui_ig_i_a_gntl_050;
+		  f modifier_max = 13.000000;
+		  f modifier_min = 9.000000;
+		}
+		[c_str]
+		{
+			armor_style = 049;
+			armor_type = type1;
+		  f defense = 24.000000;
+			equip_requirements = strength:36;
+			inventory_icon = b_gui_ig_i_a_gntl_049;
+		  f modifier_max = 9.000000;
+		  f modifier_min = 5.000000;
+		}
+		[o_avg]
+		{
+			armor_style = 051;
+			armor_type = type1;
+		  f defense = 18.000000;
+			equip_requirements = strength:30;
+			inventory_icon = b_gui_ig_i_a_gntl_051;
+		  f modifier_max = 5.000000;
+		  f modifier_min = 2.000000;
+		}
+		[o_fin]
+		{
+			armor_style = 052;
+			armor_type = type1;
+		  f defense = 20.000000;
+			equip_requirements = strength:33;
+			inventory_icon = b_gui_ig_i_a_gntl_052;
+		  f modifier_max = 7.000000;
+		  f modifier_min = 4.000000;
+		}
+		[o_mag]
+		{
+			armor_style = 054;
+			armor_type = type1;
+		  f defense = 38.000000;
+			equip_requirements = strength:52;
+			inventory_icon = b_gui_ig_i_a_gntl_054;
+		  f modifier_max = 15.000000;
+		  f modifier_min = 11.000000;
+		}
+		[o_str]
+		{
+			armor_style = 053;
+			armor_type = type1;
+		  f defense = 28.000000;
+			equip_requirements = strength:42;
+			inventory_icon = b_gui_ig_i_a_gntl_053;
+		  f modifier_max = 11.000000;
+		  f modifier_min = 7.000000;
+		}
+	}
+}
+[t:template,n:gl_gl_bl_f_g_c_avg]
+{
+	doc = "Boiled Leather Gloves";
+	specializes = base_glove;
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Boiled Leather Gloves";
+	}
+	[defend]
+	{
+		armor_style = 016;
+		armor_type = type1;
+	  f defense = 4.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:15;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_gntl_016;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_fin]
+		{
+			armor_style = 017;
+			armor_type = type1;
+		  f defense = 6.000000;
+			equip_requirements = strength:16;
+			inventory_icon = b_gui_ig_i_a_gntl_017;
+		  f modifier_max = 3.000000;
+		  f modifier_min = 1.000000;
+		}
+		[c_mag]
+		{
+			armor_style = 019;
+			armor_type = type1;
+		  f defense = 18.000000;
+			equip_requirements = strength:30;
+			inventory_icon = b_gui_ig_i_a_gntl_019;
+		  f modifier_max = 8.000000;
+		  f modifier_min = 6.000000;
+		}
+		[c_str]
+		{
+			armor_style = 018;
+			armor_type = type1;
+		  f defense = 11.000000;
+			equip_requirements = strength:22;
+			inventory_icon = b_gui_ig_i_a_gntl_018;
+		  f modifier_max = 5.000000;
+		  f modifier_min = 3.000000;
+		}
+		[o_avg]
+		{
+			armor_style = 020;
+			armor_type = type1;
+		  f defense = 7.000000;
+			equip_requirements = strength:18;
+			inventory_icon = b_gui_ig_i_a_gntl_020;
+		  f modifier_max = 3.000000;
+		  f modifier_min = 2.000000;
+		}
+		[o_fin]
+		{
+			armor_style = 021;
+			armor_type = type1;
+		  f defense = 9.000000;
+			equip_requirements = strength:20;
+			inventory_icon = b_gui_ig_i_a_gntl_021;
+		  f modifier_max = 4.000000;
+		  f modifier_min = 2.000000;
+		}
+		[o_mag]
+		{
+			armor_style = 023;
+			armor_type = type1;
+		  f defense = 21.000000;
+			equip_requirements = strength:34;
+			inventory_icon = b_gui_ig_i_a_gntl_023;
+		  f modifier_max = 8.000000;
+		  f modifier_min = 7.000000;
+		}
+		[o_str]
+		{
+			armor_style = 022;
+			armor_type = type1;
+		  f defense = 14.000000;
+			equip_requirements = strength:26;
+			inventory_icon = b_gui_ig_i_a_gntl_022;
+		  f modifier_max = 6.000000;
+		  f modifier_min = 4.000000;
+		}
+	}
+}
+[t:template,n:gl_gl_br_f_g_c_avg]
+{
+	doc = "Brigandine Gloves";
+	specializes = base_glove;
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Brigandine Gloves";
+	}
+	[defend]
+	{
+		armor_style = 008;
+		armor_type = type1;
+	  f defense = 9.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:20;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_gntl_008;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_fin]
+		{
+			armor_style = 065;
+			armor_type = type1;
+		  f defense = 11.000000;
+			equip_requirements = strength:22;
+			inventory_icon = b_gui_ig_i_a_gntl_065;
+		  f modifier_max = 2.000000;
+		  f modifier_min = 1.000000;
+		}
+		[c_mag]
+		{
+			armor_style = 067;
+			armor_type = type1;
+		  f defense = 27.000000;
+			equip_requirements = strength:40;
+			inventory_icon = b_gui_ig_i_a_gntl_067;
+		  f modifier_max = 10.000000;
+		  f modifier_min = 7.000000;
+		}
+		[c_str]
+		{
+			armor_style = 066;
+			armor_type = type1;
+		  f defense = 19.000000;
+			equip_requirements = strength:31;
+			inventory_icon = b_gui_ig_i_a_gntl_066;
+		  f modifier_max = 7.000000;
+		  f modifier_min = 4.000000;
+		}
+		[o_avg]
+		{
+			armor_style = 068;
+			armor_type = type1;
+		  f defense = 12.000000;
+			equip_requirements = strength:24;
+			inventory_icon = b_gui_ig_i_a_gntl_068;
+		  f modifier_max = 3.000000;
+		  f modifier_min = 1.000000;
+		}
+		[o_fin]
+		{
+			armor_style = 069;
+			armor_type = type1;
+		  f defense = 15.000000;
+			equip_requirements = strength:26;
+			inventory_icon = b_gui_ig_i_a_gntl_069;
+		  f modifier_max = 5.000000;
+		  f modifier_min = 3.000000;
+		}
+		[o_mag]
+		{
+			armor_style = 071;
+			armor_type = type1;
+		  f defense = 32.000000;
+			equip_requirements = strength:45;
+			inventory_icon = b_gui_ig_i_a_gntl_071;
+		  f modifier_max = 12.000000;
+		  f modifier_min = 9.000000;
+		}
+		[o_str]
+		{
+			armor_style = 070;
+			armor_type = type1;
+		  f defense = 23.000000;
+			equip_requirements = strength:35;
+			inventory_icon = b_gui_ig_i_a_gntl_070;
+		  f modifier_max = 9.000000;
+		  f modifier_min = 6.000000;
+		}
+	}
+}
+[t:template,n:gl_gl_ch_f_g_c_avg]
+{
+	doc = "Chain Gloves";
+	specializes = base_glove;
+	[common]
+	{
+		screen_name = "Chain Gloves";
+	}
+	[defend]
+	{
+		armor_style = 003;
+		armor_type = type1;
+	  f defense = 14.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:26;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_gntl_003;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 1.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_fin]
+		{
+			armor_style = 041;
+			armor_type = type1;
+		  f defense = 16.000000;
+			equip_requirements = strength:28;
+			inventory_icon = b_gui_ig_i_a_gntl_041;
+		  f modifier_max = 3.000000;
+		  f modifier_min = 1.000000;
+		}
+		[c_mag]
+		{
+			armor_style = 043;
+			armor_type = type1;
+		  f defense = 39.000000;
+			equip_requirements = strength:53;
+			inventory_icon = b_gui_ig_i_a_gntl_043;
+		  f modifier_max = 15.000000;
+		  f modifier_min = 11.000000;
+		}
+		[c_str]
+		{
+			armor_style = 042;
+			armor_type = type1;
+		  f defense = 28.000000;
+			equip_requirements = strength:41;
+			inventory_icon = b_gui_ig_i_a_gntl_042;
+		  f modifier_max = 10.000000;
+		  f modifier_min = 6.000000;
+		}
+		[o_avg]
+		{
+			armor_style = 044;
+			armor_type = type1;
+		  f defense = 20.000000;
+			equip_requirements = strength:32;
+			inventory_icon = b_gui_ig_i_a_gntl_044;
+		  f modifier_max = 6.000000;
+		  f modifier_min = 2.000000;
+		}
+		[o_fin]
+		{
+			armor_style = 045;
+			armor_type = type1;
+		  f defense = 23.000000;
+			equip_requirements = strength:36;
+			inventory_icon = b_gui_ig_i_a_gntl_045;
+		  f modifier_max = 8.000000;
+		  f modifier_min = 4.000000;
+		}
+		[o_mag]
+		{
+			armor_style = 047;
+			armor_type = type1;
+		  f defense = 45.000000;
+			equip_requirements = strength:60;
+			inventory_icon = b_gui_ig_i_a_gntl_047;
+		  f modifier_max = 18.000000;
+		  f modifier_min = 13.000000;
+		}
+		[o_str]
+		{
+			armor_style = 046;
+			armor_type = type1;
+		  f defense = 33.000000;
+			equip_requirements = strength:47;
+			inventory_icon = b_gui_ig_i_a_gntl_046;
+		  f modifier_max = 13.000000;
+		  f modifier_min = 8.000000;
+		}
+	}
+}
+[t:template,n:gl_gl_le_f_g_c_avg]
+{
+	doc = "Leather Gloves";
+	specializes = base_glove;
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Leather Gloves";
+	}
+	[defend]
+	{
+		armor_style = 012;
+		armor_type = type1;
+	  f defense = 2.000000;
+	}
+	[gui]
+	{
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_gntl_012;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_fin]
+		{
+			armor_style = 034;
+			armor_type = type1;
+		  f defense = 3.000000;
+			equip_requirements = strength:13;
+			inventory_icon = b_gui_ig_i_a_gntl_034;
+		  f modifier_max = 2.000000;
+		  f modifier_min = 1.000000;
+		}
+		[c_mag]
+		{
+			armor_style = 036;
+			armor_type = type1;
+		  f defense = 15.000000;
+			equip_requirements = strength:27;
+			inventory_icon = b_gui_ig_i_a_gntl_036;
+		  f modifier_max = 6.000000;
+		  f modifier_min = 5.000000;
+		}
+		[c_str]
+		{
+			armor_style = 035;
+			armor_type = type1;
+		  f defense = 9.000000;
+			equip_requirements = strength:20;
+			inventory_icon = b_gui_ig_i_a_gntl_035;
+		  f modifier_max = 4.000000;
+		  f modifier_min = 2.000000;
+		}
+		[o_avg]
+		{
+			armor_style = 037;
+			armor_type = type1;
+		  f defense = 4.000000;
+			equip_requirements = strength:15;
+			inventory_icon = b_gui_ig_i_a_gntl_037;
+		  f modifier_max = 2.000000;
+		  f modifier_min = 1.000000;
+		}
+		[o_fin]
+		{
+			armor_style = 038;
+			armor_type = type1;
+		  f defense = 7.000000;
+			equip_requirements = strength:17;
+			inventory_icon = b_gui_ig_i_a_gntl_038;
+		  f modifier_max = 3.000000;
+		  f modifier_min = 1.000000;
+		}
+		[o_mag]
+		{
+			armor_style = 040;
+			armor_type = type1;
+		  f defense = 19.000000;
+			equip_requirements = strength:31;
+			inventory_icon = b_gui_ig_i_a_gntl_040;
+		  f modifier_max = 7.000000;
+		  f modifier_min = 6.000000;
+		}
+		[o_str]
+		{
+			armor_style = 039;
+			armor_type = type1;
+		  f defense = 12.000000;
+			equip_requirements = strength:23;
+			inventory_icon = b_gui_ig_i_a_gntl_039;
+		  f modifier_max = 5.000000;
+		  f modifier_min = 4.000000;
+		}
+	}
+}
+[t:template,n:gl_gl_sc_f_g_c_avg]
+{
+	doc = "Scale Gloves";
+	specializes = base_glove;
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Scale Gloves";
+	}
+	[defend]
+	{
+		armor_style = 004;
+		armor_type = type1;
+	  f defense = 11.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:22;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_gntl_004;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_fin]
+		{
+			armor_style = 072;
+			armor_type = type1;
+		  f defense = 12.000000;
+			equip_requirements = strength:24;
+			inventory_icon = b_gui_ig_i_a_gntl_072;
+		  f modifier_max = 3.000000;
+		  f modifier_min = 1.000000;
+		}
+		[c_mag]
+		{
+			armor_style = 074;
+			armor_type = type1;
+		  f defense = 29.000000;
+			equip_requirements = strength:42;
+			inventory_icon = b_gui_ig_i_a_gntl_074;
+		  f modifier_max = 11.000000;
+		  f modifier_min = 8.000000;
+		}
+		[c_str]
+		{
+			armor_style = 073;
+			armor_type = type1;
+		  f defense = 20.000000;
+			equip_requirements = strength:33;
+			inventory_icon = b_gui_ig_i_a_gntl_073;
+		  f modifier_max = 8.000000;
+		  f modifier_min = 4.000000;
+		}
+		[o_avg]
+		{
+			armor_style = 075;
+			armor_type = type1;
+		  f defense = 14.000000;
+			equip_requirements = strength:26;
+			inventory_icon = b_gui_ig_i_a_gntl_075;
+		  f modifier_max = 4.000000;
+		  f modifier_min = 1.000000;
+		}
+		[o_fin]
+		{
+			armor_style = 076;
+			armor_type = type1;
+		  f defense = 17.000000;
+			equip_requirements = strength:29;
+			inventory_icon = b_gui_ig_i_a_gntl_076;
+		  f modifier_max = 6.000000;
+		  f modifier_min = 3.000000;
+		}
+		[o_mag]
+		{
+			armor_style = 078;
+			armor_type = type1;
+		  f defense = 34.000000;
+			equip_requirements = strength:48;
+			inventory_icon = b_gui_ig_i_a_gntl_078;
+		  f modifier_max = 13.000000;
+		  f modifier_min = 10.000000;
+		}
+		[o_str]
+		{
+			armor_style = 077;
+			armor_type = type1;
+		  f defense = 24.000000;
+			equip_requirements = strength:37;
+			inventory_icon = b_gui_ig_i_a_gntl_077;
+		  f modifier_max = 9.000000;
+		  f modifier_min = 6.000000;
+		}
+	}
+}
+[t:template,n:gl_gl_sl_f_g_c_avg]
+{
+	doc = "Studded Leather Gloves";
+	specializes = base_glove;
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Studded Leather Gloves";
+	}
+	[defend]
+	{
+		armor_style = 002;
+		armor_type = type1;
+	  f defense = 3.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:13;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_gntl_002;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_fin]
+		{
+			armor_style = 058;
+			armor_type = type1;
+		  f defense = 4.000000;
+			equip_requirements = strength:14;
+			inventory_icon = b_gui_ig_i_a_gntl_058;
+		  f modifier_max = 2.000000;
+		  f modifier_min = 1.000000;
+		}
+		[c_mag]
+		{
+			armor_style = 060;
+			armor_type = type1;
+		  f defense = 16.000000;
+			equip_requirements = strength:28;
+			inventory_icon = b_gui_ig_i_a_gntl_060;
+		  f modifier_max = 7.000000;
+		  f modifier_min = 5.000000;
+		}
+		[c_str]
+		{
+			armor_style = 059;
+			armor_type = type1;
+		  f defense = 10.000000;
+			equip_requirements = strength:21;
+			inventory_icon = b_gui_ig_i_a_gntl_059;
+		  f modifier_max = 5.000000;
+		  f modifier_min = 3.000000;
+		}
+		[o_avg]
+		{
+			armor_style = 061;
+			armor_type = type1;
+		  f defense = 6.000000;
+			equip_requirements = strength:16;
+			inventory_icon = b_gui_ig_i_a_gntl_061;
+		  f modifier_max = 3.000000;
+		  f modifier_min = 1.000000;
+		}
+		[o_fin]
+		{
+			armor_style = 062;
+			armor_type = type1;
+		  f defense = 8.000000;
+			equip_requirements = strength:18;
+			inventory_icon = b_gui_ig_i_a_gntl_062;
+		  f modifier_max = 3.000000;
+		  f modifier_min = 2.000000;
+		}
+		[o_mag]
+		{
+			armor_style = 064;
+			armor_type = type1;
+		  f defense = 20.000000;
+			equip_requirements = strength:32;
+			inventory_icon = b_gui_ig_i_a_gntl_064;
+		  f modifier_max = 8.000000;
+		  f modifier_min = 6.000000;
+		}
+		[o_str]
+		{
+			armor_style = 063;
+			armor_type = type1;
+		  f defense = 13.000000;
+			equip_requirements = strength:24;
+			inventory_icon = b_gui_ig_i_a_gntl_063;
+		  f modifier_max = 6.000000;
+		  f modifier_min = 4.000000;
+		}
+	}
+}
+[t:template,n:gl_ra_ga_ba_f_g_c_fin]
+{
+	doc = "Banded Gauntlets";
+	specializes = base_glove;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Solar Gauntlets";
+	}
+	[defend]
+	{
+		armor_style = 086;
+		armor_type = type1;
+	  f defense = 26.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:38;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_gntl_123;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 5.000000;
+		  f modifier_min = 2.000000;
+		}
+		[c_mag]
+		{
+			armor_style = 088;
+			armor_type = type1;
+		  f defense = 44.000000;
+			equip_requirements = strength:58;
+			inventory_icon = b_gui_ig_i_a_gntl_127;
+		  f modifier_max = 17.000000;
+		  f modifier_min = 12.000000;
+		}
+		[c_str]
+		{
+			armor_style = 087;
+			armor_type = type1;
+		  f defense = 36.000000;
+			equip_requirements = strength:49;
+			inventory_icon = b_gui_ig_i_a_gntl_125;
+		  f modifier_max = 14.000000;
+		  f modifier_min = 7.000000;
+		}
+		[o_fin]
+		{
+			armor_style = 090;
+			armor_type = type1;
+		  f defense = 31.000000;
+			equip_requirements = strength:43;
+			inventory_icon = b_gui_ig_i_a_gntl_124;
+		  f modifier_max = 11.000000;
+		  f modifier_min = 5.000000;
+		}
+		[o_str]
+		{
+			armor_style = 091;
+			armor_type = type1;
+		  f defense = 40.000000;
+			equip_requirements = strength:53;
+			inventory_icon = b_gui_ig_i_a_gntl_126;
+		  f modifier_max = 15.000000;
+		  f modifier_min = 10.000000;
+		}
+	}
+}
+[t:template,n:gl_ra_ga_bl_f_g_c_fin]
+{
+	doc = "Boiled Leather Gauntlets";
+	specializes = base_glove;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Zenith Gauntlets";
+	}
+	[defend]
+	{
+		armor_style = 025;
+		armor_type = type1;
+	  f defense = 13.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:23;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_gntl_116;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 3.000000;
+		  f modifier_min = 1.000000;
+		}
+		[o_fin]
+		{
+			armor_style = 029;
+			armor_type = type1;
+		  f defense = 16.000000;
+			equip_requirements = strength:27;
+			inventory_icon = b_gui_ig_i_a_gntl_117;
+		  f modifier_max = 6.000000;
+		  f modifier_min = 3.000000;
+		}
+	}
+}
+[t:template,n:gl_ra_ga_br_f_g_c_fin]
+{
+	doc = "Brigandine Gauntlets";
+	specializes = base_glove;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Spectral Gauntlets";
+	}
+	[defend]
+	{
+		armor_style = 079;
+		armor_type = type1;
+	  f defense = 13.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:24;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_gntl_118;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 3.000000;
+		  f modifier_min = 1.000000;
+		}
+		[o_fin]
+		{
+			armor_style = 083;
+			armor_type = type1;
+		  f defense = 18.000000;
+			equip_requirements = strength:29;
+			inventory_icon = b_gui_ig_i_a_gntl_119;
+		  f modifier_max = 7.000000;
+		  f modifier_min = 3.000000;
+		}
+		[o_mag]
+		{
+			armor_style = 085;
+			armor_type = type1;
+		  f defense = 35.000000;
+			equip_requirements = strength:48;
+			inventory_icon = b_gui_ig_i_a_gntl_120;
+		  f modifier_max = 14.000000;
+		  f modifier_min = 10.000000;
+		}
+	}
+}
+[t:template,n:gl_ra_ga_fp_f_g_o_avg]
+{
+	doc = "Full Plate Gauntlets";
+	specializes = base_glove;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Chief Gauntlets";
+	}
+	[defend]
+	{
+		armor_style = 005;
+		armor_type = type1;
+	  f defense = 35.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:49;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_gntl_129;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 15.000000;
+		  f modifier_min = 8.000000;
+		}
+		[c_fin]
+		{
+			armor_style = 055;
+			armor_type = type1;
+		  f defense = 31.000000;
+			equip_requirements = strength:44;
+			inventory_icon = b_gui_ig_i_a_gntl_128;
+		  f modifier_max = 21.000000;
+		  f modifier_min = 8.000000;
+		}
+		[c_str]
+		{
+			armor_style = 056;
+			armor_type = type1;
+		  f defense = 47.000000;
+			equip_requirements = strength:63;
+			inventory_icon = b_gui_ig_i_a_gntl_131;
+		  f modifier_max = 71.000000;
+		  f modifier_min = 13.000000;
+		}
+		[o_fin]
+		{
+			armor_style = 005;
+			armor_type = type1;
+		  f defense = 40.000000;
+			equip_requirements = strength:54;
+			inventory_icon = b_gui_ig_i_a_gntl_130;
+		  f modifier_max = 49.000000;
+		  f modifier_min = 11.000000;
+		}
+		[o_str]
+		{
+			armor_style = 005;
+			armor_type = type1;
+		  f defense = 55.000000;
+			equip_requirements = strength:71;
+			inventory_icon = b_gui_ig_i_a_gntl_132;
+		  f modifier_max = 112.000000;
+		  f modifier_min = 15.000000;
+		}
+	}
+}
+[t:template,n:gl_ra_ga_sc_f_g_c_fin]
+{
+	doc = "Scale Gauntlets";
+	specializes = base_glove;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Terrestrial Gauntlets";
+	}
+	[defend]
+	{
+		armor_style = 048;
+		armor_type = type1;
+	  f defense = 17.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:28;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_gntl_121;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 4.000000;
+		  f modifier_min = 1.000000;
+		}
+		[o_fin]
+		{
+			armor_style = 052;
+			armor_type = type1;
+		  f defense = 22.000000;
+			equip_requirements = strength:33;
+			inventory_icon = b_gui_ig_i_a_gntl_122;
+		  f modifier_max = 8.000000;
+		  f modifier_min = 4.000000;
+		}
+	}
+}
+[t:template,n:gl_ra_gl_bl_f_g_c_fin]
+{
+	doc = "Boiled Leather Gloves";
+	specializes = base_glove;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Marshal Gloves";
+	}
+	[defend]
+	{
+		armor_style = 016;
+		armor_type = type1;
+	  f defense = 7.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:17;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_gntl_102;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 4.000000;
+		  f modifier_min = 2.000000;
+		}
+		[o_fin]
+		{
+			armor_style = 021;
+			armor_type = type1;
+		  f defense = 11.000000;
+			equip_requirements = strength:20;
+			inventory_icon = b_gui_ig_i_a_gntl_103;
+		  f modifier_max = 5.000000;
+		  f modifier_min = 2.000000;
+		}
+	}
+}
+[t:template,n:gl_ra_gl_br_f_g_c_fin]
+{
+	doc = "Brigandine Gloves";
+	specializes = base_glove;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Lunar Gloves";
+	}
+	[defend]
+	{
+		armor_style = 065;
+		armor_type = type1;
+	  f defense = 12.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:22;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_gntl_104;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 2.000000;
+		  f modifier_min = 1.000000;
+		}
+		[o_fin]
+		{
+			armor_style = 069;
+			armor_type = type1;
+		  f defense = 16.000000;
+			equip_requirements = strength:27;
+			inventory_icon = b_gui_ig_i_a_gntl_105;
+		  f modifier_max = 6.000000;
+		  f modifier_min = 3.000000;
+		}
+		[o_mag]
+		{
+			armor_style = 071;
+			armor_type = type1;
+		  f defense = 33.000000;
+			equip_requirements = strength:46;
+			inventory_icon = b_gui_ig_i_a_gntl_107;
+		  f modifier_max = 13.000000;
+		  f modifier_min = 10.000000;
+		}
+		[o_str]
+		{
+			armor_style = 070;
+			armor_type = type1;
+		  f defense = 24.000000;
+			equip_requirements = strength:36;
+			inventory_icon = b_gui_ig_i_a_gntl_106;
+		  f modifier_max = 9.000000;
+		  f modifier_min = 6.000000;
+		}
+	}
+}
+[t:template,n:gl_ra_gl_ch_f_g_c_fin]
+{
+	doc = "Chain Gloves";
+	specializes = base_glove;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Sultan Gloves";
+	}
+	[defend]
+	{
+		armor_style = 041;
+		armor_type = type1;
+	  f defense = 18.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:29;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_gntl_111;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 4.000000;
+		  f modifier_min = 1.000000;
+		}
+		[c_mag]
+		{
+			armor_style = 043;
+			armor_type = type1;
+		  f defense = 40.000000;
+			equip_requirements = strength:54;
+			inventory_icon = b_gui_ig_i_a_gntl_115;
+		  f modifier_max = 15.000000;
+		  f modifier_min = 11.000000;
+		}
+		[c_str]
+		{
+			armor_style = 042;
+			armor_type = type1;
+		  f defense = 29.000000;
+			equip_requirements = strength:42;
+			inventory_icon = b_gui_ig_i_a_gntl_113;
+		  f modifier_max = 11.000000;
+		  f modifier_min = 6.000000;
+		}
+		[o_fin]
+		{
+			armor_style = 045;
+			armor_type = type1;
+		  f defense = 25.000000;
+			equip_requirements = strength:36;
+			inventory_icon = b_gui_ig_i_a_gntl_112;
+		  f modifier_max = 9.000000;
+		  f modifier_min = 4.000000;
+		}
+		[o_str]
+		{
+			armor_style = 046;
+			armor_type = type1;
+		  f defense = 35.000000;
+			equip_requirements = strength:47;
+			inventory_icon = b_gui_ig_i_a_gntl_114;
+		  f modifier_max = 13.000000;
+		  f modifier_min = 9.000000;
+		}
+	}
+}
+[t:template,n:gl_ra_gl_le_f_g_c_fin]
+{
+	doc = "Leather Gloves";
+	specializes = base_glove;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Punisher Gloves";
+	}
+	[defend]
+	{
+		armor_style = 034;
+		armor_type = type1;
+	  f defense = 4.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:13;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_gntl_098;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 3.000000;
+		  f modifier_min = 1.000000;
+		}
+		[o_fin]
+		{
+			armor_style = 038;
+			armor_type = type1;
+		  f defense = 8.000000;
+			equip_requirements = strength:18;
+			inventory_icon = b_gui_ig_i_a_gntl_099;
+		  f modifier_max = 4.000000;
+		  f modifier_min = 2.000000;
+		}
+	}
+}
+[t:template,n:gl_ra_gl_sc_f_g_c_fin]
+{
+	doc = "Scale Gloves";
+	specializes = base_glove;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Rock Scale Gloves";
+	}
+	[defend]
+	{
+		armor_style = 072;
+		armor_type = type1;
+	  f defense = 13.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:24;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_gntl_108;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 3.000000;
+		  f modifier_min = 1.000000;
+		}
+		[o_fin]
+		{
+			armor_style = 076;
+			armor_type = type1;
+		  f defense = 19.000000;
+			equip_requirements = strength:29;
+			inventory_icon = b_gui_ig_i_a_gntl_109;
+		  f modifier_max = 7.000000;
+		  f modifier_min = 3.000000;
+		}
+		[o_str]
+		{
+			armor_style = 077;
+			armor_type = type1;
+		  f defense = 26.000000;
+			equip_requirements = strength:38;
+			inventory_icon = b_gui_ig_i_a_gntl_110;
+		  f modifier_max = 10.000000;
+		  f modifier_min = 7.000000;
+		}
+	}
+}
+[t:template,n:gl_ra_gl_sl_f_g_c_fin]
+{
+	doc = "Studded Leather Gloves";
+	specializes = base_glove;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Secure Gloves";
+	}
+	[defend]
+	{
+		armor_style = 058;
+		armor_type = type1;
+	  f defense = 6.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:15;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_gntl_100;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 3.000000;
+		  f modifier_min = 1.000000;
+		}
+		[o_fin]
+		{
+			armor_style = 062;
+			armor_type = type1;
+		  f defense = 9.000000;
+			equip_requirements = strength:18;
+			inventory_icon = b_gui_ig_i_a_gntl_101;
+		  f modifier_max = 4.000000;
+		  f modifier_min = 2.000000;
+		}
+	}
+}
+[t:template,n:gl_un_gl_br_f_spider]
+{
+	doc = "Arachnid Gauntlets";
+	specializes = base_glove;
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Black Widow Gauntlets";
+	}
+	[defend]
+	{
+		armor_style = 096;
+		armor_type = type1;
+		defense = 24;
+	}
+	[gui]
+	{
+        equip_requirements = strength:25;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_gntl_096;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 19.000000;
+		  f modifier_min = 3.000000;
+		}
+	}
+}
+[t:template,n:gl_un_gl_ch_r_green]
+{
+	doc = "Green Gloves";
+	specializes = base_glove;
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Woodland Gloves";
+	}
+	[defend]
+	{
+		armor_style = 094;
+		armor_type = type1;
+		defense = 28;
+	}
+	[gui]
+	{
+        equip_requirements = strength:29;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_gntl_094;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 20.000000;
+		  f modifier_min = 4.000000;
+		}
+	}
+}
+[t:template,n:gl_un_gl_pl_f_crystal]
+{
+	doc = "Crystal Gauntlets";
+	specializes = base_glove;
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Crystal Gauntlets";
+	}
+	[defend]
+	{
+		armor_style = 095;
+		armor_type = type1;
+		defense = 32;
+	}
+	[gui]
+	{
+        equip_requirements = strength:31;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_gntl_095;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 25.000000;
+		  f modifier_min = 3.000000;
+		}
+	}
+}
+[t:template,n:gl_un_gl_ro_m_molten]
+{
+	doc = "Lava Gloves";
+	specializes = base_glove;
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Molten Gloves";
+	}
+	[defend]
+	{
+		armor_style = 093;
+		armor_type = type1;
+		defense = 49;
+	}
+	[gui]
+	{
+        equip_requirements = strength:51;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_gntl_093;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 38.000000;
+		  f modifier_min = 7.000000;
+		}
+	}
+}
+[t:template,n:gl_un_gl_sc_f_dragon]
+{
+	doc = "Dragon Gauntlets";
+	specializes = base_glove;
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Serpentine Gauntlets";
+	}
+	[defend]
+	{
+		armor_style = 097;
+		armor_type = type1;
+		defense = 43;
+	}
+	[gui]
+	{
+        equip_requirements = strength:45;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_gntl_097;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 35.000000;
+		  f modifier_min = 5.000000;
+		}
+	}
+}
