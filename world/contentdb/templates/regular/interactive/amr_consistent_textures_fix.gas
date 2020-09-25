@@ -693,7 +693,7 @@
 		}
 		[o_fin]
 		{
-			armor_style = 049;
+			armor_style = 505; // Eksevis //
 			armor_type = a2;
 		  f defense = 116.000000;
 			equip_requirements = strength:22;
@@ -895,9 +895,9 @@
 		  f modifier_max = 16.000000;
 		  f modifier_min = 8.000000;
 		}
-		[o_mag]
+		[o_mag] // Eksevis //
 		{
-			armor_style = 002;
+			armor_style = 500;
 			armor_type = a6;
 		  f defense = 447.000000;
 			equip_requirements = strength:54;

@@ -459,7 +459,7 @@
 		}
 		[o_fin]
 		{
-			armor_style = 049;
+			armor_style = 505;
 			armor_type = a2;
 		  f defense = 116.000000;
 			equip_requirements = strength:22;
