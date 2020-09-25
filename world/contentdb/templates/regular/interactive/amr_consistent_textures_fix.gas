@@ -468,65 +468,34 @@
 		}
 	}
 }
-[t:template,n:bd_ra_ro_m_g_c_059] // Eksevis //
+[t:template,n:bd_ra_ro_m_d_c_009]
 {
-	doc = "Robe";
+	doc = "Garment";
 	specializes = base_body_armor_cloth;
 	[common]
 	{
 		pcontent_special_type = rare, unique;
-		screen_name = "Dream Robe";
-	}
-	[defend]
-	{
-		armor_style = 513;
-		armor_type = a7;
-	  f defense = 72.000000;
-	}
-	[gui]
-	{
-		equip_requirements = intelligence:43;
-		inventory_height = 2;
-		inventory_icon = b_gui_ig_i_a_pos_a7_071;
-		inventory_width = 2;
-	}
-	[pcontent]
-	{
-		[base]
-		{
-		  f modifier_max = 111.000000;
-		  f modifier_min = 26.000000;
-		}
-	}
-}
-[t:template,n:bd_ra_ro_m_g_c_023] // Eksevis //
-{
-	doc = "Cloak";
-	specializes = base_body_armor_cloth;
-	[common]
-	{
-		pcontent_special_type = rare, unique;
-		screen_name = "Astral Cloak";
+		screen_name = "Night Garment";
 	}
 	[defend]
 	{
 		armor_style = 514;
 		armor_type = a7;
-	  f defense = 34.000000;
+	  f defense = 17.000000;
 	}
 	[gui]
 	{
-		equip_requirements = intelligence:25;
+		equip_requirements = intelligence:17;
 		inventory_height = 2;
-		inventory_icon = b_gui_ig_i_a_pos_a7_064;
+		inventory_icon = b_gui_ig_i_a_pos_a7_067;
 		inventory_width = 2;
 	}
 	[pcontent]
 	{
 		[base]
 		{
-		  f modifier_max = 52.000000;
-		  f modifier_min = 12.000000;
+		  f modifier_max = 20.000000;
+		  f modifier_min = 3.000000;
 		}
 	}
 }
@@ -561,6 +530,40 @@
 		}
 	}
 }
+[t:template,n:bd_ra_ro_m_g_c_059] // Eksevis //
+{
+	doc = "Robe";
+	specializes = base_body_armor_cloth;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Dream Robe";
+	}
+	[defend]
+	{
+		armor_style = 513;
+		armor_type = a7;
+	  f defense = 72.000000;
+	}
+	[gui]
+	{
+		equip_requirements = intelligence:43;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_pos_a7_071;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 111.000000;
+		  f modifier_min = 26.000000;
+		}
+	}
+}
+
+
+
 [t:template,n:bd_ra_ro_m_g_c_053] // Eksevis //
 {
 	doc = "Robe";

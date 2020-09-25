@@ -84,7 +84,7 @@
 		}
 	}
 }
-[t:template,n:bd_ra_ro_m_d_c_009]
+[t:template,n:bd_ra_ro_m_d_c_009] // Consistent Textures //
 {
 	doc = "Garment";
 	specializes = base_body_armor_cloth;
@@ -95,7 +95,7 @@
 	}
 	[defend]
 	{
-		armor_style = 020;
+		armor_style = 514;
 		armor_type = a7;
 	  f defense = 17.000000;
 	}
@@ -562,7 +562,7 @@
 	}
 	[defend]
 	{
-		armor_style = 514;
+		armor_style = 015;
 		armor_type = a7;
 	  f defense = 34.000000;
 	}
@@ -675,7 +675,7 @@
 		}
 	}
 }
-[t:template,n:bd_ra_ro_m_g_c_031]
+[t:template,n:bd_ra_ro_m_g_c_031] // Consistent Textures //
 {
 	doc = "Coat";
 	specializes = base_body_armor_cloth;
