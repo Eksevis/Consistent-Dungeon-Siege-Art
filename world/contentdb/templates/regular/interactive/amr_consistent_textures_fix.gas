@@ -693,7 +693,7 @@
 		}
 		[o_fin]
 		{
-			armor_style = 505; // Eksevis //
+			armor_style = 049;
 			armor_type = a2;
 		  f defense = 116.000000;
 			equip_requirements = strength:22;
@@ -895,9 +895,9 @@
 		  f modifier_max = 16.000000;
 		  f modifier_min = 8.000000;
 		}
-		[o_mag] // Eksevis //
+		[o_mag]
 		{
-			armor_style = 500;
+			armor_style = 002;
 			armor_type = a6;
 		  f defense = 447.000000;
 			equip_requirements = strength:54;
@@ -1101,6 +1101,35 @@
 //                                                                                 //
 /////////////////////////////////////////////////////////////////////////////////////
 
+[t:template,n:he_ra_ca_le_avg] // Eksevis //
+{
+	doc = "Pauper Cap";
+	specializes = base_helm;
+	[common]
+	{
+        pcontent_special_type = rare, unique;
+		screen_name = "Pauper Cap";
+	}
+	[defend]
+	{
+		armor_style = 500;
+		armor_type = type6;
+	  f defense = 4.000000;
+	}
+	[gui]
+	{
+		inventory_icon = b_gui_ig_i_a_hlmt_103;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 11.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+
 /////////////////////////////////////////////////////////////////////////////////////
 //                                                                                 //
 //                                      GAUNTLETS                                  //
@@ -1148,7 +1177,7 @@
 		}
 	}
 }
-[t:template,n:gl_ra_ga_fp_f_g_o_avg]
+[t:template,n:gl_ra_ga_fp_f_g_o_avg] // Eksevis //
 {
 	doc = "Full Plate Gauntlets";
 	specializes = base_glove;
@@ -1225,3 +1254,156 @@
 //                                        BOOTS                                    //
 //                                                                                 //
 /////////////////////////////////////////////////////////////////////////////////////
+
+[t:template,n:bo_ra_bo_le_f_g_c_fin] // Eksevis //
+{
+	doc = "Leather Boots";
+	specializes = base_boot;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Ready Boots";
+	}
+	[defend]
+	{
+		armor_style = 500;
+		armor_type = type1;
+	  f defense = 3.000000;
+	}
+	[gui]
+	{
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_boot_076;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 2.000000;
+		  f modifier_min = 1.000000;
+		}
+		[o_fin]
+		{
+			armor_style = 044;
+			armor_type = type1;
+		  f defense = 7.000000;
+			equip_requirements = strength:15;
+			inventory_icon = b_gui_ig_i_a_boot_077;
+		  f modifier_max = 3.000000;
+		  f modifier_min = 1.000000;
+		}
+	}
+}
+[t:template,n:bo_ra_gr_ba_f_g_c_fin] // Eksevis //
+{
+	doc = "Banded Greaves";
+	specializes = base_boot;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Pain Greaves";
+	}
+	[defend]
+	{
+		armor_style = 061;
+		armor_type = type1;
+	  f defense = 24.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:32;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_boot_095;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 4.000000;
+		  f modifier_min = 1.000000;
+		}
+		[o_fin]
+		{
+			armor_style = 065;
+			armor_type = type1;
+		  f defense = 30.000000;
+			equip_requirements = strength:37;
+			inventory_icon = b_gui_ig_i_a_boot_096;
+		  f modifier_max = 9.000000;
+		  f modifier_min = 4.000000;
+		}
+		[o_mag] // Eksevis //
+		{
+			armor_style = 501;
+			armor_type = type1;
+		  f defense = 51.000000;
+			equip_requirements = strength:58;
+			inventory_icon = b_gui_ig_i_a_boot_097;
+		  f modifier_max = 17.000000;
+		  f modifier_min = 12.000000;
+		}
+	}
+}
+[t:template,n:bo_ra_gr_fp_f_g_c_fin] // Eksevis //
+{
+	doc = "Full Plate Greaves";
+	specializes = base_boot;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Steel Greaves";
+	}
+	[defend]
+	{
+		armor_style = 502;
+		armor_type = type1;
+	  f defense = 37.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:44;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_a_boot_098;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 7.000000;
+		  f modifier_min = 1.000000;
+		}
+		[c_str]
+		{
+			armor_style = 034;
+			armor_type = type1;
+		  f defense = 52.000000;
+			equip_requirements = strength:58;
+			inventory_icon = b_gui_ig_i_a_boot_100;
+		  f modifier_max = 16.000000;
+		  f modifier_min = 9.000000;
+		}
+		[o_fin]
+		{
+			armor_style = 037;
+			armor_type = type1;
+		  f defense = 46.000000;
+			equip_requirements = strength:53;
+			inventory_icon = b_gui_ig_i_a_boot_099;
+		  f modifier_max = 14.000000;
+		  f modifier_min = 6.000000;
+		}
+		[o_str]
+		{
+			armor_style = 038;
+			armor_type = type1;
+		  f defense = 58.000000;
+			equip_requirements = strength:64;
+			inventory_icon = b_gui_ig_i_a_boot_101;
+		  f modifier_max = 19.000000;
+		  f modifier_min = 12.000000;
+		}
+	}
+}

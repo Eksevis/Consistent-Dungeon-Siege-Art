@@ -1,0 +1,3688 @@
+[t:template,n:base_helm]
+{
+	doc = "helm base template";
+	specializes = armor;
+	[aspect]
+	{
+		[voice]
+		{
+			[put_down]
+			{
+				* = s_e_gui_put_down_helmet;
+			}
+		}
+	}
+	[gui]
+	{
+		equip_slot = es_head;
+		inventory_height = 2;
+		inventory_width = 2;
+	}
+}
+[t:template,n:he_ca_le_avg]
+{
+	doc = "Leather Cap";
+	specializes = base_helm;
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Leather Cap";
+	}
+	[defend]
+	{
+		armor_style = 006;
+		armor_type = type6;
+	  f defense = 2.000000;
+	}
+	[gui]
+	{
+		inventory_icon = b_gui_ig_i_a_hlmt_006;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:he_ca_pl_avg]
+{
+	doc = "Steel Cap";
+	specializes = base_helm;
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Steel Cap";
+	}
+	[defend]
+	{
+		armor_style = 004;
+		armor_type = type4;
+	  f defense = 12.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:20;
+		inventory_icon = b_gui_ig_i_a_hlmt_004;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:he_ca_pl_blue]
+{
+	doc = "Iron Helm";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Iron Helm";
+	}
+	[defend]
+	{
+		armor_style = 014;
+		armor_type = type14;
+	  f defense = 11.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:19;
+		inventory_icon = b_gui_ig_i_a_hlmt_014;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 3.000000;
+		  f modifier_min = 1.000000;
+		}
+	}
+}
+[t:template,n:he_ca_pl_blue_02]
+{
+	doc = "Onyx Helm";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Onyx Helm";
+	}
+	[defend]
+	{
+		armor_style = 089;
+		armor_type = type14;
+	  f defense = 20.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:27;
+		inventory_icon = b_gui_ig_i_a_hlmt_089;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 6.000000;
+		  f modifier_min = 4.000000;
+		}
+	}
+}
+[t:template,n:he_ca_pl_cap]
+{
+	doc = "Plate Cap";
+	specializes = base_helm;
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Plate Cap";
+	}
+	[defend]
+	{
+		armor_style = 028;
+		armor_type = type28;
+	  f defense = 7.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:15;
+		inventory_icon = b_gui_ig_i_a_hlmt_028;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:he_ca_pl_cap_brown]
+{
+	doc = "Earthen Helm";
+	specializes = base_helm;
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Earthen Helm";
+	}
+	[defend]
+	{
+		armor_style = 045;
+		armor_type = type28;
+	  f defense = 10.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:18;
+		inventory_icon = b_gui_ig_i_a_hlmt_045;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:he_ca_pl_dome]
+{
+	doc = "Dome Cap";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Dome Cap";
+	}
+	[defend]
+	{
+		armor_style = 019;
+		armor_type = type19;
+	  f defense = 5.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:14;
+		inventory_icon = b_gui_ig_i_a_hlmt_019;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 1.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:he_ca_pl_fin]
+{
+	doc = "Ridge Helm";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Ridge Helm";
+	}
+	[defend]
+	{
+		armor_style = 013;
+		armor_type = type13;
+	  f defense = 14.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:22;
+		inventory_icon = b_gui_ig_i_a_hlmt_013;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 4.000000;
+		  f modifier_min = 2.000000;
+		}
+	}
+}
+[t:template,n:he_ca_pl_mag]
+{
+	doc = "Brow Cap";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Brow Cap";
+	}
+	[defend]
+	{
+		armor_style = 009;
+		armor_type = type9;
+	  f defense = 17.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:24;
+		inventory_icon = b_gui_ig_i_a_hlmt_009;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 5.000000;
+		  f modifier_min = 2.000000;
+		}
+	}
+}
+[t:template,n:he_ca_pl_ornage]
+{
+	doc = "Solar Cap";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Solar Cap";
+	}
+	[defend]
+	{
+		armor_style = 012;
+		armor_type = type12;
+	  f defense = 11.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:19;
+		inventory_icon = b_gui_ig_i_a_hlmt_012;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 3.000000;
+		  f modifier_min = 2.000000;
+		}
+	}
+}
+[t:template,n:he_ca_ro_felt_01]
+{
+	doc = "Felt Cap";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Felt Cap";
+	}
+	[defend]
+	{
+		armor_style = 038;
+		armor_type = type38;
+	  f defense = 3.000000;
+	}
+	[gui]
+	{
+		inventory_icon = b_gui_ig_i_a_hlmt_038;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 2.000000;
+		  f modifier_min = 1.000000;
+		}
+	}
+}
+[t:template,n:he_ca_ro_felt_02]
+{
+	doc = "Felt Cap";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Felt Cap";
+	}
+	[defend]
+	{
+		armor_style = 075;
+		armor_type = type38;
+	  f defense = 2.000000;
+	}
+	[gui]
+	{
+		inventory_icon = b_gui_ig_i_a_hlmt_075;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 2.000000;
+		  f modifier_min = 1.000000;
+		}
+	}
+}
+[t:template,n:he_ca_ro_felt_03]
+{
+	doc = "Felt Cap";
+	specializes = base_helm;
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Felt Cap";
+	}
+	[defend]
+	{
+		armor_style = 076;
+		armor_type = type38;
+	  f defense = 1.000000;
+	}
+	[gui]
+	{
+		inventory_icon = b_gui_ig_i_a_hlmt_076;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 1.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:he_ca_ro_felt_04]
+{
+	doc = "Felt Cap";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Felt Cap";
+	}
+	[defend]
+	{
+		armor_style = 077;
+		armor_type = type38;
+	  f defense = 4.000000;
+	}
+	[gui]
+	{
+		equip_requirements = intelligence:13;
+		inventory_icon = b_gui_ig_i_a_hlmt_077;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 3.000000;
+		  f modifier_min = 2.000000;
+		}
+	}
+}
+[t:template,n:he_ca_ro_flat_01]
+{
+	doc = "Flat Cap";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Flat Cap";
+	}
+	[defend]
+	{
+		armor_style = 016;
+		armor_type = type16;
+	  f defense = 11.000000;
+	}
+	[gui]
+	{
+		equip_requirements = intelligence:20;
+		inventory_icon = b_gui_ig_i_a_hlmt_016;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 5.000000;
+		  f modifier_min = 1.000000;
+		}
+	}
+}
+[t:template,n:he_ca_ro_flat_02]
+{
+	doc = "Flat Cap";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Flat Cap";
+	}
+	[defend]
+	{
+		armor_style = 066;
+		armor_type = type16;
+	  f defense = 13.000000;
+	}
+	[gui]
+	{
+		equip_requirements = intelligence:22;
+		inventory_icon = b_gui_ig_i_a_hlmt_066;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 9.000000;
+		  f modifier_min = 3.000000;
+		}
+	}
+}
+[t:template,n:he_ca_ro_flat_03]
+{
+	doc = "Flat Cap";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Flat Cap";
+	}
+	[defend]
+	{
+		armor_style = 067;
+		armor_type = type16;
+	  f defense = 15.000000;
+	}
+	[gui]
+	{
+		equip_requirements = intelligence:23;
+		inventory_icon = b_gui_ig_i_a_hlmt_067;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 12.000000;
+		  f modifier_min = 5.000000;
+		}
+	}
+}
+[t:template,n:he_ca_ro_flat_04]
+{
+	doc = "Flat Cap";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Flat Cap";
+	}
+	[defend]
+	{
+		armor_style = 068;
+		armor_type = type16;
+	  f defense = 16.000000;
+	}
+	[gui]
+	{
+		equip_requirements = intelligence:25;
+		inventory_icon = b_gui_ig_i_a_hlmt_068;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 14.000000;
+		  f modifier_min = 8.000000;
+		}
+	}
+}
+[t:template,n:he_ca_ro_gemblue]
+{
+	doc = "Gem Cap";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Gem Cap";
+	}
+	[defend]
+	{
+		armor_style = 037;
+		armor_type = type37;
+	  f defense = 1.000000;
+	}
+	[gui]
+	{
+		inventory_icon = b_gui_ig_i_a_hlmt_037;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 6.000000;
+		  f modifier_min = 2.000000;
+		}
+	}
+}
+[t:template,n:he_ca_ro_green]
+{
+	doc = "Fabric Cap";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Fabric Cap";
+	}
+	[defend]
+	{
+		armor_style = 038;
+		armor_type = type38;
+	  f defense = 1.000000;
+	}
+	[gui]
+	{
+		inventory_icon = b_gui_ig_i_a_hlmt_038;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 6.000000;
+		  f modifier_min = 2.000000;
+		}
+	}
+}
+[t:template,n:he_ca_ro_slope_01]
+{
+	doc = "Peak Cap";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Peak Cap";
+	}
+	[defend]
+	{
+		armor_style = 035;
+		armor_type = type35;
+	  f defense = 3.000000;
+	}
+	[gui]
+	{
+		inventory_icon = b_gui_ig_i_a_hlmt_035;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 2.000000;
+		  f modifier_min = 1.000000;
+		}
+	}
+}
+[t:template,n:he_ca_ro_slope_02]
+{
+	doc = "Peak Cap";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Peak Cap";
+	}
+	[defend]
+	{
+		armor_style = 078;
+		armor_type = type35;
+	  f defense = 2.000000;
+	}
+	[gui]
+	{
+		inventory_icon = b_gui_ig_i_a_hlmt_078;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 1.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:he_ca_ro_slope_03]
+{
+	doc = "Peak Cap";
+	specializes = base_helm;
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Peak Cap";
+	}
+	[defend]
+	{
+		armor_style = 079;
+		armor_type = type35;
+	  f defense = 1.000000;
+	}
+	[gui]
+	{
+		inventory_icon = b_gui_ig_i_a_hlmt_079;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:he_ca_ro_slope_04]
+{
+	doc = "Peak Cap";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Peak Cap";
+	}
+	[defend]
+	{
+		armor_style = 080;
+		armor_type = type35;
+	  f defense = 4.000000;
+	}
+	[gui]
+	{
+		equip_requirements = intelligence:13;
+		inventory_icon = b_gui_ig_i_a_hlmt_080;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 3.000000;
+		  f modifier_min = 1.000000;
+		}
+	}
+}
+[t:template,n:he_ca_ro_thin_01]
+{
+	doc = "Thin Cap";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Thin Cap";
+	}
+	[defend]
+	{
+		armor_style = 008;
+		armor_type = type8;
+	  f defense = 4.000000;
+	}
+	[gui]
+	{
+		equip_requirements = intelligence:14;
+		inventory_icon = b_gui_ig_i_a_hlmt_008;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 5.000000;
+		  f modifier_min = 2.000000;
+		}
+	}
+}
+[t:template,n:he_ca_ro_thin_02]
+{
+	doc = "Thin Cap";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Thin Cap";
+	}
+	[defend]
+	{
+		armor_style = 060;
+		armor_type = type8;
+	  f defense = 2.000000;
+	}
+	[gui]
+	{
+		inventory_icon = b_gui_ig_i_a_hlmt_060;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 1.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:he_ca_ro_thin_03]
+{
+	doc = "Thin Cap";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Thin Cap";
+	}
+	[defend]
+	{
+		armor_style = 061;
+		armor_type = type8;
+	  f defense = 3.000000;
+	}
+	[gui]
+	{
+		inventory_icon = b_gui_ig_i_a_hlmt_061;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 2.000000;
+		  f modifier_min = 1.000000;
+		}
+	}
+}
+[t:template,n:he_ca_ro_thin_04]
+{
+	doc = "Thin Cap";
+	specializes = base_helm;
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Thin Cap";
+	}
+	[defend]
+	{
+		armor_style = 062;
+		armor_type = type8;
+	  f defense = 1.000000;
+	}
+	[gui]
+	{
+		inventory_icon = b_gui_ig_i_a_hlmt_062;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:he_ca_ro_turban_01]
+{
+	doc = "Coiled Cap";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Coiled Cap";
+	}
+	[defend]
+	{
+		armor_style = 037;
+		armor_type = type37;
+	  f defense = 4.000000;
+	}
+	[gui]
+	{
+		equip_requirements = intelligence:14;
+		inventory_icon = b_gui_ig_i_a_hlmt_037;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 3.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:he_ca_ro_turban_02]
+{
+	doc = "Coiled Cap";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Coiled Cap";
+	}
+	[defend]
+	{
+		armor_style = 063;
+		armor_type = type37;
+	  f defense = 5.000000;
+	}
+	[gui]
+	{
+		equip_requirements = intelligence:15;
+		inventory_icon = b_gui_ig_i_a_hlmt_063;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 4.000000;
+		  f modifier_min = 1.000000;
+		}
+	}
+}
+[t:template,n:he_ca_ro_turban_03]
+{
+	doc = "Coiled Cap";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Coiled Cap";
+	}
+	[defend]
+	{
+		armor_style = 064;
+		armor_type = type37;
+	  f defense = 6.000000;
+	}
+	[gui]
+	{
+		equip_requirements = intelligence:15;
+		inventory_icon = b_gui_ig_i_a_hlmt_064;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 5.000000;
+		  f modifier_min = 2.000000;
+		}
+	}
+}
+[t:template,n:he_ca_ro_turban_04]
+{
+	doc = "Coiled Cap";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Coiled Cap";
+	}
+	[defend]
+	{
+		armor_style = 065;
+		armor_type = type37;
+	  f defense = 7.000000;
+	}
+	[gui]
+	{
+		equip_requirements = intelligence:16;
+		inventory_icon = b_gui_ig_i_a_hlmt_065;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 6.000000;
+		  f modifier_min = 3.000000;
+		}
+	}
+}
+[t:template,n:he_ca_ro_wizard_01]
+{
+	doc = "Wizard Cap";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Wizard Cap";
+	}
+	[defend]
+	{
+		armor_style = 010;
+		armor_type = type10;
+	  f defense = 4.000000;
+	}
+	[gui]
+	{
+		equip_requirements = intelligence:13;
+		inventory_icon = b_gui_ig_i_a_hlmt_010;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 1.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:he_ca_ro_wizard_02]
+{
+	doc = "Wizard Cap";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Wizard Cap";
+	}
+	[defend]
+	{
+		armor_style = 055;
+		armor_type = type10;
+	  f defense = 5.000000;
+	}
+	[gui]
+	{
+		equip_requirements = intelligence:15;
+		inventory_icon = b_gui_ig_i_a_hlmt_055;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 3.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:he_ca_ro_wizard_03]
+{
+	doc = "Wizard Cap";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Wizard Cap";
+	}
+	[defend]
+	{
+		armor_style = 056;
+		armor_type = type10;
+	  f defense = 6.000000;
+	}
+	[gui]
+	{
+		equip_requirements = intelligence:15;
+		inventory_icon = b_gui_ig_i_a_hlmt_056;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 4.000000;
+		  f modifier_min = 2.000000;
+		}
+	}
+}
+[t:template,n:he_ca_ro_wizard_04]
+{
+	doc = "Wizard Cap";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Wizard Cap";
+	}
+	[defend]
+	{
+		armor_style = 057;
+		armor_type = type10;
+	  f defense = 7.000000;
+	}
+	[gui]
+	{
+		equip_requirements = intelligence:17;
+		inventory_icon = b_gui_ig_i_a_hlmt_057;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 6.000000;
+		  f modifier_min = 3.000000;
+		}
+	}
+}
+[t:template,n:he_ca_ro_wizard_05]
+{
+	doc = "Wizard Cap";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Wizard Cap";
+	}
+	[defend]
+	{
+		armor_style = 058;
+		armor_type = type10;
+	  f defense = 8.000000;
+	}
+	[gui]
+	{
+		equip_requirements = intelligence:18;
+		inventory_icon = b_gui_ig_i_a_hlmt_058;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 7.000000;
+		  f modifier_min = 4.000000;
+		}
+	}
+}
+[t:template,n:he_ca_ro_wizard_06]
+{
+	doc = "Wizard Cap";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Wizard Cap";
+	}
+	[defend]
+	{
+		armor_style = 059;
+		armor_type = type10;
+	  f defense = 9.000000;
+	}
+	[gui]
+	{
+		equip_requirements = intelligence:18;
+		inventory_icon = b_gui_ig_i_a_hlmt_059;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 8.000000;
+		  f modifier_min = 5.000000;
+		}
+	}
+}
+[t:template,n:he_ca_ro_wizard_07]
+{
+	doc = "Wizard Cap";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Wizard Cap";
+	}
+	[defend]
+	{
+		armor_style = 095;
+		armor_type = type10;
+	  f defense = 10.000000;
+	}
+	[gui]
+	{
+		equip_requirements = intelligence:19;
+		inventory_icon = b_gui_ig_i_a_hlmt_095;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 9.000000;
+		  f modifier_min = 6.000000;
+		}
+	}
+}
+[t:template,n:he_ca_ro_wooly_01]
+{
+	doc = "Wooly Cap";
+	specializes = base_helm;
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Wooly Cap";
+	}
+	[defend]
+	{
+		armor_style = 036;
+		armor_type = type36;
+	  f defense = 2.000000;
+	}
+	[gui]
+	{
+		inventory_icon = b_gui_ig_i_a_hlmt_036;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:he_ca_ro_wooly_02]
+{
+	doc = "Wooly Cap";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Wooly Cap";
+	}
+	[defend]
+	{
+		armor_style = 072;
+		armor_type = type36;
+	  f defense = 3.000000;
+	}
+	[gui]
+	{
+		inventory_icon = b_gui_ig_i_a_hlmt_072;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 1.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:he_ca_ro_wooly_03]
+{
+	doc = "Wooly Cap";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Wooly Cap";
+	}
+	[defend]
+	{
+		armor_style = 073;
+		armor_type = type36;
+	  f defense = 4.000000;
+	}
+	[gui]
+	{
+		equip_requirements = intelligence:13;
+		inventory_icon = b_gui_ig_i_a_hlmt_073;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 3.000000;
+		  f modifier_min = 1.000000;
+		}
+	}
+}
+[t:template,n:he_ca_ro_wooly_04]
+{
+	doc = "Wooly Cap";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Wooly Cap";
+	}
+	[defend]
+	{
+		armor_style = 074;
+		armor_type = type36;
+	  f defense = 5.000000;
+	}
+	[gui]
+	{
+		equip_requirements = intelligence:15;
+		inventory_icon = b_gui_ig_i_a_hlmt_074;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 5.000000;
+		  f modifier_min = 2.000000;
+		}
+	}
+}
+[t:template,n:he_ca_ro_woven_01]
+{
+	doc = "Thicket Helm";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Thicket Helm";
+	}
+	[defend]
+	{
+		armor_style = 015;
+		armor_type = type15;
+	  f defense = 5.000000;
+	}
+	[gui]
+	{
+		equip_requirements = intelligence:15;
+		inventory_icon = b_gui_ig_i_a_hlmt_015;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 3.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:he_ca_ro_woven_02]
+{
+	doc = "Woven Cap";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Woven Cap";
+	}
+	[defend]
+	{
+		armor_style = 069;
+		armor_type = type15;
+	  f defense = 4.000000;
+	}
+	[gui]
+	{
+		equip_requirements = intelligence:13;
+		inventory_icon = b_gui_ig_i_a_hlmt_069;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 1.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:he_ca_ro_woven_03]
+{
+	doc = "Woven Cap";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Woven Cap";
+	}
+	[defend]
+	{
+		armor_style = 070;
+		armor_type = type15;
+	  f defense = 6.000000;
+	}
+	[gui]
+	{
+		equip_requirements = intelligence:15;
+		inventory_icon = b_gui_ig_i_a_hlmt_070;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 4.000000;
+		  f modifier_min = 2.000000;
+		}
+	}
+}
+[t:template,n:he_ca_ro_woven_04]
+{
+	doc = "Woven Cap";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Woven Cap";
+	}
+	[defend]
+	{
+		armor_style = 071;
+		armor_type = type15;
+	  f defense = 7.000000;
+	}
+	[gui]
+	{
+		equip_requirements = intelligence:16;
+		inventory_icon = b_gui_ig_i_a_hlmt_071;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 35.000000;
+		  f modifier_min = 2.000000;
+		}
+	}
+}
+[t:template,n:he_ca_sl_avg]
+{
+	doc = "Studded Cap";
+	specializes = base_helm;
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Studded Cap";
+	}
+	[defend]
+	{
+		armor_style = 011;
+		armor_type = type4;
+	  f defense = 4.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:13;
+		inventory_icon = b_gui_ig_i_a_hlmt_011;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:he_fu_bronze]
+{
+	doc = "Bronze Helm";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Bronze Helm";
+	}
+	[defend]
+	{
+		armor_style = 024;
+		armor_type = type24;
+	  f defense = 31.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:36;
+		inventory_icon = b_gui_ig_i_a_hlmt_024;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 8.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:he_fu_bronze_02]
+{
+	doc = "Centaur Helm";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Centaur Helm";
+	}
+	[defend]
+	{
+		armor_style = 091;
+		armor_type = type24;
+	  f defense = 39.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:43;
+		inventory_icon = b_gui_ig_i_a_hlmt_091;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 7.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:he_fu_pl_desert]
+{
+	doc = "Desert Helm";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Desert Helm";
+	}
+	[defend]
+	{
+		armor_style = 025;
+		armor_type = type25;
+	  f defense = 31.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:36;
+		inventory_icon = b_gui_ig_i_a_hlmt_025;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 6.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:he_fu_pl_grate]
+{
+	doc = "Slotted Helm";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Slotted Helm";
+	}
+	[defend]
+	{
+		armor_style = 039;
+		armor_type = type39;
+	  f defense = 35.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:39;
+		inventory_icon = b_gui_ig_i_a_hlmt_039;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 10.000000;
+		  f modifier_min = 7.000000;
+		}
+	}
+}
+[t:template,n:he_fu_pl_horn_avg]
+{
+	doc = "Horned Helm";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Horned Helm";
+	}
+	[defend]
+	{
+		armor_style = 005;
+		armor_type = type5;
+	  f defense = 40.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:43;
+		inventory_icon = b_gui_ig_i_a_hlmt_005;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 10.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:he_fu_pl_horn_fin]
+{
+	doc = "Bull Helm";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Bull Helm";
+	}
+	[defend]
+	{
+		armor_style = 040;
+		armor_type = type40;
+	  f defense = 44.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:47;
+		inventory_icon = b_gui_ig_i_a_hlmt_040;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 11.000000;
+		  f modifier_min = 5.000000;
+		}
+	}
+}
+[t:template,n:he_fu_pl_horn_fin_02]
+{
+	doc = "Brute Helm";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Brute Helm";
+	}
+	[defend]
+	{
+		armor_style = 084;
+		armor_type = type40;
+	  f defense = 45.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:48;
+		inventory_icon = b_gui_ig_i_a_hlmt_084;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 13.000000;
+		  f modifier_min = 9.000000;
+		}
+	}
+}
+[t:template,n:he_fu_pl_horn_fin_03]
+{
+	doc = "Black Helm";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Black Helm";
+	}
+	[defend]
+	{
+		armor_style = 085;
+		armor_type = type40;
+	  f defense = 49.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:51;
+		inventory_icon = b_gui_ig_i_a_hlmt_085;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 15.000000;
+		  f modifier_min = 10.000000;
+		}
+	}
+}
+[t:template,n:he_fu_pl_horn_mag]
+{
+	doc = "Regal Helm";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Regal Helm";
+	}
+	[defend]
+	{
+		armor_style = 027;
+		armor_type = type27;
+	  f defense = 47.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:50;
+		inventory_icon = b_gui_ig_i_a_hlmt_027;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 14.000000;
+		  f modifier_min = 10.000000;
+		}
+	}
+}
+[t:template,n:he_fu_pl_horn_mag_02]
+{
+	doc = "Raven Helm";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Raven Helm";
+	}
+	[defend]
+	{
+		armor_style = 088;
+		armor_type = type27;
+	  f defense = 55.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:56;
+		inventory_icon = b_gui_ig_i_a_hlmt_088;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 16.000000;
+		  f modifier_min = 11.000000;
+		}
+	}
+}
+[t:template,n:he_fu_pl_knight]
+{
+	doc = "Great Helm";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Great Helm";
+	}
+	[defend]
+	{
+		armor_style = 003;
+		armor_type = type3;
+	  f defense = 35.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:39;
+		inventory_icon = b_gui_ig_i_a_hlmt_003;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 9.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:he_fu_pl_knight_02]
+{
+	doc = "Blaster Helm";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Blaster Helm";
+	}
+	[defend]
+	{
+		armor_style = 093;
+		armor_type = type3;
+	  f defense = 38.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:42;
+		inventory_icon = b_gui_ig_i_a_hlmt_093;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 10.000000;
+		  f modifier_min = 4.000000;
+		}
+	}
+}
+[t:template,n:he_fu_pl_knight_fin]
+{
+	doc = "Knight Helm";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Knight Helm";
+	}
+	[defend]
+	{
+		armor_style = 021;
+		armor_type = type21;
+	  f defense = 44.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:47;
+		inventory_icon = b_gui_ig_i_a_hlmt_021;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 13.000000;
+		  f modifier_min = 5.000000;
+		}
+	}
+}
+[t:template,n:he_fu_pl_knight_fin_02]
+{
+	doc = "Karlat's Magic Helm";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Karlat's Magic Helm";
+	}
+	[defend]
+	{
+		armor_style = 081;
+		armor_type = type21;
+	  f defense = 50.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:52;
+		inventory_icon = b_gui_ig_i_a_hlmt_081;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 15.000000;
+		  f modifier_min = 12.000000;
+		}
+	}
+}
+[t:template,n:he_fu_pl_knight_fin_03]
+{
+	doc = "Sightless Helm";
+	specializes = base_helm;
+	[common]
+	{
+        is_pcontent_allowed = false;
+		screen_name = "Sightless Helm";
+	}
+	[defend]
+	{
+		armor_style = 082;
+		armor_type = type21;
+	  f defense = 57.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:58;
+		inventory_icon = b_gui_ig_i_a_hlmt_082;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 17.000000;
+		  f modifier_min = 12.000000;
+		}
+	}
+}
+[t:template,n:he_fu_pl_knight_str]
+{
+	doc = "War Helm";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "War Helm";
+	}
+	[defend]
+	{
+		armor_style = 018;
+		armor_type = type18;
+	  f defense = 41.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:45;
+		inventory_icon = b_gui_ig_i_a_hlmt_018;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 8.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:he_fu_pl_knight_str_02]
+{
+	doc = "Bluster Helm";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Bluster Helm";
+	}
+	[defend]
+	{
+		armor_style = 087;
+		armor_type = type18;
+	  f defense = 47.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:49;
+		inventory_icon = b_gui_ig_i_a_hlmt_087;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 12.000000;
+		  f modifier_min = 5.000000;
+		}
+	}
+}
+[t:template,n:he_fu_pl_smallwings]
+{
+	doc = "Hawk Helm";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Hawk Helm";
+	}
+	[defend]
+	{
+		armor_style = 033;
+		armor_type = type33;
+	  f defense = 37.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:41;
+		inventory_icon = b_gui_ig_i_a_hlmt_033;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 11.000000;
+		  f modifier_min = 8.000000;
+		}
+	}
+}
+[t:template,n:he_fu_pl_smallwings_02]
+{
+	doc = "Guardian Helm";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Guardian Helm";
+	}
+	[defend]
+	{
+		armor_style = 094;
+		armor_type = type33;
+	  f defense = 41.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:45;
+		inventory_icon = b_gui_ig_i_a_hlmt_094;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 12.000000;
+		  f modifier_min = 9.000000;
+		}
+	}
+}
+[t:template,n:he_fu_pl_smallwings_kavaren]
+{
+	doc = "Utraean Helm";
+	specializes = base_helm;
+	[common]
+	{
+	  b allow_modifiers = false;
+		is_pcontent_allowed = false;
+		screen_name = "Utraean Helm";
+	}
+	[defend]
+	{
+		armor_style = 094;
+		armor_type = type33;
+	  f defense = 37.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:41;
+		inventory_icon = b_gui_ig_i_a_hlmt_094;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_intelligence;
+				description = "Adds 1 to Intelligence";
+				duration = #infinite;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 1;
+			}
+			[*]
+			{
+				alteration = alter_armor;
+				description = "+3 to Armor";
+				duration = #infinite;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 3;
+			}
+			[*]
+			{
+				alteration = alter_mana_bonus;
+				description = "Adds 3 Mana per hit";
+				duration = #infinite;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 3;
+			}
+			[*]
+			{
+				alteration = alter_dexterity;
+				description = "+2 to Dexterity";
+				duration = #infinite;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 2;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:he_fu_pl_spike]
+{
+	doc = "Spiked Helm";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Spiked Helm";
+	}
+	[defend]
+	{
+		armor_style = 044;
+		armor_type = type24;
+	  f defense = 37.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:41;
+		inventory_icon = b_gui_ig_i_a_hlmt_044;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 10.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:he_fu_pl_str]
+{
+	doc = "Heavy Helm";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Heavy Helm";
+	}
+	[defend]
+	{
+		armor_style = 001;
+		armor_type = type1;
+	  f defense = 40.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:43;
+		inventory_icon = b_gui_ig_i_a_hlmt_001;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 8.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:he_op_bigwings]
+{
+	doc = "Soaring Helm";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Soaring Helm";
+	}
+	[defend]
+	{
+		armor_style = 043;
+		armor_type = type43;
+	  f defense = 19.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:26;
+		inventory_icon = b_gui_ig_i_a_hlmt_043;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 5.000000;
+		  f modifier_min = 4.000000;
+		}
+	}
+}
+[t:template,n:he_op_bigwings_02]
+{
+	doc = "Winged Helm";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Winged Helm";
+	}
+	[defend]
+	{
+		armor_style = 086;
+		armor_type = type43;
+	  f defense = 27.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:32;
+		inventory_icon = b_gui_ig_i_a_hlmt_086;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 8.000000;
+		  f modifier_min = 5.000000;
+		}
+	}
+}
+[t:template,n:he_op_pl_avg]
+{
+	doc = "Sentry Helm";
+	specializes = base_helm;
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Sentry Helm";
+	}
+	[defend]
+	{
+		armor_style = 002;
+		armor_type = type2;
+	  f defense = 10.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:18;
+		inventory_icon = b_gui_ig_i_a_hlmt_002;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:he_op_pl_cone]
+{
+	doc = "Tusk Helm";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Tusk Helm";
+	}
+	[defend]
+	{
+		armor_style = 030;
+		armor_type = type30;
+	  f defense = 11.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:19;
+		inventory_icon = b_gui_ig_i_a_hlmt_030;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 2.000000;
+		  f modifier_min = 1.000000;
+		}
+	}
+}
+[t:template,n:he_op_pl_eyes]
+{
+	doc = "Face Helm";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Face Helm";
+	}
+	[defend]
+	{
+		armor_style = 020;
+		armor_type = type20;
+	  f defense = 13.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:20;
+		inventory_icon = b_gui_ig_i_a_hlmt_020;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 2.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:he_op_pl_roman]
+{
+	doc = "Parade Helm";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Parade Helm";
+	}
+	[defend]
+	{
+		armor_style = 029;
+		armor_type = type29;
+	  f defense = 14.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:22;
+		inventory_icon = b_gui_ig_i_a_hlmt_029;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 4.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:he_op_pl_roman_02]
+{
+	doc = "Sovereign Helm";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Sovereign Helm";
+	}
+	[defend]
+	{
+		armor_style = 092;
+		armor_type = type29;
+	  f defense = 22.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:29;
+		inventory_icon = b_gui_ig_i_a_hlmt_092;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 6.000000;
+		  f modifier_min = 5.000000;
+		}
+	}
+}
+[t:template,n:he_op_pl_santa]
+{
+	doc = "Crimson Helm";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Crimson Helm";
+	}
+	[defend]
+	{
+		armor_style = 034;
+		armor_type = type34;
+	  f defense = 16.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:24;
+		inventory_icon = b_gui_ig_i_a_hlmt_034;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 4.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:he_op_pl_santa_02]
+{
+	doc = "Dashing Helm";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Dashing Helm";
+	}
+	[defend]
+	{
+		armor_style = 083;
+		armor_type = type34;
+	  f defense = 24.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:30;
+		inventory_icon = b_gui_ig_i_a_hlmt_083;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 7.000000;
+		  f modifier_min = 5.000000;
+		}
+	}
+}
+[t:template,n:he_ra_ca_le_avg] // Consistent Textures //
+{
+	doc = "Pauper Cap";
+	specializes = base_helm;
+	[common]
+	{
+        pcontent_special_type = rare, unique;
+		screen_name = "Pauper Cap";
+	}
+	[defend]
+	{
+		armor_style = 500;
+		armor_type = type6;
+	  f defense = 4.000000;
+	}
+	[gui]
+	{
+		inventory_icon = b_gui_ig_i_a_hlmt_103;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 11.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:he_ra_ca_pl_avg]
+{
+	doc = "Snug Cap";
+	specializes = base_helm;
+	[common]
+	{
+        pcontent_special_type = rare, unique;
+		screen_name = "Snug Cap";
+	}
+	[defend]
+	{
+		armor_style = 004;
+		armor_type = type4;
+	  f defense = 14.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:20;
+		inventory_icon = b_gui_ig_i_a_hlmt_107;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 23.000000;
+		  f modifier_min = 2.000000;
+		}
+	}
+}
+[t:template,n:he_ra_ca_pl_cap]
+{
+	doc = "Wanderer Cap";
+	specializes = base_helm;
+	[common]
+	{
+        pcontent_special_type = rare, unique;
+		screen_name = "Wanderer Cap";
+	}
+	[defend]
+	{
+		armor_style = 028;
+		armor_type = type28;
+	  f defense = 9.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:16;
+		inventory_icon = b_gui_ig_i_a_hlmt_106;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 15.000000;
+		  f modifier_min = 1.000000;
+		}
+	}
+}
+[t:template,n:he_ra_ca_pl_dome]
+{
+	doc = "Sheen Cap";
+	specializes = base_helm;
+	[common]
+	{
+        pcontent_special_type = rare, unique;
+		screen_name = "Sheen Cap";
+	}
+	[defend]
+	{
+		armor_style = 019;
+		armor_type = type19;
+	  f defense = 7.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:15;
+		inventory_icon = b_gui_ig_i_a_hlmt_105;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 12.000000;
+		  f modifier_min = 1.000000;
+		}
+	}
+}
+[t:template,n:he_ra_ca_ro_felt_01]
+{
+	doc = "Rustic Cap";
+	specializes = base_helm;
+	[common]
+	{
+        pcontent_special_type = rare, unique;
+		screen_name = "Rustic Cap";
+	}
+	[defend]
+	{
+		armor_style = 038;
+		armor_type = type38;
+	  f defense = 4.000000;
+	}
+	[gui]
+	{
+		equip_requirements = intelligence:13;
+		inventory_icon = b_gui_ig_i_a_hlmt_099;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 12.000000;
+		  f modifier_min = 1.000000;
+		}
+	}
+}
+[t:template,n:he_ra_ca_ro_flat_02]
+{
+	doc = "Pressed Cap";
+	specializes = base_helm;
+	[common]
+	{
+        pcontent_special_type = rare, unique;
+		screen_name = "Pressed Cap";
+	}
+	[defend]
+	{
+		armor_style = 066;
+		armor_type = type16;
+	  f defense = 15.000000;
+	}
+	[gui]
+	{
+		equip_requirements = intelligence:23;
+		inventory_icon = b_gui_ig_i_a_hlmt_123;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 24.000000;
+		  f modifier_min = 2.000000;
+		}
+	}
+}
+[t:template,n:he_ra_ca_ro_slope_04]
+{
+	doc = "Cerebral Cap";
+	specializes = base_helm;
+	[common]
+	{
+        pcontent_special_type = rare, unique;
+		screen_name = "Cerebral Cap";
+	}
+	[defend]
+	{
+		armor_style = 080;
+		armor_type = type35;
+	  f defense = 5.000000;
+	}
+	[gui]
+	{
+		equip_requirements = intelligence:13;
+		inventory_icon = b_gui_ig_i_a_hlmt_096;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 13.000000;
+		  f modifier_min = 1.000000;
+		}
+	}
+}
+[t:template,n:he_ra_ca_ro_thin_04]
+{
+	doc = "Scratchy Cap";
+	specializes = base_helm;
+	[common]
+	{
+        pcontent_special_type = rare, unique;
+		screen_name = "Scratchy Cap";
+	}
+	[defend]
+	{
+		armor_style = 062;
+		armor_type = type8;
+	  f defense = 4.000000;
+	}
+	[gui]
+	{
+		inventory_icon = b_gui_ig_i_a_hlmt_102;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 9.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:he_ra_ca_ro_wizard_03]
+{
+	doc = "Knowledge Cap";
+	specializes = base_helm;
+	[common]
+	{
+        pcontent_special_type = rare, unique;
+		screen_name = "Knowledge Cap";
+	}
+	[defend]
+	{
+		armor_style = 056;
+		armor_type = type10;
+	  f defense = 8.000000;
+	}
+	[gui]
+	{
+		equip_requirements = intelligence:16;
+		inventory_icon = b_gui_ig_i_a_hlmt_097;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 17.000000;
+		  f modifier_min = 1.000000;
+		}
+	}
+}
+[t:template,n:he_ra_ca_ro_wizard_04]
+{
+	doc = "Knowledge Cap";
+	specializes = base_helm;
+	[common]
+	{
+        pcontent_special_type = rare, unique;
+		screen_name = "Knowledge Cap";
+	}
+	[defend]
+	{
+		armor_style = 010;
+		armor_type = type10;
+	  f defense = 3.000000;
+	}
+	[gui]
+	{
+		inventory_icon = b_gui_ig_i_a_hlmt_095;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 6.000000;
+		  f modifier_min = 2.000000;
+		}
+	}
+}
+[t:template,n:he_ra_ca_ro_wizard_06]
+{
+	doc = "Knowledge Cap";
+	specializes = base_helm;
+	[common]
+	{
+        pcontent_special_type = rare, unique;
+		screen_name = "Knowledge Cap";
+	}
+	[defend]
+	{
+		armor_style = 059;
+		armor_type = type10;
+	  f defense = 11.000000;
+	}
+	[gui]
+	{
+		equip_requirements = intelligence:19;
+		inventory_icon = b_gui_ig_i_a_hlmt_098;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 26.000000;
+		  f modifier_min = 1.000000;
+		}
+	}
+}
+[t:template,n:he_ra_ca_ro_wooly_02]
+{
+	doc = "Warmth Cap";
+	specializes = base_helm;
+	[common]
+	{
+        pcontent_special_type = rare, unique;
+		screen_name = "Warmth Cap";
+	}
+	[defend]
+	{
+		armor_style = 072;
+		armor_type = type36;
+	  f defense = 4.000000;
+	}
+	[gui]
+	{
+		equip_requirements = intelligence:13;
+		inventory_icon = b_gui_ig_i_a_hlmt_100;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 11.000000;
+		  f modifier_min = 1.000000;
+		}
+	}
+}
+[t:template,n:he_ra_ca_ro_wooly_04]
+{
+	doc = "Warmth Cap";
+	specializes = base_helm;
+	[common]
+	{
+        pcontent_special_type = rare, unique;
+		screen_name = "Warmth Cap";
+	}
+	[defend]
+	{
+		armor_style = 074;
+		armor_type = type36;
+	  f defense = 7.000000;
+	}
+	[gui]
+	{
+		equip_requirements = intelligence:15;
+		inventory_icon = b_gui_ig_i_a_hlmt_101;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 18.000000;
+		  f modifier_min = 1.000000;
+		}
+	}
+}
+[t:template,n:he_ra_ca_ro_woven_03]
+{
+	doc = "Loom Cap";
+	specializes = base_helm;
+	[common]
+	{
+        pcontent_special_type = rare, unique;
+		screen_name = "Loom Cap";
+	}
+	[defend]
+	{
+		armor_style = 070;
+		armor_type = type15;
+	  f defense = 8.000000;
+	}
+	[gui]
+	{
+		equip_requirements = intelligence:16;
+		inventory_icon = b_gui_ig_i_a_hlmt_122;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 13.000000;
+		  f modifier_min = 1.000000;
+		}
+	}
+}
+[t:template,n:he_ra_ca_sl_avg]
+{
+	doc = "Traveling Cap";
+	specializes = base_helm;
+	[common]
+	{
+        pcontent_special_type = rare, unique;
+		screen_name = "Traveling Cap";
+	}
+	[defend]
+	{
+		armor_style = 011;
+		armor_type = type4;
+	  f defense = 5.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:13;
+		inventory_icon = b_gui_ig_i_a_hlmt_104;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 13.000000;
+		  f modifier_min = 1.000000;
+		}
+	}
+}
+[t:template,n:he_ra_fu_pl_desert]
+{
+	doc = "Seething Helm";
+	specializes = base_helm;
+	[common]
+	{
+        pcontent_special_type = rare, unique;
+		screen_name = "Seething Helm";
+	}
+	[defend]
+	{
+		armor_style = 025;
+		armor_type = type25;
+	  f defense = 32.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:36;
+		inventory_icon = b_gui_ig_i_a_hlmt_113;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 53.000000;
+		  f modifier_min = 4.000000;
+		}
+	}
+}
+[t:template,n:he_ra_fu_pl_horn_fin]
+{
+	doc = "Gore Helm";
+	specializes = base_helm;
+	[common]
+	{
+        pcontent_special_type = rare, unique;
+		screen_name = "Gore Helm";
+	}
+	[defend]
+	{
+		armor_style = 040;
+		armor_type = type40;
+	  f defense = 46.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:47;
+		inventory_icon = b_gui_ig_i_a_hlmt_118;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 76.000000;
+		  f modifier_min = 5.000000;
+		}
+	}
+}
+[t:template,n:he_ra_fu_pl_horn_mag]
+{
+	doc = "Conqueror Helm";
+	specializes = base_helm;
+	[common]
+	{
+        pcontent_special_type = rare, unique;
+		screen_name = "Conqueror Helm";
+	}
+	[defend]
+	{
+		armor_style = 027;
+		armor_type = type27;
+	  f defense = 50.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:50;
+		inventory_icon = b_gui_ig_i_a_hlmt_121;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 82.000000;
+		  f modifier_min = 6.000000;
+		}
+	}
+}
+[t:template,n:he_ra_fu_pl_knight]
+{
+	doc = "Echo Helm";
+	specializes = base_helm;
+	[common]
+	{
+        pcontent_special_type = rare, unique;
+		screen_name = "Echo Helm";
+	}
+	[defend]
+	{
+		armor_style = 003;
+		armor_type = type21;
+	  f defense = 37.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:40;
+		inventory_icon = b_gui_ig_i_a_hlmt_114;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 61.000000;
+		  f modifier_min = 4.000000;
+		}
+	}
+}
+[t:template,n:he_ra_fu_pl_knight_fin]
+{
+	doc = "Bloody Helm";
+	specializes = base_helm;
+	[common]
+	{
+        pcontent_special_type = rare, unique;
+		screen_name = "Bloody Helm";
+	}
+	[defend]
+	{
+		armor_style = 021;
+		armor_type = type21;
+	  f defense = 47.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:48;
+		inventory_icon = b_gui_ig_i_a_hlmt_119;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 77.000000;
+		  f modifier_min = 5.000000;
+		}
+	}
+}
+[t:template,n:he_ra_fu_pl_knight_fin_02]
+{
+	doc = "Bloody Helm";
+	specializes = base_helm;
+	[common]
+	{
+        pcontent_special_type = rare, unique;
+		screen_name = "Bloody Helm";
+	}
+	[defend]
+	{
+		armor_style = 081;
+		armor_type = type21;
+	  f defense = 53.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:53;
+		inventory_icon = b_gui_ig_i_a_hlmt_120;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 87.000000;
+		  f modifier_min = 6.000000;
+		}
+	}
+}
+[t:template,n:he_ra_fu_pl_knight_str]
+{
+	doc = "Menacing Helm";
+	specializes = base_helm;
+	[common]
+	{
+        pcontent_special_type = rare, unique;
+		screen_name = "Menacing Helm";
+	}
+	[defend]
+	{
+		armor_style = 018;
+		armor_type = type18;
+	  f defense = 44.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:45;
+		inventory_icon = b_gui_ig_i_a_hlmt_117;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 72.000000;
+		  f modifier_min = 5.000000;
+		}
+	}
+}
+[t:template,n:he_ra_fu_pl_spike]
+{
+	doc = "Prickly Helm";
+	specializes = base_helm;
+	[common]
+	{
+        pcontent_special_type = rare, unique;
+		screen_name = "Prickly Helm";
+	}
+	[defend]
+	{
+		armor_style = 044;
+		armor_type = type24;
+	  f defense = 39.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:42;
+		inventory_icon = b_gui_ig_i_a_hlmt_115;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 64.000000;
+		  f modifier_min = 5.000000;
+		}
+	}
+}
+[t:template,n:he_ra_fu_pl_str]
+{
+	doc = "Bolted Helm";
+	specializes = base_helm;
+	[common]
+	{
+        pcontent_special_type = rare, unique;
+		screen_name = "Bolted Helm";
+	}
+	[defend]
+	{
+		armor_style = 001;
+		armor_type = type1;
+	  f defense = 42.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:44;
+		inventory_icon = b_gui_ig_i_a_hlmt_116;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 69.000000;
+		  f modifier_min = 5.000000;
+		}
+	}
+}
+[t:template,n:he_ra_op_bigwings]
+{
+	doc = "Spirited Helm";
+	specializes = base_helm;
+	[common]
+	{
+        pcontent_special_type = rare, unique;
+		screen_name = "Spirited Helm";
+	}
+	[defend]
+	{
+		armor_style = 043;
+		armor_type = type43;
+	  f defense = 21.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:26;
+		inventory_icon = b_gui_ig_i_a_hlmt_111;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 34.000000;
+		  f modifier_min = 2.000000;
+		}
+	}
+}
+[t:template,n:he_ra_op_pl_avg]
+{
+	doc = "Jaw Helm";
+	specializes = base_helm;
+	[common]
+	{
+        pcontent_special_type = rare, unique;
+		screen_name = "Jaw Helm";
+	}
+	[defend]
+	{
+		armor_style = 002;
+		armor_type = type2;
+	  f defense = 11.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:18;
+		inventory_icon = b_gui_ig_i_a_hlmt_108;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 18.000000;
+		  f modifier_min = 1.000000;
+		}
+	}
+}
+[t:template,n:he_ra_op_pl_cone]
+{
+	doc = "Stature Helm";
+	specializes = base_helm;
+	[common]
+	{
+        pcontent_special_type = rare, unique;
+		screen_name = "Stature Helm";
+	}
+	[defend]
+	{
+		armor_style = 030;
+		armor_type = type30;
+	  f defense = 13.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:20;
+		inventory_icon = b_gui_ig_i_a_hlmt_109;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 22.000000;
+		  f modifier_min = 2.000000;
+		}
+	}
+}
+[t:template,n:he_ra_op_pl_roman]
+{
+	doc = "Whiplash Helm";
+	specializes = base_helm;
+	[common]
+	{
+        pcontent_special_type = rare, unique;
+		screen_name = "Whiplash Helm";
+	}
+	[defend]
+	{
+		armor_style = 029;
+		armor_type = type29;
+	  f defense = 16.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:22;
+		inventory_icon = b_gui_ig_i_a_hlmt_110;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 26.000000;
+		  f modifier_min = 2.000000;
+		}
+	}
+}
+[t:template,n:he_ra_un_fu_pl_skull]
+{
+	doc = "Disturbed Helm";
+	specializes = base_helm;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Disturbed Helm";
+	}
+	[defend]
+	{
+		armor_style = 022;
+		armor_type = type22;
+	  f defense = 44.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:45;
+		inventory_icon = b_gui_ig_i_a_hlmt_124;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 72.000000;
+		  f modifier_min = 5.000000;
+		}
+	}
+}
+[t:template,n:he_ra_vi_pl_knight]
+{
+	doc = "Burdened Helm";
+	specializes = base_helm;
+	[common]
+	{
+        pcontent_special_type = rare, unique;
+		screen_name = "Burdened Helm";
+	}
+	[defend]
+	{
+		armor_style = 007;
+		armor_type = type7;
+	  f defense = 26.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:31;
+		inventory_icon = b_gui_ig_i_a_hlmt_112;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 43.000000;
+		  f modifier_min = 3.000000;
+		}
+	}
+}
+[t:template,n:he_un_ca_barbarian]
+{
+	doc = "Olaf's Helmet";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Olaf's Helmet";
+	}
+	[defend]
+	{
+		armor_style = 047;
+		armor_type = type45;
+	  f defense = 5.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:14;
+		inventory_icon = b_gui_ig_i_a_hlmt_047;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 2.000000;
+		  f modifier_min = 1.000000;
+		}
+	}
+}
+[t:template,n:he_un_ca_cowskull]
+{
+	doc = "Bovine Helm";
+	specializes = base_helm;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Bovine Helm";
+	}
+	[defend]
+	{
+		armor_style = 017;
+		armor_type = type17;
+	  f defense = 16.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:24;
+		inventory_icon = b_gui_ig_i_a_hlmt_017;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 5.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:he_un_ca_brim]
+{
+	doc = "Brimmed Hat";
+	specializes = base_helm;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Brimmed Hat";
+	}
+	[defend]
+	{
+		armor_style = 032;
+		armor_type = type32;
+	  f defense = 7.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:15;
+		inventory_icon = b_gui_ig_i_a_hlmt_032;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 2.000000;
+		  f modifier_min = 1.000000;
+		}
+	}
+}
+[t:template,n:he_un_ca_moon]
+{
+	doc = "Luna Cap";
+	specializes = base_helm;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Luna Cap";
+	}
+	[defend]
+	{
+		armor_style = 026;
+		armor_type = type26;
+	  f defense = 18.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:25;
+		inventory_icon = b_gui_ig_i_a_hlmt_026;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 5.000000;
+		  f modifier_min = 4.000000;
+		}
+	}
+}
+[t:template,n:he_un_ca_pl_guard_archer]
+{
+	doc = "Archer Helm";
+	specializes = base_helm;
+	[common]
+	{
+		is_pcontent_allowed = false;
+		screen_name = "Archer Helm";
+	}
+	[defend]
+	{
+		armor_style = 052;
+		armor_type = type19;
+	  f defense = 20;
+	}
+	[gui]
+	{
+		equip_requirements = strength:25;
+		inventory_icon = b_gui_ig_i_a_hlmt_052;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0;
+		  f modifier_min = 0;
+		}
+	}
+}
+[t:template,n:he_un_ca_ro_warlock]
+{
+	doc = "Warlock Hat";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Warlock Hat";
+	}
+	[defend]
+	{
+		armor_style = 096;
+		armor_type = type50;
+	  f defense = 8.000000;
+	}
+	[gui]
+	{
+		inventory_icon = b_gui_ig_i_a_hlmt_125;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 100.000000;
+		  f modifier_min = 2.000000;
+		}
+	}
+}
+[t:template,n:he_un_ca_tallcrown]
+{
+	doc = "Imperial Helm";
+	specializes = base_helm;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Imperial Helm";
+	}
+	[defend]
+	{
+		armor_style = 031;
+		armor_type = type31;
+	  f defense = 28.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:33;
+		inventory_icon = b_gui_ig_i_a_hlmt_031;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 8.000000;
+		  f modifier_min = 6.000000;
+		}
+	}
+}
+[t:template,n:he_un_fu_crystal]
+{
+	doc = "Crystal Helm";
+	specializes = base_helm;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Crystal Helm";
+	}
+	[defend]
+	{
+		armor_style = 048;
+		armor_type = type46;
+	  f defense = 42.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:45;
+		inventory_icon = b_gui_ig_i_a_hlmt_048;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 11.000000;
+		  f modifier_min = 5.000000;
+		}
+	}
+}
+[t:template,n:he_un_fu_eyebrows]
+{
+	doc = "Eye Helm";
+	specializes = base_helm;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Eye Helm";
+	}
+	[defend]
+	{
+		armor_style = 023;
+		armor_type = type23;
+	  f defense = 21.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:27;
+		inventory_icon = b_gui_ig_i_a_hlmt_023;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 6.000000;
+		  f modifier_min = 2.000000;
+		}
+	}
+}
+[t:template,n:he_un_fu_pl_fish]
+{
+	doc = "Fish Helm";
+	specializes = base_helm;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Fish Helm";
+	}
+	[defend]
+	{
+		armor_style = 042;
+		armor_type = type42;
+	  f defense = 31.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:36;
+		inventory_icon = b_gui_ig_i_a_hlmt_042;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 6.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:he_un_fu_pl_fish_02]
+{
+	doc = "Dragonfly Helm";
+	specializes = base_helm;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Dragonfly Helm";
+	}
+	[defend]
+	{
+		armor_style = 090;
+		armor_type = type42;
+	  f defense = 35.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:40;
+		inventory_icon = b_gui_ig_i_a_hlmt_090;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 10.000000;
+		  f modifier_min = 7.000000;
+		}
+	}
+}
+[t:template,n:he_un_fu_pl_skull]
+{
+	doc = "Carnage Helm";
+	specializes = base_helm;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Carnage Helm";
+	}
+	[defend]
+	{
+		armor_style = 022;
+		armor_type = type22;
+	  f defense = 41.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:45;
+		inventory_icon = b_gui_ig_i_a_hlmt_022;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 12.000000;
+		  f modifier_min = 9.000000;
+		}
+	}
+}
+[t:template,n:he_un_mask_bone]
+{
+	doc = "Bone Helm";
+	specializes = base_helm;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Bone Helm";
+	}
+	[defend]
+	{
+		armor_style = 049;
+		armor_type = type47;
+	  f defense = 33.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:38;
+		inventory_icon = b_gui_ig_i_a_hlmt_049;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 6.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:he_un_op_pl_guard_captain]
+{
+	doc = "Captain Helm";
+	specializes = base_helm;
+	[common]
+	{
+		is_pcontent_allowed = false;
+		screen_name = "Captain Helm";
+	}
+	[defend]
+	{
+		armor_style = 054;
+		armor_type = type29;
+	  f defense = 20;
+	}
+	[gui]
+	{
+		equip_requirements = strength:25;
+		inventory_icon = b_gui_ig_i_a_hlmt_054;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0;
+		  f modifier_min = 0;
+		}
+	}
+}
+[t:template,n:he_un_op_pl_guard_fighter]
+{
+	doc = "Guard Helm";
+	specializes = base_helm;
+	[common]
+	{
+		is_pcontent_allowed = false;
+		screen_name = "Guard Helm";
+	}
+	[defend]
+	{
+		armor_style = 053;
+		armor_type = type20;
+	  f defense = 20;
+	}
+	[gui]
+	{
+		equip_requirements = strength:25;
+		inventory_icon = b_gui_ig_i_a_hlmt_053;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0;
+		  f modifier_min = 0;
+		}
+	}
+}
+[t:template,n:he_un_spider]
+{
+	doc = "Black Widow Helmet";
+	specializes = base_helm;
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Black Widow Helmet";
+	}
+	[defend]
+	{
+		armor_style = 050;
+		armor_type = type48;
+	  f defense = 32.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:37;
+		inventory_icon = b_gui_ig_i_a_hlmt_050;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 9.000000;
+		  f modifier_min = 4.000000;
+		}
+	}
+}
+[t:template,n:he_un_vi_dragon]
+{
+	doc = "Serpentine Helmet";
+	specializes = base_helm;
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Serpentine Helmet";
+	}
+	[defend]
+	{
+		armor_style = 051;
+		armor_type = type49;
+	  f defense = 57.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:58;
+		inventory_icon = b_gui_ig_i_a_hlmt_051;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 15.000000;
+		  f modifier_min = 7.000000;
+		}
+	}
+}
+[t:template,n:he_un_vi_moto]
+{
+	doc = "Challenger Helm";
+	specializes = base_helm;
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Challenger Helm";
+	}
+	[defend]
+	{
+		armor_style = 041;
+		armor_type = type41;
+	  f defense = 43.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:46;
+		inventory_icon = b_gui_ig_i_a_hlmt_041;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 11.000000;
+		  f modifier_min = 5.000000;
+		}
+	}
+}
+[t:template,n:he_vi_pl_knight]
+{
+	doc = "Knight Helm";
+	specializes = base_helm;
+	[common]
+	{
+		screen_name = "Knight Helm";
+	}
+	[defend]
+	{
+		armor_style = 007;
+		armor_type = type7;
+	  f defense = 24.000000;
+	}
+	[gui]
+	{
+		equip_requirements = strength:30;
+		inventory_icon = b_gui_ig_i_a_hlmt_007;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 5.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}

@@ -1443,7 +1443,7 @@
 		}
 	}
 }
-[t:template,n:gl_ra_gl_br_f_g_c_fin]
+[t:template,n:gl_ra_gl_br_f_g_c_fin] // Consistent Textures //
 {
 	doc = "Brigandine Gloves";
 	specializes = base_glove;
@@ -1454,7 +1454,7 @@
 	}
 	[defend]
 	{
-		armor_style = 065;
+		armor_style = 503;
 		armor_type = type1;
 	  f defense = 12.000000;
 	}
@@ -1472,9 +1472,9 @@
 		  f modifier_max = 2.000000;
 		  f modifier_min = 1.000000;
 		}
-		[o_fin]
+		[o_fin] // Consistent Texures
 		{
-			armor_style = 069;
+			armor_style = 502;
 			armor_type = type1;
 		  f defense = 16.000000;
 			equip_requirements = strength:27;
