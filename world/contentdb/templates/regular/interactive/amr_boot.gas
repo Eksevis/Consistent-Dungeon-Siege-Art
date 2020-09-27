@@ -1067,7 +1067,7 @@
 	}
 	[defend]
 	{
-		armor_style = 500;
+		armor_style = 1000;
 		armor_type = type1;
 	  f defense = 3.000000;
 	}
@@ -1239,7 +1239,7 @@
 		}
 		[o_mag] // Consistent Textures //
 		{
-			armor_style = 501;
+			armor_style = 1001;
 			armor_type = type1;
 		  f defense = 51.000000;
 			equip_requirements = strength:58;
@@ -1321,7 +1321,7 @@
 	}
 	[defend]
 	{
-		armor_style = 502;
+		armor_style = 1002;
 		armor_type = type1;
 	  f defense = 37.000000;
 	}
