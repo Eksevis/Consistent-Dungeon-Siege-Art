@@ -938,7 +938,7 @@
 		}
 	}
 }
-[t:template,n:bd_ra_br_m_g_o_fin] // Moros //
+[t:template,n:bd_ra_br_m_g_o_fin] // Tristanzz //
 {
 	doc = "Thin Brigandine";
 	specializes = base_body_armor_plate;
