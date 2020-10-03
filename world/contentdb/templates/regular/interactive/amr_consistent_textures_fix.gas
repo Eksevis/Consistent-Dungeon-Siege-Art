@@ -15,7 +15,7 @@
 	}
 	[defend]
 	{
-		armor_style = 504;
+		armor_style = 061;
 		armor_type = a2;
 	  f defense = 72.000000;
 	}
@@ -74,7 +74,7 @@
 	}
 	[defend]
 	{
-		armor_style = 509;
+		armor_style = 059;
 		armor_type = a7;
 	  f defense = 9.000000;
 	}
@@ -105,7 +105,7 @@
 	}
 	[defend]
 	{
-		armor_style = 507;
+		armor_style = 055;
 		armor_type = a7;
 	  f defense = 61.000000;
 	}
@@ -136,7 +136,7 @@
 	}
 	[defend]
 	{
-		armor_style = 505;
+		armor_style = 077;
 		armor_type = a7;
 	  f defense = 6.000000;
 	}
@@ -167,7 +167,7 @@
 	}
 	[defend]
 	{
-		armor_style = 501;
+		armor_style = 058;
 		armor_type = a7;
 	  f defense = 11.000000;
 	}
@@ -199,7 +199,7 @@
 	}
 	[defend]
 	{
-		armor_style = 500;
+		armor_style = 078;
 		armor_type = a7;
 	  f defense = 11.000000;
 	}
@@ -230,7 +230,7 @@
 	}
 	[defend]
 	{
-		armor_style = 508;
+		armor_style = 080;
 		armor_type = a7;
 	  f defense = 22.000000;
 	}
@@ -261,7 +261,7 @@
 	}
 	[defend]
 	{
-		armor_style = 506;
+		armor_style = 051;
 		armor_type = a7;
 	  f defense = 24.000000;
 	}
@@ -293,7 +293,7 @@
 	}
 	[defend]
 	{
-		armor_style = 503;
+		armor_style = 082;
 		armor_type = a7;
 	  f defense = 31.000000;
 	}
@@ -324,7 +324,7 @@
 	}
 	[defend]
 	{
-		armor_style = 510;
+		armor_style = 083;
 		armor_type = a7;
 	  f defense = 36.000000;
 	}
@@ -355,7 +355,7 @@
 	}
 	[defend]
 	{
-		armor_style = 502;
+		armor_style = 052;
 		armor_type = a7;
 	  f defense = 65.000000;
 	}
@@ -386,7 +386,7 @@
 	}
 	[defend]
 	{
-		armor_style = 504;
+		armor_style = 056;
 		armor_type = a7;
 	  f defense = 93.000000;
 	}
@@ -417,7 +417,7 @@
 	}
 	[defend]
 	{
-		armor_style = 511;
+		armor_style = 057;
 		armor_type = a7;
 	  f defense = 96.000000;
 	}
@@ -448,7 +448,7 @@
 	}
 	[defend]
 	{
-		armor_style = 512;
+		armor_style = 066;
 		armor_type = a7;
 	  f defense = 107.000000;
 	}
@@ -479,7 +479,7 @@
 	}
 	[defend]
 	{
-		armor_style = 513;
+		armor_style = 071;
 		armor_type = a7;
 	  f defense = 72.000000;
 	}
@@ -511,7 +511,7 @@
 	}
 	[defend]
 	{
-		armor_style = 514;
+		armor_style = 067;
 		armor_type = a7;
 	  f defense = 17.000000;
 	}
@@ -542,7 +542,7 @@
 	}
 	[defend]
 	{
-		armor_style = 515;
+		armor_style = 500;
 		armor_type = a7;
 	  f defense = 45.000000;
 	}
@@ -573,7 +573,7 @@
 	}
 	[defend]
 	{
-		armor_style = 516;
+		armor_style = 069;
 		armor_type = a7;
 	  f defense = 68.000000;
 	}
@@ -604,7 +604,7 @@
 	}
 	[defend]
 	{
-		armor_style = 517;
+		armor_style = 084;
 		armor_type = a7;
 	  f defense = 43.000000;
 	}
@@ -635,7 +635,7 @@
 	}
 	[defend]
 	{
-		armor_style = 518;
+		armor_style = 085;
 		armor_type = a7;
 	  f defense = 48.000000;
 	}
@@ -673,7 +673,7 @@
 	}
 	[defend]
 	{
-		armor_style = 503;
+		armor_style = 071;
 		armor_type = a2;
 	  f defense = 141.000000;
 	}
@@ -714,7 +714,7 @@
 	}
 	[defend]
 	{
-		armor_style = 501;
+		armor_style = 060;
 		armor_type = a2;
 	  f defense = 44.000000;
 	}
@@ -753,7 +753,7 @@
 	}
 	[defend]
 	{
-		armor_style = 501;
+		armor_style = 061;
 		armor_type = a1;
 	  f defense = 23.000000;
 	}
@@ -772,7 +772,7 @@
 		}
 		[c_fin]
 		{
-			armor_style = 500;
+			armor_style = 062;
 			armor_type = a1;
 		  f defense = 30.000000;
 			inventory_icon = b_gui_ig_i_a_pos_a1_062;
@@ -781,7 +781,7 @@
 		}
 		[c_str]
 		{
-			armor_style = 502;
+			armor_style = 069;
 			armor_type = a2;
 		  f defense = 66.000000;
 			equip_requirements = strength:12;
@@ -821,7 +821,7 @@
 	}
 	[defend]
 	{
-		armor_style = 500;
+		armor_style = 057;
 		armor_type = a2;
 	  f defense = 27.000000;
 	}
@@ -877,7 +877,7 @@
 	}
 	[defend]
 	{
-		armor_style = 501;
+		armor_style = 025;
 		armor_type = a5;
 	  f defense = 253.000000;
 	}
@@ -918,7 +918,7 @@
 	}
 	[defend]
 	{
-		armor_style = 502;
+		armor_style = 041;
 		armor_type = a3;
 	  f defense = 204.000000;
 	}
@@ -949,7 +949,7 @@
 	}
 	[defend]
 	{
-		armor_style = 501;
+		armor_style = 043;
 		armor_type = a3;
 	  f defense = 83.000000;
 	}
@@ -991,7 +991,7 @@
 	}
 	[defend]
 	{
-		armor_style = 500;
+		armor_style = 042;
 		armor_type = a3;
 	  f defense = 72.000000;
 	}
@@ -1033,7 +1033,7 @@
 	}
 	[defend]
 	{
-		armor_style = 500;
+		armor_style = 022;
 		armor_type = a5;
 	  f defense = 391.000000;
 	}
@@ -1074,7 +1074,7 @@
 	}
 	[defend]
 	{
-		armor_style = 502;
+		armor_style = 024;
 		armor_type = a5;
 	  f defense = 242.000000;
 	}
@@ -1112,7 +1112,7 @@
 	}
 	[defend]
 	{
-		armor_style = 500;
+		armor_style = 103;
 		armor_type = type6;
 	  f defense = 4.000000;
 	}
@@ -1147,7 +1147,7 @@
 	}
 	[defend]
 	{
-		armor_style = 500;
+		armor_style = 121;
 		armor_type = type1;
 	  f defense = 17.000000;
 	}
@@ -1208,7 +1208,7 @@
 		}
 		[c_fin] // Eksevis //
 		{
-			armor_style = 501;
+			armor_style = 128;
 			armor_type = type1;
 		  f defense = 31.000000;
 			equip_requirements = strength:44;
@@ -1267,7 +1267,7 @@
 	}
 	[defend]
 	{
-		armor_style = 1000;
+		armor_style = 076;
 		armor_type = type1;
 	  f defense = 3.000000;
 	}
@@ -1337,7 +1337,7 @@
 		}
 		[o_mag] // Eksevis //
 		{
-			armor_style = 1001;
+			armor_style = 097;
 			armor_type = type1;
 		  f defense = 51.000000;
 			equip_requirements = strength:58;
@@ -1358,7 +1358,7 @@
 	}
 	[defend]
 	{
-		armor_style = 1002;
+		armor_style = 098;
 		armor_type = type1;
 	  f defense = 37.000000;
 	}
