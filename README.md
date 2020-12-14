@@ -29,7 +29,7 @@ On top of the textures that are included within the compiled version, there is a
 project I had in mind. With their permission I have decided to nevertheless include it on this repository. It is clearly labeled as "Unused" so as to create as little
 confusion as possible.
 
-# Long-Term-Goals
+# Long Term Goals
 
 1. Synchronize all in-game textures with their inventory art.
 2. Create new names, giving more variety / distinction other than just visual
