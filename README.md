@@ -32,25 +32,5 @@ confusion as possible.
 # Long-Term-Goals
 
 1. Synchronize all in-game textures with their inventory art.
-  a. Weapons
-    a1. Swords
-    a2. Axes
-    a3. Staves
-    a4. Hammers
-    a5. Bows
-    a6. Daggers
-  b. Armor
-    b1. Boots
-    b2. Gloves
-    b3. Robes
-    b4. Plate Armor
-    b5. Chain Armor
-    b6. Leather Armor
-    b7. Shields
-      b7-1. Upscale some of the textures to be more consistent with the other pieces of equipment
-  c. Enemy Giblets
-    c1. Find every vanilla giblet and fix it
-    c2. Make every monster have a fitting giblet texture associated to them for gore restoration mods
 2. Create new names, giving more variety / distinction other than just visual
-  a. There are at least 5 "Night Leathers", all with the same exact name, and not always the same stats
 3. Use the old in-game textures to create new inventory icons and items, creating further variety and using otherwise cut content
