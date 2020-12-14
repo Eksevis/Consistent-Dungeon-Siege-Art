@@ -1,0 +1,1997 @@
+[t:template,n:base_axe]
+{
+	doc = "Axe";
+	specializes = weapon_melee;
+	[aspect]
+	{
+		material = steeledge;
+		[voice]
+		{
+			[put_down]
+			{
+				* = s_e_gui_put_down_sword;
+			}
+		}
+	}
+	[attack]
+	{
+		attack_class = ac_axe;
+		is_melee = true;
+		reload_delay = 0;
+		skill_class = melee;
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_axe_001;
+		equip_slot = es_weapon_hand;
+	}
+}
+[t:template,n:ax_carnage]
+{
+	doc = "Axe of Kill Kill Carnage";
+	specializes = base_axe;
+	[aspect]
+	{
+		model = m_w_axe_045;
+		selection_indicator_scale = 0.65;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+	  f damage_max = 421.000000;
+	  f damage_min = 342.000000;
+		is_two_handed = true;
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Axe of Kill Kill Carnage";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_axe_008;
+		equip_requirements = strength:78;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_axe_139;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 100.000000;
+		  f modifier_min = 1.000000;
+		}
+	}
+}
+[t:template,n:ax_d_c_1h1b_avg]
+{
+	doc = "Hack";
+	specializes = base_axe;
+	[aspect]
+	{
+		model = m_w_axe_029;
+		selection_indicator_scale = 0.65;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+	  f damage_max = 17.000000;
+	  f damage_min = 14.000000;
+	}
+	[common]
+	{
+		screen_name = "Hack";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_axe_001;
+		equip_requirements = strength:12;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_w_axe_092;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 1.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:ax_d_c_2h1b_avg]
+{
+	doc = "Tofk Axe";
+	specializes = base_axe;
+	[aspect]
+	{
+		model = m_w_axe_030;
+		selection_indicator_scale = 0.65;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+	  f damage_max = 71.000000;
+	  f damage_min = 55.000000;
+		is_two_handed = true;
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Tofk Axe";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_axe_003;
+		equip_requirements = strength:20;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_axe_093;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 1.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:ax_d_c_2h2b_avg]
+{
+	doc = "Cleft Axe";
+	specializes = base_axe;
+	[aspect]
+	{
+		model = m_w_axe_031;
+		selection_indicator_scale = 0.65;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+	  f damage_max = 113.000000;
+	  f damage_min = 83.000000;
+		is_two_handed = true;
+	}
+	[common]
+	{
+		screen_name = "Cleft Axe";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_axe_008;
+		equip_requirements = strength:26;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_axe_094;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 1.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:ax_d_d_1h1b_avg] // Consistent Textures //
+{
+	doc = "Chuck";
+	specializes = base_axe;
+	[aspect]
+	{
+		model = m_w_axe_029;
+		selection_indicator_scale = 0.65;
+			[textures]
+		{
+			0 = b_w_weapons_con1;
+		}
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 7;
+		damage_min = 3;
+	}
+	[common]
+	{
+		screen_name = "Chuck";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_axe_001;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_w_axe_089;
+		inventory_width = 1;
+	}
+}
+[t:template,n:ax_d_d_2h1b_avg]
+{
+	doc = "Cutter";
+	specializes = base_axe;
+	[aspect]
+	{
+		model = m_w_axe_030;
+		selection_indicator_scale = 0.65;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+	  f damage_max = 50.000000;
+	  f damage_min = 40.000000;
+		is_two_handed = true;
+	}
+	[common]
+	{
+		screen_name = "Cutter";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_axe_003;
+		equip_requirements = strength:17;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_axe_090;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 1.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:ax_d_d_2h2b_avg]
+{
+	doc = "Drive Axe";
+	specializes = base_axe;
+	[aspect]
+	{
+		model = m_w_axe_031;
+		selection_indicator_scale = 0.65;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+	  f damage_max = 92.000000;
+	  f damage_min = 68.000000;
+		is_two_handed = true;
+	}
+	[common]
+	{
+		screen_name = "Drive Axe";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_axe_004;
+		equip_requirements = strength:23;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_axe_091;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 1.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:ax_d_o_1h1b_avg]
+{
+	doc = "Splitter";
+	specializes = base_axe;
+	[aspect]
+	{
+		model = m_w_axe_029;
+		selection_indicator_scale = 0.65;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+	  f damage_max = 11.000000;
+	  f damage_min = 9.000000;
+	}
+	[common]
+	{
+		screen_name = "Splitter";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_axe_005;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_w_axe_095;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 2.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:ax_d_o_2h1b_avg]
+{
+	doc = "Heft Axe";
+	specializes = base_axe;
+	[aspect]
+	{
+		model = m_w_axe_030;
+		selection_indicator_scale = 0.65;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+	  f damage_max = 17.000000;
+	  f damage_min = 13.000000;
+		is_two_handed = true;
+	}
+	[common]
+	{
+		screen_name = "Heft Axe";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_axe_007;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_axe_096;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 2.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:ax_d_o_2h2b_avg]
+{
+	doc = "Swing Axe";
+	specializes = base_axe;
+	[aspect]
+	{
+		model = m_w_axe_031;
+		selection_indicator_scale = 0.65;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+	  f damage_max = 26.000000;
+	  f damage_min = 20.000000;
+		is_two_handed = true;
+	}
+	[common]
+	{
+		screen_name = "Swing Axe";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_axe_008;
+		equip_requirements = strength:13;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_axe_097;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 4.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:ax_g_c_1h1b_avg]
+{
+	doc = "Wedge Axe";
+	specializes = base_axe;
+	[aspect]
+	{
+		model = m_w_axe_049;
+		selection_indicator_scale = 0.65;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+	  f damage_max = 22.000000;
+	  f damage_min = 18.000000;
+	}
+	[common]
+	{
+		screen_name = "Wedge Axe";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_axe_001;
+		equip_requirements = strength:13;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_w_axe_143;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 1.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_fin]
+		{
+		  f damage_max = 28.000000;
+		  f damage_min = 23.000000;
+			equip_requirements = strength:15;
+			inventory_icon = b_gui_ig_i_w_axe_144;
+			model = m_w_axe_050;
+		  f modifier_max = 6.000000;
+		  f modifier_min = 1.000000;
+		}
+		[c_mag]
+		{
+		  f damage_max = 93.000000;
+		  f damage_min = 76.000000;
+			equip_requirements = strength:29;
+			inventory_icon = b_gui_ig_i_w_axe_146;
+			model = m_w_axe_052;
+		  f modifier_max = 26.000000;
+		  f modifier_min = 19.000000;
+		}
+		[c_str]
+		{
+		  f damage_max = 60.000000;
+		  f damage_min = 49.000000;
+			equip_requirements = strength:22;
+			inventory_height = 3;
+			inventory_icon = b_gui_ig_i_w_axe_145;
+			inventory_width = 1;
+			model = m_w_axe_051;
+		  f modifier_max = 18.000000;
+		  f modifier_min = 11.000000;
+		}
+		[o_avg]
+		{
+			active_icon = b_gui_ig_i_ic_axe_005;
+		  f damage_max = 37.000000;
+		  f damage_min = 30.000000;
+			equip_requirements = strength:17;
+			inventory_icon = b_gui_ig_i_w_axe_149;
+			model = m_w_axe_055;
+		  f modifier_max = 11.000000;
+		  f modifier_min = 3.000000;
+		}
+		[o_fin]
+		{
+			active_icon = b_gui_ig_i_ic_axe_005;
+		  f damage_max = 47.000000;
+		  f damage_min = 38.000000;
+			equip_requirements = strength:18;
+			inventory_icon = b_gui_ig_i_w_axe_150;
+			model = m_w_axe_056;
+		  f modifier_max = 14.000000;
+		  f modifier_min = 6.000000;
+		}
+		[o_mag]
+		{
+			active_icon = b_gui_ig_i_ic_axe_005;
+		  f damage_max = 111.000000;
+		  f damage_min = 91.000000;
+			equip_requirements = strength:33;
+			inventory_icon = b_gui_ig_i_w_axe_152;
+			model = m_w_axe_058;
+		  f modifier_max = 28.000000;
+		  f modifier_min = 22.000000;
+		}
+		[o_str]
+		{
+			active_icon = b_gui_ig_i_ic_axe_005;
+		  f damage_max = 74.000000;
+		  f damage_min = 60.000000;
+			equip_requirements = strength:24;
+			inventory_height = 3;
+			inventory_icon = b_gui_ig_i_w_axe_151;
+			inventory_width = 1;
+			model = m_w_axe_057;
+		  f modifier_max = 22.000000;
+		  f modifier_min = 15.000000;
+		}
+	}
+}
+[t:template,n:ax_g_c_1h1b_fun]
+{
+	doc = "Dull Wedge Axe";
+	specializes = base_axe;
+	[aspect]
+	{
+		model = m_w_axe_048;
+		selection_indicator_scale = 0.65;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+	  f damage_max = 16.000000;
+	  f damage_min = 13.000000;
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Dull Wedge Axe";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_axe_001;
+		equip_requirements = strength:12;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_w_axe_142;
+		inventory_width = 1;
+	}
+}
+[t:template,n:ax_g_c_1h1b_low]
+{
+	doc = "Rusted Wedge Axe";
+	specializes = base_axe;
+	[aspect]
+	{
+		model = m_w_axe_047;
+		selection_indicator_scale = 0.65;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+	  f damage_max = 13.000000;
+	  f damage_min = 10.000000;
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Rusted Wedge Axe";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_axe_001;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_w_axe_141;
+		inventory_width = 1;
+	}
+}
+[t:template,n:ax_g_c_1h2b_avg]
+{
+	doc = "Full Axe";
+	specializes = base_axe;
+	[aspect]
+	{
+		model = m_w_axe_061;
+		selection_indicator_scale = 0.65;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+	  f damage_max = 33.000000;
+	  f damage_min = 27.000000;
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Full Axe";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_axe_002;
+		equip_requirements = strength:16;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_w_axe_155;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_fin]
+		{
+		  f damage_max = 42.000000;
+		  f damage_min = 35.000000;
+			equip_requirements = strength:18;
+			inventory_icon = b_gui_ig_i_w_axe_156;
+			model = m_w_axe_062;
+		  f modifier_max = 6.000000;
+		  f modifier_min = 1.000000;
+		}
+		[c_mag]
+		{
+		  f damage_max = 126.000000;
+		  f damage_min = 103.000000;
+			equip_requirements = strength:36;
+			inventory_icon = b_gui_ig_i_w_axe_158;
+			model = m_w_axe_064;
+		  f modifier_max = 32.000000;
+		  f modifier_min = 23.000000;
+		}
+		[c_str]
+		{
+		  f damage_max = 81.000000;
+		  f damage_min = 67.000000;
+			equip_requirements = strength:26;
+			inventory_height = 3;
+			inventory_icon = b_gui_ig_i_w_axe_157;
+			inventory_width = 1;
+			model = m_w_axe_063;
+		  f modifier_max = 21.000000;
+		  f modifier_min = 10.000000;
+		}
+		[o_avg]
+		{
+			active_icon = b_gui_ig_i_ic_axe_006;
+		  f damage_max = 51.000000;
+		  f damage_min = 42.000000;
+			equip_requirements = strength:20;
+			inventory_icon = b_gui_ig_i_w_axe_161;
+			model = m_w_axe_067;
+		  f modifier_max = 9.000000;
+		  f modifier_min = 3.000000;
+		}
+		[o_fin]
+		{
+			active_icon = b_gui_ig_i_ic_axe_006;
+		  f damage_max = 63.000000;
+		  f damage_min = 52.000000;
+			equip_requirements = strength:22;
+			inventory_icon = b_gui_ig_i_w_axe_162;
+			model = m_w_axe_068;
+		  f modifier_max = 16.000000;
+		  f modifier_min = 7.000000;
+		}
+		[o_mag]
+		{
+			active_icon = b_gui_ig_i_ic_axe_006;
+		  f damage_max = 150.000000;
+		  f damage_min = 123.000000;
+			equip_requirements = strength:41;
+			inventory_icon = b_gui_ig_i_w_axe_164;
+			model = m_w_axe_070;
+		  f modifier_max = 40.000000;
+		  f modifier_min = 29.000000;
+		}
+		[o_str]
+		{
+			active_icon = b_gui_ig_i_ic_axe_006;
+		  f damage_max = 105.000000;
+		  f damage_min = 86.000000;
+			equip_requirements = strength:31;
+			inventory_height = 3;
+			inventory_icon = b_gui_ig_i_w_axe_163;
+			inventory_width = 1;
+			model = m_w_axe_069;
+		  f modifier_max = 27.000000;
+		  f modifier_min = 17.000000;
+		}
+	}
+}
+[t:template,n:ax_g_c_1h2b_fun]
+{
+	doc = "Blunt Full Axe";
+	specializes = base_axe;
+	[aspect]
+	{
+		model = m_w_axe_060;
+		selection_indicator_scale = 0.65;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+	  f damage_max = 30.000000;
+	  f damage_min = 25.000000;
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Blunt Full Axe";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_axe_002;
+		equip_requirements = strength:15;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_w_axe_154;
+		inventory_width = 1;
+	}
+}
+[t:template,n:ax_g_c_1h2b_low]
+{
+	doc = "Worn Full Axe";
+	specializes = base_axe;
+	[aspect]
+	{
+		model = m_w_axe_059;
+		selection_indicator_scale = 0.65;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+	  f damage_max = 28.000000;
+	  f damage_min = 23.000000;
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Worn Full Axe";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_axe_002;
+		equip_requirements = strength:15;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_w_axe_153;
+		inventory_width = 1;
+	}
+}
+[t:template,n:ax_g_c_2h1b_avg]
+{
+	doc = "Field Axe";
+	specializes = base_axe;
+	[aspect]
+	{
+		model = m_w_axe_073;
+		selection_indicator_scale = 0.65;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+	  f damage_max = 74.000000;
+	  f damage_min = 58.000000;
+		is_two_handed = true;
+	}
+	[common]
+	{
+		screen_name = "Field Axe";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_axe_003;
+		equip_requirements = strength:21;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_axe_167;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 3.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_fin]
+		{
+		  f damage_max = 85.000000;
+		  f damage_min = 67.000000;
+			equip_requirements = strength:23;
+			inventory_icon = b_gui_ig_i_w_axe_168;
+			model = m_w_axe_074;
+		  f modifier_max = 9.000000;
+		  f modifier_min = 2.000000;
+		}
+		[c_mag]
+		{
+		  f damage_max = 231.000000;
+		  f damage_min = 181.000000;
+			equip_requirements = strength:47;
+			inventory_icon = b_gui_ig_i_w_axe_170;
+			model = m_w_axe_076;
+		  f modifier_max = 46.000000;
+		  f modifier_min = 33.000000;
+		}
+		[c_str]
+		{
+		  f damage_max = 161.000000;
+		  f damage_min = 127.000000;
+			equip_requirements = strength:36;
+			inventory_icon = b_gui_ig_i_w_axe_169;
+			model = m_w_axe_075;
+		  f modifier_max = 31.000000;
+		  f modifier_min = 17.000000;
+		}
+		[o_avg]
+		{
+			active_icon = b_gui_ig_i_ic_axe_007;
+		  f damage_max = 104.000000;
+		  f damage_min = 82.000000;
+			equip_requirements = strength:26;
+			inventory_icon = b_gui_ig_i_w_axe_173;
+			model = m_w_axe_079;
+		  f modifier_max = 16.000000;
+		  f modifier_min = 6.000000;
+		}
+		[o_fin]
+		{
+			active_icon = b_gui_ig_i_ic_axe_007;
+		  f damage_max = 134.000000;
+		  f damage_min = 106.000000;
+			equip_requirements = strength:31;
+			inventory_icon = b_gui_ig_i_w_axe_174;
+			model = m_w_axe_080;
+		  f modifier_max = 24.000000;
+		  f modifier_min = 11.000000;
+		}
+		[o_mag]
+		{
+			active_icon = b_gui_ig_i_ic_axe_007;
+		  f damage_max = 273.000000;
+		  f damage_min = 215.000000;
+			equip_requirements = strength:54;
+			inventory_icon = b_gui_ig_i_w_axe_176;
+			model = m_w_axe_082;
+		  f modifier_max = 56.000000;
+		  f modifier_min = 41.000000;
+		}
+		[o_str]
+		{
+			active_icon = b_gui_ig_i_ic_axe_007;
+		  f damage_max = 193.000000;
+		  f damage_min = 151.000000;
+			equip_requirements = strength:41;
+			inventory_icon = b_gui_ig_i_w_axe_175;
+			model = m_w_axe_081;
+		  f modifier_max = 38.000000;
+		  f modifier_min = 26.000000;
+		}
+	}
+}
+[t:template,n:ax_g_c_2h1b_fun]
+{
+	doc = "Blunt Field Axe";
+	specializes = base_axe;
+	[aspect]
+	{
+		model = m_w_axe_072;
+		selection_indicator_scale = 0.65;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+	  f damage_max = 69.000000;
+	  f damage_min = 55.000000;
+		is_two_handed = true;
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Blunt Field Axe";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_axe_003;
+		equip_requirements = strength:20;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_axe_166;
+		inventory_width = 1;
+	}
+}
+[t:template,n:ax_g_c_2h1b_low]
+{
+	doc = "Worn Field Axe";
+	specializes = base_axe;
+	[aspect]
+	{
+		model = m_w_axe_071;
+		selection_indicator_scale = 0.65;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+	  f damage_max = 66.000000;
+	  f damage_min = 52.000000;
+		is_two_handed = true;
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Worn Field Axe";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_axe_003;
+		equip_requirements = strength:20;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_axe_165;
+		inventory_width = 1;
+	}
+}
+[t:template,n:ax_g_c_2h2b_avg]
+{
+	doc = "Assault Axe";
+	specializes = base_axe;
+	[aspect]
+	{
+		model = m_w_axe_085;
+		selection_indicator_scale = 0.65;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+	  f damage_max = 115.000000;
+	  f damage_min = 85.000000;
+		is_two_handed = true;
+	}
+	[common]
+	{
+		screen_name = "Assault Axe";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_axe_004;
+		equip_requirements = strength:27;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_axe_179;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 5.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_fin]
+		{
+		  f damage_max = 131.000000;
+		  f damage_min = 97.000000;
+			equip_requirements = strength:30;
+			inventory_icon = b_gui_ig_i_w_axe_180;
+			model = m_w_axe_086;
+		  f modifier_max = 14.000000;
+		  f modifier_min = 3.000000;
+		}
+		[c_mag]
+		{
+		  f damage_max = 284.000000;
+		  f damage_min = 210.000000;
+			equip_requirements = strength:55;
+			inventory_icon = b_gui_ig_i_w_axe_182;
+			model = m_w_axe_088;
+		  f modifier_max = 55.000000;
+		  f modifier_min = 39.000000;
+		}
+		[c_str]
+		{
+		  f damage_max = 209.000000;
+		  f damage_min = 155.000000;
+			equip_requirements = strength:43;
+			inventory_icon = b_gui_ig_i_w_axe_181;
+			model = m_w_axe_087;
+		  f modifier_max = 39.000000;
+		  f modifier_min = 22.000000;
+		}
+		[o_avg]
+		{
+			active_icon = b_gui_ig_i_ic_axe_008;
+		  f damage_max = 151.000000;
+		  f damage_min = 111.000000;
+			equip_requirements = strength:33;
+			inventory_icon = b_gui_ig_i_w_axe_185;
+			model = m_w_axe_091;
+		  f modifier_max = 22.000000;
+		  f modifier_min = 8.000000;
+		}
+		[o_fin]
+		{
+			active_icon = b_gui_ig_i_ic_axe_008;
+		  f damage_max = 178.000000;
+		  f damage_min = 132.000000;
+			equip_requirements = strength:38;
+			inventory_icon = b_gui_ig_i_w_axe_186;
+			model = m_w_axe_092;
+		  f modifier_max = 31.000000;
+		  f modifier_min = 14.000000;
+		}
+		[o_mag]
+		{
+			active_icon = b_gui_ig_i_ic_axe_008;
+		  f damage_max = 328.000000;
+		  f damage_min = 242.000000;
+			equip_requirements = strength:62;
+			inventory_icon = b_gui_ig_i_w_axe_188;
+			model = m_w_axe_094;
+		  f modifier_max = 66.000000;
+		  f modifier_min = 47.000000;
+		}
+		[o_str]
+		{
+			active_icon = b_gui_ig_i_ic_axe_008;
+		  f damage_max = 245.000000;
+		  f damage_min = 181.000000;
+			equip_requirements = strength:49;
+			inventory_icon = b_gui_ig_i_w_axe_187;
+			model = m_w_axe_093;
+		  f modifier_max = 47.000000;
+		  f modifier_min = 32.000000;
+		}
+	}
+}
+[t:template,n:ax_g_c_2h2b_fun]
+{
+	doc = "Blunt Assault Axe";
+	specializes = base_axe;
+	[aspect]
+	{
+		model = m_w_axe_084;
+		selection_indicator_scale = 0.65;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+	  f damage_max = 112.000000;
+	  f damage_min = 82.000000;
+		is_two_handed = true;
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Blunt Assault Axe";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_axe_004;
+		equip_requirements = strength:27;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_axe_178;
+		inventory_width = 2;
+	}
+}
+[t:template,n:ax_g_c_2h2b_low]
+{
+	doc = "Rusted Assault Axe";
+	specializes = base_axe;
+	[aspect]
+	{
+		model = m_w_axe_083;
+		selection_indicator_scale = 0.65;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+	  f damage_max = 107.000000;
+	  f damage_min = 79.000000;
+		is_two_handed = true;
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Rusted Assault Axe";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_axe_004;
+		equip_requirements = strength:26;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_axe_177;
+		inventory_width = 2;
+	}
+}
+[t:template,n:ax_g_d_1h1b_avg]
+{
+	doc = "Hatchet";
+	specializes = base_axe;
+	[aspect]
+	{
+		model = m_w_axe_023;
+		selection_indicator_scale = 0.65;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 2;
+		damage_min = 1;
+	}
+	[common]
+	{
+		screen_name = "Hatchet";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_ax_1h1b;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_w_axe_035;
+		inventory_width = 1;
+	}
+}
+[t:template,n:ax_g_d_2h1b_avg]
+{
+	doc = "Timber Axe";
+	specializes = base_axe;
+	[aspect]
+	{
+		model = m_w_axe_024;
+		selection_indicator_scale = 0.65;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 6;
+		damage_min = 3;
+		is_two_handed = true;
+	}
+	[common]
+	{
+		screen_name = "Timber Axe";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_ax_2h1b;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_axe_036;
+		inventory_width = 1;
+	}
+}
+[t:template,n:ax_g_d_2h2b_avg] // Consistent Textures //
+{
+	doc = "Forest Axe";
+	specializes = base_axe;
+	[aspect]
+	{
+		model = m_w_axe_025;
+		selection_indicator_scale = 0.65;
+			[textures]
+		{
+			0 = b_w_weapons_con1;
+		}
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 12;
+		damage_min = 8;
+		is_two_handed = true;
+	}
+	[common]
+	{
+		screen_name = "Forest Axe";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_ax_2h2b;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_axe_037;
+		inventory_width = 2;
+	}
+}
+[t:template,n:ax_g_o_1h1b_fun]
+{
+	doc = "Grimy Wedge Axe";
+	specializes = base_axe;
+	[aspect]
+	{
+		model = m_w_axe_054;
+		selection_indicator_scale = 0.65;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+	  f damage_max = 25.000000;
+	  f damage_min = 20.000000;
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Grimy Wedge Axe";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_axe_005;
+		equip_requirements = strength:14;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_w_axe_148;
+		inventory_width = 1;
+	}
+}
+[t:template,n:ax_g_o_1h1b_low]
+{
+	doc = "Ordus' Axe";
+	specializes = base_axe;
+	[aspect]
+	{
+		model = m_w_axe_053;
+		selection_indicator_scale = 0.65;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+	  f damage_max = 20.000000;
+	  f damage_min = 16.000000;
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		is_pcontent_allowed = false;
+		screen_name = "Ordus' Axe";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_axe_005;
+		equip_requirements = strength:13;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_w_axe_147;
+		inventory_width = 1;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_melee;
+				description = "+1 to Melee Skill";
+				duration = #infinite;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 1;
+			}
+		}
+	}
+}
+[t:template,n:ax_g_o_1h2b_fun]
+{
+	doc = "Dull Full Axe";
+	specializes = base_axe;
+	[aspect]
+	{
+		model = m_w_axe_066;
+		selection_indicator_scale = 0.65;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+	  f damage_max = 39.000000;
+	  f damage_min = 32.000000;
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Dull Full Axe";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_axe_006;
+		equip_requirements = strength:17;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_w_axe_160;
+		inventory_width = 1;
+	}
+}
+[t:template,n:ax_g_o_1h2b_low]
+{
+	doc = "Nicked Full Axe";
+	specializes = base_axe;
+	[aspect]
+	{
+		model = m_w_axe_065;
+		selection_indicator_scale = 0.65;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+	  f damage_max = 37.000000;
+	  f damage_min = 30.000000;
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Nicked Full Axe";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_axe_006;
+		equip_requirements = strength:17;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_w_axe_159;
+		inventory_width = 1;
+	}
+}
+[t:template,n:ax_g_o_2h1b_fun]
+{
+	doc = "Marred Field Axe";
+	specializes = base_axe;
+	[aspect]
+	{
+		model = m_w_axe_078;
+		selection_indicator_scale = 0.65;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+	  f damage_max = 82.000000;
+	  f damage_min = 64.000000;
+		is_two_handed = true;
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Marred Field Axe";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_axe_007;
+		equip_requirements = strength:22;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_axe_172;
+		inventory_width = 1;
+	}
+}
+[t:template,n:ax_g_o_2h1b_low]
+{
+	doc = "Dull Field Axe";
+	specializes = base_axe;
+	[aspect]
+	{
+		model = m_w_axe_077;
+		selection_indicator_scale = 0.65;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+	  f damage_max = 77.000000;
+	  f damage_min = 61.000000;
+		is_two_handed = true;
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Dull Field Axe";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_axe_007;
+		equip_requirements = strength:22;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_axe_171;
+		inventory_width = 1;
+	}
+}
+[t:template,n:ax_g_o_2h2b_fun]
+{
+	doc = "Warped Assault Axe";
+	specializes = base_axe;
+	[aspect]
+	{
+		model = m_w_axe_090;
+		selection_indicator_scale = 0.65;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+	  f damage_max = 127.000000;
+	  f damage_min = 94.000000;
+		is_two_handed = true;
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Warped Assault Axe";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_axe_008;
+		equip_requirements = strength:29;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_axe_184;
+		inventory_width = 2;
+	}
+}
+[t:template,n:ax_g_o_2h2b_low]
+{
+	doc = "Battered Assault Axe";
+	specializes = base_axe;
+	[aspect]
+	{
+		model = m_w_axe_089;
+		selection_indicator_scale = 0.65;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+	  f damage_max = 118.000000;
+	  f damage_min = 88.000000;
+		is_two_handed = true;
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Battered Assault Axe";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_axe_008;
+		equip_requirements = strength:28;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_axe_183;
+		inventory_width = 2;
+	}
+}
+[t:template,n:ax_ra_g_c_1h1b_fin]
+{
+	doc = "Pain Bringer";
+	specializes = base_axe;
+	[aspect]
+	{
+		model = m_w_axe_054;
+		selection_indicator_scale = 0.65;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+	  f damage_max = 33.000000;
+	  f damage_min = 27.000000;
+	}
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Pain Bringer";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_axe_001;
+		equip_requirements = strength:15;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_w_axe_189;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 7.000000;
+		  f modifier_min = 1.000000;
+		}
+		[o_fin]
+		{
+			active_icon = b_gui_ig_i_ic_axe_005;
+		  f damage_max = 51.000000;
+		  f damage_min = 42.000000;
+			equip_requirements = strength:18;
+			inventory_icon = b_gui_ig_i_w_axe_190;
+			model = m_w_axe_056;
+		  f modifier_max = 15.000000;
+		  f modifier_min = 7.000000;
+		}
+		[o_mag]
+		{
+			active_icon = b_gui_ig_i_ic_axe_005;
+		  f damage_max = 117.000000;
+		  f damage_min = 96.000000;
+			equip_requirements = strength:33;
+			inventory_icon = b_gui_ig_i_w_axe_192;
+			model = m_w_axe_058;
+		  f modifier_max = 30.000000;
+		  f modifier_min = 23.000000;
+		}
+		[o_str]
+		{
+			active_icon = b_gui_ig_i_ic_axe_005;
+		  f damage_max = 78.000000;
+		  f damage_min = 64.000000;
+			equip_requirements = strength:24;
+			inventory_height = 3;
+			inventory_icon = b_gui_ig_i_w_axe_191;
+			inventory_width = 1;
+			model = m_w_axe_057;
+		  f modifier_max = 23.000000;
+		  f modifier_min = 16.000000;
+		}
+	}
+}
+[t:template,n:ax_ra_g_c_1h2b_fin]
+{
+	doc = "Gore Axe";
+	specializes = base_axe;
+	[aspect]
+	{
+		model = m_w_axe_062;
+		selection_indicator_scale = 0.65;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+	  f damage_max = 47.000000;
+	  f damage_min = 38.000000;
+	}
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Gore Axe";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_axe_002;
+		equip_requirements = strength:18;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_w_axe_193;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 6.000000;
+		  f modifier_min = 1.000000;
+		}
+		[c_mag]
+		{
+		  f damage_max = 129.000000;
+		  f damage_min = 106.000000;
+			equip_requirements = strength:36;
+			inventory_icon = b_gui_ig_i_w_axe_197;
+			model = m_w_axe_064;
+		  f modifier_max = 33.000000;
+		  f modifier_min = 23.000000;
+		}
+		[c_str]
+		{
+		  f damage_max = 87.000000;
+		  f damage_min = 71.000000;
+			equip_requirements = strength:26;
+			inventory_height = 3;
+			inventory_icon = b_gui_ig_i_w_axe_196;
+			inventory_width = 1;
+			model = m_w_axe_063;
+		  f modifier_max = 22.000000;
+		  f modifier_min = 11.000000;
+		}
+		[o_fin]
+		{
+			active_icon = b_gui_ig_i_ic_axe_006;
+		  f damage_max = 69.000000;
+		  f damage_min = 57.000000;
+			equip_requirements = strength:22;
+			inventory_icon = b_gui_ig_i_w_axe_194;
+			model = m_w_axe_068;
+		  f modifier_max = 17.000000;
+		  f modifier_min = 8.000000;
+		}
+		[o_str]
+		{
+			active_icon = b_gui_ig_i_ic_axe_006;
+		  f damage_max = 110.000000;
+		  f damage_min = 90.000000;
+			equip_requirements = strength:31;
+			inventory_height = 3;
+			inventory_icon = b_gui_ig_i_w_axe_195;
+			inventory_width = 1;
+			model = m_w_axe_069;
+		  f modifier_max = 28.000000;
+		  f modifier_min = 18.000000;
+		}
+	}
+}
+[t:template,n:ax_ra_g_c_2h1b_fin]
+{
+	doc = "Gut Masher";
+	specializes = base_axe;
+	[aspect]
+	{
+		model = m_w_axe_074;
+		selection_indicator_scale = 0.65;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+	  f damage_max = 93.000000;
+	  f damage_min = 73.000000;
+		is_two_handed = true;
+	}
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Gut Masher";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_axe_003;
+		equip_requirements = strength:23;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_axe_198;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 10.000000;
+		  f modifier_min = 2.000000;
+		}
+		[c_mag]
+		{
+		  f damage_max = 239.000000;
+		  f damage_min = 187.000000;
+			equip_requirements = strength:47;
+			inventory_icon = b_gui_ig_i_w_axe_199;
+			model = m_w_axe_076;
+		  f modifier_max = 47.000000;
+		  f modifier_min = 34.000000;
+		}
+		[o_fin]
+		{
+			active_icon = b_gui_ig_i_ic_axe_007;
+		  f damage_max = 141.000000;
+		  f damage_min = 111.000000;
+			equip_requirements = strength:31;
+			inventory_icon = b_gui_ig_i_w_axe_200;
+			model = m_w_axe_080;
+		  f modifier_max = 25.000000;
+		  f modifier_min = 11.000000;
+		}
+		[o_str]
+		{
+			active_icon = b_gui_ig_i_ic_axe_007;
+		  f damage_max = 200.000000;
+		  f damage_min = 158.000000;
+			equip_requirements = strength:41;
+			inventory_icon = b_gui_ig_i_w_axe_201;
+			model = m_w_axe_081;
+		  f modifier_max = 40.000000;
+		  f modifier_min = 27.000000;
+		}
+	}
+}
+[t:template,n:ax_ra_g_c_2h2b_fin]
+{
+	doc = "Flesh Splitter";
+	specializes = base_axe;
+	[aspect]
+	{
+		model = m_w_axe_086;
+		selection_indicator_scale = 0.65;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+	  f damage_max = 138.000000;
+	  f damage_min = 102.000000;
+		is_two_handed = true;
+	}
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Flesh Splitter";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_axe_004;
+		equip_requirements = strength:30;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_axe_202;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 14.000000;
+		  f modifier_min = 3.000000;
+		}
+		[c_mag]
+		{
+		  f damage_max = 292.000000;
+		  f damage_min = 216.000000;
+			equip_requirements = strength:55;
+			inventory_icon = b_gui_ig_i_w_axe_207;
+			model = m_w_axe_088;
+		  f modifier_max = 56.000000;
+		  f modifier_min = 40.000000;
+		}
+		[c_str]
+		{
+		  f damage_max = 217.000000;
+		  f damage_min = 161.000000;
+			equip_requirements = strength:43;
+			inventory_icon = b_gui_ig_i_w_axe_205;
+			model = m_w_axe_087;
+		  f modifier_max = 40.000000;
+		  f modifier_min = 22.000000;
+		}
+		[o_avg]
+		{
+			active_icon = b_gui_ig_i_ic_axe_008;
+		  f damage_max = 159.000000;
+		  f damage_min = 117.000000;
+			equip_requirements = strength:33;
+			inventory_icon = b_gui_ig_i_w_axe_203;
+			model = m_w_axe_091;
+		  f modifier_max = 23.000000;
+		  f modifier_min = 9.000000;
+		}
+		[o_fin]
+		{
+			active_icon = b_gui_ig_i_ic_axe_008;
+		  f damage_max = 186.000000;
+		  f damage_min = 138.000000;
+			equip_requirements = strength:38;
+			inventory_icon = b_gui_ig_i_w_axe_204;
+			model = m_w_axe_092;
+		  f modifier_max = 32.000000;
+		  f modifier_min = 14.000000;
+		}
+		[o_str]
+		{
+			active_icon = b_gui_ig_i_ic_axe_008;
+		  f damage_max = 253.000000;
+		  f damage_min = 187.000000;
+			equip_requirements = strength:49;
+			inventory_icon = b_gui_ig_i_w_axe_206;
+			model = m_w_axe_093;
+		  f modifier_max = 49.000000;
+		  f modifier_min = 33.000000;
+		}
+	}
+}
+[t:template,n:ax_un_2h1b_darkblood]
+{
+	doc = "Bone Axe";
+	specializes = base_axe;
+	[aspect]
+	{
+		model = m_w_axe_012;
+		selection_indicator_scale = 0.65;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 25;
+		damage_min = 17;
+		is_two_handed = true;
+	}
+	[common]
+	{
+		is_pcontent_allowed = false;
+		screen_name = "Bone Axe";
+	}
+	[gui]
+	{
+		equip_requirements = strength:29;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_axe_012;
+		inventory_width = 2;
+	}
+}
+[t:template,n:ax_un_g_c_1h1b_str]
+{
+	doc = "Strike Axe";
+	specializes = base_axe;
+	[aspect]
+	{
+		model = m_w_axe_043;
+		selection_indicator_scale = 0.65;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+	  f damage_max = 182.000000;
+	  f damage_min = 149.000000;
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Strike Axe";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_axe_001;
+		equip_requirements = strength:46;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_axe_137;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 38.000000;
+		  f modifier_min = 12.000000;
+		}
+	}
+}
+[t:template,n:ax_un_g_c_1h2b_str]
+{
+	doc = "Chip Axe";
+	specializes = base_axe;
+	[aspect]
+	{
+		model = m_w_axe_044;
+		selection_indicator_scale = 0.65;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+	  f damage_max = 211.000000;
+	  f damage_min = 166.000000;
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Chip Axe";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_axe_002;
+		equip_requirements = strength:51;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_axe_138;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 43.000000;
+		  f modifier_min = 13.000000;
+		}
+	}
+}
+[t:template,n:ax_un_g_c_2h2b_str]
+{
+	doc = "Lug Axe";
+	specializes = base_axe;
+	[aspect]
+	{
+		model = m_w_axe_045;
+		selection_indicator_scale = 0.65;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+	  f damage_max = 293.000000;
+	  f damage_min = 217.000000;
+		is_two_handed = true;
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Lug Axe";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_axe_004;
+		equip_requirements = strength:54;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_axe_139;
+		inventory_width = 2;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 47.000000;
+		  f modifier_min = 14.000000;
+		}
+	}
+}
+[t:template,n:pickaxe]
+{
+	doc = "Pickaxe";
+	specializes = base_axe;
+	[aspect]
+	{
+		model = m_w_misc_pickaxe;
+		selection_indicator_scale = 0.65;
+	}
+	[attack]
+	{
+		attack_range = 1;
+	  f damage_max = 10.000000;
+	  f damage_min = 6.000000;
+		is_two_handed = true;
+		reload_delay = 1;
+	}
+	[common]
+	{
+		is_pcontent_allowed = false;
+		screen_name = "Pickaxe";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_msc_008;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_axe_140;
+		inventory_width = 2;
+	}
+}
+[t:template,n:scythe_g_1h_avg]
+{
+	doc = "Scythe";
+	specializes = base_axe;
+	[aspect]
+	{
+		model = m_w_misc_scythe-002;
+	}
+	[attack]
+	{
+		damage_max = 45;
+		damage_min = 32;
+	}
+	[common]
+	{
+		screen_name = "Scythe";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_msc_004;
+		equip_requirements = strength:18;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_msc_011;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 7.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:scythe_g_1h_fun]
+{
+	doc = "Short Scythe";
+	specializes = base_axe;
+	[aspect]
+	{
+		model = m_w_misc_scythe-003;
+	}
+	[attack]
+	{
+		damage_max = 21;
+		damage_min = 10;
+	}
+	[common]
+	{
+		is_pcontent_allowed = false;
+		screen_name = "Short Scythe";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_msc_004;
+		equip_requirements = strength:15;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_msc_012;
+		inventory_width = 1;
+	}
+}
+[t:template,n:scythe_g_1h_mag]
+{
+	doc = "Sweeping Scythe";
+	specializes = base_axe;
+	[aspect]
+	{
+		model = m_w_misc_scythe-001;
+	}
+	[attack]
+	{
+		damage_max = 130;
+		damage_min = 100;
+	}
+	[common]
+	{
+		screen_name = "Sweeping Scythe";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_msc_004;
+		equip_requirements = strength:36;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_msc_010;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 31.000000;
+		  f modifier_min = 3.000000;
+		}
+	}
+}

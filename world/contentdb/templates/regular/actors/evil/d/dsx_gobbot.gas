@@ -1,0 +1,745 @@
+[t:template,n:dsx_base_gobbot]
+{
+	category_name = "1W_evil_d";
+	doc = "dsx_base_gobbot";
+	specializes = actor_evil;
+	[aspect]
+	{
+		model = m_c_edm_go_pos_1;
+		material = wood;
+		[voice]
+		{
+			[die]			{ priority = high; * = s_e_die_gobbot_SED; }
+		}
+	}
+	[body]
+	{
+		min_move_velocity = 1.8;
+		avg_move_velocity = 2.7;
+		[bone_translator]
+		{
+			body_anterior = Bip01_Head;
+			body_mid = Bip01_Spine;
+			body_posterior = Bip01_Pelvis;
+			kill_bone = Bip01_Spine;
+			shield_bone = shield_grip;
+			weapon_bone = weapon_grip;
+		}
+		[chore_dictionary]
+		{
+			chore_prefix = a_c_edm_go_fs;
+			[chore_attack]
+			{
+				chore_stances = 7;
+				skrit = select_attack;
+				[anim_files] { 00=at; }
+			}
+			[chore_default]
+			{
+				chore_stances = 7;
+				skrit = infinite_loop;
+				[anim_files] { 00=dfs; }
+			}
+			[chore_die]
+			{
+				chore_stances = 7;
+				skrit = select_transition;
+				[anim_files] { 00=dfs; }
+			}
+			[chore_fidget]
+			{
+				chore_stances = 7;
+				skrit = select_fidget;
+				[anim_files] { 00=dff; }
+			}
+			[chore_misc]
+			{
+				chore_stances = ignore;
+				skrit = select_transition;
+				[anim_files]
+				{
+					froz = a_c_edm_go_fs7_ds;
+				}
+			}
+			[chore_walk]
+			{
+				chore_stances = 7;
+				skrit = select_walk;
+				[anim_files] { 00=wl; }
+			}
+		}
+		[weapon_scales]
+		{
+			as_minigun			= 0.8, 0.8, 0.8;
+		}
+	}
+	[effect_manager]
+	{
+		start_msg = WE_ENTERED_WORLD;
+		stop_msg = WE_LEFT_WORLD;
+		stop_msg2 = WE_KILLED;
+
+		effect_name = "";
+		rep_effect_name = "gobbot_blink";
+
+		repeat_rate = .3;
+		repeat_rate_max = .3;
+
+		run_once = true;
+	}
+	[common]
+	{
+		screen_name="Gobbot";
+		membership = gobbot, monster;
+	}
+	[mind]
+	{
+		jat_fidget				= world\ai\jobs\common\job_fidget.skrit
+		?curious				= 0.75
+		&wander					= 0.8
+		&social					= 0.1
+		&interest				= interest
+		&delay_min				= 6
+		&delay_max				= 16
+		&still					= false;
+		on_enemy_spotted_alert_friends 		= true;
+		jat_brain				= world\ai\jobs\common\brain_hero.skrit
+		?actor_joins_existing_party		= true
+		&actor_creates_own_party		= true
+		&party_template				= "party_dsx_gobbot";
+		com_channels				= dyn_party, gobbot;
+		com_range				= 14.0;
+		melee_engage_range			= 14.0;
+		ranged_engage_range	 		= 14.0;
+		sight_range				= 14.0;
+		personal_space_range			= 0.7;
+		actor_life_ratio_low_threshold 		= 0.5;
+		// $ mana ratio low is sent when a gobbot runs out of mana in his minigun. -ET
+		on_mana_ratio_low_flee			= true;
+		flee_count				= 1;
+	}
+	[physics]
+	{
+		explode_when_killed = true;
+		explosion_magnitude = 1.0;
+		gib_gore_good = true;
+		[break_particulate]
+		{
+			frag_glb_gobbot_01 = 1;
+			frag_glb_gobbot_02 = 2;
+			frag_glb_gobbot_03 = 3;
+			frag_glb_gobbot_04 = 2;
+			frag_glb_gobbot_05 = 1;
+			frag_glb_gobbot_06 = 3;
+			frag_glb_gobbot_07 = 1;
+		}
+	}
+}
+
+[t:template,n:dsx_gobbot_minigun] // Consistent Textures //
+//balanced to Level 18
+{
+	category_name = "1W_evil_d";
+	doc = "dsx_gobbot_minigun";
+	specializes = dsx_base_gobbot;
+	[actor]
+	{
+		[skills]
+		{
+			strength 		=  20,0;
+			intelligence 	=  9, 0;
+			dexterity 		=  13, 0;
+            ranged			=  20,0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 1196;
+		life 			= 355;
+        	max_life 		= 355;
+        	mana 			= 14;
+        	max_mana 		= 14;
+        	[textures]	
+        	{ 
+        		0 = b_c_edm_px_2; 
+        	}
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 62;
+		damage_min = 54;
+	}
+	[common]
+	{
+		screen_name="Gobbot Sleeper";
+	}
+
+	[defend] { defense=112; }
+
+	[inventory]
+	{
+		selected_active_location = IL_ACTIVE_RANGED_WEAPON;
+	[pcontent]  //GUN
+		{
+			[oneof*]
+			{
+				ES_WEAPON_HAND = dsx_minigun_dragon;
+			}
+		}
+	}
+	[physics] // Consistent Textures //
+	{
+		explode_when_killed = true;
+		explosion_magnitude = 1.0;
+		gib_gore_good = true;
+		[break_particulate]
+		{
+			frag_glb_gobbot_dark_01 = 1;
+			frag_glb_gobbot_dark_02 = 2;
+			frag_glb_gobbot_dark_03 = 3;
+			frag_glb_gobbot_dark_04 = 2;
+			frag_glb_gobbot_dark_05 = 1;
+			frag_glb_gobbot_dark_06 = 3;
+			frag_glb_gobbot_dark_07 = 1;
+		}
+	}
+}
+
+[t:template,n:dsx_gobbot_minigun_02]
+{
+//balanced to Level 28, medium ranged
+	category_name = "1W_evil_d";
+	doc = "dsx_gobbot_minigun_2";
+	specializes = dsx_base_gobbot;
+	[actor]
+	{
+		[skills]
+		{
+			strength 	=  19,0;
+			intelligence 	=  8, 0;
+			dexterity 	=  12, 0;
+           		ranged		=  20,0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 1805;
+		life = 510;
+        	max_life = 510;
+        	mana = 14;
+        	max_mana = 14;    	
+	}
+	[attack]
+	{
+		// minigun_dragon does 68-75 damage, which is fine for this guy 
+		//		- no new weapon needed unless we want to change his damage
+		attack_range = 0.5;
+		damage_max = 74;
+		damage_min = 68;
+	}
+	[common]
+	{
+		screen_name="Gobbot Gunner";
+	}
+
+	[defend] { defense=168; }
+
+	[inventory]
+	{
+		selected_active_location = IL_ACTIVE_RANGED_WEAPON;
+[pcontent]  //GUN
+		{
+			[oneof*]
+			{
+				ES_WEAPON_HAND = minigun_dragon;
+			}
+		}
+	}
+}
+
+[t:template,n:dsx_gobbot_flamethrower]
+{
+	category_name = "1W_evil_d";
+	doc = "dsx_gobbot_flamethrower";
+	specializes = dsx_base_gobbot;
+	[actor]
+	{
+		[skills]
+		{
+			strength 	=  18,0;
+			intelligence =  8, 0;
+			dexterity 	=  11, 0;
+            		ranged		=  21,0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 1170;
+		life = 478;
+        	max_life = 478;
+        	mana = 14;
+        	max_mana = 14;
+        	[textures]	
+        	{ 
+        		0 = b_c_edm_px_2; 
+        	}
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 70;
+		damage_min = 61;
+	}
+	[defend] { defense=189; }
+
+	[common]
+	{
+		screen_name="Gobbot Igniter";
+	}
+
+	[inventory]
+	{
+		selected_active_location = IL_ACTIVE_RANGED_WEAPON;
+
+		[pcontent]
+		{
+			[oneof*]
+			{
+				ES_WEAPON_HAND = minigun_napalm;
+			}
+		}
+	}
+	[physics] // Consistent Textures //
+	{
+		explode_when_killed = true;
+		explosion_magnitude = 1.0;
+		gib_gore_good = true;
+		[break_particulate]
+		{
+			frag_glb_gobbot_dark_01 = 1;
+			frag_glb_gobbot_dark_02 = 2;
+			frag_glb_gobbot_dark_03 = 3;
+			frag_glb_gobbot_dark_04 = 2;
+			frag_glb_gobbot_dark_05 = 1;
+			frag_glb_gobbot_dark_06 = 3;
+			frag_glb_gobbot_dark_07 = 1;
+		}
+	}
+}
+[t:template,n:dsx_gobbot_flamethrower_02]
+{
+// Balanced to level 28, medium ranged
+	category_name = "1W_evil_d";
+	doc = "dsx_gobbot_flamethrower_2";
+	specializes = dsx_base_gobbot;
+	[actor]
+	{
+		[skills]
+		{
+			strength 	=  19,0;
+			intelligence 	=  8, 0;
+			dexterity 	=  12, 0;
+            		ranged		=  20,0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 1793;
+		life = 510;
+        	max_life = 510;
+        	mana = 14;
+        	max_mana = 14;
+	}
+	[attack]
+	{
+		// has custom weapon
+		attack_range = 0.5;
+		damage_max = 75;
+		damage_min = 68;
+	}
+	[defend] { defense=168; }
+
+	[common]
+	{
+		screen_name="Gobbot Scorcher";
+	}
+
+	[inventory]
+	{
+		selected_active_location = IL_ACTIVE_RANGED_WEAPON;
+
+		[pcontent]
+		{
+			[oneof*]
+			{
+				ES_WEAPON_HAND = dsx_minigun_flamethrower2;
+			}
+		}
+	}
+}
+
+[t:template,n:dsx_gobbot_lightning]
+{
+	category_name = "1W_evil_d";
+	doc = "dsx_gobbot_lightning";
+	specializes = dsx_base_gobbot;
+	[actor]
+	{
+		[skills]
+		{
+			strength 		=  18,0;
+			intelligence 		=  8, 0;
+			dexterity 		=  12, 0;
+            		ranged			=  18,0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 1674;
+		life = 486;
+        	max_life = 486;
+        	mana = 14;
+        	max_mana = 14;
+        	[textures]	
+        	{ 
+        		0 = b_c_edm_px_2; 
+        	}
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 70;
+		damage_min = 62;
+	}
+	[defend] { defense=156; }
+
+	[common]
+	{
+		screen_name="Gobbot Shocker";
+	}
+
+	[inventory]
+	{
+		selected_active_location = IL_ACTIVE_RANGED_WEAPON;
+		[pcontent]
+		{
+			[oneof*]
+			{
+				ES_WEAPON_HAND = minigun_lightning;
+			}
+		}
+	}
+	[physics] // Consistent Textures //
+	{
+		explode_when_killed = true;
+		explosion_magnitude = 1.0;
+		gib_gore_good = true;
+		[break_particulate]
+		{
+			frag_glb_gobbot_dark_01 = 1;
+			frag_glb_gobbot_dark_02 = 2;
+			frag_glb_gobbot_dark_03 = 3;
+			frag_glb_gobbot_dark_04 = 2;
+			frag_glb_gobbot_dark_05 = 1;
+			frag_glb_gobbot_dark_06 = 3;
+			frag_glb_gobbot_dark_07 = 1;
+		}
+	}
+}
+
+
+[t:template,n:dsx_gobbot_lightning_02]
+{
+// Balanced to level 28 - medium ranged
+	category_name = "1W_evil_d";
+	doc = "dsx_gobbot_lightning_2";
+	specializes = dsx_base_gobbot;
+	[actor]
+	{
+		[skills]
+		{
+			strength 	=  19,0;
+			intelligence 	=  8, 0;
+			dexterity 	=  12, 0;
+            		ranged		=  20,0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 1793;
+		life = 510;
+        	max_life = 510;
+        	mana = 14;
+        	max_mana = 14;
+	}
+	[attack]
+	{
+		// minigun_lightning does 69-77 damage, below is what it's supposed to be
+		attack_range = 0.5;
+		damage_max = 74;
+		damage_min = 68;
+	}
+	[defend] { defense=169; }
+
+	[common]
+	{
+		screen_name="Gobbot Zapper";
+	}
+
+	[inventory]
+	{
+		selected_active_location = IL_ACTIVE_RANGED_WEAPON;
+
+		[pcontent]
+		{
+			[oneof*]
+			{
+				ES_WEAPON_HAND = minigun_lightning;
+			}
+		}
+	}
+}
+
+[t:template,n:dsx_gobbot_grenade]
+{
+	category_name = "1W_evil_d";
+	doc = "dsx_gobbot_grenade";
+	specializes = dsx_base_gobbot;
+	[actor]
+	{
+		[skills]
+		{
+			strength 	=  18,0;
+			intelligence =  8, 0;
+			dexterity 	=  11, 0;
+            ranged		=  18,0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 1370;
+		life = 478;
+        	max_life = 478;
+        	mana = 14;
+        	max_mana = 14;
+        	[textures]	
+        	{ 
+        		0 = b_c_edm_px_2; 
+        	}
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 70;
+		damage_min = 61;
+	}
+	[defend] { defense=150; }
+
+  	[common]
+	{
+		screen_name="Gobbot Grenadier";
+	}
+
+
+	[inventory]
+	{
+		spew_equipped_kill_count = <ignore>;
+		selected_active_location = IL_ACTIVE_RANGED_WEAPON;
+		[equipment]
+		{
+			es_weapon_hand = dsx_gobbot_grenade_launcher;
+		}
+		
+	}
+	[physics] // Consistent Textures //
+	{
+		explode_when_killed = true;
+		explosion_magnitude = 1.0;
+		gib_gore_good = true;
+		[break_particulate]
+		{
+			frag_glb_gobbot_dark_01 = 1;
+			frag_glb_gobbot_dark_02 = 2;
+			frag_glb_gobbot_dark_03 = 3;
+			frag_glb_gobbot_dark_04 = 2;
+			frag_glb_gobbot_dark_05 = 1;
+			frag_glb_gobbot_dark_06 = 3;
+			frag_glb_gobbot_dark_07 = 1;
+		}
+	}
+}
+
+[t:template,n:dsx_gobbot_grenade_02]
+{
+// Balanced to Level 28, easy ranged
+	category_name = "1W_evil_d";
+	doc = "dsx_gobbot_grenade_02";
+	specializes = dsx_base_gobbot;
+	[actor]
+	{
+		[skills]
+		{
+			strength 	=  19,0;
+			intelligence 	=  8, 0;
+			dexterity 	=  12, 0;
+            		ranged		=  20,0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 1203;
+		life = 255;
+    	    	max_life = 255;
+        	mana = 14;
+        	max_mana = 14;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 63;
+		damage_min = 55;
+	}
+	[defend] { defense=117; }
+
+  	[common]
+	{
+		screen_name="Gobbot Lobber";
+	}
+
+
+	[inventory]
+	{
+		selected_active_location = IL_ACTIVE_RANGED_WEAPON;
+
+		[pcontent]
+		{
+			[oneof*]
+			{
+				ES_WEAPON_HAND = dsx_minigun_grenade_launcher;
+			}
+    		}
+	}
+}
+[t:template,n:dsx_gobbot_general] // Consistent Textures //
+{
+// Balanced to level 28, hard ranged
+	category_name = "1W_evil_d";
+	doc = "dsx_gobbot_general";
+	specializes = dsx_base_gobbot;
+	[actor]
+	{
+		[skills]
+		{
+			strength 	=  19,0;
+			intelligence 	=  8, 0;
+			dexterity 	=  12, 0;
+           		ranged		=  20,0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 2732;
+		life = 784;
+        	max_life = 784;
+        	mana = 14;
+        	max_mana = 14;
+        	[textures]	
+        	{ 
+        		0 = b_c_edm_px_3; 
+        	}    	
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 100;
+		damage_min = 90;
+	}
+	[common]
+	{
+		screen_name="Gobbot General";
+	}
+
+	[defend] { defense=207; }
+
+	[inventory]
+	{
+		// Has the monster weapon equipped
+		spew_equipped_kill_count = <ignore>;
+		selected_active_location = IL_ACTIVE_RANGED_WEAPON;
+		[equipment]
+		{
+			// this is balanced for the monster to use
+			es_weapon_hand = dsx_minigun_gas_monster;
+		}
+		[pcontent]
+	{
+	/* Generated: Tue Jun 17 11:13:15 2003
+		Level 28, Strong */
+		[oneof*]
+		{
+			[gold*]
+			{
+				chance = 0.2;
+				min = 2165;
+				max = 4298;
+			}
+			[oneof*]
+			{
+				chance = 0.088888888888889;
+				il_main = potion_mana_small;
+				il_main = potion_health_small;
+			}
+			[oneof*]
+			{
+				chance = 0.111111111111111;
+				il_main = potion_mana_medium;
+				il_main = potion_health_medium;
+			}
+			[oneof*]
+			{
+				il_main = minigun_gas;
+				chance = 0.2;
+				il_main = #weapon/63-79;
+				il_main = #armor/38-202;
+				il_main = #*/63-79;
+			}
+			[oneof*]
+			{
+				chance = 0.01;
+				il_main = #weapon/-rare(1)/79-87;
+				il_main = #armor/-rare(1)/165-268;
+				il_main = #*/-rare(1)/79-87;
+			}
+			[oneof*]
+			{
+				chance = 0.005;
+				il_main = #weapon/-unique(2)/79-87;
+				il_main = #armor/-unique(2)/165-268;
+				il_main = #*/-unique(2)/79-87;
+			}		
+		}
+	}
+
+		// drops a player version
+		
+	}
+	[physics] // Consistent Textures //
+	{
+		explode_when_killed = true;
+		explosion_magnitude = 1.0;
+		gib_gore_good = true;
+		[break_particulate]
+		{
+			frag_glb_gobbot_general_01 = 1;
+			frag_glb_gobbot_general_02 = 2;
+			frag_glb_gobbot_general_03 = 3;
+			frag_glb_gobbot_general_04 = 2;
+			frag_glb_gobbot_general_05 = 1;
+			frag_glb_gobbot_general_06 = 3;
+			frag_glb_gobbot_general_07 = 1;
+		}
+	}
+}
+}
+

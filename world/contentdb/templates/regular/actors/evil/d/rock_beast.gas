@@ -1,0 +1,482 @@
+[t:template,n:base_rock_beast]
+{
+	category_name = "1W_evil_d";
+	doc = "rock_beast";
+	specializes = actor_evil;
+	[aspect]
+	{
+		model = m_c_edm_rb_pos_1;
+		material = stone;
+		[voice]
+		{
+			[attack]		{ * = s_e_attack_rock_beast; }
+		}
+	}
+	[body]
+	{
+		avg_move_velocity = 2.810000;
+		[bone_translator]
+		{
+			body_anterior = bip01_head;
+			body_mid = bip01_spine;
+			body_posterior = bip01_pelvis;
+			kill_bone = bip01_spine;
+			shield_bone = bip01_l_hand;
+			weapon_bone = bip01_r_hand;
+		}
+		[chore_dictionary]
+		{
+			chore_prefix = a_c_edm_rb_fs;
+			[chore_attack]
+			{
+				chore_stances = 0;
+				skrit = select_attack;
+
+				[anim_files]
+				{
+					00 = at;
+					01 = at-02;
+				}
+			}
+			[chore_default]
+			{
+				chore_stances = 0;
+				skrit = infinite_loop;
+				[anim_files] { 00=dfs; }
+			}
+			[chore_die]
+			{
+				chore_stances = 0;
+				skrit = select_transition;
+				[anim_files] { 00=di; }
+			}
+			[chore_fidget]
+			{
+				chore_stances = 0;
+				skrit = select_fidget;
+				[anim_files]
+				{
+					00 = dff;
+					01 = dff-02;
+				}
+			}
+			[chore_magic]
+			{
+				chore_stances = 0;
+				skrit = select_attack;
+				[anim_files] { 00=mg; }
+			}
+			[chore_walk]
+			{
+				chore_stances = 0;
+				skrit = select_walk;
+				[anim_files] { 00=wl; }
+			}
+		}
+	}
+	[common]
+	{
+		membership=monster,immune_freeze;
+		[template_triggers]
+		{
+			[*]
+			{
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+				action* = call_sfx_script("rock_beast_eye_glow");
+			}
+			[*]
+			{
+				action* = call_sfx_script("rock_beast_dust","bip01_r_foot");
+				condition* = receive_world_message("we_anim_other",'rfdn');
+			}
+			[*]
+			{
+				action* = call_sfx_script("rock_beast_dust","bip01_l_foot");
+				condition* = receive_world_message("we_anim_other",'lfdn');
+			}
+			[*]
+			{
+				action* = call_sfx_script("rock_beast_smash");
+				condition* = receive_world_message("we_anim_sfx",1);
+			}
+			[*]
+			{
+				action* = call_sfx_script("rock_beast_yell");
+				condition* = receive_world_message("we_anim_sfx",2);
+			}
+			[*]
+			{
+				action* = call_sfx_script("rock_beast_dust_hands");
+				condition* = receive_world_message("we_anim_sfx",3);
+			}
+		}
+	}
+	[mind]
+	{
+
+		actor_weapon_preference			= WP_MAGIC;
+		actor_auto_switches_to_magic	= true;
+		actor_auto_switches_to_karate	= true;
+		actor_auto_switches_to_melee	= true;
+
+		on_enemy_entered_icz_switch_to_melee = true;
+
+		jat_die = world\ai\jobs\actors\evil\job_die_explode.skrit;
+		jat_fidget	= world\ai\jobs\common\job_fidget.skrit;
+
+		jat_attack_object_melee	 		= world\ai\jobs\common\job_attack_object_melee.skrit
+			?persistence				= 0.0
+			&hit_multiple				= true;
+
+		melee_engage_range = 4.1;
+		personal_space_range = 2;
+		ranged_engage_range = 14.0;
+		sight_range = 14.0;
+		inner_comfort_zone_range        = 4.0;
+		outer_comfort_zone_range        = 9.0;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration			= alter_chance_to_hit;
+				value				= 40;
+				description			= "+40% Chance to Hit Enemy";
+				duration			= #infinite;
+				is_permanent		= true;
+				is_single_instance	= true;
+			}
+		}
+	}
+	[enchantment_manager] {}
+	[physics]
+	{
+		break_sound = s_e_explode_rockbeast;
+		break_effect = dust_explosion;
+		//explode_when_killed = true;
+		explosion_magnitude = 1.0;
+		fire_effect = human_physics_fire;
+		fire_resistance = 0.0;
+        fire_burn_threshold = 50;
+        gib_gore_good = true;
+		[break_particulate]
+		{
+			frag_glb_rock_beast_01 = 1;
+			frag_glb_rock_beast_02 = 1;
+			frag_glb_rock_beast_03 = 1;
+			frag_glb_rock_beast_04 = 1;
+			frag_glb_rock_beast_05 = 1;
+			frag_glb_rock_beast_06 = 2;
+			frag_glb_rock_beast_07 = 3;
+			frag_glb_rock_beast_08 = 4;
+			frag_glb_stone_01 = 6;
+			frag_glb_stone_02 = 4;
+			frag_glb_stone_03 = 3;
+			frag_glb_stone_04 = 6;
+			frag_glb_stone_05 = 9;
+			frag_glb_stone_06 = 5;
+		}
+	}
+}
+[t:template,n:rock_beast_base]
+{
+	category_name = "1W_evil_d";
+	doc = "rock_beast";
+	specializes = base_rock_beast;
+	[actor]
+	{
+		[skills]
+		{
+			strength =  22, 0;
+			intelligence =  3, 0;
+			dexterity =  9, 0;
+            melee =  	5,  0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 113;
+		life = 132;
+		material = stone;
+		max_life = 132;
+		mana = 10;
+		max_mana = 10;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 69;
+		damage_min = 65;
+	}
+	[common] { screen_name="Rock Beast"; }
+	[defend] { defense=115; }
+	[inventory]
+	{
+		selected_active_location = il_active_primary_spell;
+		[other] { il_active_primary_spell=spell_rock_beast_blast; }
+
+   		[pcontent]
+		{
+			[oneof*]
+			{
+				[oneof*]
+				{
+//					chance = 1.0;
+					il_main = #*/30-35;
+					il_main = #armor/50-73;
+					max = 2;
+					min = 1;
+				}
+			}
+		}
+	}
+}
+[t:template,n:rock_beast]
+{
+	category_name = "1W_evil_d";
+	doc = "rock_beast";
+	specializes = rock_beast_base;
+}
+[t:template,n:rock_beast_summon]
+{
+	category_name = "1W_evil_d";
+	doc = "[summon] rock_beast";
+	specializes = rock_beast_base;
+	aspect:experience_value = 0;
+	[inventory]
+	{
+		selected_active_location = il_active_primary_spell;
+		[other] { il_active_primary_spell=spell_rock_beast_blast_summon; }
+		[pcontent]
+		{
+			[gold*]
+			{
+				chance = 0;
+			}
+		}
+	}
+}
+[t:template,n:lava_beast]
+{
+	category_name = "1W_evil_d";
+	doc = "lava_beast";
+	specializes = base_rock_beast;
+	[actor]
+	{
+		[skills]
+		{
+			strength =  	52, 0;
+			intelligence =  16, 0;
+			dexterity =  	23, 0;
+            melee =  		28,  0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 130000;
+		life = 1325;
+		material = stone;
+		max_life = 1325;
+		mana = 10;
+		max_mana = 10;
+		textures:0 = b_c_edm_rb-02;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 220;
+		damage_min = 190;
+	}
+	[common] { screen_name="Lava Beast"; }
+	[defend] { defense=800; }
+
+	[physics]
+	gib_gore_good = true;
+	{
+		[break_particulate]
+		{
+			frag_glb_lava_beast_01 = 1;
+			frag_glb_lava_beast_02 = 1;
+			frag_glb_lava_beast_03 = 1;
+			frag_glb_lava_beast_04 = 1;
+			frag_glb_lava_beast_05 = 1;
+			frag_glb_lava_beast_06 = 2;
+			frag_glb_lava_beast_07 = 3;
+			frag_glb_lava_beast_08 = 4;
+		}
+	}
+	[inventory]
+	{
+		selected_active_location = il_active_primary_spell;
+		[other] { il_active_primary_spell=spell_lava_beast_blast; }
+
+   		[pcontent]
+		{
+			[oneof*]
+			{
+				[oneof*]
+				{
+					chance = 0.45;
+					il_main = #*/88-148;
+					il_main = #armor/66-328;
+	                il_main = #nmagic/55-60;
+	                il_main = #cmagic/55-60;
+				}
+				[oneof*]
+				{
+	            	chance = 0.004;
+	                il_main = #weapon/-rare(1)/144-163;
+	                il_main = #armor/-rare(1)/493-510;
+                    il_main = #*/-rare(1)/144-163;
+                }
+				[oneof*]
+				{
+                	chance = 0.002;
+	                il_main = #weapon/-unique(2)/144-163;
+	                il_main = #armor/-unique(2)/493-510;
+                    il_main = #*/-unique(2)/144-163;
+	            }
+				[gold*]
+				{
+					chance = 0.125;
+					max = 31657;
+					min = 24325;
+					min_pile = 4019;
+					piles = 2 - 4;
+				}
+			}
+		}
+	}
+}
+[t:template,n:lava_beast_boss_01]
+{
+	category_name = "1W_evil_d";
+	doc = "lava_beast boss 01";
+	specializes = base_rock_beast;
+	[actor]
+	{
+		[skills]
+		{
+			strength =  	55, 0;
+			intelligence =  13, 0;
+			dexterity =  	23, 0;
+            melee =  		33,  0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 199000;
+		life = 1353;
+		material = stone;
+		max_life = 1353;
+		mana = 10;
+		max_mana = 10;
+		textures:0 = b_c_edm_rb-03;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 226;
+		damage_min = 196;
+	}
+	[common]
+	{
+		screen_name="Magma Beast";
+		membership=monster,immune_charm,immune_control,immune_freeze,immune_polymorph,immune_align_change,immune_explode;
+		[template_triggers]
+		{
+			[*]
+			{
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+				no_trig_bits = true;
+				action* = call_sfx_script("rock_beast_eye_glow");
+				action* = call_sfx_script("unique_ray_yellow(sgx)");
+				action* = call_sfx_script("unique_light_yellow(sgx)");
+			}
+			[*]
+			{
+				action* = call_sfx_script("rock_beast_dust","bip01_r_foot");
+				condition* = receive_world_message("we_anim_other",'rfdn');
+			}
+			[*]
+			{
+				action* = call_sfx_script("rock_beast_dust","bip01_l_foot");
+				condition* = receive_world_message("we_anim_other",'lfdn');
+			}
+			[*]
+			{
+				action* = call_sfx_script("rock_beast_smash");
+				condition* = receive_world_message("we_anim_sfx",1);
+			}
+			[*]
+			{
+				action* = call_sfx_script("rock_beast_yell");
+				condition* = receive_world_message("we_anim_sfx",2);
+			}
+			[*]
+			{
+				action* = call_sfx_script("rock_beast_dust_hands");
+				condition* = receive_world_message("we_anim_sfx",3);
+			}
+		}
+	}
+	[defend] { defense=1882; }
+
+	[physics] // Consistent Textures //
+	{
+		gib_gore_good = true;
+		[break_particulate]
+		{
+			frag_glb_lava_beast_boss_01 = 1;
+			frag_glb_lava_beast_boss_02 = 1;
+			frag_glb_lava_beast_boss_03 = 1;
+			frag_glb_lava_beast_boss_04 = 1;
+			frag_glb_lava_beast_boss_05 = 1;
+			frag_glb_lava_beast_boss_06 = 2;
+			frag_glb_lava_beast_boss_07 = 3;
+			frag_glb_lava_beast_boss_08 = 4;
+		}
+	}
+	[inventory]
+	{
+		selected_active_location = il_active_primary_spell;
+		[other] { il_active_primary_spell=spell_lava_beast_blast; }
+
+   		[pcontent]
+		{
+			[all*]
+			{
+				[oneof*]
+				{
+					il_main = #*/150-170;
+					il_main = #armor/480-530;
+				}
+				[oneof*]
+				{
+	            	chance = 0.004;
+	                il_main = #weapon/-rare(1)/178-195;
+	                il_main = #armor/-rare(1)/550-564;
+                    il_main = #*/-rare(1)/178-195;
+                }
+				[oneof*]
+				{
+                	chance = 0.002;
+	                il_main = #weapon/-unique(2)/178-195;
+	                il_main = #armor/-unique(2)/550-564;
+                    il_main = #*/-unique(2)/178-195;
+	            }
+				[gold*]
+				{
+					max = 59876;
+					min = 57632;
+					min_pile = 5987;
+					piles = 6 - 8;
+				}
+			}
+		}
+	}
+}

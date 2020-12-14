@@ -406,7 +406,7 @@
 		}
 	}
 }
-[t:template,n:bd_le_r_g_c_low]
+[t:template,n:bd_le_r_g_c_lowlb]
 {
 	doc = "Tattered Leather";
 	specializes = base_body_armor_leather;
@@ -852,9 +852,9 @@
 		  f modifier_max = 0.000000;
 		  f modifier_min = 0.000000;
 		}
-		[c_fin]
+		[c_fin] // Consistent Textures //
 		{
-			armor_style = 047;
+			armor_style = 503;
 			armor_type = a1;
 		  f defense = 24.000000;
 			inventory_icon = b_gui_ig_i_a_pos_a1_047;
