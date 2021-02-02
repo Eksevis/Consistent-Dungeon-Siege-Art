@@ -28,3 +28,9 @@ https://www.nexusmods.com/dungeonsiege1/mods/55
 On top of the textures that are included within the compiled version, there is an additional texture that I believe was fairly well done, but otherwise did not match the
 project I had in mind. With their permission I have decided to nevertheless include it on this repository. It is clearly labeled as "Unused" so as to create as little
 confusion as possible.
+
+# Long Term Goals
+
+1. Synchronize all in-game textures / meshes with their inventory art
+3. Create new names, giving more variety / distinction other than just visual
+4. Use the old in-game textures to create new inventory icons and items, creating further variety and using otherwise cut content
