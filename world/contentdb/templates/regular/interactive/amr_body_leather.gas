@@ -406,7 +406,7 @@
 		}
 	}
 }
-[t:template,n:bd_le_r_g_c_lowlb]
+[t:template,n:bd_le_r_g_c_low]
 {
 	doc = "Tattered Leather";
 	specializes = base_body_armor_leather;
