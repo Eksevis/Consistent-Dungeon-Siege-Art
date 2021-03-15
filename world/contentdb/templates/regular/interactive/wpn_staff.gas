@@ -1,0 +1,1921 @@
+[t:template,n:base_staff]
+{
+	doc = "Staff or staff-like weapon.";
+	specializes = weapon_melee;
+	[aspect]
+	{
+		material = wood;
+		[voice]
+		{
+			[put_down]
+			{
+				* = s_e_gui_put_down_staff;
+			}
+		}
+	}
+	[attack]
+	{
+		attack_class = ac_staff;
+		is_melee = true;
+		is_two_handed = true;
+		reload_delay = 0;
+		skill_class = melee;
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_stf_001;
+		equip_slot = es_weapon_hand;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "10% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 10;
+			}
+		}
+	}
+}
+[t:template,n:hoe]
+{
+	category_name = "staff";
+	doc = "Hoe";
+	specializes = base_staff;
+	[aspect]
+	{
+		model = m_w_misc_hoe;
+	}
+	[attack]
+	{
+	  f damage_max = 1;
+	  f damage_min = 1;
+	}
+	[common]
+	{
+        is_pcontent_allowed = false;
+        allow_modifiers = false;
+		screen_name = "Hoe";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_ms_ho;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_msc_017;
+		inventory_width = 1;
+	}
+}
+[t:template,n:pitchfork]
+{
+	category_name = "staff";
+	doc = "Pitchfork";
+	specializes = base_staff;
+	[aspect]
+	{
+		model = m_w_misc_pitchfork;
+	}
+	[attack]
+	{
+	  f damage_max = 10.000000;
+	  f damage_min = 6.000000;
+	}
+	[common]
+	{
+        is_pcontent_allowed = false;
+        allow_modifiers = false;
+		screen_name = "Pitchfork";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_ms_pf;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_msc_005;
+		inventory_width = 1;
+	}
+}
+[t:template,n:pitchfork_dull]
+{
+	category_name = "staff";
+	doc = "Dull Pitchfork";
+	specializes = base_staff;
+	[aspect]
+	{
+		model = m_w_misc_pitchfork;
+	}
+	[attack]
+	{
+	  f damage_max = 4.000000;
+	  f damage_min = 2.000000;
+	}
+	[common]
+	{
+        is_pcontent_allowed = false;
+        allow_modifiers = false;
+		screen_name = "Dull Pitchfork";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_ms_pf;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_msc_005;
+		inventory_width = 1;
+	}
+}
+[t:template,n:rake]
+{
+	category_name = "staff";
+	doc = "Rake";
+	specializes = base_staff;
+	[aspect]
+	{
+		model = m_w_misc_rake;
+	}
+	[attack]
+	{
+	  f damage_max = 2.000000;
+	  f damage_min = 1.000000;
+	}
+	[common]
+	{
+        is_pcontent_allowed = false;
+        allow_modifiers = false;
+		screen_name = "Rake";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_msc_006;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_msc_004;
+		inventory_width = 1;
+	}
+}
+[t:template,n:shovel]
+{
+	category_name = "staff";
+	doc = "Shovel";
+	specializes = base_staff;
+	[aspect]
+	{
+		model = m_w_misc_shovel;
+	}
+	[attack]
+	{
+	  f damage_max = 3.000000;
+	  f damage_min = 1.000000;
+	}
+	[common]
+	{
+        is_pcontent_allowed = false;
+        allow_modifiers = false;
+		screen_name = "Shovel";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_msc_005;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_msc_002;
+		inventory_width = 1;
+	}
+}
+[t:template,n:st_g_c_b_avg]
+{
+	doc = "Bladed Staff";
+	specializes = base_staff;
+	[aspect]
+	{
+		model = m_w_stf_075;
+	}
+	[attack]
+	{
+	  f damage_max = 73.000000;
+	  f damage_min = 49.000000;
+	}
+	[common]
+	{
+		screen_name = "Bladed Staff";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_stf_003;
+		equip_requirements = intelligence:23;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_stf_116;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 3.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_fin]
+		{
+		  f damage_max = 84.000000;
+		  f damage_min = 56.000000;
+			equip_requirements = intelligence:25;
+			inventory_icon = b_gui_ig_i_w_stf_117;
+			model = m_w_stf_076;
+		  f modifier_max = 9.000000;
+		  f modifier_min = 2.000000;
+		}
+		[c_mag]
+		{
+		  f damage_max = 228.000000;
+		  f damage_min = 152.000000;
+			equip_requirements = intelligence:53;
+			inventory_icon = b_gui_ig_i_w_stf_119;
+			model = m_w_stf_078;
+		  f modifier_max = 46.000000;
+		  f modifier_min = 33.000000;
+		}
+		[c_str]
+		{
+		  f damage_max = 160.000000;
+		  f damage_min = 106.000000;
+			equip_requirements = intelligence:39;
+			inventory_icon = b_gui_ig_i_w_stf_118;
+			model = m_w_stf_077;
+		  f modifier_max = 31.000000;
+		  f modifier_min = 17.000000;
+		}
+		[o_avg]
+		{
+			active_icon = b_gui_ig_i_ic_stf_006;
+		  f damage_max = 103.000000;
+		  f damage_min = 69.000000;
+			equip_requirements = intelligence:28;
+			inventory_icon = b_gui_ig_i_w_stf_122;
+			model = m_w_stf_081;
+		  f modifier_max = 16.000000;
+		  f modifier_min = 6.000000;
+		}
+		[o_fin]
+		{
+			active_icon = b_gui_ig_i_ic_stf_006;
+		  f damage_max = 133.000000;
+		  f damage_min = 89.000000;
+			equip_requirements = intelligence:34;
+			inventory_icon = b_gui_ig_i_w_stf_123;
+			model = m_w_stf_082;
+		  f modifier_max = 24.000000;
+		  f modifier_min = 11.000000;
+		}
+		[o_mag]
+		{
+			active_icon = b_gui_ig_i_ic_stf_006;
+		  f damage_max = 269.000000;
+		  f damage_min = 179.000000;
+			equip_requirements = intelligence:61;
+			inventory_icon = b_gui_ig_i_w_stf_125;
+			model = m_w_stf_084;
+		  f modifier_max = 56.000000;
+		  f modifier_min = 41.000000;
+		}
+		[o_str]
+		{
+			active_icon = b_gui_ig_i_ic_stf_006;
+		  f damage_max = 190.000000;
+		  f damage_min = 126.000000;
+			equip_requirements = intelligence:45;
+			inventory_icon = b_gui_ig_i_w_stf_124;
+			model = m_w_stf_083;
+		  f modifier_max = 38.000000;
+		  f modifier_min = 26.000000;
+		}
+	}
+}
+[t:template,n:st_g_c_b_fun]
+{
+	doc = "Gnarled Staff";
+	specializes = base_staff;
+	[aspect]
+	{
+		model = m_w_stf_074;
+	}
+	[attack]
+	{
+	  f damage_max = 68.000000;
+	  f damage_min = 46.000000;
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Gnarled Staff";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_stf_003;
+		equip_requirements = intelligence:22;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_stf_115;
+		inventory_width = 1;
+	}
+}
+[t:template,n:st_g_c_b_low]
+{
+	doc = "Notched Staff";
+	specializes = base_staff;
+	[aspect]
+	{
+		model = m_w_stf_073;
+	}
+	[attack]
+	{
+	  f damage_max = 65.000000;
+	  f damage_min = 43.000000;
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Notched Staff";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_stf_003;
+		equip_requirements = intelligence:21;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_stf_114;
+		inventory_width = 1;
+	}
+}
+[t:template,n:st_g_c_r_avg]
+{
+	doc = "Staff";
+	specializes = base_staff;
+	[aspect]
+	{
+		model = m_w_stf_063;
+	}
+	[attack]
+	{
+	  f damage_max = 8.000000;
+	  f damage_min = 6.000000;
+	}
+	[common]
+	{
+		screen_name = "Staff";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_stf_001;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_stf_104;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 1.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_fin]
+		{
+		  f damage_max = 14.000000;
+		  f damage_min = 12.000000;
+			equip_requirements = intelligence:12;
+			inventory_icon = b_gui_ig_i_w_stf_105;
+			model = m_w_stf_064;
+		  f modifier_max = 3.000000;
+		  f modifier_min = 1.000000;
+		}
+		[c_mag]
+		{
+		  f damage_max = 87.000000;
+		  f damage_min = 71.000000;
+			equip_requirements = intelligence:27;
+			inventory_icon = b_gui_ig_i_w_stf_107;
+			model = m_w_stf_066;
+		  f modifier_max = 21.000000;
+		  f modifier_min = 15.000000;
+		}
+		[c_str]
+		{
+		  f damage_max = 53.000000;
+		  f damage_min = 43.000000;
+			equip_requirements = intelligence:20;
+			inventory_icon = b_gui_ig_i_w_stf_106;
+			model = m_w_stf_065;
+		  f modifier_max = 14.000000;
+		  f modifier_min = 8.000000;
+		}
+		[o_avg]
+		{
+			active_icon = b_gui_ig_i_ic_stf_004;
+		  f damage_max = 23.000000;
+		  f damage_min = 19.000000;
+			equip_requirements = intelligence:13;
+			inventory_icon = b_gui_ig_i_w_stf_110;
+			model = m_w_stf_069;
+		  f modifier_max = 6.000000;
+		  f modifier_min = 2.000000;
+		}
+		[o_fin]
+		{
+			active_icon = b_gui_ig_i_ic_stf_004;
+		  f damage_max = 35.000000;
+		  f damage_min = 29.000000;
+			equip_requirements = intelligence:16;
+			inventory_icon = b_gui_ig_i_w_stf_111;
+			model = m_w_stf_070;
+		  f modifier_max = 9.000000;
+		  f modifier_min = 4.000000;
+		}
+		[o_mag]
+		{
+			active_icon = b_gui_ig_i_ic_stf_004;
+		  f damage_max = 112.000000;
+		  f damage_min = 92.000000;
+			equip_requirements = intelligence:32;
+			inventory_icon = b_gui_ig_i_w_stf_113;
+			model = m_w_stf_072;
+		  f modifier_max = 25.000000;
+		  f modifier_min = 19.000000;
+		}
+		[o_str]
+		{
+			active_icon = b_gui_ig_i_ic_stf_004;
+		  f damage_max = 70.000000;
+		  f damage_min = 58.000000;
+			equip_requirements = intelligence:23;
+			inventory_icon = b_gui_ig_i_w_stf_112;
+			model = m_w_stf_071;
+		  f modifier_max = 18.000000;
+		  f modifier_min = 12.000000;
+		}
+	}
+}
+[t:template,n:st_g_c_r_fun]
+{
+	doc = "Crooked Staff";
+	specializes = base_staff;
+	[aspect]
+	{
+		model = m_w_stf_062;
+	}
+	[attack]
+	{
+	  f damage_max = 4.000000;
+	  f damage_min = 2.000000;
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Crooked Staff";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_stf_001;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_stf_103;
+		inventory_width = 1;
+	}
+}
+[t:template,n:st_g_c_r_low]
+{
+	doc = "Splintered Staff";
+	specializes = base_staff;
+	[aspect]
+	{
+		model = m_w_stf_061;
+	}
+	[attack]
+	{
+	  f damage_max = 4.000000;
+	  f damage_min = 2.000000;
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Splintered Staff";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_stf_001;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_stf_102;
+		inventory_width = 1;
+	}
+}
+[t:template,n:st_g_c_s_avg]
+{
+	doc = "Steel Staff";
+	specializes = base_staff;
+	[aspect]
+	{
+		model = m_w_stf_049;
+	}
+	[attack]
+	{
+	  f damage_max = 39.000000;
+	  f damage_min = 31.000000;
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Steel Staff";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_stf_002;
+		equip_requirements = intelligence:17;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_stf_090;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_fin]
+		{
+		  f damage_max = 50.000000;
+		  f damage_min = 40.000000;
+			equip_requirements = intelligence:19;
+			inventory_icon = b_gui_ig_i_w_stf_091;
+			model = m_w_stf_050;
+		  f modifier_max = 6.000000;
+		  f modifier_min = 1.000000;
+		}
+		[c_mag]
+		{
+		  f damage_max = 149.000000;
+		  f damage_min = 117.000000;
+			equip_requirements = intelligence:39;
+			inventory_icon = b_gui_ig_i_w_stf_093;
+			model = m_w_stf_052;
+		  f modifier_max = 32.000000;
+		  f modifier_min = 23.000000;
+		}
+		[c_str]
+		{
+		  f damage_max = 96.000000;
+		  f damage_min = 76.000000;
+			equip_requirements = intelligence:28;
+			inventory_icon = b_gui_ig_i_w_stf_092;
+			model = m_w_stf_051;
+		  f modifier_max = 21.000000;
+		  f modifier_min = 10.000000;
+		}
+		[o_avg]
+		{
+			active_icon = b_gui_ig_i_ic_stf_005;
+		  f damage_max = 60.000000;
+		  f damage_min = 48.000000;
+			equip_requirements = intelligence:21;
+			inventory_icon = b_gui_ig_i_w_stf_094;
+			model = m_w_stf_053;
+		  f modifier_max = 9.000000;
+		  f modifier_min = 3.000000;
+		}
+		[o_fin]
+		{
+			active_icon = b_gui_ig_i_ic_stf_005;
+		  f damage_max = 75.000000;
+		  f damage_min = 59.000000;
+			equip_requirements = intelligence:24;
+			inventory_icon = b_gui_ig_i_w_stf_095;
+			model = m_w_stf_054;
+		  f modifier_max = 16.000000;
+		  f modifier_min = 7.000000;
+		}
+		[o_mag]
+		{
+			active_icon = b_gui_ig_i_ic_stf_005;
+		  f damage_max = 177.000000;
+		  f damage_min = 139.000000;
+			equip_requirements = intelligence:45;
+			inventory_icon = b_gui_ig_i_w_stf_097;
+			model = m_w_stf_056;
+		  f modifier_max = 40.000000;
+		  f modifier_min = 29.000000;
+		}
+		[o_str]
+		{
+			active_icon = b_gui_ig_i_ic_stf_005;
+		  f damage_max = 124.000000;
+		  f damage_min = 98.000000;
+			equip_requirements = intelligence:34;
+			inventory_icon = b_gui_ig_i_w_stf_096;
+			model = m_w_stf_055;
+		  f modifier_max = 27.000000;
+		  f modifier_min = 17.000000;
+		}
+	}
+}
+[t:template,n:st_g_c_s_fun]
+{
+	doc = "Bent Staff";
+	specializes = base_staff;
+	[aspect]
+	{
+		model = m_w_stf_058;
+	}
+	[attack]
+	{
+	  f damage_max = 36.000000;
+	  f damage_min = 28.000000;
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Bent Staff";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_stf_002;
+		equip_requirements = intelligence:16;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_stf_099;
+		inventory_width = 1;
+	}
+}
+[t:template,n:st_g_c_s_low_old] // Consistent Textures //
+{
+	doc = "Warped Staff";
+	specializes = base_staff;
+	[aspect]
+	{
+		model = m_w_stf_057;
+	}
+	[attack]
+	{
+	  f damage_max = 32.000000;
+	  f damage_min = 26.000000;
+	}
+	[common]
+	{
+		is_pcontent_allowed = false;
+	  b allow_modifiers = false;
+		screen_name = "Warped Staff";
+		
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_stf_002;
+		equip_requirements = intelligence:15;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_stf_500;
+		inventory_width = 1;
+	}
+}
+[t:template,n:st_g_c_s_low] // Consistent Textures //
+{
+	doc = "Warped Staff";
+	specializes = base_staff;
+	[aspect]
+	{
+		model = m_w_stf_057;
+	}
+	[attack]
+	{
+	  f damage_max = 32.000000;
+	  f damage_min = 26.000000;
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Warped Staff";
+		
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_stf_002;
+		equip_requirements = intelligence:15;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_stf_501;
+		inventory_width = 1;
+	}
+}
+[t:template,n:st_g_d_r_avg]
+{
+	doc = "Walking Stick";
+	specializes = base_staff;
+	[aspect]
+	{
+		model = m_w_stf_017;
+	}
+	[attack]
+	{
+		damage_max = 2;
+		damage_min = 1;
+	}
+	[common]
+	{
+        allow_modifiers = false;
+		screen_name = "Walking Stick";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_stf_001;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_stf_035;
+		inventory_width = 1;
+	}
+}
+[t:template,n:st_g_o_b_fun]
+{
+	doc = "Knife Staff";
+	specializes = base_staff;
+	[aspect]
+	{
+		model = m_w_stf_080;
+	}
+	[attack]
+	{
+	  f damage_max = 80.000000;
+	  f damage_min = 54.000000;
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Knife Staff";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_stf_003;
+		equip_requirements = intelligence:24;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_stf_121;
+		inventory_width = 1;
+	}
+}
+[t:template,n:st_g_o_b_low]
+{
+	doc = "Edge Staff";
+	specializes = base_staff;
+	[aspect]
+	{
+		model = m_w_stf_079;
+	}
+	[attack]
+	{
+	  f damage_max = 77.000000;
+	  f damage_min = 51.000000;
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Edge Staff";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_stf_006;
+		equip_requirements = intelligence:23;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_stf_120;
+		inventory_width = 1;
+	}
+}
+[t:template,n:st_g_o_r_fun]
+{
+	doc = "Yearling Staff";
+	specializes = base_staff;
+	[aspect]
+	{
+		model = m_w_stf_068;
+	}
+	[attack]
+	{
+	  f damage_max = 22.000000;
+	  f damage_min = 18.000000;
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Yearling Staff";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_stf_004;
+		equip_requirements = intelligence:13;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_stf_109;
+		inventory_width = 1;
+	}
+}
+[t:template,n:st_g_o_r_low]
+{
+	doc = "Weathered Staff";
+	specializes = base_staff;
+	[aspect]
+	{
+		model = m_w_stf_067;
+	}
+	[attack]
+	{
+	  f damage_max = 18.000000;
+	  f damage_min = 14.000000;
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Weathered Staff";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_stf_004;
+		equip_requirements = intelligence:12;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_stf_108;
+		inventory_width = 1;
+	}
+}
+[t:template,n:st_g_o_s_fun]
+{
+	doc = "Eastern Staff";
+	specializes = base_staff;
+	[aspect]
+	{
+		model = m_w_stf_060;
+	}
+	[attack]
+	{
+	  f damage_max = 47.000000;
+	  f damage_min = 37.000000;
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Eastern Staff";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_stf_005;
+		equip_requirements = intelligence:18;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_stf_101;
+		inventory_width = 1;
+	}
+}
+[t:template,n:st_g_o_s_low]
+{
+	doc = "Charred Staff";
+	specializes = base_staff;
+	[aspect]
+	{
+		model = m_w_stf_059;
+	}
+	[attack]
+	{
+	  f damage_max = 44.000000;
+	  f damage_min = 34.000000;
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Charred Staff";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_stf_005;
+		equip_requirements = intelligence:18;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_stf_100;
+		inventory_width = 1;
+	}
+}
+[t:template,n:st_ra_g_c_b_fin]
+{
+	doc = "Destroyer";
+	specializes = base_staff;
+	[aspect]
+	{
+		model = m_w_stf_076;
+	}
+	[attack]
+	{
+	  f damage_max = 91.000000;
+	  f damage_min = 61.000000;
+	}
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Destroyer";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_stf_003;
+		equip_requirements = intelligence:25;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_stf_139;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 10.000000;
+		  f modifier_min = 2.000000;
+		}
+		[c_mag]
+		{
+		  f damage_max = 235.000000;
+		  f damage_min = 157.000000;
+			equip_requirements = intelligence:53;
+			inventory_icon = b_gui_ig_i_w_stf_143;
+			model = m_w_stf_078;
+		  f modifier_max = 47.000000;
+		  f modifier_min = 34.000000;
+		}
+		[c_str]
+		{
+		  f damage_max = 170.000000;
+		  f damage_min = 114.000000;
+			equip_requirements = intelligence:40;
+			inventory_icon = b_gui_ig_i_w_stf_142;
+			model = m_w_stf_077;
+		  f modifier_max = 33.000000;
+		  f modifier_min = 18.000000;
+		}
+		[o_avg]
+		{
+			active_icon = b_gui_ig_i_ic_stf_006;
+		  f damage_max = 114.000000;
+		  f damage_min = 76.000000;
+			equip_requirements = intelligence:29;
+			inventory_icon = b_gui_ig_i_w_stf_140;
+			model = m_w_stf_081;
+		  f modifier_max = 17.000000;
+		  f modifier_min = 7.000000;
+		}
+		[o_fin]
+		{
+			active_icon = b_gui_ig_i_ic_stf_006;
+		  f damage_max = 137.000000;
+		  f damage_min = 91.000000;
+			equip_requirements = intelligence:34;
+			inventory_icon = b_gui_ig_i_w_stf_141;
+			model = m_w_stf_082;
+		  f modifier_max = 25.000000;
+		  f modifier_min = 11.000000;
+		}
+		[o_mag]
+		{
+			active_icon = b_gui_ig_i_ic_stf_006;
+		  f damage_max = 277.000000;
+		  f damage_min = 185.000000;
+			equip_requirements = intelligence:61;
+			inventory_icon = b_gui_ig_i_w_stf_145;
+			model = m_w_stf_084;
+		  f modifier_max = 58.000000;
+		  f modifier_min = 42.000000;
+		}
+		[o_str]
+		{
+			active_icon = b_gui_ig_i_ic_stf_006;
+		  f damage_max = 197.000000;
+		  f damage_min = 131.000000;
+			equip_requirements = intelligence:45;
+			inventory_icon = b_gui_ig_i_w_stf_144;
+			model = m_w_stf_083;
+		  f modifier_max = 40.000000;
+		  f modifier_min = 27.000000;
+		}
+	}
+}
+[t:template,n:st_ra_g_c_s_fin]
+{
+	doc = "Leg Breaker";
+	specializes = base_staff;
+	[aspect]
+	{
+		model = m_w_stf_050;
+	}
+	[attack]
+	{
+	  f damage_max = 54.000000;
+	  f damage_min = 42.000000;
+	}
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Leg Breaker";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_stf_002;
+		equip_requirements = intelligence:18;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_stf_132;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 6.000000;
+		  f modifier_min = 1.000000;
+		}
+		[c_mag]
+		{
+		  f damage_max = 152.000000;
+		  f damage_min = 120.000000;
+			equip_requirements = intelligence:39;
+			inventory_icon = b_gui_ig_i_w_stf_137;
+			model = m_w_stf_052;
+		  f modifier_max = 33.000000;
+		  f modifier_min = 23.000000;
+		}
+		[c_str]
+		{
+		  f damage_max = 103.000000;
+		  f damage_min = 81.000000;
+			equip_requirements = intelligence:28;
+			inventory_icon = b_gui_ig_i_w_stf_135;
+			model = m_w_stf_051;
+		  f modifier_max = 22.000000;
+		  f modifier_min = 11.000000;
+		}
+		[o_avg]
+		{
+			active_icon = b_gui_ig_i_ic_stf_005;
+		  f damage_max = 64.000000;
+		  f damage_min = 50.000000;
+			equip_requirements = intelligence:20;
+			inventory_icon = b_gui_ig_i_w_stf_133;
+			model = m_w_stf_053;
+		  f modifier_max = 10.000000;
+		  f modifier_min = 3.000000;
+		}
+		[o_fin]
+		{
+			active_icon = b_gui_ig_i_ic_stf_005;
+		  f damage_max = 82.000000;
+		  f damage_min = 64.000000;
+			equip_requirements = intelligence:24;
+			inventory_icon = b_gui_ig_i_w_stf_134;
+			model = m_w_stf_054;
+		  f modifier_max = 17.000000;
+		  f modifier_min = 8.000000;
+		}
+		[o_mag]
+		{
+			active_icon = b_gui_ig_i_ic_stf_005;
+		  f damage_max = 188.000000;
+		  f damage_min = 148.000000;
+			equip_requirements = intelligence:46;
+			inventory_icon = b_gui_ig_i_w_stf_138;
+			model = m_w_stf_056;
+		  f modifier_max = 42.000000;
+		  f modifier_min = 30.000000;
+		}
+		[o_str]
+		{
+			active_icon = b_gui_ig_i_ic_stf_005;
+		  f damage_max = 130.000000;
+		  f damage_min = 102.000000;
+			equip_requirements = intelligence:34;
+			inventory_icon = b_gui_ig_i_w_stf_136;
+			model = m_w_stf_055;
+		  f modifier_max = 28.000000;
+		  f modifier_min = 18.000000;
+		}
+	}
+}
+[t:template,n:st_ra_g_o_r_avg]
+{
+	doc = "Cruel Staff";
+	specializes = base_staff;
+	[aspect]
+	{
+		model = m_w_stf_050;
+	}
+	[attack]
+	{
+	  f damage_max = 25.000000;
+	  f damage_min = 21.000000;
+	}
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Cruel Staff";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_stf_001;
+		equip_requirements = intelligence:13;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_stf_126;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 6.000000;
+		  f modifier_min = 2.000000;
+		}
+		[c_mag]
+		{
+		  f damage_max = 95.000000;
+		  f damage_min = 77.000000;
+			equip_requirements = intelligence:27;
+			inventory_icon = b_gui_ig_i_w_stf_130;
+			model = m_w_stf_066;
+		  f modifier_max = 23.000000;
+		  f modifier_min = 16.000000;
+		}
+		[c_str]
+		{
+		  f damage_max = 56.000000;
+		  f damage_min = 46.000000;
+			equip_requirements = intelligence:20;
+			inventory_icon = b_gui_ig_i_w_stf_128;
+			model = m_w_stf_065;
+		  f modifier_max = 15.000000;
+		  f modifier_min = 9.000000;
+		}
+		[o_fin]
+		{
+			active_icon = b_gui_ig_i_ic_stf_004;
+		  f damage_max = 39.000000;
+		  f damage_min = 32.000000;
+			equip_requirements = intelligence:15;
+			inventory_icon = b_gui_ig_i_w_stf_127;
+			model = m_w_stf_070;
+		  f modifier_max = 10.000000;
+		  f modifier_min = 5.000000;
+		}
+		[o_mag]
+		{
+			active_icon = b_gui_ig_i_ic_stf_004;
+		  f damage_max = 119.000000;
+		  f damage_min = 97.000000;
+			equip_requirements = intelligence:32;
+			inventory_icon = b_gui_ig_i_w_stf_131;
+			model = m_w_stf_072;
+		  f modifier_max = 26.000000;
+		  f modifier_min = 20.000000;
+		}
+		[o_str]
+		{
+			active_icon = b_gui_ig_i_ic_stf_004;
+		  f damage_max = 74.000000;
+		  f damage_min = 60.000000;
+			equip_requirements = intelligence:23;
+			inventory_icon = b_gui_ig_i_w_stf_129;
+			model = m_w_stf_071;
+		  f modifier_max = 19.000000;
+		  f modifier_min = 13.000000;
+		}
+	}
+}
+[t:template,n:st_ra_g_o_r_puller]
+{
+	doc = "Puller Staff";
+	specializes = base_staff;
+	[aspect]
+	{
+		model = m_w_stf_050;
+	}
+	[attack]
+	{
+	  f damage_max = 15.000000;
+	  f damage_min = 13.000000;
+	}
+	[common]
+	{
+		is_pcontent_allowed = false;
+		screen_name = "Puller Staff";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_stf_001;
+		equip_requirements = intelligence:12;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_stf_126;
+		inventory_width = 1;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_mana_bonus;
+				description = "Adds 1 Mana per hit";
+				duration = #infinite;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 1;
+			}
+		}
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 1.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:st_un_axe_str]
+{
+	doc = "Axe Staff";
+	specializes = base_staff;
+	[aspect]
+	{
+		model = m_w_stf_038;
+	}
+	[attack]
+	{
+	  f damage_max = 294.000000;
+	  f damage_min = 196.000000;
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Axe Staff";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_stf_007;
+		equip_requirements = intelligence:63;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_stf_078;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 49.000000;
+		  f modifier_min = 15.000000;
+		}
+	}
+}
+[t:template,n:st_un_b_glaive]
+{
+	doc = "Bladed Staff";
+	specializes = base_staff;
+	[aspect]
+	{
+		model = m_w_stf_046;
+	}
+	[attack]
+	{
+	  f damage_max = 146.000000;
+	  f damage_min = 98.000000;
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Bladed Staff";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_stf_006;
+		equip_requirements = intelligence:35;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_stf_087;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 24.000000;
+		  f modifier_min = 7.000000;
+		}
+	}
+}
+[t:template,n:st_un_b_hook]
+{
+	doc = "Hooked Staff";
+	specializes = base_staff;
+	[aspect]
+	{
+		model = m_w_stf_043;
+	}
+	[attack]
+	{
+	  f damage_max = 227.000000;
+	  f damage_min = 151.000000;
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Hooked Staff";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_stf_006;
+		equip_requirements = intelligence:50;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_stf_084;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 44.000000;
+		  f modifier_min = 18.000000;
+		}
+	}
+}
+[t:template,n:st_un_b_wing]
+{
+	doc = "Wing Staff";
+	specializes = base_staff;
+	[aspect]
+	{
+		model = m_w_stf_043;
+	}
+	[attack]
+	{
+	  f damage_max = 335.000000;
+	  f damage_min = 223.000000;
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Wing Staff";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_stf_006;
+		equip_requirements = intelligence:70;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_stf_083;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 67.000000;
+		  f modifier_min = 38.000000;
+		}
+	}
+}
+[t:template,n:st_un_hand]
+{
+	doc = "Hand Staff";
+	specializes = base_staff;
+	[aspect]
+	{
+		model = m_w_stf_041;
+	}
+	[attack]
+	{
+	  f damage_max = 108.000000;
+	  f damage_min = 80.000000;
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Hand Staff";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_stf_005;
+		equip_requirements = intelligence:29;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_stf_081;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 22.000000;
+		  f modifier_min = 9.000000;
+		}
+	}
+}
+[t:template,n:st_un_ice_c_d_b_avg]
+{
+	doc = "Ice Staff";
+	specializes = base_staff;
+	[aspect]
+	{
+		model = m_w_stf_013;
+	}
+	[attack]
+	{
+	  f damage_max = 106.000000;
+	  f damage_min = 70.000000;
+	}
+	[common]
+	{
+		is_pcontent_allowed = false;
+		screen_name = "Ice Staff";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_stf_006;
+		equip_requirements = intelligence:23;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_stf_013;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 1.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:st_un_mc_s]
+{
+	doc = "Mace Staff";
+	specializes = base_staff;
+	[aspect]
+	{
+		model = m_w_stf_044;
+	}
+	[attack]
+	{
+	  f damage_max = 122.000000;
+	  f damage_min = 90.000000;
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Mace Staff";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_stf_005;
+		equip_requirements = intelligence:32;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_stf_085;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 21.000000;
+		  f modifier_min = 6.000000;
+		}
+	}
+}
+[t:template,n:st_un_merik]
+{
+	doc = "Merik's Staff";
+	specializes = base_staff;
+	[aspect]
+	{
+		model = m_w_stf_014;
+	}
+	[attack]
+	{
+		damage_max = 103;
+		damage_min = 69;
+	}
+	[body]
+	{
+		[chore_dictionary]
+		{
+			[chore_default]
+			{
+				skrit = rotate_object2?angle_x=0.0&rpm_y=0.0;
+			}
+			[chore_rotate]
+			{
+				skrit = rotate_object?angle_x=0.866&rpm_y=-8.0;
+			}
+		}
+	}
+	[common]
+	{
+		is_pcontent_allowed = false;
+		pcontent_special_type = unique;
+		screen_name = "Merik's Staff";
+	}
+	[effect_manager]
+	{
+		effect_name = "staff_merik";
+		repeat = false;
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_stf_005;
+		can_sell = false;
+		equip_requirements = intelligence:28;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_stf_014;
+		inventory_width = 1;
+	}
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_chance_to_block_melee_damage;
+				description = "10% Chance to Block Melee Attack";
+				duration = #infinite;
+				innate_enchantment = true;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 10;
+			}
+			[*]
+			{
+				alteration = alter_max_life;
+				description = "Adds 42 to Health";
+				duration = #infinite;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 42;
+			}
+			[*]
+			{
+				alteration = alter_max_mana;
+				description = "Adds 70 to Mana";
+				duration = #infinite;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 70;
+			}
+			[*]
+			{
+				alteration = alter_armor;
+				description = "Adds 15 to Armor";
+				duration = #infinite;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 15;
+			}
+			[*]
+			{
+				alteration = alter_block_combat_magic_damage;
+				description = "Magic Damage Reduced by 6%";
+				duration = #infinite;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 6;
+			}
+			[*]
+			{
+				alteration = alter_melee_damage_min;
+				duration = #infinite;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 16;
+			}
+			[*]
+			{
+				alteration = alter_melee_damage_max;
+				description = "Adds 16 to 27 Damage";
+				duration = #infinite;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 27;
+			}
+			[*]
+			{
+				alteration = alter_nature_magic;
+				description = "Adds 1 to Nature Magic Skill";
+				duration = #infinite;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 1;
+			}
+			[*]
+			{
+				alteration = alter_combat_magic;
+				description = "Adds 1 to Combat Magic Skill";
+				duration = #infinite;
+				is_permanent = true;
+				is_single_instance = false;
+				value = 1;
+			}
+		}
+	}
+}
+[t:template,n:st_un_pointy]
+{
+	doc = "Sharp Staff";
+	specializes = base_staff;
+	[aspect]
+	{
+		model = m_w_stf_048;
+	}
+	[attack]
+	{
+	  f damage_max = 115.000000;
+	  f damage_min = 85.000000;
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Sharp Staff";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_stf_006;
+		equip_requirements = intelligence:31;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_stf_089;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 23.000000;
+		  f modifier_min = 9.000000;
+		}
+	}
+}
+[t:template,n:st_un_pudgel]
+{
+	doc = "Pudgel Staff";
+	specializes = base_staff;
+	[aspect]
+	{
+		model = m_w_stf_039;
+	}
+	[attack]
+	{
+	  f damage_max = 53.000000;
+	  f damage_min = 43.000000;
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Pudgel Staff";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_stf_004;
+		equip_requirements = intelligence:19;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_stf_079;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 9.000000;
+		  f modifier_min = 3.000000;
+		}
+	}
+}
+[t:template,n:st_un_reaper]
+{
+	doc = "Reaper";
+	specializes = base_staff;
+	[aspect]
+	{
+		model = m_w_stf_035;
+	}
+	[attack]
+	{
+		damage_max = 35;
+		damage_min = 25;
+	}
+	[common]
+	{
+		allow_modifiers = false;
+		is_pcontent_allowed = false;
+		screen_name = "Reaper";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_stf_004;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_stf_082;
+		inventory_width = 1;
+	}
+}
+[t:template,n:st_un_seck_gom]
+{
+	doc = "Gom";
+	specializes = base_staff;
+	[aspect]
+	{
+		model = m_w_stf_037;
+	}
+	[attack]
+	{
+		damage_max = 170;
+		damage_min = 130;
+	}
+	[common]
+	{
+		is_pcontent_allowed = false;
+		screen_name = "Gom's Staff";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_stf_004;
+		equip_requirements = strength:45;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_stf_077;
+		inventory_width = 2;
+	}
+}
+[t:template,n:st_un_seck_mage]
+{
+	doc = "Seck Mage Staff";
+	specializes = base_staff;
+	[aspect]
+	{
+		model = m_w_stf_036;
+	}
+	[attack]
+	{
+		damage_max = 145;
+		damage_min = 125;
+	}
+	[common]
+	{
+		is_pcontent_allowed = false;
+		screen_name = "Seck Mage Staff";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_stf_004;
+		equip_requirements = strength:41;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_stf_076;
+		inventory_width = 1;
+	}
+}
+[t:template,n:st_un_skull]
+{
+	doc = "Skull Staff";
+	specializes = base_staff;
+	[aspect]
+	{
+		model = m_w_stf_040;
+	}
+	[attack]
+	{
+	  f damage_max = 88.000000;
+	  f damage_min = 72.000000;
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Skull Staff";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_stf_004;
+		equip_requirements = intelligence:26;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_stf_080;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 16.000000;
+		  f modifier_min = 5.000000;
+		}
+	}
+}
+[t:template,n:st_un_tiger]
+{
+	doc = "Tiger Staff";
+	specializes = base_staff;
+	[aspect]
+	{
+		model = m_w_stf_047;
+	}
+	[attack]
+	{
+	  f damage_max = 74.000000;
+	  f damage_min = 60.000000;
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Tiger Staff";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_stf_004;
+		equip_requirements = intelligence:23;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_stf_088;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 13.000000;
+		  f modifier_min = 4.000000;
+		}
+	}
+}
+[t:template,n:st_un_toothpick]
+{
+	doc = "Pointed Staff";
+	specializes = base_staff;
+	[aspect]
+	{
+		model = m_w_stf_042;
+	}
+	[attack]
+	{
+	  f damage_max = 25.000000;
+	  f damage_min = 21.000000;
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Pointed Staff";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_stf_001;
+		equip_requirements = intelligence:13;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_stf_082;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 1.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:st_un_toreck]
+{
+	doc = "Sickle Staff";
+	specializes = base_staff;
+	[aspect]
+	{
+		model = m_w_stf_012;
+	}
+	[attack]
+	{
+		damage_max = 150;
+		damage_min = 130;
+	}
+	[common]
+	{
+		is_pcontent_allowed = false;
+		screen_name = "Sickle Staff";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_stf_004;
+		equip_requirements = strength:42;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_stf_010;
+		inventory_width = 1;
+	}
+}
+[t:template,n:st_un_twirl]
+{
+	doc = "Twirled Staff";
+	specializes = base_staff;
+	[aspect]
+	{
+		model = m_w_stf_045;
+	}
+	[attack]
+	{
+	  f damage_max = 97.000000;
+	  f damage_min = 79.000000;
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Twirled Staff";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_stf_005;
+		equip_requirements = intelligence:28;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_stf_086;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 20.000000;
+		  f modifier_min = 8.000000;
+		}
+	}
+}

@@ -329,7 +329,7 @@
 	}
 	[defend]
 	{
-		armor_style = 001;
+		armor_style = 1003;
 		armor_type = type1;
 	  f defense = 2.000000;
 	}
