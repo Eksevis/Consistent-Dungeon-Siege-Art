@@ -1351,7 +1351,7 @@
 		}
 		[o_str]
 		{
-			armor_style = 005;
+			armor_style = 507;
 			armor_type = type1;
 		  f defense = 55.000000;
 			equip_requirements = strength:71;
@@ -1606,7 +1606,7 @@
 		}
 		[o_fin]
 		{
-			armor_style = 038;
+			armor_style = 505;
 			armor_type = type1;
 		  f defense = 8.000000;
 			equip_requirements = strength:18;
@@ -1678,7 +1678,7 @@
 	}
 	[defend]
 	{
-		armor_style = 058;
+		armor_style = 506;
 		armor_type = type1;
 	  f defense = 6.000000;
 	}

@@ -1339,9 +1339,9 @@
 		  f modifier_max = 7.000000;
 		  f modifier_min = 1.000000;
 		}
-		[c_str]
+		[c_str] // Consistent Textures //
 		{
-			armor_style = 034;
+			armor_style = 1005;
 			armor_type = type1;
 		  f defense = 52.000000;
 			equip_requirements = strength:58;
@@ -1349,9 +1349,9 @@
 		  f modifier_max = 16.000000;
 		  f modifier_min = 9.000000;
 		}
-		[o_fin]
+		[o_fin] // Consistent Textures //
 		{
-			armor_style = 037;
+			armor_style = 1004;
 			armor_type = type1;
 		  f defense = 46.000000;
 			equip_requirements = strength:53;
@@ -1359,9 +1359,9 @@
 		  f modifier_max = 14.000000;
 		  f modifier_min = 6.000000;
 		}
-		[o_str]
+		[o_str] // Consistent Textures //
 		{
-			armor_style = 038;
+			armor_style = 1006;
 			armor_type = type1;
 		  f defense = 58.000000;
 			equip_requirements = strength:64;
