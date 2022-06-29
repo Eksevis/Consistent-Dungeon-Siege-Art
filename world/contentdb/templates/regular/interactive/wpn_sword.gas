@@ -1,0 +1,2772 @@
+[t:template,n:base_sword]
+{
+	doc = "Sword";
+	specializes = weapon_melee;
+	[aspect]
+	{
+		material = steelsword;
+		[voice]
+		{
+			[put_down]
+			{
+				* = s_e_gui_put_down_sword;
+			}
+		}
+	}
+	[attack]
+	{
+		attack_class = ac_sword;
+		is_melee = true;
+		reload_delay = 0;
+		skill_class = melee;
+	}
+	[body]
+	{
+		[bone_translator]
+		{
+			handle = grip;
+			middle = ap_trace02;
+			tip = ap_trace01;
+		}
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_swd_002;
+		equip_slot = es_weapon_hand;
+	}
+}
+[t:template,n:sd_g_c_bl_1h_avg]
+{
+	doc = "Full Blade";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_014;
+	}
+	[attack]
+	{
+	  f damage_max = 41.000000;
+	  f damage_min = 31.000000;
+	}
+	[common]
+	{
+		screen_name = "Full Blade";
+	}
+	[gui]
+	{
+		equip_requirements = strength:17;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_swd_014;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 1.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_fin]
+		{
+		  f damage_max = 47.000000;
+		  f damage_min = 35.000000;
+			equip_requirements = strength:18;
+			inventory_height = 3;
+			inventory_icon = b_gui_ig_i_w_swd_098;
+			inventory_width = 1;
+			model = m_w_swd_012;
+		  f modifier_max = 9.000000;
+		  f modifier_min = 2.000000;
+		}
+		[o_avg]
+		{
+			active_icon = b_gui_ig_i_ic_swd_004;
+		  f damage_max = 54.000000;
+		  f damage_min = 40.000000;
+			equip_requirements = strength:20;
+			inventory_height = 3;
+			inventory_icon = b_gui_ig_i_w_swd_019;
+			inventory_width = 1;
+			model = m_w_swd_014;
+		  f modifier_max = 15.000000;
+		  f modifier_min = 4.000000;
+		}
+		[o_fin]
+		{
+			active_icon = b_gui_ig_i_ic_swd_004;
+		  f damage_max = 65.000000;
+		  f damage_min = 48.000000;
+			equip_requirements = strength:22;
+			inventory_height = 3;
+			inventory_icon = b_gui_ig_i_w_swd_029;
+			inventory_width = 1;
+			model = m_w_swd_014;
+		  f modifier_max = 19.000000;
+		  f modifier_min = 8.000000;
+		}
+	}
+}
+[t:template,n:sd_g_c_bl_1h_low]
+{
+	doc = "Cracked Full Blade";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_013;
+	}
+	[attack]
+	{
+	  f damage_max = 35.000000;
+	  f damage_min = 26.000000;
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Cracked Full Blade";
+	}
+	[gui]
+	{
+		equip_requirements = strength:16;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_swd_009;
+		inventory_width = 1;
+	}
+}
+[t:template,n:sd_g_c_fa_1h_avg]
+{
+	doc = "Falchion";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_027;
+	}
+	[attack]
+	{
+	  f damage_max = 77.000000;
+	  f damage_min = 55.000000;
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Falchion";
+	}
+	[gui]
+	{
+		equip_requirements = strength:24;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_swd_058;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[c_fin]
+		{
+		  f damage_max = 83.000000;
+		  f damage_min = 59.000000;
+			equip_requirements = strength:26;
+			inventory_height = 3;
+			inventory_icon = b_gui_ig_i_w_swd_059;
+			inventory_width = 1;
+			model = m_w_swd_026;
+		  f modifier_max = 11.000000;
+		  f modifier_min = 1.000000;
+		}
+		[c_mag]
+		{
+		  f damage_max = 179.000000;
+		  f damage_min = 127.000000;
+			equip_requirements = strength:45;
+			inventory_height = 3;
+			inventory_icon = b_gui_ig_i_w_swd_061;
+			inventory_width = 1;
+			model = m_w_swd_035;
+		  f modifier_max = 43.000000;
+		  f modifier_min = 31.000000;
+		}
+		[c_str]
+		{
+		  f damage_max = 131.000000;
+		  f damage_min = 93.000000;
+			equip_requirements = strength:35;
+			inventory_height = 3;
+			inventory_icon = b_gui_ig_i_w_swd_060;
+			inventory_width = 1;
+			model = m_w_swd_029;
+		  f modifier_max = 31.000000;
+		  f modifier_min = 16.000000;
+		}
+	}
+}
+[t:template,n:sd_g_c_gl_1h_avg]
+{
+	doc = "Full Gladius";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_011;
+	}
+	[attack]
+	{
+	  f damage_max = 32.000000;
+	  f damage_min = 24.000000;
+	}
+	[common]
+	{
+		screen_name = "Full Gladius";
+	}
+	[gui]
+	{
+		equip_requirements = strength:15;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_swd_012;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 1.000000;
+		  f modifier_min = 0.000000;
+		}
+		[o_avg]
+		{
+			active_icon = b_gui_ig_i_ic_swd_004;
+		  f damage_max = 47.000000;
+		  f damage_min = 35.000000;
+			equip_requirements = strength:18;
+			inventory_height = 3;
+			inventory_icon = b_gui_ig_i_w_swd_018;
+			inventory_width = 1;
+			model = m_w_swd_012;
+		  f modifier_max = 14.000000;
+		  f modifier_min = 4.000000;
+		}
+		[o_fin]
+		{
+			active_icon = b_gui_ig_i_ic_swd_004;
+		  f damage_max = 57.000000;
+		  f damage_min = 42.000000;
+			equip_requirements = strength:20;
+			inventory_height = 3;
+			inventory_icon = b_gui_ig_i_w_swd_026;
+			inventory_width = 1;
+			model = m_w_swd_012;
+		  f modifier_max = 16.000000;
+		  f modifier_min = 7.000000;
+		}
+	}
+}
+[t:template,n:sd_g_c_gl_1h_low]
+{
+	doc = "Blunt Full Gladius";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_011;
+	}
+	[attack]
+	{
+	  f damage_max = 26.000000;
+	  f damage_min = 19.000000;
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Blunt Full Gladius";
+	}
+	[gui]
+	{
+		equip_requirements = strength:14;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_swd_003;
+		inventory_width = 1;
+	}
+}
+[t:template,n:sd_g_c_sc_1h_avg]
+{
+	doc = "Scimitar";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_033;
+	}
+	[attack]
+	{
+	  f damage_max = 66.000000;
+	  f damage_min = 47.000000;
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Scimitar";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_swd_006;
+		equip_requirements = strength:22;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_swd_064;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[c_fin]
+		{
+		  f damage_max = 74.000000;
+		  f damage_min = 52.000000;
+			equip_requirements = strength:24;
+			inventory_height = 3;
+			inventory_icon = b_gui_ig_i_w_swd_065;
+			inventory_width = 1;
+			model = m_w_swd_032;
+		  f modifier_max = 9.000000;
+		  f modifier_min = 1.000000;
+		}
+		[c_mag]
+		{
+		  f damage_max = 166.000000;
+		  f damage_min = 118.000000;
+			equip_requirements = strength:42;
+			inventory_height = 3;
+			inventory_icon = b_gui_ig_i_w_swd_067;
+			inventory_width = 1;
+			model = m_w_swd_036;
+		  f modifier_max = 40.000000;
+		  f modifier_min = 28.000000;
+		}
+		[c_str]
+		{
+		  f damage_max = 118.000000;
+		  f damage_min = 84.000000;
+			equip_requirements = strength:33;
+			inventory_height = 3;
+			inventory_icon = b_gui_ig_i_w_swd_066;
+			inventory_width = 1;
+			model = m_w_swd_034;
+		  f modifier_max = 28.000000;
+		  f modifier_min = 14.000000;
+		}
+	}
+}
+[t:template,n:sd_g_c_sd_1h_avg]
+{
+	doc = "Long Sword";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_018;
+	}
+	[attack]
+	{
+	  f damage_max = 76.000000;
+	  f damage_min = 50.000000;
+	}
+	[common]
+	{
+		screen_name = "Long Sword";
+	}
+	[gui]
+	{
+		equip_requirements = strength:24;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_swd_017;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 4.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_fin]
+		{
+		  f damage_max = 85.000000;
+		  f damage_min = 57.000000;
+			equip_requirements = strength:26;
+			inventory_height = 4;
+			inventory_icon = b_gui_ig_i_w_swd_025;
+			inventory_width = 1;
+			model = m_w_swd_016;
+		  f modifier_max = 11.000000;
+		  f modifier_min = 2.000000;
+		}
+		[c_mag]
+		{
+		  f damage_max = 213.000000;
+		  f damage_min = 142.000000;
+			equip_requirements = strength:50;
+			inventory_height = 4;
+			inventory_icon = b_gui_ig_i_w_swd_037;
+			inventory_width = 1;
+			model = m_w_swd_018;
+		  f modifier_max = 50.000000;
+		  f modifier_min = 35.000000;
+		}
+		[c_str]
+		{
+		  f damage_max = 151.000000;
+		  f damage_min = 100.000000;
+			equip_requirements = strength:38;
+			inventory_height = 4;
+			inventory_icon = b_gui_ig_i_w_swd_031;
+			inventory_width = 1;
+			model = m_w_swd_016;
+		  f modifier_max = 34.000000;
+		  f modifier_min = 19.000000;
+		}
+		[o_avg]
+		{
+			active_icon = b_gui_ig_i_ic_swd_004;
+		  f damage_max = 105.000000;
+		  f damage_min = 70.000000;
+			equip_requirements = strength:29;
+			inventory_height = 4;
+			inventory_icon = b_gui_ig_i_w_swd_028;
+			inventory_width = 1;
+			model = m_w_swd_019;
+		  f modifier_max = 18.000000;
+		  f modifier_min = 7.000000;
+		}
+	}
+}
+[t:template,n:sd_g_c_sd_1h_fun]
+{
+	doc = "Pitted Long Sword";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_013;
+	}
+	[attack]
+	{
+	  f damage_max = 72.000000;
+	  f damage_min = 48.000000;
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Pitted Long Sword";
+	}
+	[gui]
+	{
+		equip_requirements = strength:23;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_swd_019;
+		inventory_width = 1;
+	}
+}
+[t:template,n:sd_g_c_sd_2h_avg]
+{
+	doc = "Great Sword";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_017;
+	}
+	[attack]
+	{
+	  f damage_max = 116.000000;
+	  f damage_min = 78.000000;
+		is_two_handed = true;
+	}
+	[common]
+	{
+		screen_name = "Great Sword";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_swd_007;
+		equip_requirements = strength:27;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_swd_035;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 5.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_fin]
+		{
+		  f damage_max = 132.000000;
+		  f damage_min = 88.000000;
+			equip_requirements = strength:29;
+			inventory_height = 4;
+			inventory_icon = b_gui_ig_i_w_swd_041;
+			inventory_width = 1;
+			model = m_w_swd_017;
+		  f modifier_max = 13.000000;
+		  f modifier_min = 3.000000;
+		}
+		[c_mag]
+		{
+		  f damage_max = 293.000000;
+		  f damage_min = 195.000000;
+			equip_requirements = strength:54;
+			inventory_height = 4;
+			inventory_icon = b_gui_ig_i_w_swd_051;
+			inventory_width = 1;
+			model = m_w_swd_020;
+		  f modifier_max = 54.000000;
+		  f modifier_min = 39.000000;
+		}
+		[c_str]
+		{
+		  f damage_max = 215.000000;
+		  f damage_min = 143.000000;
+			equip_requirements = strength:42;
+			inventory_height = 4;
+			inventory_icon = b_gui_ig_i_w_swd_047;
+			inventory_width = 1;
+			model = m_w_swd_020;
+		  f modifier_max = 38.000000;
+		  f modifier_min = 21.000000;
+		}
+		[o_avg]
+		{
+			active_icon = b_gui_ig_i_ic_swd_008;
+		  f damage_max = 152.000000;
+		  f damage_min = 102.000000;
+			equip_requirements = strength:33;
+			inventory_height = 4;
+			inventory_icon = b_gui_ig_i_w_swd_043;
+			inventory_width = 1;
+			model = m_w_swd_020;
+		  f modifier_max = 21.000000;
+		  f modifier_min = 8.000000;
+		}
+	}
+}
+[t:template,n:sd_g_c_sd_2h_fun]
+{
+	doc = "Damaged Great Sword";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_020;
+	}
+	[attack]
+	{
+	  f damage_max = 112.000000;
+	  f damage_min = 74.000000;
+		is_two_handed = true;
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Damaged Great Sword";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_swd_007;
+		equip_requirements = strength:26;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_swd_023;
+		inventory_width = 1;
+	}
+}
+[t:template,n:sd_g_c_sd_2h_fun_trog]
+{
+	doc = "Trog Great Sword";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_020;
+	}
+	[attack]
+	{
+	  f damage_max = 77.000000;
+	  f damage_min = 75.000000;
+		is_two_handed = true;
+	}
+	[common]
+	{
+		allow_modifiers = false;
+		screen_name = "Trog Great Sword";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_swd_007;
+		equip_requirements = strength:26;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_swd_023;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 1.000000;
+		  f modifier_min = 0.000000;
+		}
+	}
+}
+[t:template,n:sd_g_c_sd_2h_low]
+{
+	doc = "Dented Great Sword";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_017;
+	}
+	[attack]
+	{
+	  f damage_max = 108.000000;
+	  f damage_min = 72.000000;
+		is_two_handed = true;
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Dented Great Sword";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_swd_007;
+		equip_requirements = strength:26;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_swd_021;
+		inventory_width = 1;
+	}
+}
+[t:template,n:sd_g_c_st_1h_avg]
+{
+	doc = "Steel";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_019;
+	}
+	[attack]
+	{
+	  f damage_max = 59.000000;
+	  f damage_min = 40.000000;
+	}
+	[common]
+	{
+		screen_name = "Steel";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_swd_003;
+		equip_requirements = strength:20;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_swd_015;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 3.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_fin]
+		{
+		  f damage_max = 69.000000;
+		  f damage_min = 46.000000;
+			equip_requirements = strength:22;
+			inventory_height = 4;
+			inventory_icon = b_gui_ig_i_w_swd_020;
+			inventory_width = 1;
+			model = m_w_swd_019;
+		  f modifier_max = 9.000000;
+		  f modifier_min = 2.000000;
+		}
+		[c_mag]
+		{
+		  f damage_max = 193.000000;
+		  f damage_min = 129.000000;
+			equip_requirements = strength:47;
+			inventory_height = 4;
+			inventory_icon = b_gui_ig_i_w_swd_036;
+			inventory_width = 1;
+			model = m_w_swd_022;
+		  f modifier_max = 45.000000;
+		  f modifier_min = 32.000000;
+		}
+		[c_str]
+		{
+		  f damage_max = 134.000000;
+		  f damage_min = 90.000000;
+			equip_requirements = strength:35;
+			inventory_height = 4;
+			inventory_icon = b_gui_ig_i_w_swd_030;
+			inventory_width = 1;
+			model = m_w_swd_018;
+		  f modifier_max = 30.000000;
+		  f modifier_min = 17.000000;
+		}
+		[o_avg]
+		{
+			active_icon = b_gui_ig_i_ic_swd_005;
+		  f damage_max = 85.000000;
+		  f damage_min = 57.000000;
+			equip_requirements = strength:26;
+			inventory_height = 4;
+			inventory_icon = b_gui_ig_i_w_swd_027;
+			inventory_width = 1;
+			model = m_w_swd_015;
+		  f modifier_max = 15.000000;
+		  f modifier_min = 6.000000;
+		}
+		[o_fin]
+		{
+			active_icon = b_gui_ig_i_ic_swd_005;
+		  f damage_max = 111.000000;
+		  f damage_min = 74.000000;
+			equip_requirements = strength:31;
+			inventory_height = 4;
+			inventory_icon = b_gui_ig_i_w_swd_032;
+			inventory_width = 1;
+			model = m_w_swd_018;
+		  f modifier_max = 23.000000;
+		  f modifier_min = 10.000000;
+		}
+		[o_mag]
+		{
+			active_icon = b_gui_ig_i_ic_swd_005;
+		  f damage_max = 229.000000;
+		  f damage_min = 153.000000;
+			equip_requirements = strength:54;
+			inventory_height = 4;
+			inventory_icon = b_gui_ig_i_w_swd_036;
+			inventory_width = 1;
+			model = m_w_swd_022;
+		  f modifier_max = 55.000000;
+		  f modifier_min = 40.000000;
+		}
+		[o_str]
+		{
+			active_icon = b_gui_ig_i_ic_swd_005;
+		  f damage_max = 160.000000;
+		  f damage_min = 107.000000;
+			equip_requirements = strength:40;
+			inventory_height = 4;
+			inventory_icon = b_gui_ig_i_w_swd_038;
+			inventory_width = 1;
+			model = m_w_swd_020;
+		  f modifier_max = 37.000000;
+		  f modifier_min = 25.000000;
+		}
+	}
+}
+[t:template,n:sd_g_c_st_2h_avg]
+{
+	doc = "Great Steel";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_020;
+	}
+	[attack]
+	{
+	  f damage_max = 112.000000;
+	  f damage_min = 74.000000;
+		is_two_handed = true;
+	}
+	[common]
+	{
+		screen_name = "Great Steel";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_swd_007;
+		equip_requirements = strength:26;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_swd_034;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 4.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_fin]
+		{
+		  f damage_max = 128.000000;
+		  f damage_min = 86.000000;
+			equip_requirements = strength:29;
+			inventory_height = 4;
+			inventory_icon = b_gui_ig_i_w_swd_040;
+			inventory_width = 1;
+			model = m_w_swd_017;
+		  f modifier_max = 13.000000;
+		  f modifier_min = 3.000000;
+		}
+		[c_mag]
+		{
+		  f damage_max = 288.000000;
+		  f damage_min = 192.000000;
+			equip_requirements = strength:54;
+			inventory_height = 4;
+			inventory_icon = b_gui_ig_i_w_swd_050;
+			inventory_width = 1;
+			model = m_w_swd_020;
+		  f modifier_max = 53.000000;
+		  f modifier_min = 38.000000;
+		}
+		[c_str]
+		{
+		  f damage_max = 210.000000;
+		  f damage_min = 140.000000;
+			equip_requirements = strength:42;
+			inventory_height = 4;
+			inventory_icon = b_gui_ig_i_w_swd_046;
+			inventory_width = 1;
+			model = m_w_swd_017;
+		  f modifier_max = 38.000000;
+		  f modifier_min = 21.000000;
+		}
+		[o_avg]
+		{
+			active_icon = b_gui_ig_i_ic_swd_008;
+		  f damage_max = 151.000000;
+		  f damage_min = 101.000000;
+			equip_requirements = strength:32;
+			inventory_height = 4;
+			inventory_icon = b_gui_ig_i_w_swd_042;
+			inventory_width = 1;
+			model = m_w_swd_017;
+		  f modifier_max = 21.000000;
+		  f modifier_min = 8.000000;
+		}
+		[o_fin]
+		{
+			active_icon = b_gui_ig_i_ic_swd_008;
+		  f damage_max = 178.000000;
+		  f damage_min = 118.000000;
+			equip_requirements = strength:36;
+			inventory_height = 4;
+			inventory_icon = b_gui_ig_i_w_swd_048;
+			inventory_width = 1;
+			model = m_w_swd_017;
+		  f modifier_max = 29.000000;
+		  f modifier_min = 13.000000;
+		}
+		[o_mag]
+		{
+			active_icon = b_gui_ig_i_ic_swd_008;
+		  f damage_max = 334.000000;
+		  f damage_min = 222.000000;
+			equip_requirements = strength:61;
+			inventory_height = 4;
+			inventory_icon = b_gui_ig_i_w_swd_054;
+			inventory_width = 1;
+			model = m_w_swd_020;
+		  f modifier_max = 64.000000;
+		  f modifier_min = 46.000000;
+		}
+		[o_str]
+		{
+			active_icon = b_gui_ig_i_ic_swd_008;
+		  f damage_max = 247.000000;
+		  f damage_min = 165.000000;
+			equip_requirements = strength:47;
+			inventory_height = 4;
+			inventory_icon = b_gui_ig_i_w_swd_052;
+			inventory_width = 1;
+			model = m_w_swd_017;
+		  f modifier_max = 46.000000;
+		  f modifier_min = 31.000000;
+		}
+	}
+}
+[t:template,n:sd_g_c_st_2h_fun]
+{
+	doc = "Worn Great Steel";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_020;
+	}
+	[attack]
+	{
+	  f damage_max = 108.000000;
+	  f damage_min = 72.000000;
+		is_two_handed = true;
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Worn Great Steel";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_swd_007;
+		equip_requirements = strength:26;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_swd_022;
+		inventory_width = 1;
+	}
+}
+[t:template,n:sd_ra_g_c_bl_1h_fin]
+{
+	doc = "Cruel Blade";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_012;
+	}
+	[attack]
+	{
+	  f damage_max = 49.000000;
+	  f damage_min = 36.000000;
+	}
+	[common]
+	{
+		pcontent_special_type = rare;
+		screen_name = "Cruel Blade";
+	}
+	[gui]
+	{
+		equip_requirements = strength:18;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_swd_111;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 10.000000;
+		  f modifier_min = 2.000000;
+		}
+	}
+}
+[t:template,n:sd_ra_g_c_fa_1h_fin]
+{
+	doc = "Falchion";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_031;
+	}
+	[attack]
+	{
+	  f damage_max = 90.000000;
+	  f damage_min = 64.000000;
+	}
+	[common]
+	{
+		pcontent_special_type = rare;
+		screen_name = "Bone Cutter";
+	}
+	[gui]
+	{
+		equip_requirements = strength:26;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_swd_125;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 11.000000;
+		  f modifier_min = 2.000000;
+		}
+		[c_mag]
+		{
+		  f damage_max = 188.000000;
+		  f damage_min = 133.000000;
+			equip_requirements = strength:45;
+			inventory_height = 3;
+			inventory_icon = b_gui_ig_i_w_swd_127;
+			inventory_width = 1;
+			model = m_w_swd_035;
+		  f modifier_max = 45.000000;
+		  f modifier_min = 32.000000;
+		}
+		[c_str]
+		{
+		  f damage_max = 134.000000;
+		  f damage_min = 95.000000;
+			equip_requirements = strength:34;
+			inventory_height = 3;
+			inventory_icon = b_gui_ig_i_w_swd_126;
+			inventory_width = 1;
+			model = m_w_swd_029;
+		  f modifier_max = 32.000000;
+		  f modifier_min = 16.000000;
+		}
+	}
+}
+[t:template,n:sd_ra_g_c_sc_1h_fin]
+{
+	doc = "Scimitar";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_032;
+	}
+	[attack]
+	{
+	  f damage_max = 79.000000;
+	  f damage_min = 56.000000;
+	}
+	[common]
+	{
+		pcontent_special_type = rare;
+		screen_name = "Gut Masher";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_swd_006;
+		equip_requirements = strength:24;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_swd_122;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 10.000000;
+		  f modifier_min = 1.000000;
+		}
+		[c_mag]
+		{
+		  f damage_max = 172.000000;
+		  f damage_min = 122.000000;
+			equip_requirements = strength:42;
+			inventory_height = 3;
+			inventory_icon = b_gui_ig_i_w_swd_124;
+			inventory_width = 1;
+			model = m_w_swd_036;
+		  f modifier_max = 41.000000;
+		  f modifier_min = 29.000000;
+		}
+		[c_str]
+		{
+		  f damage_max = 125.000000;
+		  f damage_min = 88.000000;
+			equip_requirements = strength:33;
+			inventory_height = 3;
+			inventory_icon = b_gui_ig_i_w_swd_123;
+			inventory_width = 1;
+			model = m_w_swd_034;
+		  f modifier_max = 30.000000;
+		  f modifier_min = 15.000000;
+		}
+	}
+}
+[t:template,n:sd_ra_g_c_sd_2h_fin]
+{
+	doc = "Great Sword";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_017;
+	}
+	[attack]
+	{
+	  f damage_max = 140.000000;
+	  f damage_min = 94.000000;
+		is_two_handed = true;
+	}
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Lethal Sword";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_swd_007;
+		equip_requirements = strength:29;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_swd_035;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 14.000000;
+		  f modifier_min = 3.000000;
+		}
+		[c_mag]
+		{
+		  f damage_max = 300.000000;
+		  f damage_min = 200.000000;
+			equip_requirements = strength:54;
+			inventory_height = 4;
+			inventory_icon = b_gui_ig_i_w_swd_134;
+			inventory_width = 1;
+			model = m_w_swd_020;
+		  f modifier_max = 56.000000;
+		  f modifier_min = 40.000000;
+		}
+		[o_fin]
+		{
+		  f damage_max = 190.000000;
+		  f damage_min = 126.000000;
+			equip_requirements = strength:37;
+			inventory_height = 4;
+			inventory_icon = b_gui_ig_i_w_swd_133;
+			inventory_width = 1;
+			model = m_w_swd_020;
+		  f modifier_max = 31.000000;
+		  f modifier_min = 14.000000;
+		}
+	}
+}
+[t:template,n:sd_ra_g_o_bl_1h_avg]
+{
+	doc = "Vicious Blade";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_013;
+	}
+	[attack]
+	{
+	  f damage_max = 56.000000;
+	  f damage_min = 16.000000;
+	}
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Vicious Blade";
+	}
+	[gui]
+	{
+		equip_requirements = strength:17;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_swd_014;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 14.000000;
+		  f modifier_min = 3.000000;
+		}
+	}
+}
+[t:template,n:sd_ra_g_o_gl_1h_avg]
+{
+	doc = "Full Gladius";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_012;
+	}
+	[attack]
+	{
+	  f damage_max = 51.000000;
+	  f damage_min = 37.000000;
+	}
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Finger Chopper";
+	}
+	[gui]
+	{
+		equip_requirements = strength:18;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_swd_110;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 15.000000;
+		  f modifier_min = 4.000000;
+		}
+	}
+}
+[t:template,n:sd_ra_g_o_sd_1h_avg]
+{
+	doc = "Long Sword";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_019;
+	}
+	[attack]
+	{
+	  f damage_max = 101.000000;
+	  f damage_min = 25.000000;
+	}
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Head Splitter";
+	}
+	[gui]
+	{
+		equip_requirements = strength:24;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_swd_116;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 5.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_fin]
+		{
+			active_icon = b_gui_ig_i_ic_swd_004;
+		  f damage_max = 149.000000;
+		  f damage_min = 37.000000;
+			equip_requirements = strength:31;
+			inventory_height = 4;
+			inventory_icon = b_gui_ig_i_w_swd_115;
+			inventory_width = 1;
+			model = m_w_swd_016;
+		  f modifier_max = 37.000000;
+		  f modifier_min = 23.000000;
+		}
+		[c_mag]
+		{
+		  f damage_max = 357.000000;
+		  f damage_min = 89.000000;
+			equip_requirements = strength:61;
+			inventory_height = 4;
+			inventory_icon = b_gui_ig_i_w_swd_120;
+			inventory_width = 1;
+			model = m_w_swd_018;
+		  f modifier_max = 107.000000;
+		  f modifier_min = 94.000000;
+		}
+		[c_str]
+		{
+		  f damage_max = 236.000000;
+		  f damage_min = 59.000000;
+			equip_requirements = strength:43;
+			inventory_height = 4;
+			inventory_icon = b_gui_ig_i_w_swd_118;
+			inventory_width = 1;
+			model = m_w_swd_016;
+		  f modifier_max = 69.000000;
+		  f modifier_min = 56.000000;
+		}
+		[o_fin]
+		{
+			active_icon = b_gui_ig_i_ic_swd_004;
+		  f damage_max = 169.000000;
+		  f damage_min = 57.000000;
+			equip_requirements = strength:31;
+			inventory_height = 4;
+			inventory_icon = b_gui_ig_i_w_swd_117;
+			inventory_width = 1;
+			model = m_w_swd_019;
+		  f modifier_max = 37.000000;
+		  f modifier_min = 23.000000;
+		}
+		[o_mag]
+		{
+		  f damage_max = 363.000000;
+		  f damage_min = 94.000000;
+			equip_requirements = strength:61;
+			inventory_height = 4;
+			inventory_icon = b_gui_ig_i_w_swd_121;
+			inventory_width = 1;
+			model = m_w_swd_019;
+		  f modifier_max = 107.000000;
+		  f modifier_min = 94.000000;
+		}
+		[o_str]
+		{
+		  f damage_max = 257.000000;
+		  f damage_min = 69.000000;
+			equip_requirements = strength:43;
+			inventory_height = 4;
+			inventory_icon = b_gui_ig_i_w_swd_119;
+			inventory_width = 1;
+			model = m_w_swd_023;
+		  f modifier_max = 69.000000;
+		  f modifier_min = 56.000000;
+		}
+	}
+}
+[t:template,n:sd_ra_g_o_st_1h_fin]
+{
+	doc = "Steel Death";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_018;
+	}
+	[attack]
+	{
+	  f damage_max = 171.000000;
+	  f damage_min = 43.000000;
+	}
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Steel Death";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_swd_003;
+		equip_requirements = strength:33;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_swd_112;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 214.000000;
+		  f modifier_min = 1.000000;
+		}
+		[c_str]
+		{
+		  f damage_max = 221.000000;
+		  f damage_min = 55.000000;
+			equip_requirements = strength:40;
+			inventory_height = 4;
+			inventory_icon = b_gui_ig_i_w_swd_113;
+			inventory_width = 1;
+			model = m_w_swd_018;
+		  f modifier_max = 276.000000;
+		  f modifier_min = 1.000000;
+		}
+		[o_str]
+		{
+			active_icon = b_gui_ig_i_ic_swd_005;
+		  f damage_max = 238.000000;
+		  f damage_min = 59.000000;
+			equip_requirements = strength:42;
+			inventory_height = 4;
+			inventory_icon = b_gui_ig_i_w_swd_114;
+			inventory_width = 1;
+			model = m_w_swd_020;
+		  f modifier_max = 297.000000;
+		  f modifier_min = 1.000000;
+		}
+	}
+}
+[t:template,n:sd_ra_g_o_st_2h_avg]
+{
+	doc = "Leg Cleaver";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_017;
+	}
+	[attack]
+	{
+	  f damage_max = 233.000000;
+	  f damage_min = 78.000000;
+		is_two_handed = true;
+	}
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Leg Cleaver";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_swd_007;
+		equip_requirements = strength:26;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_swd_129;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 6.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_fin]
+		{
+			active_icon = b_gui_ig_i_ic_swd_008;
+		  f damage_max = 318.000000;
+		  f damage_min = 106.000000;
+			equip_requirements = strength:33;
+			inventory_height = 4;
+			inventory_icon = b_gui_ig_i_w_swd_128;
+			inventory_width = 1;
+			model = m_w_swd_017;
+		  f modifier_max = 40.000000;
+		  f modifier_min = 25.000000;
+		}
+		[c_mag]
+		{
+		  f damage_max = 738.000000;
+		  f damage_min = 246.000000;
+			equip_requirements = strength:64;
+			inventory_height = 4;
+			inventory_icon = b_gui_ig_i_w_swd_131;
+			inventory_width = 1;
+			model = m_w_swd_020;
+		  f modifier_max = 112.000000;
+		  f modifier_min = 98.000000;
+		}
+		[o_str]
+		{
+			active_icon = b_gui_ig_i_ic_swd_008;
+		  f damage_max = 609.000000;
+		  f damage_min = 203.000000;
+			equip_requirements = strength:54;
+			inventory_height = 4;
+			inventory_icon = b_gui_ig_i_w_swd_130;
+			inventory_width = 1;
+			model = m_w_swd_017;
+		  f modifier_max = 95.000000;
+		  f modifier_min = 81.000000;
+		}
+	}
+}
+[t:template,n:sd_un_big_1h_d_jagged]
+{
+	doc = "Jagged Sword";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_044;
+	}
+	[attack]
+	{
+	  f damage_max = 269.000000;
+	  f damage_min = 199.000000;
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Jagged Sword";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_swd_007;
+		equip_requirements = strength:61;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_swd_074;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 63.000000;
+		  f modifier_min = 26.000000;
+		}
+	}
+}
+[t:template,n:sd_un_big_1h_d_square]
+{
+	doc = "Massive Sword";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_040;
+	}
+	[attack]
+	{
+	  f damage_max = 276.000000;
+	  f damage_min = 204.000000;
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Massive Sword";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_swd_007;
+		equip_requirements = strength:63;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_swd_072;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 55.000000;
+		  f modifier_min = 17.000000;
+		}
+	}
+}
+[t:template,n:sd_un_big_1h_g_breaker]
+{
+	doc = "Sword Breaker";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_051;
+	}
+	[attack]
+	{
+	  f damage_max = 152.000000;
+	  f damage_min = 124.000000;
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Sword Breaker";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_swd_007;
+		equip_requirements = strength:40;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_swd_084;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 37.000000;
+		  f modifier_min = 15.000000;
+		}
+	}
+}
+[t:template,n:sd_un_big_1h_g_cleaver]
+{
+	doc = "Sickle Sword";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_050;
+	}
+	[attack]
+	{
+	  f damage_max = 133.000000;
+	  f damage_min = 109.000000;
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Sickle Sword";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_swd_007;
+		equip_requirements = strength:36;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_swd_083;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 28.000000;
+		  f modifier_min = 8.000000;
+		}
+	}
+}
+[t:template,n:sd_un_big_1h_g_flame]
+{
+	doc = "Cascade Sword";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_039;
+	}
+	[attack]
+	{
+	  f damage_max = 250.000000;
+	  f damage_min = 185.000000;
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Cascade Sword";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_swd_007;
+		equip_requirements = strength:58;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_swd_071;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 59.000000;
+		  f modifier_min = 24.000000;
+		}
+	}
+}
+[t:template,n:sd_un_big_1h_g_ornate]
+{
+	doc = "Starburst Sword";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_043;
+	}
+	[attack]
+	{
+	  f damage_max = 282.000000;
+	  f damage_min = 230.000000;
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Starburst Sword";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_swd_008;
+		equip_requirements = strength:66;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_swd_073;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 72.000000;
+		  f modifier_min = 41.000000;
+		}
+	}
+}
+[t:template,n:sd_un_big_2h_d_barbed]
+{
+	doc = "Barbed Sword";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_046;
+	}
+	[attack]
+	{
+	  f damage_max = 401.000000;
+	  f damage_min = 297.000000;
+		is_two_handed = true;
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Barbed Sword";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_swd_007;
+		equip_requirements = strength:71;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_swd_078;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 75.000000;
+		  f modifier_min = 30.000000;
+		}
+	}
+}
+[t:template,n:sd_un_big_2h_d_serrated]
+{
+	doc = "Serrated Sword";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_042;
+	}
+	[attack]
+	{
+	  f damage_max = 414.000000;
+	  f damage_min = 306.000000;
+		is_two_handed = true;
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Serrated Sword";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_swd_010;
+		equip_requirements = strength:73;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_swd_076;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 77.000000;
+		  f modifier_min = 31.000000;
+		}
+	}
+}
+[t:template,n:sd_un_big_2h_g_eye]
+{
+	doc = "Onyx Sword";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_054;
+	}
+	[attack]
+	{
+	  f damage_max = 215.000000;
+	  f damage_min = 159.000000;
+		is_two_handed = true;
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Onyx Sword";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_swd_007;
+		equip_requirements = strength:42;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_swd_087;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 34.000000;
+		  f modifier_min = 10.000000;
+		}
+	}
+}
+[t:template,n:sd_un_big_2h_g_fork]
+{
+	doc = "Snake Sword";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_045;
+	}
+	[attack]
+	{
+	  f damage_max = 363.000000;
+	  f damage_min = 269.000000;
+		is_two_handed = true;
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Snake Sword";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_swd_007;
+		equip_requirements = strength:65;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_swd_077;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 70.000000;
+		  f modifier_min = 40.000000;
+		}
+	}
+}
+[t:template,n:sd_un_big_2h_g_split]
+{
+	doc = "Split Sword";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_041;
+	}
+	[attack]
+	{
+	  f damage_max = 384.000000;
+	  f damage_min = 284.000000;
+		is_two_handed = true;
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Split Sword";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_swd_007;
+		equip_requirements = strength:68;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_swd_075;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 71.000000;
+		  f modifier_min = 29.000000;
+		}
+	}
+}
+[t:template,n:sd_un_droog_1h_avg]
+{
+	doc = "Droog Sword";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_059;
+	}
+	[attack]
+	{
+	  f damage_max = 130;
+	  f damage_min = 90;
+	}
+	[common]
+	{
+		is_pcontent_allowed = false;
+		screen_name = "Droog Sword";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_swd_005;
+		equip_requirements = strength:34;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_swd_100;
+		inventory_width = 1;
+	}
+}
+[t:template,n:sd_un_g_1h_angle]
+{
+	doc = "Edged Sword";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_047;
+	}
+	[attack]
+	{
+	  f damage_max = 95.000000;
+	  f damage_min = 70.000000;
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Edged Sword";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_swd_005;
+		equip_requirements = strength:27;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_swd_079;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 19.000000;
+		  f modifier_min = 6.000000;
+		}
+	}
+}
+[t:template,n:sd_un_g_1h_phoenix]
+{
+	doc = "Phoenix Sword";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_055;
+	}
+	[attack]
+	{
+	  f damage_max = 292.000000;
+	  f damage_min = 216.000000;
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Phoenix Sword";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_swd_005;
+		equip_requirements = strength:66;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_swd_088;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 69.000000;
+		  f modifier_min = 28.000000;
+		}
+	}
+}
+[t:template,n:sd_un_g_1h_twirl]
+{
+	doc = "Twisted Sword";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_057;
+	}
+	[attack]
+	{
+	  f damage_max = 207.000000;
+	  f damage_min = 153.000000;
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Twisted Sword";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_swd_005;
+		equip_requirements = strength:49;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_swd_090;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 52.000000;
+		  f modifier_min = 40.000000;
+		}
+	}
+}
+[t:template,n:sd_un_g_1h_wing]
+{
+	doc = "Dragon Wing";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_053;
+	}
+	[attack]
+	{
+	  f damage_max = 334.000000;
+	  f damage_min = 247.000000;
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Dragon Wing";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_swd_011;
+		equip_requirements = strength:74;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_swd_086;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 81.000000;
+		  f modifier_min = 47.000000;
+		}
+	}
+}
+[t:template,n:sd_un_g_2h_angle]
+{
+	doc = "Elegant Sword";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_048;
+	}
+	[attack]
+	{
+	  f damage_max = 150.000000;
+	  f damage_min = 111.000000;
+		is_two_handed = true;
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Elegant Sword";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_swd_008;
+		equip_requirements = strength:32;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_swd_080;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 28.000000;
+		  f modifier_min = 11.000000;
+		}
+	}
+}
+[t:template,n:sd_un_g_2h_ribbon]
+{
+	doc = "Union Sword";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_052;
+	}
+	[attack]
+	{
+	  f damage_max = 228.000000;
+	  f damage_min = 168.000000;
+		is_two_handed = true;
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Union Sword";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_swd_008;
+		equip_requirements = strength:44;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_swd_085;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 42.000000;
+		  f modifier_min = 17.000000;
+		}
+	}
+}
+[t:template,n:sd_un_g_2h_zap]
+{
+	doc = "Diamond Sword";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_056;
+	}
+	[attack]
+	{
+	  f damage_max = 311.000000;
+	  f damage_min = 230.000000;
+		is_two_handed = true;
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Diamond Sword";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_swd_008;
+		equip_requirements = strength:57;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_swd_089;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 62.000000;
+		  f modifier_min = 34.000000;
+		}
+	}
+}
+[t:template,n:sd_un_g_c_sd_1h_mag]
+{
+	doc = "Jewel Sword";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_038;
+	}
+	[attack]
+	{
+	  f damage_max = 113.000000;
+	  f damage_min = 83.000000;
+	}
+	[common]
+	{
+		pcontent_special_type = unique;
+		screen_name = "Jewel Sword";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_swd_005;
+		equip_requirements = strength:31;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_swd_069;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 23.000000;
+		  f modifier_min = 7.000000;
+		}
+	}
+}
+[t:template,n:sd_un_ice_avg]
+{
+	doc = "Ice Sword";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_003;
+		[textures]
+		{
+			0 = b_i_glb_ice;
+		}
+	}
+	[attack]
+	{
+		damage_max = 48;
+		damage_min = 40;
+	}
+	[common]
+	{
+		is_pcontent_allowed = false;
+		screen_name = "Ice Sword";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_swd_005;
+		equip_requirements = strength:19;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_swd_068;
+		inventory_width = 1;
+	}
+}
+[t:template,n:sd_un_seck_1h_avg]
+{
+	doc = "Seck Sword";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_049;
+	}
+	[attack]
+	{
+		damage_max = 165;
+		damage_min = 135;
+	}
+	[common]
+	{
+		is_pcontent_allowed = false;
+		screen_name = "Seck Sword";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_swd_005;
+		equip_requirements = strength:44;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_swd_082;
+		inventory_width = 1;
+	}
+}
+[t:template,n:sd_un_seck_1h_fin] // Consistent Textures //
+{
+	doc = "Seck Elite Sword";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_049;
+		[textures]
+		{
+			0 = b_w_weapons_con1;
+		}
+	}
+	[attack]
+	{
+		damage_max = 195;
+		damage_min = 160;
+	}
+	[common]
+	{
+		is_pcontent_allowed = false;
+		screen_name = "Seck Elite Sword";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_swd_009;
+		equip_requirements = strength:50;
+		inventory_height = 4;
+		inventory_icon = b_gui_ig_i_w_swd_081;
+		inventory_width = 1;
+	}
+}
+[t:template,n:ss_g_c_bl_1h_avg]
+{
+	doc = "Blade";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_014;
+	}
+	[attack]
+	{
+	  f damage_max = 29.000000;
+	  f damage_min = 16.000000;
+	}
+	[common]
+	{
+		screen_name = "Blade";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_swd_001;
+		equip_requirements = strength:14;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_swd_007;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 1.000000;
+		  f modifier_min = 0.000000;
+		}
+		[o_avg]
+		{
+		  f damage_max = 47.000000;
+		  f damage_min = 25.000000;
+			equip_requirements = strength:17;
+			inventory_height = 3;
+			inventory_icon = b_gui_ig_i_w_swd_102;
+			inventory_width = 1;
+			model = m_w_swd_014;
+		  f modifier_max = 12.000000;
+		  f modifier_min = 3.000000;
+		}
+	}
+}
+[t:template,n:ss_g_c_bl_1h_fun]
+{
+	doc = "Dull Blade";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_014;
+	}
+	[attack]
+	{
+	  f damage_max = 25.000000;
+	  f damage_min = 14.000000;
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Dull Blade";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_swd_001;
+		equip_requirements = strength:13;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_swd_006;
+		inventory_width = 1;
+	}
+}
+[t:template,n:ss_g_c_gl_1h_avg]
+{
+	doc = "Gladius";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_011;
+	}
+	[attack]
+	{
+	  f damage_max = 22.000000;
+	  f damage_min = 12.000000;
+	}
+	[common]
+	{
+		screen_name = "Gladius";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_swd_001;
+		equip_requirements = strength:13;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_swd_004;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 1.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_fin]
+		{
+		  f damage_max = 25.000000;
+		  f damage_min = 14.000000;
+			equip_requirements = strength:13;
+			inventory_height = 3;
+			inventory_icon = b_gui_ig_i_w_swd_005;
+			inventory_width = 1;
+			model = m_w_swd_012;
+		  f modifier_max = 5.000000;
+		  f modifier_min = 1.000000;
+		}
+	}
+}
+[t:template,n:ss_g_c_gl_1h_fun]
+{
+	doc = "Tarnished Gladius";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_ct001;
+	}
+	[attack]
+	{
+		damage_max = 11;
+		damage_min = 3;
+	}
+	[common]
+	{
+		allow_modifiers = false;
+		screen_name = "Tarnished Gladius";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_swd_001;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_swd_ct001; // Consistent Textures // (originally 0002)
+		inventory_width = 1;
+	}
+}
+[t:template,n:ss_g_c_gl_1h_low]
+{
+	doc = "Crusted Gladius";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_ct001;
+	}
+	[attack]
+	{
+	  f damage_max = 15.000000;
+	  f damage_min = 8.000000;
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Crusted Gladius";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_swd_001;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_swd_ct001; // Consistent Textres //
+		inventory_width = 1;
+	}
+}
+[t:template,n:ss_g_c_sd_1h_avg]
+{
+	doc = "Short Sword";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_015;
+	}
+	[attack]
+	{
+	  f damage_max = 57.000000;
+	  f damage_min = 31.000000;
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Short Sword";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_swd_001;
+		equip_requirements = strength:19;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_swd_011;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_fin]
+		{
+		  f damage_max = 68.000000;
+		  f damage_min = 37.000000;
+			equip_requirements = strength:21;
+			inventory_height = 2;
+			inventory_icon = b_gui_ig_i_w_swd_095;
+			inventory_width = 1;
+			model = m_w_swd_015;
+		  f modifier_max = 8.000000;
+		  f modifier_min = 1.000000;
+		}
+		[c_mag]
+		{
+		  f damage_max = 167.000000;
+		  f damage_min = 90.000000;
+			equip_requirements = strength:39;
+			inventory_height = 3;
+			inventory_icon = b_gui_ig_i_w_swd_024;
+			inventory_width = 1;
+			model = m_w_swd_021;
+		  f modifier_max = 36.000000;
+		  f modifier_min = 26.000000;
+		}
+		[c_str]
+		{
+		  f damage_max = 117.000000;
+		  f damage_min = 63.000000;
+			equip_requirements = strength:30;
+			inventory_height = 3;
+			inventory_icon = b_gui_ig_i_w_swd_016;
+			inventory_width = 1;
+			model = m_w_swd_015;
+		  f modifier_max = 25.000000;
+		  f modifier_min = 13.000000;
+		}
+		[o_avg]
+		{
+		  f damage_max = 78.000000;
+		  f damage_min = 42.000000;
+			equip_requirements = strength:23;
+			inventory_height = 2;
+			inventory_icon = b_gui_ig_i_w_swd_096;
+			inventory_width = 1;
+			model = m_w_swd_015;
+		  f modifier_max = 12.000000;
+		  f modifier_min = 4.000000;
+		}
+		[o_fin]
+		{
+		  f damage_max = 93.000000;
+		  f damage_min = 50.000000;
+			equip_requirements = strength:26;
+			inventory_height = 2;
+			inventory_icon = b_gui_ig_i_w_swd_097;
+			inventory_width = 1;
+			model = m_w_swd_014;
+		  f modifier_max = 19.000000;
+		  f modifier_min = 9.000000;
+		}
+	}
+}
+[t:template,n:ss_g_c_st_1h_avg]
+{
+	doc = "Short Steel";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_014;
+	}
+	[attack]
+	{
+	  f damage_max = 47.000000;
+	  f damage_min = 25.000000;
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Short Steel";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_swd_001;
+		equip_requirements = strength:17;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_swd_010;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_fin]
+		{
+		  f damage_max = 55.000000;
+		  f damage_min = 30.000000;
+			equip_requirements = strength:18;
+			inventory_height = 2;
+			inventory_icon = b_gui_ig_i_w_swd_092;
+			inventory_width = 1;
+			model = m_w_swd_015;
+		  f modifier_max = 6.000000;
+		  f modifier_min = 1.000000;
+		}
+		[o_avg]
+		{
+		  f damage_max = 68.000000;
+		  f damage_min = 37.000000;
+			equip_requirements = strength:21;
+			inventory_height = 2;
+			inventory_icon = b_gui_ig_i_w_swd_093;
+			inventory_width = 1;
+			model = m_w_swd_014;
+		  f modifier_max = 10.000000;
+		  f modifier_min = 4.000000;
+		}
+		[o_fin]
+		{
+		  f damage_max = 82.000000;
+		  f damage_min = 44.000000;
+			equip_requirements = strength:24;
+			inventory_height = 2;
+			inventory_icon = b_gui_ig_i_w_swd_094;
+			inventory_width = 1;
+			model = m_w_swd_016;
+		  f modifier_max = 17.000000;
+		  f modifier_min = 8.000000;
+		}
+	}
+}
+[t:template,n:ss_g_c_st_1h_fun]
+{
+	doc = "Pitted Short Steel";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_013;
+	}
+	[attack]
+	{
+	  f damage_max = 43.000000;
+	  f damage_min = 23.000000;
+	}
+	[common]
+	{
+	  b allow_modifiers = false;
+		screen_name = "Pitted Short Steel";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_swd_001;
+		equip_requirements = strength:17;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_swd_008;
+		inventory_width = 1;
+	}
+}
+[t:template,n:ss_ra_g_c_gl_1h_fin]
+{
+	doc = "Gladius";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_012;
+	}
+	[attack]
+	{
+	  f damage_max = 35.000000;
+	  f damage_min = 13.000000;
+	}
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Pain Gladius";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_swd_001;
+		equip_requirements = strength:14;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_swd_101;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 14.000000;
+		  f modifier_min = 3.000000;
+		}
+	}
+}
+[t:template,n:ss_ra_g_c_st_1h_fin]
+{
+	doc = "Short Steel";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_015;
+	}
+	[attack]
+	{
+	  f damage_max = 61.000000;
+	  f damage_min = 33.000000;
+	}
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Short Impaler";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_swd_001;
+		equip_requirements = strength:18;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_swd_103;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 7.000000;
+		  f modifier_min = 1.000000;
+		}
+		[o_avg]
+		{
+		  f damage_max = 73.000000;
+		  f damage_min = 39.000000;
+			equip_requirements = strength:21;
+			inventory_height = 2;
+			inventory_icon = b_gui_ig_i_w_swd_104;
+			inventory_width = 1;
+			model = m_w_swd_014;
+		  f modifier_max = 11.000000;
+		  f modifier_min = 4.000000;
+		}
+		[o_fin]
+		{
+		  f damage_max = 87.000000;
+		  f damage_min = 47.000000;
+			equip_requirements = strength:24;
+			inventory_height = 2;
+			inventory_icon = b_gui_ig_i_w_swd_105;
+			inventory_width = 1;
+			model = m_w_swd_016;
+		  f modifier_max = 18.000000;
+		  f modifier_min = 9.000000;
+		}
+	}
+}
+[t:template,n:ss_ra_g_o_sd_1h_avg]
+{
+	doc = "Short Sword";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_015;
+	}
+	[attack]
+	{
+	  f damage_max = 70.000000;
+	  f damage_min = 18.000000;
+	}
+	[common]
+	{
+		pcontent_special_type = rare, unique;
+		screen_name = "Masher";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_swd_001;
+		equip_requirements = strength:19;
+		inventory_height = 2;
+		inventory_icon = b_gui_ig_i_w_swd_107;
+		inventory_width = 1;
+	}
+	[pcontent]
+	{
+		[base]
+		{
+		  f modifier_max = 0.000000;
+		  f modifier_min = 0.000000;
+		}
+		[c_fin]
+		{
+		  f damage_max = 105.000000;
+		  f damage_min = 26.000000;
+			equip_requirements = strength:24;
+			inventory_height = 2;
+			inventory_icon = b_gui_ig_i_w_swd_106;
+			inventory_width = 1;
+			model = m_w_swd_015;
+		  f modifier_max = 18.000000;
+		  f modifier_min = 13.000000;
+		}
+		[c_mag]
+		{
+		  f damage_max = 257.000000;
+		  f damage_min = 64.000000;
+			equip_requirements = strength:47;
+			inventory_height = 3;
+			inventory_icon = b_gui_ig_i_w_swd_109;
+			inventory_width = 1;
+			model = m_w_swd_021;
+		  f modifier_max = 80.000000;
+		  f modifier_min = 72.000000;
+		}
+		[o_fin]
+		{
+		  f damage_max = 140.000000;
+		  f damage_min = 35.000000;
+			equip_requirements = strength:29;
+			inventory_height = 2;
+			inventory_icon = b_gui_ig_i_w_swd_108;
+			inventory_width = 1;
+			model = m_w_swd_014;
+		  f modifier_max = 32.000000;
+		  f modifier_min = 24.000000;
+		}
+	}
+}
+[t:template,n:ss_un_gl_rusk]
+{
+	doc = "Crude Gladius";
+	specializes = base_sword;
+	[aspect]
+	{
+		model = m_w_swd_ct001;
+	}
+	[attack]
+	{
+		damage_max = 17;
+		damage_min = 12;
+	}
+	[common]
+	{
+		is_pcontent_allowed = false;
+		screen_name = "Crude Gladius";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_swd_001;
+		inventory_height = 3;
+		inventory_icon = b_gui_ig_i_w_swd_ct001; // Consistent Textures //
+		inventory_width = 1;
+	}
+}
