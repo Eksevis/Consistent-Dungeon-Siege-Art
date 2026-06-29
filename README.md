@@ -13,6 +13,8 @@ Kathycf
 
 Project Britannica
 
+Mystere
+
 and Eksevis, myself,
 
 have directly contributed at least something to this mod, or otherwise had their work registered under free distrubtion law by the creators. I believe it is our 
